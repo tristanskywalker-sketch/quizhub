@@ -3,3 +3,5 @@
 .player-label{min-width:110px;overflow-wrap:anywhere}.clue p{line-height:1.55}.scoreops .pill{margin:0}.grid .tile{min-height:160px}@media(max-width:520px){.player-label{min-width:88px}.grid{gap:10px}.grid .tile{min-height:140px}}
 
 .open-question{font-size:clamp(22px,4vw,32px);line-height:1.38}.career-list{display:grid;gap:9px;margin:20px 0}.career-club{background:#252e46;border:1px solid #35415b;padding:13px;border-radius:12px;display:flex;align-items:center;gap:14px;font-weight:700}.career-club span{background:#465477;color:white;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;flex-shrink:0}.scoreops select{min-width:100px}button:focus-visible{outline:3px solid #85e3d4;outline-offset:3px}
+
+.roundchoices{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:12px;margin:26px 0}.roundchoices .btn{min-height:70px;font-size:17px}.roundchoices .btn:focus-visible{outline:3px solid #85e3d4;outline-offset:3px}

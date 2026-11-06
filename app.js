@@ -1,17 +1,21 @@
 import {quizzes,questions} from './data.js';
 const KEY='quizhub-save-v1'; // Behold gamle spillere og lagrede poeng ved oppdatering
-const blank=()=>({mode:null,players:[],scores:{},rounds:[],quiz:null,index:0,revealed:false,clue:0,selected:null,awarded:{},category:'',locks:{},complete:false});
+const blank=()=>({mode:null,players:[],scores:{},rounds:[],quiz:null,index:0,revealed:false,clue:0,selected:null,awarded:{},category:'',locks:{},complete:false,deck:null,roundSize:10});
 let state;
 try{state={...blank(),...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch{state=blank()}
 // Gamle økter i fjernet quiztype skal ikke stoppe den oppdaterte appen.
 if(state.quiz==='country'){state.quiz=null;state.category='';state.started=true;}
+// Pågående økter fra tidligere versjoner kan spilles ferdig med gammel rekkefølge.
+if(state.quiz&&state.category!==undefined&&state.index>0&&!Array.isArray(state.deck)){const old=(questions[state.quiz]||[]).filter(q=>!['fiveone','career'].includes(state.quiz)||state.category==='Blandet'||q.category===state.category);state.deck=old.map((_,i)=>i);}
 const app=document.querySelector('#app');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function save(){localStorage.setItem(KEY,JSON.stringify(state));}
 function update(obj){Object.assign(state,obj);save();render();}
 const quiz=id=>quizzes.find(x=>x.id===id);
 const list=()=>['fiveone','career'].includes(state.quiz)?(questions[state.quiz]||[]).filter(q=>state.category==='Blandet'||q.category===state.category):(questions[state.quiz]||[]);
-const active=()=>list()[state.index];
+const active=()=>list()[Array.isArray(state.deck)?state.deck[state.index]:state.index];
+const count=()=>Array.isArray(state.deck)?state.deck.length:list().length;
+function makeDeck(length, requested){const indices=Array.from({length},(_,i)=>i);for(let i=indices.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[indices[i],indices[j]]=[indices[j],indices[i]];}return indices.slice(0,requested==='all'?length:Math.min(length,Number(requested)||10));}
 const header=()=>`<header class="top"><div class="logo">QUIZ<b>HUB</b><div class="tag">Én app. Uendelig med quizglede.</div></div><button class="btn ghost" data-action="home">Hjem</button></header>`;
 const back=(action='home')=>`<button class="back" data-action="${action}">← Tilbake</button>`;
 const quizzTiles=()=>`<div class="grid">${quizzes.map(q=>`<button class="tile" data-action="choose" data-id="${q.id}"><div class="em">${q.emoji}</div><strong>${esc(q.name)}</strong><small>${esc(q.subtitle)}</small></button>`).join('')}</div>`;
@@ -25,8 +29,9 @@ function categorySelection(){
  const icons=isFive?['🌟','🌍','⚽','🎲']:['⚽','🏅','🌍','🎲','🎯'];
  return `${back('selection')}<div class="eyebrow">${esc(quiz(state.quiz).name)}</div><h1 class="heading">Velg kategori</h1><p class="sub">${isFive?'Fem ledetråder per spørsmål. Lås svar på ønsket poengnivå.':'Gjett spilleren ut fra klubbene i karriereløpet.'}</p><div class="grid">${cats.map((c,i)=>`<button class="tile" data-action="category" data-id="${esc(c)}"><div class="em">${icons[i]||'⚽'}</div><strong>${esc(c)}</strong><small>${c==='Blandet'?'Alle spørsmål':questions[state.quiz].filter(q=>q.category===c).length+' spørsmål'}</small></button>`).join('')}</div>`;
 }
+function roundSetup(){const n=list().length;const opts=[5,10,15,20].filter(v=>v<=n);opts.push('all');return `${back(['fiveone','career'].includes(state.quiz)?'categories':'selection')}<div class="eyebrow">${esc(quiz(state.quiz).name)}</div><h1 class="heading">Hvor mange spørsmål?</h1><p class="sub">Vi trekker tilfeldig fra ${n} tilgjengelige spørsmål${state.category&&state.category!=='Blandet'?' i '+esc(state.category):''}. Hvert spørsmål kommer bare én gang per runde.</p><div class="roundchoices">${opts.map(v=>`<button class="btn ${v===10||v==='all'&&n<10?'':'secondary'}" data-action="beginround" data-size="${v}">${v==='all'?'Alle '+n:v+' spørsmål'}</button>`).join('')}</div><p class="notice">En ny runde gir et nytt tilfeldig utvalg og en ny rekkefølge. Poengene fortsetter å telle i quizkveld-modus.</p>`;}
 function play(){let q=active();if(!q)return `<h2>Ingen flere spørsmål</h2><button class="btn" data-action="done">Se resultat</button>`;
- const type=state.quiz, count=list().length;
+ const type=state.quiz, total=count();
  let content='';
  if(type==='fiveone'){
   const visible=Math.min(state.clue+1,5);
@@ -52,11 +57,11 @@ function play(){let q=active();if(!q)return `<h2>Ingen flere spørsmål</h2><but
  content+=`<div class="scoreops"><strong class="player-label">${esc(p)}</strong>${type==='fiveone'?`<span class="tiny">${state.locks[p]?'Låst på '+max+' poeng':'Ikke låst'}</span>`:''}<select data-award-player="${encodeURIComponent(p)}" aria-label="Poeng til ${esc(p)}">${Array.from({length:max+1},(_,v)=>`<option value="${v}" ${(state.awarded[p]||0)===v?'selected':''}>${v} poeng</option>`).join('')}</select></div>`;
  }
  }
- return `${back('selection')}<div class="roundhead"><div><div class="eyebrow">${esc(quiz(type).name)}</div><h2>Spørsmål ${state.index+1} av ${count}</h2></div><span class="pill">${state.mode==='night'?'🏆 Quizkveld':'🎯 Enkeltquiz'}</span></div><div class="panel">${content}</div><div class="actions"><button class="btn" data-action="next" ${!state.revealed?'disabled':''}>${state.index===count-1?'Fullfør quiz':'Lagre poeng og neste →'}</button><button class="btn ghost" data-action="selection">Til quizoversikt</button></div>`;
+ return `${back('selection')}<div class="roundhead"><div><div class="eyebrow">${esc(quiz(type).name)}</div><h2>Spørsmål ${state.index+1} av ${total}</h2></div><span class="pill">${state.mode==='night'?'🏆 Quizkveld':'🎯 Enkeltquiz'}</span></div><div class="panel">${content}</div><div class="actions"><button class="btn" data-action="next" ${!state.revealed?'disabled':''}>${state.index===total-1?'Fullfør quiz':'Lagre poeng og neste →'}</button><button class="btn ghost" data-action="selection">Til quizoversikt</button></div>`;
 }
 function results(){return `${back('selection')}<div class="eyebrow">${state.mode==='night'?'Quizkveld':'Enkeltquiz'}</div><h1 class="heading">${state.mode==='night'?'Quizkveldens resultat':'Resultat'}</h1><div class="panel">${board()}${state.mode==='night'?`<h3>Fullførte runder</h3>${state.rounds.map((r,i)=>`<p>${i+1}. ${esc(quiz(r)?.name||r)}</p>`).join('')||'<p class="muted">Ingen fullførte runder.</p>'}`:''}</div><div class="actions">${state.mode==='night'?'<button class="btn" data-action="selection">Spill en ny runde</button>':'<button class="btn" data-action="new">Ny enkeltquiz</button>'}<button class="btn secondary" data-action="reset">Start helt på nytt</button></div>`;}
-function render(){app.innerHTML=header()+(state.complete?results():!state.mode?home():state.quiz?(['fiveone','career'].includes(state.quiz)&&!state.category?categorySelection():play()):state.players.length&&state.started?selection():setup());}
-function resetQuestion(){state.index=0;state.revealed=false;state.clue=0;state.selected=null;state.awarded={};state.locks={};state.category='';state.complete=false;}
+function render(){app.innerHTML=header()+(state.complete?results():!state.mode?home():state.quiz?(['fiveone','career'].includes(state.quiz)&&!state.category?categorySelection():!Array.isArray(state.deck)?roundSetup():play()):state.players.length&&state.started?selection():setup());}
+function resetQuestion(){state.index=0;state.revealed=false;state.clue=0;state.selected=null;state.awarded={};state.locks={};state.category='';state.deck=null;state.complete=false;}
 function dispatch(action,el){switch(action){
  case 'home':update({mode:null,quiz:null,complete:false});break;
  case 'setmode':state=blank();update({mode:el.dataset.mode});break;
@@ -64,7 +69,9 @@ function dispatch(action,el){switch(action){
  case 'setup':update({started:false,quiz:null,complete:false});break;
  case 'start':update({started:true});break;
  case 'choose':resetQuestion();state.quiz=el.dataset.id;save();render();break;
- case 'category':state.category=el.dataset.id;state.index=0;state.clue=0;state.locks={};state.awarded={};state.revealed=false;save();render();break;
+ case 'categories':state.deck=null;state.category='';save();render();break;
+ case 'beginround':{const pool=list();if(!pool.length){alert('Ingen spørsmål i denne kategorien ennå.');break;}state.deck=makeDeck(pool.length,el.dataset.size);state.roundSize=el.dataset.size;state.index=0;state.clue=0;state.revealed=false;state.locks={};state.awarded={};save();render();break;}
+ case 'category':state.category=el.dataset.id;state.deck=null;state.index=0;state.clue=0;state.locks={};state.awarded={};state.revealed=false;save();render();break;
  case 'lock':{if(state.revealed||state.quiz!=='fiveone')break;const p=decodeURIComponent(el.dataset.id);if(!state.players.includes(p)||state.locks[p])break;state.locks[p]={points:5-state.clue};save();render();break;}
  case 'selection':update({quiz:null,complete:false,started:true});break;
  case 'remove':{const p=decodeURIComponent(el.dataset.id);state.players=state.players.filter(x=>x!==p);delete state.scores[p];save();render();break;}
@@ -75,7 +82,7 @@ function dispatch(action,el){switch(action){
    if(!state.revealed)return;
    state.players.forEach(p=>state.scores[p]=(state.scores[p]||0)+Number(state.awarded[p]||0));
    state.index++;state.revealed=false;state.clue=0;state.selected=null;state.awarded={};state.locks={};
-   if(state.index>=list().length){if(state.mode==='night'){state.rounds.push(state.quiz);state.quiz=null;state.started=true}else{state.complete=true;state.quiz=null;}}
+   if(state.index>=count()){if(state.mode==='night'){state.rounds.push(state.quiz);state.quiz=null;state.started=true}else{state.complete=true;state.quiz=null;}}
    save();render();break;
  }
  case 'finish':update({complete:true});break;
