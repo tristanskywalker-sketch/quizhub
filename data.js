@@ -62,7 +62,7 @@ export const questions={
   {question:'I hvilken idrett brukes uttrykkene birdie, eagle og bogey?',answer:'Golf'},
   {question:'Hvilket lag vant den første sesongen av Premier League i 1992–93?',answer:'Manchester United'}
  ],
- ,fiveone:[
+ fiveone:[
   {category:'Kjendiser',answer:'Leonardo DiCaprio',clues:['Jeg ble født i California i 1974.','Jeg startet som barneskuespiller og fikk en Oscar-nominasjon for What’s Eating Gilbert Grape.','Jeg har spilt hovedroller i filmer regissert av Martin Scorsese.','Jeg vant Oscar for beste mannlige hovedrolle for The Revenant.','Jeg spilte Jack i Titanic.']},
   {category:'Kjendiser',answer:'Adele',clues:['Jeg ble født i London i 1988.','Jeg slo gjennom med et album oppkalt etter alderen min.','Albumene mine heter blant annet 19, 21, 25 og 30.','Jeg synger låten Rolling in the Deep.','Jeg synger Hello og Someone Like You.']},
   {category:'Kjendiser',answer:'Dwayne Johnson',clues:['Jeg ble født i California i 1972.','Jeg var profesjonell wrestler før jeg ble filmstjerne.','Jeg har medvirket i flere filmer i Fast & Furious-serien.','Jeg spiller i Jumanji: Welcome to the Jungle.','Jeg er kjent under kallenavnet The Rock.']},
