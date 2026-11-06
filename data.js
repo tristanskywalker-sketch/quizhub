@@ -1,17 +1,25 @@
 export const quizzes=[
- {id:'country',name:'Gjett landet',emoji:'🌍',subtitle:'Ledetråder og synkende poeng',color:'mint'},
- {id:'career',name:'Fotballkarriere',emoji:'⚽',subtitle:'Klubbene avslører spilleren',color:'violet'},
- {id:'music',name:'Musikkquiz',emoji:'🎵',subtitle:'Låt og oppfølgingsspørsmål',color:'pink'},
- {id:'general',name:'Allmennquiz',emoji:'🧠',subtitle:'Fire svaralternativer',color:'amber'},
- {id:'fiveone',name:'5–1 quiz',emoji:'🔎',subtitle:'Fem ledetråder – fra 5 til 1 poeng',color:'cyan'}
+ {id:'fiveone',name:'5–1 quiz',emoji:'🔎',subtitle:'Fem ledetråder – 5 til 1 poeng'},
+ {id:'geography',name:'Geografi',emoji:'🌍',subtitle:'Fun facts, flagg og rekorder'},
+ {id:'general',name:'Allmennquiz',emoji:'🧠',subtitle:'Vanlige spørsmål uten svaralternativer'},
+ {id:'sports',name:'Sportsquiz',emoji:'🏆',subtitle:'Sport og idrett – åpne spørsmål'},
+ {id:'career',name:'Fotballkarriere',emoji:'⚽',subtitle:'Klubbene avslører spilleren'},
+ {id:'music',name:'Musikkquiz',emoji:'🎵',subtitle:'Låt og oppfølgingsspørsmål'}
 ];
 export const questions={
- country:[
-  {answer:'Portugal',clues:['Landet ligger i Europa.','Landet har kyst mot Atlanterhavet.','Hovedstaden er Lisboa.']},
-  {answer:'Japan',clues:['Landet ligger i Asia.','Landet består av mange øyer.','Hovedstaden er Tokyo.']},
-  {answer:'Canada',clues:['Landet ligger i Nord-Amerika.','Landet har både engelsk og fransk som offisielle språk.','Hovedstaden er Ottawa.']},
-  {answer:'Marokko',clues:['Landet ligger i Afrika.','Landet har kyst mot både Atlanterhavet og Middelhavet.','Hovedstaden er Rabat.']},
-  {answer:'Argentina',clues:['Landet ligger i Sør-Amerika.','Landet er kjent for tango og fotball.','Hovedstaden er Buenos Aires.']}
+ geography:[
+  {question:'Hvilket land har verdens eneste nasjonalflagg som ikke er rektangulært eller kvadratisk?',answer:'Nepal',fact:'Nepals flagg består av to trekantede vimpler.'},
+  {question:'Hvilket lands nasjonalflagg har verken rødt, hvitt eller blått i seg?',answer:'Jamaica',fact:'Flagget er grønt, gull og svart.'},
+  {question:'Hvilket land har flest tidssoner dersom oversjøiske territorier regnes med?',answer:'Frankrike',fact:'Frankrikes oversjøiske områder strekker seg over mange tidssoner.'},
+  {question:'Hva heter verdens største øy som ikke regnes som et kontinent?',answer:'Grønland',fact:'Australia regnes som kontinent og er derfor ikke med i denne sammenligningen.'},
+  {question:'Hvilke to land deler verdens lengste internasjonale landegrense?',answer:'Canada og USA',fact:'Grensen strekker seg fra Atlanterhavet til Stillehavet og langs Alaska.'},
+  {question:'Hvilken europeisk hovedstad ligger ved elven Tiber?',answer:'Roma',fact:'Tiber renner gjennom Italias hovedstad.'},
+  {question:'Hvilket land er helt omsluttet av Sør-Afrika?',answer:'Lesotho',fact:'Lesotho er en enklave innenfor Sør-Afrika.'},
+  {question:'Hvilket land har hovedstaden Ulaanbaatar?',answer:'Mongolia',fact:'Mongolia ligger mellom Russland og Kina.'},
+  {question:'Hva heter verdens dypeste innsjø?',answer:'Bajkalsjøen (Baikal)',fact:'Innsjøen ligger i Sibir i Russland.'},
+  {question:'Hvilket land har en sedertrefigur midt på flagget?',answer:'Libanon',fact:'Sedertreet har stor symbolsk betydning for landet.'},
+  {question:'Hvilken hovedstad ligger på øya Sjælland?',answer:'København',fact:'København ligger hovedsakelig på Sjælland og Amager.'},
+  {question:'Hvilket søramerikansk land har både Quechua og Aymara som offisielle språk sammen med spansk?',answer:'Bolivia',fact:'Bolivia anerkjenner mange urfolksspråk som offisielle.'}
  ],
  career:[
   {answer:'Erling Braut Haaland',category:'Norske spillere',clues:['Bryne','Molde','Red Bull Salzburg','Borussia Dortmund','Manchester City']},
@@ -27,12 +35,33 @@ export const questions={
   {answer:'Britney Spears – ...Baby One More Time',question:'Hvilket år ble singelen først utgitt?',options:['1995','1998','2001','2004'],correct:1,spotify:'https://open.spotify.com/search/Britney%20Spears%20Baby%20One%20More%20Time'}
  ],
  general:[
-  {question:'Hva er hovedstaden i Australia?',options:['Sydney','Canberra','Melbourne','Perth'],correct:1},
-  {question:'Hvilket grunnstoff har det kjemiske symbolet Fe?',options:['Fluor','Fosfor','Jern','Francium'],correct:2},
-  {question:'Hvor mange spillere er det på banen for ett fotballag ved vanlig elleverfotball?',options:['9','10','11','12'],correct:2},
-  {question:'Hvilken planet er nærmest solen?',options:['Venus','Merkur','Mars','Jorden'],correct:1},
-  {question:'Hvem skrev romanen «Sult»?',options:['Knut Hamsun','Henrik Ibsen','Sigrid Undset','Tarjei Vesaas'],correct:0}
- ]
+  {question:'Hva heter hovedstaden i Australia?',answer:'Canberra'},
+  {question:'Hvilket grunnstoff har det kjemiske symbolet Fe?',answer:'Jern'},
+  {question:'Hvem skrev romanen «Sult»?',answer:'Knut Hamsun'},
+  {question:'Hva heter den største planeten i solsystemet?',answer:'Jupiter'},
+  {question:'Hvilket år sank Titanic?',answer:'1912'},
+  {question:'Hvilken kunstner malte «Guernica»?',answer:'Pablo Picasso'},
+  {question:'Hvilken valuta brukes i Japan?',answer:'Yen'},
+  {question:'Hva er det kjemiske symbolet for gull?',answer:'Au'},
+  {question:'Hvem skrev skuespillet «Et dukkehjem»?',answer:'Henrik Ibsen'},
+  {question:'Hvilket organ produserer insulin?',answer:'Bukspyttkjertelen'},
+  {question:'Hva heter verdens største nålevende dyr?',answer:'Blåhval'},
+  {question:'Hva kalles prosessen der planter bruker lys til å lage sukker?',answer:'Fotosyntese'}
+ ],
+ sports:[
+  {question:'Hvor mange spillere har ett lag på banen i vanlig elleverfotball?',answer:'11'},
+  {question:'Hvilket land vant herre-VM i fotball i 2022?',answer:'Argentina'},
+  {question:'Hvor mange ringer er det i OL-symbolet?',answer:'5'},
+  {question:'Hva heter den norske skiskytteren som vant åtte olympiske gull?',answer:'Ole Einar Bjørndalen'},
+  {question:'Hvilken idrett forbindes med Wimbledon?',answer:'Tennis'},
+  {question:'Hvilken fotballklubb spiller hjemmekampene sine på Anfield?',answer:'Liverpool FC'},
+  {question:'Hvor lang er et maraton, målt i kilometer?',answer:'42,195 km'},
+  {question:'Hvilket land arrangerte sommer-OL i 2016?',answer:'Brasil'},
+  {question:'Hva heter trofeet vinneren av NHL-sluttspillet mottar?',answer:'Stanley Cup'},
+  {question:'Hvem scoret vinnermålet for Tyskland i VM-finalen i fotball 2014?',answer:'Mario Götze'},
+  {question:'I hvilken idrett brukes uttrykkene birdie, eagle og bogey?',answer:'Golf'},
+  {question:'Hvilket lag vant den første sesongen av Premier League i 1992–93?',answer:'Manchester United'}
+ ],
  ,fiveone:[
   {category:'Kjendiser',answer:'Leonardo DiCaprio',clues:['Jeg ble født i California i 1974.','Jeg startet som barneskuespiller og fikk en Oscar-nominasjon for What’s Eating Gilbert Grape.','Jeg har spilt hovedroller i filmer regissert av Martin Scorsese.','Jeg vant Oscar for beste mannlige hovedrolle for The Revenant.','Jeg spilte Jack i Titanic.']},
   {category:'Kjendiser',answer:'Adele',clues:['Jeg ble født i London i 1988.','Jeg slo gjennom med et album oppkalt etter alderen min.','Albumene mine heter blant annet 19, 21, 25 og 30.','Jeg synger låten Rolling in the Deep.','Jeg synger Hello og Someone Like You.']},
