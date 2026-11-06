@@ -2,7 +2,8 @@ export const quizzes=[
  {id:'country',name:'Gjett landet',emoji:'🌍',subtitle:'Ledetråder og synkende poeng',color:'mint'},
  {id:'career',name:'Fotballkarriere',emoji:'⚽',subtitle:'Klubbene avslører spilleren',color:'violet'},
  {id:'music',name:'Musikkquiz',emoji:'🎵',subtitle:'Låt og oppfølgingsspørsmål',color:'pink'},
- {id:'general',name:'Allmennquiz',emoji:'🧠',subtitle:'Fire svaralternativer',color:'amber'}
+ {id:'general',name:'Allmennquiz',emoji:'🧠',subtitle:'Fire svaralternativer',color:'amber'},
+ {id:'fiveone',name:'5–1 quiz',emoji:'🔎',subtitle:'Fem ledetråder – fra 5 til 1 poeng',color:'cyan'}
 ];
 export const questions={
  country:[
@@ -32,4 +33,18 @@ export const questions={
   {question:'Hvilken planet er nærmest solen?',options:['Venus','Merkur','Mars','Jorden'],correct:1},
   {question:'Hvem skrev romanen «Sult»?',options:['Knut Hamsun','Henrik Ibsen','Sigrid Undset','Tarjei Vesaas'],correct:0}
  ]
+ ,fiveone:[
+  {category:'Kjendiser',answer:'Leonardo DiCaprio',clues:['Jeg ble født i California i 1974.','Jeg startet som barneskuespiller og fikk en Oscar-nominasjon for What’s Eating Gilbert Grape.','Jeg har spilt hovedroller i filmer regissert av Martin Scorsese.','Jeg vant Oscar for beste mannlige hovedrolle for The Revenant.','Jeg spilte Jack i Titanic.']},
+  {category:'Kjendiser',answer:'Adele',clues:['Jeg ble født i London i 1988.','Jeg slo gjennom med et album oppkalt etter alderen min.','Albumene mine heter blant annet 19, 21, 25 og 30.','Jeg synger låten Rolling in the Deep.','Jeg synger Hello og Someone Like You.']},
+  {category:'Kjendiser',answer:'Dwayne Johnson',clues:['Jeg ble født i California i 1972.','Jeg var profesjonell wrestler før jeg ble filmstjerne.','Jeg har medvirket i flere filmer i Fast & Furious-serien.','Jeg spiller i Jumanji: Welcome to the Jungle.','Jeg er kjent under kallenavnet The Rock.']},
+  {category:'Kjendiser',answer:'Taylor Swift',clues:['Jeg ble født i Pennsylvania i 1989.','Jeg startet musikkarrieren innen country.','Jeg har gitt ut album med navnene Red og 1989.','Jeg er kjent for å spille inn nye versjoner merket Taylor’s Version.','Jeg synger Shake It Off og Blank Space.']},
+  {category:'Kjendiser',answer:'Gordon Ramsay',clues:['Jeg ble født i Skottland i 1966.','Jeg er kjent innen et yrke som krever mye arbeid på kjøkkenet.','Jeg har drevet restauranter med Michelin-stjerner.','Jeg har ledet TV-programmet Hell’s Kitchen.','Jeg er en britisk kjendiskokk kjent for et temperamentsfullt TV-image.']},
+  {category:'Geografi',answer:'Island',clues:['Dette landet ligger i Europa.','Landet har ingen landgrenser mot andre land.','Landet ligger på den midtatlantiske ryggen.','Geotermisk energi og vulkaner er viktige kjennetegn.','Hovedstaden er Reykjavík.']},
+  {category:'Geografi',answer:'Nepal',clues:['Dette landet ligger i Asia.','Landet har ingen kyst.','Landet grenser til både India og Kina.','Landets flagg er ikke firkantet.','Mount Everest ligger på grensen mellom dette landet og Kina.']},
+  {category:'Geografi',answer:'New Zealand',clues:['Dette landet ligger på den sørlige halvkule.','Det er en øystat i Stillehavet.','Landet har to store hovedøyer, Nordøya og Sørøya.','Filmeningen av Ringenes herre-trilogien foregikk her.','Hovedstaden er Wellington.']},
+  {category:'Fotball',answer:'Erling Braut Haaland',clues:['Jeg er født i Leeds i 2000.','Min far spilte profesjonell fotball i England.','Jeg spilte for Molde før jeg flyttet til Østerrike.','Jeg scoret mange mål for Borussia Dortmund.','Jeg er norsk spiss i Manchester City.']},
+  {category:'Fotball',answer:'Lionel Messi',clues:['Jeg er født i Rosario i 1987.','Jeg har spilt profesjonell klubbfotball i Spania, Frankrike og USA.','Jeg spilte lenge sammen med Xavi og Andrés Iniesta.','Jeg vant VM i fotball med Argentina i 2022.','Jeg er kjent for draktnummer 10 og mange år i Barcelona.']},
+  {category:'Fotball',answer:'Mario Götze',clues:['Jeg ble født i 1992 i Tyskland.','Jeg spilte for både Borussia Dortmund og Bayern München.','Jeg gikk videre til PSV i Nederland i 2020.','Jeg scoret i VM-finalen mot Argentina i 2014.','Jeg avgjorde VM-finalen i 2014 med et mål i ekstraomgangene.']}
+ ]
+
 };
