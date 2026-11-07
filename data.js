@@ -74,6 +74,46 @@ export const questions={
   {"question": "Hva heter havstrekningen som skiller Madagaskar fra fastlandet i Afrika?", "answer": "Mosambikkanalen", "fact": "Den ligger mellom Madagaskar og Mosambik."},
   {"question": "Hvilke to selvstendige land ligger på øya Timor?", "answer": "Øst-Timor og Indonesia", "fact": "Øst-Timor deler øya med Indonesias Vest-Timor."},
   {"question": "Hva heter havet som ligger mellom Italia og Balkanhalvøya?", "answer": "Adriaterhavet", "fact": "Det er en del av Middelhavet."},
+  {"question": "Hvilket land har en nasjonalflagg med en rød sol på hvit bakgrunn?", "answer": "Japan", "fact": "Den røde sirkelen symboliserer solen."},
+  {"question": "Hvilke fire land møtes rundt Tsjadsjøen?", "answer": "Tsjad, Niger, Nigeria og Kamerun", "fact": "Tsjadsjøen ligger i Sahel-regionen."},
+  {"question": "Hvilke to land deler øya Irland?", "answer": "Irland og Storbritannia (Nord-Irland)", "fact": "Nord-Irland er en del av Storbritannia."},
+  {"question": "Hvilket land består blant annet av øyene Upolu og Savai’i?", "answer": "Samoa", "fact": "Samoa er en selvstendig stat i Stillehavet."},
+  {"question": "Hvilken europeisk hovedstad ligger på begge sider av Donau og het tidligere Buda og Pest?", "answer": "Budapest", "fact": "De historiske bydelene ble slått sammen i 1873."},
+  {"question": "Hvilket land har flere enn 17 000 øyer og øya Sumatra blant dem?", "answer": "Indonesia", "fact": "Indonesia er verdens største øystat etter øyantall i mange oppgjørelser."},
+  {"question": "Hvilket land har både Saharaørkenen og Atlasfjellene, og hovedstad i Rabat?", "answer": "Marokko", "fact": "Atlasfjellene strekker seg gjennom flere nordafrikanske land."},
+  {"question": "Hvilken by har kallenavnet Den evige stad?", "answer": "Roma", "fact": "Kallenavnet har røtter tilbake til antikken."},
+  {"question": "Hva heter det største landet i Afrika målt i areal?", "answer": "Algerie", "fact": "Algerie ble Afrikas største land etter at Sudan ble delt i 2011."},
+  {"question": "Hvilket land er verdens største øystat målt i areal?", "answer": "Indonesia", "fact": "Indonesia har et samlet landareal på om lag 1,9 millioner km²."},
+  {"question": "Hvilke to land deler Titicacasjøen?", "answer": "Peru og Bolivia", "fact": "Titicacasjøen ligger høyt oppe i Andesfjellene."},
+  {"question": "Hva heter verdens sørligste kontinent?", "answer": "Antarktis", "fact": "Sørpolen ligger på dette kontinentet."},
+  {"question": "Hvilket land har hovedstaden Thimphu?", "answer": "Bhutan", "fact": "Bhutan ligger i Himalaya mellom India og Kina."},
+  {"question": "Hvilket land har hovedstaden Port Moresby?", "answer": "Papua Ny-Guinea", "fact": "Hovedstaden ligger på den sørøstlige delen av Ny-Guinea."},
+  {"question": "Hvilken elv renner gjennom både Wien, Bratislava, Budapest og Beograd?", "answer": "Donau", "fact": "Donau renner gjennom eller langs ti land."},
+  {"question": "Hvilket land er den største selvstendige staten i Karibia målt i areal?", "answer": "Cuba", "fact": "Cuba er også navnet på øya som utgjør mesteparten av landet."},
+  {"question": "Hvilke to land grenser direkte til Mongolia?", "answer": "Russland og Kina", "fact": "Mongolia er en innlandsstat mellom de to landene."},
+  {"question": "Hvilket land har en sekskantet stjerne midt på flagget og hovedstad i Jerusalem?", "answer": "Israel", "fact": "Flagget har Davidsstjernen mellom to blå striper."},
+  {"question": "Hvilken afrikansk stat har hovedstaden Addis Abeba?", "answer": "Etiopia", "fact": "Addis Abeba er også vertskap for Den afrikanske unions hovedkvarter."},
+  {"question": "Hva heter stredet mellom den arabiske halvøya og Afrikas horn, ved innløpet til Rødehavet?", "answer": "Bab al-Mandab", "fact": "Stredet ligger mellom Jemen og Djibouti/Eritrea."},
+  {"question": "Hvilken øy deles mellom Frankrike og Nederland i Karibia?", "answer": "Saint Martin / Sint Maarten", "fact": "Den nordlige delen tilhører Frankrike, den sørlige Nederland."},
+  {"question": "Hvilke to land er de eneste i Sør-Amerika med nederlandsk og engelsk som offisielle språk, ett språk i hvert land?", "answer": "Surinam (nederlandsk) og Guyana (engelsk)", "fact": "Begge ligger på nordkysten av Sør-Amerika."},
+  {"question": "Hvilket land har hovedstaden Windhoek?", "answer": "Namibia", "fact": "Namibia har kyst mot Atlanterhavet."},
+  {"question": "Hva heter verdens største halvøy?", "answer": "Den arabiske halvøy", "fact": "Halvøya omfatter blant annet Saudi-Arabia og Oman."},
+  {"question": "Hvilket land har hovedstaden Yerevan (Jerevan)?", "answer": "Armenia", "fact": "Armenia ligger i Sør-Kaukasus."},
+  {"question": "Hvilken sjø har verdens laveste beliggende overflate på land?", "answer": "Dødehavet", "fact": "Vannflaten ligger mer enn 400 meter under havnivå."},
+  {"question": "Hvilket land har hovedstaden Vientiane?", "answer": "Laos", "fact": "Laos er det eneste landet i Sørøst-Asia uten kyst."},
+  {"question": "Hva heter øygruppen som ligger vest for Ecuador, og som er kjent for Charles Darwins forskning?", "answer": "Galápagosøyene", "fact": "Øyene tilhører Ecuador."},
+  {"question": "Hvilke tre land grenser til Luxembourg?", "answer": "Belgia, Frankrike og Tyskland", "fact": "Luxembourg er en innlandsstat."},
+  {"question": "Hvilket land har en nasjonalflagg med en gul sol i midten på blå og hvit bunn?", "answer": "Argentina", "fact": "Den gule solen i Argentinas flagg kalles Maisolen."},
+  {"question": "Hva heter det store innlandshavet mellom Kasakhstan og Usbekistan som har krympet kraftig?", "answer": "Aralsjøen", "fact": "Vanning fra tilførselselvene har bidratt til kraftig uttørking."},
+  {"question": "Hvilke to land deler øya Ildlandet (Tierra del Fuego)?", "answer": "Chile og Argentina", "fact": "Øygruppen ligger helt sør i Sør-Amerika."},
+  {"question": "Hvilket land har hovedstaden Suva?", "answer": "Fiji", "fact": "Fiji er en øystat i Stillehavet."},
+  {"question": "Hva heter fjellkjeden mellom Frankrike og Spania?", "answer": "Pyreneene", "fact": "Andorra ligger i Pyreneene."},
+  {"question": "Hvilket land har verdens sørligste hovedstad blant selvstendige stater?", "answer": "New Zealand (Wellington)", "fact": "Wellington ligger på sørspissen av Nordøya."},
+  {"question": "Hvilket land er kjent for klippebyen Lalibela og sine steinhogde kirker?", "answer": "Etiopia", "fact": "Lalibela er et UNESCO-verdensarvsted."},
+  {"question": "Hvilken sjø ligger mellom Israel og Jordan og er kjent for sitt svært salte vann?", "answer": "Dødehavet", "fact": "Vannet har høy saltholdighet."},
+  {"question": "Hvilke to land deler den store øya Usedom i Østersjøen?", "answer": "Tyskland og Polen", "fact": "Øya ligger ved Østersjøkysten."},
+  {"question": "Hvilket land har verdens eldste nasjonalflagg som fortsatt brukes i samme grunnutforming?", "answer": "Danmark", "fact": "Dannebrog er et av verdens eldste kontinuerlig brukte nasjonalflagg."},
+  {"question": "Hvilken europeisk hovedstad ligger ved elven Vltava (Moldau)?", "answer": "Praha", "fact": "Vltava er den lengste elven i Tsjekkia."},
  ],
  career:[
   {answer:'Erling Braut Haaland',category:'Norske spillere',clues:['Bryne','Molde','Red Bull Salzburg','Borussia Dortmund','Manchester City']},
@@ -90,7 +130,35 @@ export const questions={
   {"answer": "Mohamed Salah", "category": "Egyptiske spillere", "clues": ["Al Mokawloon", "Basel", "Chelsea", "Fiorentina (lån)", "Roma", "Liverpool"]},
   {"answer": "Luka Modrić", "category": "Kroatiske spillere", "clues": ["Dinamo Zagreb", "Zrinjski Mostar (lån)", "Inter Zaprešić (lån)", "Tottenham", "Real Madrid", "AC Milan"]},
   {"answer": "Alexander Isak", "category": "Svenske spillere", "clues": ["AIK", "Borussia Dortmund", "Willem II (lån)", "Real Sociedad", "Newcastle United", "Liverpool"]},
-  {"answer": "Heung-min Son", "category": "Sørkoreanske spillere", "clues": ["Hamburger SV", "Bayer Leverkusen", "Tottenham", "Los Angeles FC"]}
+  {"answer": "Heung-min Son", "category": "Sørkoreanske spillere", "clues": ["Hamburger SV", "Bayer Leverkusen", "Tottenham", "Los Angeles FC"]},
+  {"answer": "Lionel Messi", "clues": ["Barcelona", "Paris Saint-Germain", "Inter Miami"]},
+  {"answer": "Neymar", "clues": ["Santos", "Barcelona", "Paris Saint-Germain", "Al-Hilal", "Santos"]},
+  {"answer": "Luis Suárez", "clues": ["Nacional", "Groningen", "Ajax", "Liverpool", "Barcelona", "Atlético Madrid", "Nacional", "Grêmio", "Inter Miami"]},
+  {"answer": "Sergio Agüero", "clues": ["Independiente", "Atlético Madrid", "Manchester City", "Barcelona"]},
+  {"answer": "Ángel Di María", "clues": ["Rosario Central", "Benfica", "Real Madrid", "Manchester United", "Paris Saint-Germain", "Juventus", "Benfica", "Rosario Central"]},
+  {"answer": "Edinson Cavani", "clues": ["Danubio", "Palermo", "Napoli", "Paris Saint-Germain", "Manchester United", "Valencia", "Boca Juniors"]},
+  {"answer": "Memphis Depay", "clues": ["PSV", "Manchester United", "Lyon", "Barcelona", "Atlético Madrid", "Corinthians"]},
+  {"answer": "Antoine Griezmann", "clues": ["Real Sociedad", "Atlético Madrid", "Barcelona", "Atlético Madrid"]},
+  {"answer": "Olivier Giroud", "clues": ["Grenoble", "Istres (lån)", "Tours", "Montpellier", "Arsenal", "Chelsea", "AC Milan", "Los Angeles FC", "Lille"]},
+  {"answer": "Romelu Lukaku", "clues": ["Anderlecht", "Chelsea", "West Bromwich (lån)", "Everton (lån)", "Everton", "Manchester United", "Inter", "Chelsea", "Inter (lån)", "Roma (lån)", "Napoli"]},
+  {"answer": "Eden Hazard", "clues": ["Lille", "Chelsea", "Real Madrid"]},
+  {"answer": "Gonzalo Higuaín", "clues": ["River Plate", "Real Madrid", "Napoli", "Juventus", "AC Milan (lån)", "Chelsea (lån)", "Juventus", "Inter Miami"]},
+  {"answer": "Carlos Tevez", "clues": ["Boca Juniors", "Corinthians", "West Ham", "Manchester United (lån)", "Manchester City", "Juventus", "Boca Juniors", "Shanghai Shenhua", "Boca Juniors"]},
+  {"answer": "Fernando Torres", "clues": ["Atlético Madrid", "Liverpool", "Chelsea", "AC Milan (lån)", "Atlético Madrid", "Sagan Tosu"]},
+  {"answer": "Robin van Persie", "clues": ["Feyenoord", "Arsenal", "Manchester United", "Fenerbahçe", "Feyenoord"]},
+  {"answer": "Cesc Fàbregas", "clues": ["Arsenal", "Barcelona", "Chelsea", "Monaco", "Como"]},
+  {"answer": "Mesut Özil", "clues": ["Schalke 04", "Werder Bremen", "Real Madrid", "Arsenal", "Fenerbahçe", "İstanbul Başakşehir"]},
+  {"answer": "David Villa", "clues": ["Sporting Gijón", "Real Zaragoza", "Valencia", "Barcelona", "Atlético Madrid", "New York City FC", "Melbourne City (lån)", "Vissel Kobe"]},
+  {"answer": "Xabi Alonso", "clues": ["Real Sociedad", "Eibar (lån)", "Liverpool", "Real Madrid", "Bayern München"]},
+  {"answer": "Thierry Henry", "clues": ["Monaco", "Juventus", "Arsenal", "Barcelona", "New York Red Bulls", "Arsenal (lån)"]},
+  {"answer": "Wayne Rooney", "clues": ["Everton", "Manchester United", "Everton", "D.C. United", "Derby County"]},
+  {"answer": "Sergio Ramos", "clues": ["Sevilla", "Real Madrid", "Paris Saint-Germain", "Sevilla", "Monterrey"]},
+  {"answer": "Marco Reus", "clues": ["Rot Weiss Ahlen", "Borussia Mönchengladbach", "Borussia Dortmund", "LA Galaxy"]},
+  {"answer": "Ivan Rakitić", "clues": ["Basel", "Schalke 04", "Sevilla", "Barcelona", "Sevilla", "Al-Shabab", "Hajduk Split"]},
+  {"answer": "Santi Cazorla", "clues": ["Villarreal", "Recreativo Huelva", "Villarreal", "Málaga", "Arsenal", "Villarreal", "Al Sadd", "Real Oviedo"]},
+  {"answer": "Mario Mandžukić", "clues": ["Marsonia", "NK Zagreb", "Dinamo Zagreb", "Wolfsburg", "Bayern München", "Atlético Madrid", "Juventus", "Al-Duhail", "AC Milan"]},
+  {"answer": "Arjen Robben", "clues": ["Groningen", "PSV", "Chelsea", "Real Madrid", "Bayern München", "Groningen"]},
+  {"answer": "Franck Ribéry", "clues": ["Boulogne", "Alès", "Brest", "Metz", "Galatasaray", "Marseille", "Bayern München", "Fiorentina", "Salernitana"]},
  ],
  music:[
   {answer:'ABBA – Dancing Queen',question:'Hvilket land representerte gruppen i Eurovision i 1974?',bonusAnswer:'Sverige',spotify:'https://open.spotify.com/search/ABBA%20Dancing%20Queen'},
@@ -245,3 +313,17 @@ export const questions={
  ]
 
 };
+
+export const difficultyByIndex={"general": {"easy": [2, 7, 8, 11, 12, 16, 20, 24, 28, 32, 35, 37, 38, 40, 41, 43, 44, 47, 48, 52, 54, 55, 58, 59, 60, 61, 62, 63, 66], "hard": [1, 3, 4, 5, 6, 14, 15, 17, 18, 19, 21, 22, 23, 26, 29, 33, 34, 64]}, "geography": {"easy": [4, 5, 6, 11, 13, 15, 16, 19, 20, 24, 25, 26, 27, 29, 30, 36, 38, 39, 49, 50, 54, 56, 67, 69, 71, 72, 73, 74, 75, 78, 81, 83, 94, 100, 103, 106], "hard": [3, 12, 18, 31, 32, 34, 35, 40, 43, 44, 46, 48, 53, 58, 59, 61, 63, 64, 65, 68, 79, 80, 84, 86, 87, 88, 90, 91, 92, 93, 96, 97, 98, 99, 101, 102, 104, 105]}, "sports": {"easy": [1, 2, 3, 5, 6, 7, 11, 13, 14, 16, 18, 20, 24, 29, 30], "hard": [4, 10, 12, 21, 25, 26]}};
+// Nivåmerking er kuratert for bankens nåværende rekkefølge.
+// Nye importerte spørsmål bør ha difficulty: 'easy'|'medium'|'hard' direkte på objektet.
+export function getDifficulty(type, question, index){
+  if(['general','geography','sports'].includes(type)){
+    if(['easy','medium','hard'].includes(question?.difficulty))return question.difficulty;
+    const map=difficultyByIndex[type]||{};
+    if((map.easy||[]).includes(index+1))return 'easy';
+    if((map.hard||[]).includes(index+1))return 'hard';
+    return 'medium';
+  }
+  return question?.difficulty||'medium';
+}
