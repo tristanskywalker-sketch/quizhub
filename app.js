@@ -117,7 +117,7 @@ function dispatch(action,el){switch(action){
  case 'lock':{if(state.revealed||state.quiz!=='fiveone')break;const p=decodeURIComponent(el.dataset.id);if(!state.players.includes(p)||state.locks[p])break;state.locks[p]={points:5-state.clue};save();render();break;}
  case 'selection':update({quiz:null,complete:false,started:true});break;
  case 'remove':{const p=decodeURIComponent(el.dataset.id);state.players=state.players.filter(x=>x!==p);delete state.scores[p];save();render();break;}
- case 'clue':if(!state.revealed)update({clue:Math.min(state.clue+1,active().clues.length-1)});break;
+ case 'clue':if(!state.revealed)update({clue:Math.min(state.clue+1,(active().yearClues||active().clues||[]).length-1)});break;
  case 'option':update({selected:Number(el.dataset.id)});break;
  case 'reveal':update({revealed:!state.revealed});break;
  case 'next':{
