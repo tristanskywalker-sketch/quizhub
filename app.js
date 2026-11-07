@@ -74,7 +74,16 @@ function play(){let q=active();if(!q)return `<h2>Ingen flere spørsmål</h2><but
   content+=`<p class="muted">Hvilken spiller har denne karrieren?</p>`;
   content+=`<div class="career-kits">${q.clues.map((club,i)=>jersey(club,i)).join('<span class="kit-arrow" aria-hidden="true">→</span>')}</div>`;
  }else if(['general','geography','sports'].includes(type)){
-  content+=`<h2 class="open-question">${esc(q.question)}</h2><p class="muted">Spillerne skriver ned svaret før fasit vises. Ingen svaralternativer.</p>`;
+  content+=`<h2 class="open-question">${esc(q.question)}</h2>`;
+  if(q.yearClues){
+    const visible=Math.min(state.clue+1,q.yearClues.length);
+    content+=`<p class="muted">Gjett årstallet. Vis én og én ledetråd. Fasit er skjult til alle har svart.</p>`;
+    content+=q.yearClues.slice(0,visible).map((c,i)=>`<div class="clue"><strong>Ledetråd ${i+1}</strong><p style="margin:6px 0 0">${esc(c)}</p></div>`).join('');
+    if(!state.revealed&&visible<q.yearClues.length)content+=`<button class="btn secondary" data-action="clue">Vis neste ledetråd (${visible+1} av 5)</button>`;
+  }else{
+    content+=`<p class="muted">Spillerne skriver ned svaret før fasit vises. Ingen svaralternativer.</p>`;
+    if(q.yearRange)content+=`<p class="tiny">Alle hele årstall innenfor personens levetid er riktige.</p>`;
+  }
  }else{
  content+=`<p class="sub">Spill låten uten å vise tittelen til deltakerne. Fasit ligger bak knappen.</p><a class="btn secondary" href="${esc(q.spotify)}" target="_blank" rel="noopener noreferrer" style="display:inline-block;text-decoration:none">🎵 Åpne låten i Spotify</a><h2>Bonusspørsmål (1 poeng)</h2><p>${esc(q.question)}</p><p class="tiny">1 poeng for riktig artist og låt, og 1 poeng for bonusspørsmålet (maks 2). Skriv svarene på papir før du viser fasit.</p>`;
  }
