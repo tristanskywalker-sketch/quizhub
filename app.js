@@ -1,5 +1,29 @@
 import {quizzes,questions,getDifficulty} from './data.js';
 const KEY='quizhub-save-v1'; // Behold gamle spillere og lagrede poeng ved oppdatering
+// Separat historikk: beholdes også når spillere og poengtavle nullstilles.
+const HISTORY_KEY='quizhub-question-history-v1';
+let history={};
+try { const loaded=JSON.parse(localStorage.getItem(HISTORY_KEY)||'{}'); if(loaded&&typeof loaded==='object'&&!Array.isArray(loaded))history=loaded; } catch {}
+function questionKey(type,q){
+ const identity=[type,q.question||'',q.answer||'',q.spotify||'',...(q.clues||[])].join('\u001f');
+ // Stabil nøkkel for like spørsmål på tvers av runder og nye versjoner av databasen.
+ let a=2166136261,b=5381;
+ for(let i=0;i<identity.length;i++){const c=identity.charCodeAt(i);a=Math.imul(a^c,16777619);b=Math.imul(b,33)^c;}
+ return type+':'+(a>>>0).toString(36)+':'+(b>>>0).toString(36);
+}
+function seenValue(type,q){return Number(history[questionKey(type,q)]||0);}
+function markSeen(type,q){
+ if(!q)return;
+ const key=questionKey(type,q);
+ history[key]=Date.now();
+ try{localStorage.setItem(HISTORY_KEY,JSON.stringify(history));}catch(e){console.warn('Kunne ikke lagre spørsmålhistorikk',e);}
+}
+function freshFirst(type,pool,indices){
+ const shuffled=shuffle(indices);
+ // Nye spørsmål først; hvis vi må gjenbruke, prioriter dem som ble spilt lengst tilbake.
+ return shuffled.sort((a,b)=>{const av=seenValue(type,pool[a]),bv=seenValue(type,pool[b]);return (!av?-1:!bv?1:av-bv);});
+}
+
 const blank=()=>({mode:null,players:[],scores:{},rounds:[],quiz:null,index:0,revealed:false,clue:0,selected:null,awarded:{},category:'',locks:{},complete:false,deck:null,roundSize:10,level:''});
 let state;
 try{state={...blank(),...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch{state=blank()}
@@ -20,12 +44,12 @@ const list=()=>state.quiz==='fiveone'?(questions.fiveone||[]).filter(q=>state.ca
 const active=()=>list()[Array.isArray(state.deck)?state.deck[state.index]:state.index];
 const count=()=>Array.isArray(state.deck)?state.deck.length:list().length;
 function shuffle(items){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
-function makeDeck(length, requested){return shuffle(Array.from({length},(_,i)=>i)).slice(0,requested==='all'?length:Math.min(length,Number(requested)||10));}
+function makeDeck(type,pool,requested){const length=pool.length;return freshFirst(type,pool,Array.from({length},(_,i)=>i)).slice(0,requested==='all'?length:Math.min(length,Number(requested)||10));}
 // Trekk en blanding uten gjentakelser. Bruk nærmeste tilgjengelige nivå hvis et nivå går tomt.
 function makeLeveledDeck(type,requested,level){
  const pool=list();const countRequested=requested==='all'?pool.length:Math.min(pool.length,Number(requested)||10);
  const bands={easy:[],medium:[],hard:[]};pool.forEach((q,i)=>bands[getDifficulty(type,q,i)]?.push(i));
- for(const k in bands)bands[k]=shuffle(bands[k]);
+ for(const k in bands)bands[k]=freshFirst(type,pool,bands[k]);
  const weights=configs[level]?.weights||configs.normal.weights;
  const desired={};let rem=countRequested;
  for(const k of ['easy','medium','hard']){desired[k]=Math.floor(countRequested*weights[k]/10);rem-=desired[k];}
@@ -33,11 +57,24 @@ function makeLeveledDeck(type,requested,level){
  const rank=['easy','medium','hard'].sort((a,b)=>(countRequested*weights[b]/10%1)-(countRequested*weights[a]/10%1));
  for(let i=0;i<rem;i++)desired[rank[i%rank.length]]++;
  let chosen=[];
- for(const k of ['easy','medium','hard']) chosen.push(...bands[k].splice(0,desired[k]));
+ // Bruk ønsket nivåblanding, men prioriter ferske spørsmål fremfor tidligere spilte
+ // innenfor nivåene som er tillatt for den valgte modusen.
+ const allowed=level==='family'?['easy','medium']:level==='expert'?['hard','medium']:['easy','medium','hard'];
+ for(const k of ['easy','medium','hard']){
+   if(!allowed.includes(k))continue;
+   const fresh=bands[k].filter(i=>!seenValue(type,pool[i]));
+   const picked=fresh.slice(0,desired[k]);
+   chosen.push(...picked);
+   bands[k]=bands[k].filter(i=>!picked.includes(i));
+ }
  let remaining=countRequested-chosen.length;
- // I familiequiz unngås vanskelige så lenge easy/medium er tilgjengelig.
- const fallback=level==='family'?['easy','medium','hard']:level==='expert'?['hard','medium','easy']:['medium','easy','hard'];
- for(const k of fallback){if(!remaining)break;const add=bands[k].splice(0,remaining);chosen.push(...add);remaining-=add.length;}
+ // Fyll først på med ennå uprøvde spørsmål fra de andre passende nivåene.
+ for(const k of allowed){if(!remaining)break;const fresh=bands[k].filter(i=>!seenValue(type,pool[i])).slice(0,remaining);chosen.push(...fresh);bands[k]=bands[k].filter(i=>!fresh.includes(i));remaining-=fresh.length;}
+ // Deretter de eldste tidligere viste spørsmålene, fortsatt uten duplikater.
+ const repeated=allowed.flatMap(k=>bands[k]).sort((a,b)=>seenValue(type,pool[a])-seenValue(type,pool[b]));
+ chosen.push(...repeated.slice(0,remaining));remaining=countRequested-chosen.length;
+ // Ved «Alle» kan vi også ta med nivåer utenfor profilen til slutt.
+ if(remaining){const other=['easy','medium','hard'].filter(k=>!allowed.includes(k)).flatMap(k=>bands[k]);chosen.push(...other.slice(0,remaining));}
  return shuffle(chosen);
 }
 const safeColor=(s)=>{const n=String(s).toLowerCase().replace(/\s*\(.*?\)/g,'');const palettes=[['#e12842','#ffffff','stripes'],['#245dba','#ffffff','solid'],['#e7c03a','#141b37','solid'],['#ffffff','#202b3c','solid'],['#1a9c79','#ffffff','stripes'],['#a12f57','#ffffff','solid'],['#111a28','#ffffff','stripes'],['#f38b35','#19213c','solid']];
@@ -60,7 +97,7 @@ function categorySelection(){
  return `${back('selection')}<div class="eyebrow">${esc(quiz(state.quiz).name)}</div><h1 class="heading">Velg kategori</h1><p class="sub">Fem ledetråder per spørsmål. Lås svar på ønsket poengnivå.</p><div class="grid">${cats.map((c,i)=>`<button class="tile" data-action="category" data-id="${esc(c)}"><div class="em">${icons[i]}</div><strong>${esc(c)}</strong><small>${c==='Blandet'?'Alle spørsmål':questions.fiveone.filter(q=>q.category===c).length+' spørsmål'}</small></button>`).join('')}</div>`;
 }
 function levelSelection(){return `${back('selection')}<div class="eyebrow">${esc(quiz(state.quiz).name)}</div><h1 class="heading">Velg vanskelighetsgrad</h1><p class="sub">Spørsmålene er sortert etter forventet vanskelighetsgrad. Trekningen blir tilfeldig innenfor nivåene.</p><div class="level-grid">${Object.entries(configs).map(([key,v])=>`<button class="level-tile" data-action="setlevel" data-id="${key}"><strong>${key==='family'?'👨‍👩‍👧‍👦':key==='normal'?'🧠':'🎓'} ${v.name}</strong><span>${v.description}</span></button>`).join('')}</div><p class="notice">Vanskelighetsgrad er et anslag. For små spørsmålsutvalg kan fordelingen avvike hvis det ikke finnes nok spørsmål på et nivå.</p>`;}
-function roundSetup(){const n=list().length;const opts=[5,10,15,20].filter(v=>v<=n);opts.push('all');return `${back(state.quiz==='fiveone'?'categories':leveled.includes(state.quiz)?'levels':'selection')}<div class="eyebrow">${esc(quiz(state.quiz).name)}</div><h1 class="heading">Hvor mange spørsmål?</h1><p class="sub">Vi trekker tilfeldig fra ${n} tilgjengelige spørsmål${leveled.includes(state.quiz)?' · '+esc(configs[state.level]?.name||'Vanlig quiz'):''}${state.category&&state.category!=='Blandet'?' i '+esc(state.category):''}. Hvert spørsmål kommer bare én gang per runde.</p><div class="roundchoices">${opts.map(v=>`<button class="btn ${v===10||v==='all'&&n<10?'':'secondary'}" data-action="beginround" data-size="${v}">${v==='all'?'Alle '+n:v+' spørsmål'}</button>`).join('')}</div><p class="notice">En ny runde gir et nytt tilfeldig utvalg og en ny rekkefølge. Poengene fortsetter å telle i quizkveld-modus.</p>`;}
+function roundSetup(){const pool=list(),n=pool.length,seen=pool.filter(q=>seenValue(state.quiz,q)).length;const opts=[5,10,15,20].filter(v=>v<=n);opts.push('all');return `${back(state.quiz==='fiveone'?'categories':leveled.includes(state.quiz)?'levels':'selection')}<div class="eyebrow">${esc(quiz(state.quiz).name)}</div><h1 class="heading">Hvor mange spørsmål?</h1><p class="sub">Vi trekker tilfeldig fra ${n} tilgjengelige spørsmål${leveled.includes(state.quiz)?' · '+esc(configs[state.level]?.name||'Vanlig quiz'):''}${state.category&&state.category!=='Blandet'?' i '+esc(state.category):''}. Hvert spørsmål kommer bare én gang per runde.</p><div class="panel"><strong>🆕 ${n-seen} uprøvde spørsmål av ${n}</strong><p class="muted">Vi prioriterer spørsmål du ikke har spilt før på denne enheten. Når det er for få nye, bruker vi de eldste tidligere spilte spørsmålene igjen.</p><button class="btn ghost" data-action="clearhistory">Nullstill spørsmålhistorikk</button></div><div class="roundchoices">${opts.map(v=>`<button class="btn ${v===10||v==='all'&&n<10?'':'secondary'}" data-action="beginround" data-size="${v}">${v==='all'?'Alle '+n:v+' spørsmål'}</button>`).join('')}</div><p class="notice">En ny runde gir et nytt tilfeldig utvalg og en ny rekkefølge. Poengene fortsetter å telle i quizkveld-modus. Historikken lagres bare i denne nettleseren.</p>`;}
 function play(){let q=active();if(!q)return `<h2>Ingen flere spørsmål</h2><button class="btn" data-action="done">Se resultat</button>`;
  const type=state.quiz, total=count();
  let content='';
@@ -111,7 +148,8 @@ function dispatch(action,el){switch(action){
  case 'choose':resetQuestion();state.quiz=el.dataset.id;save();render();break;
  case 'levels':state.deck=null;state.level='';save();render();break;
  case 'categories':state.deck=null;state.category='';save();render();break;
- case 'beginround':{const pool=list();if(!pool.length){alert('Ingen spørsmål i denne kategorien ennå.');break;}state.deck=leveled.includes(state.quiz)?makeLeveledDeck(state.quiz,el.dataset.size,state.level):makeDeck(pool.length,el.dataset.size);state.roundSize=el.dataset.size;state.index=0;state.clue=0;state.revealed=false;state.locks={};state.awarded={};save();render();break;}
+ case 'clearhistory':if(confirm('Nullstille oversikten over tidligere spilte spørsmål på denne enheten? Poeng og spillere beholdes.')){history={};try{localStorage.removeItem(HISTORY_KEY);}catch{}render();}break;
+ case 'beginround':{const pool=list();if(!pool.length){alert('Ingen spørsmål i denne kategorien ennå.');break;}state.deck=leveled.includes(state.quiz)?makeLeveledDeck(state.quiz,el.dataset.size,state.level):makeDeck(state.quiz,pool,el.dataset.size);state.roundSize=el.dataset.size;state.index=0;state.clue=0;state.revealed=false;state.locks={};state.awarded={};save();render();break;}
  case 'setlevel':state.level=el.dataset.id;state.deck=null;state.index=0;state.revealed=false;save();render();break;
  case 'category':state.category=el.dataset.id;state.deck=null;state.index=0;state.clue=0;state.locks={};state.awarded={};state.revealed=false;save();render();break;
  case 'lock':{if(state.revealed||state.quiz!=='fiveone')break;const p=decodeURIComponent(el.dataset.id);if(!state.players.includes(p)||state.locks[p])break;state.locks[p]={points:5-state.clue};save();render();break;}
@@ -122,6 +160,7 @@ function dispatch(action,el){switch(action){
  case 'reveal':update({revealed:!state.revealed});break;
  case 'next':{
    if(!state.revealed)return;
+   markSeen(state.quiz,active());
    state.players.forEach(p=>state.scores[p]=(state.scores[p]||0)+Number(state.awarded[p]||0));
    state.index++;state.revealed=false;state.clue=0;state.selected=null;state.awarded={};state.locks={};
    if(state.index>=count()){if(state.mode==='night'){state.rounds.push(state.quiz);state.quiz=null;state.started=true}else{state.complete=true;state.quiz=null;}}
