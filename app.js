@@ -45,7 +45,7 @@ function update(obj){Object.assign(state,obj);save();render();}
 const quiz=id=>quizzes.find(x=>x.id===id);
 const leveled=['general','geography','sports'];
 const difficultyNames={easy:'Enkel',medium:'Middels',hard:'Vanskelig'};
-const configs={family:{name:'Familiequiz',description:'70 % enkle og 30 % middels spørsmål',weights:{easy:7,medium:3,hard:0}},normal:{name:'Vanlig quiz',description:'30 % enkle, 50 % middels og 20 % vanskelige',weights:{easy:3,medium:5,hard:2}},expert:{name:'Ekspertquiz',description:'30 % middels og 70 % vanskelige',weights:{easy:0,medium:3,hard:7}}};
+const configs={family:{name:'Familiequiz',description:'80 % enkle og 20 % middels spørsmål',weights:{easy:8,medium:2,hard:0}},normal:{name:'Vanlig quiz',description:'60 % enkle, 35 % middels og 5 % vanskelige',weights:{easy:6,medium:3.5,hard:0.5}},expert:{name:'Ekspertquiz',description:'30 % middels og 70 % vanskelige',weights:{easy:0,medium:3,hard:7}}};
 const list=()=>state.quiz==='fiveone'?(questions.fiveone||[]).filter(q=>state.category==='Blandet'||q.category===state.category):(questions[state.quiz]||[]);
 const active=()=>list()[Array.isArray(state.deck)?state.deck[state.index]:state.index];
 const count=()=>Array.isArray(state.deck)?state.deck.length:list().length;

@@ -2349,3 +2349,1276 @@ export function getDifficulty(type, question, index){
   }
   return question?.difficulty||'medium';
 }
+
+// QuizHub v18: Flere lette og middels spørsmål, felles objekter mellom fagbankene.
+const v18NewQuestions = [
+  {
+    "question": "Hva heter kaffebaren hvor vennene i Friends ofte møtes?",
+    "answer": "Central Perk",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken TV-serie følger familien Simpson i byen Springfield?",
+    "answer": "The Simpsons",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter læreren og kjemikeren som blir narkotikaprodusent i Breaking Bad?",
+    "answer": "Walter White",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken TV-serie har en karakter som heter Eleven?",
+    "answer": "Stranger Things",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken amerikansk komiserie foregår på kontoret til papirfirmaet Dunder Mifflin?",
+    "answer": "The Office",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter søsteren til Ross Geller i Friends?",
+    "answer": "Monica Geller",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken TV-serie handler om en familie som bor i Westeros og kjemper om Jerntronen?",
+    "answer": "Game of Thrones",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter hotellverten som spilles av John Cleese i Hotell i særklasse?",
+    "answer": "Basil Fawlty",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket land kommer TV-serien Skam fra?",
+    "answer": "Norge",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter baren hvor vennene møtes i How I Met Your Mother?",
+    "answer": "MacLaren's Pub",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den fiktive byen i Twin Peaks?",
+    "answer": "Twin Peaks",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter advokaten som er hovedpersonen i Better Call Saul?",
+    "answer": "Jimmy McGill (Saul Goodman)",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter det svenske politidramaet med Saga Norén som hovedperson?",
+    "answer": "Broen (Bron)",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken TV-serie har karakteren Don Draper?",
+    "answer": "Mad Men",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter familien som driver begravelsesbyrå i Six Feet Under?",
+    "answer": "Fisher",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter løven som blir konge i Disneys Løvenes konge?",
+    "answer": "Simba",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken filmserie følger trollmannen Harry Potter på Galtvort?",
+    "answer": "Harry Potter",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvem spiller Jack Dawson i Titanic fra 1997?",
+    "answer": "Leonardo DiCaprio",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter cowboydukken i Toy Story?",
+    "answer": "Woody",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "I hvilken Disney-film møter vi snømannen Olaf?",
+    "answer": "Frost (Frozen)",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken superhelt bruker hammeren Mjølner?",
+    "answer": "Thor",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den grønne figuren som bor i en sump sammen med eselet Donkey?",
+    "answer": "Shrek",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket dyr er Dumbo i Disney-filmen?",
+    "answer": "Elefant",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den arkeologiske eventyreren som ofte bruker hatt og pisk?",
+    "answer": "Indiana Jones",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken film fra 1993 handler om en fornøyelsespark med levende dinosaurer?",
+    "answer": "Jurassic Park",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvem regisserte filmen Titanic fra 1997?",
+    "answer": "James Cameron",
+    "category": "Film",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket dyr er hovedfiguren Po i Kung Fu Panda?",
+    "answer": "Panda",
+    "category": "Film",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter hotellet i Stanley Kubricks The Shining?",
+    "answer": "Overlook Hotel",
+    "category": "Film",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken skuespiller spiller Maximus i Gladiator fra 2000?",
+    "answer": "Russell Crowe",
+    "category": "Film",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken filmserie har skurken Lord Voldemort?",
+    "answer": "Harry Potter",
+    "category": "Film",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den grønne rørleggerbroren til Mario?",
+    "answer": "Luigi",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter de små lommemonsterne som fanges i Poké Balls?",
+    "answer": "Pokémon",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken japansk spillprodusent står bak Super Mario?",
+    "answer": "Nintendo",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter konsollen fra Sony som ofte forkortes PS?",
+    "answer": "PlayStation",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket populært spill lar deg bygge med klosser og slåss mot Creepers?",
+    "answer": "Minecraft",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter spillfiguren som er en blå pinnsvin og samler ringer?",
+    "answer": "Sonic",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket spill har en figur som heter Steve og en verden bygget av blokker?",
+    "answer": "Minecraft",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "I hvilken spillserie kjemper man for å bli den aller beste Pokémon-treneren?",
+    "answer": "Pokémon",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket spillunivers har en prinsesse som heter Zelda?",
+    "answer": "The Legend of Zelda",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket spill er kjent for slagordet «Victory Royale»?",
+    "answer": "Fortnite",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket spill har fiktive byen Los Santos og en rekke biltyverier?",
+    "answer": "Grand Theft Auto (GTA)",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den oransje pungrotten som er hovedfigur i en PlayStation-spillserie?",
+    "answer": "Crash Bandicoot",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket brettspill går ut på å kjøpe gater og bygge hus og hoteller?",
+    "answer": "Monopol",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvor mange felter er det på et vanlig sjakkbrett?",
+    "answer": "64",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket brettspill bruker bokstavbrikker til å danne ord?",
+    "answer": "Scrabble",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter spillet hvor man legger dominobrikker med like prikker mot hverandre?",
+    "answer": "Domino",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvor mange terninger bruker man vanligvis i Yatzy?",
+    "answer": "Fem",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket brettspill har brikker som flyttes etter terningkast og som skal inn i mål fra hver sin startplass?",
+    "answer": "Ludo",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "I hvilket brettspill handler det om å bygge veier, bosetninger og byer på en øy?",
+    "answer": "Catan",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket spill har kortene «pluss fire» og «bytt farge»?",
+    "answer": "UNO",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter spillet hvor spillerne skal gjette ord tegnet av en lagkamerat?",
+    "answer": "Pictionary",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter brettspillet der man forsøker å erobre verdens land og kontinenter?",
+    "answer": "Risk",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken frukt brukes tradisjonelt i guacamole?",
+    "answer": "Avokado",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva er hovedingrediensen i hummus?",
+    "answer": "Kikerter",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket land forbindes særlig med pizza margherita?",
+    "answer": "Italia",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken type melk brukes tradisjonelt til fetaost?",
+    "answer": "Sauemelk (ofte også geitemelk)",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den italienske desserten laget med kaffe og mascarpone?",
+    "answer": "Tiramisu",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva kalles japanske risruller med tang og fyll?",
+    "answer": "Maki (sushi)",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva slags råvare er mozzarella?",
+    "answer": "Ost",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den franske retten med egg, melk og fyll i en paibunn?",
+    "answer": "Quiche",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket krydder gir ofte en gul farge til curry og ris?",
+    "answer": "Gurkemeie",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva er hovedingrediensen i potetmos?",
+    "answer": "Poteter",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken nøtt er hovedingrediensen i marsipan?",
+    "answer": "Mandler",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den spanske retten der ris gjerne tilberedes med safran og sjømat eller kjøtt?",
+    "answer": "Paella",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den franske sausen med eggeplomme og smør, ofte servert til asparges?",
+    "answer": "Hollandaisesaus",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den koreanske retten av fermenterte grønnsaker, ofte kinakål?",
+    "answer": "Kimchi",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken type pasta har navn etter små sommerfugler?",
+    "answer": "Farfalle",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken svensk popgruppe hadde hits som Mamma Mia og Waterloo?",
+    "answer": "ABBA",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken artist ble kjent som «The King of Pop»?",
+    "answer": "Michael Jackson",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter sangkonkurransen der europeiske land deltar med hver sin låt?",
+    "answer": "Eurovision Song Contest",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket instrument har vanligvis seks strenger og spilles med fingrene eller plekter?",
+    "answer": "Gitar",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken norsk duo hadde verdenshiten The Fox i 2013?",
+    "answer": "Ylvis",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket band hadde vokalisten Freddie Mercury?",
+    "answer": "Queen",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken artist ga ut albumet 1989 i 2014?",
+    "answer": "Taylor Swift",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken norsk gruppe slo gjennom internasjonalt med Take On Me?",
+    "answer": "a-ha",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvem var trommeslager i The Beatles?",
+    "answer": "Ringo Starr",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken artist har albumene 21, 25 og 30?",
+    "answer": "Adele",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket irsk rockeband har vokalisten Bono?",
+    "answer": "U2",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket land kommer artisten Björk fra?",
+    "answer": "Island",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken norsk forfatter skrev bøkene om Doktor Proktor?",
+    "answer": "Jo Nesbø",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvem skrev bøkene om Harry Potter?",
+    "answer": "J.K. Rowling",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter bjørnen som elsker honning i A.A. Milnes bøker?",
+    "answer": "Ole Brumm",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den norske barnebokfiguren som bor i Hakkebakkeskogen og er en mus?",
+    "answer": "Klatremus",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken dansk forfatter skrev Den lille havfruen?",
+    "answer": "H.C. Andersen",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvem skrev romanen Ringenes herre?",
+    "answer": "J.R.R. Tolkien",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken forfatter skapte detektiven Hercule Poirot?",
+    "answer": "Agatha Christie",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken forfatter skrev Matilda og Charlie og sjokoladefabrikken?",
+    "answer": "Roald Dahl",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken mur delte en tysk by frem til 1989?",
+    "answer": "Berlinmuren",
+    "category": "Historie",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "I hvilket år sluttet andre verdenskrig i Europa?",
+    "answer": "1945",
+    "category": "Historie",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvem var den første mannen som gikk på Månen?",
+    "answer": "Neil Armstrong",
+    "category": "Historie",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva het skipet som sank på sin jomfrutur i 1912?",
+    "answer": "Titanic",
+    "category": "Historie",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket land ble styrt av faraoer i oldtiden?",
+    "answer": "Egypt",
+    "category": "Historie",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva het den norske polfareren som nådde Sydpolen i 1911?",
+    "answer": "Roald Amundsen",
+    "category": "Historie",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket år ble Norge selvstendig fra unionen med Sverige?",
+    "answer": "1905",
+    "category": "Historie",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken engelsk dronning regjerte fra 1837 til 1901?",
+    "answer": "Victoria",
+    "category": "Historie",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken planet er nærmest Solen?",
+    "answer": "Merkur",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter gassen vi trenger for å puste?",
+    "answer": "Oksygen",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvor mange bein har en edderkopp?",
+    "answer": "Åtte",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter prosessen der planter lager sukker ved hjelp av sollys?",
+    "answer": "Fotosyntese",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva måler et termometer?",
+    "answer": "Temperatur",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter det ytterste laget av jordkloden som vi bor på?",
+    "answer": "Jordskorpen",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket dyr er verdens største nålevende landdyr?",
+    "answer": "Afrikansk elefant",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket pattedyr kan fly aktivt?",
+    "answer": "Flaggermus",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva kalles en ung sau?",
+    "answer": "Lam",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket dyr lager honning?",
+    "answer": "Honningbie",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter et hann-dyr av arten høns?",
+    "answer": "Hane",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket dyr er kjent for å kunne endre hudfarge og bevege øynene uavhengig av hverandre?",
+    "answer": "Kameleon",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva kalles en gruppe ulver?",
+    "answer": "Flokk (ulveflokk)",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter verdens største nålevende fugl?",
+    "answer": "Struts",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter Norges nasjonaldag?",
+    "answer": "17. mai",
+    "category": "Norge",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken by er Norges hovedstad?",
+    "answer": "Oslo",
+    "category": "Norge",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter Norges lengste fjord?",
+    "answer": "Sognefjorden",
+    "category": "Norge",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken norsk by blir kalt Rosenes by?",
+    "answer": "Molde",
+    "category": "Norge",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket fylke ligger Lillehammer i?",
+    "answer": "Innlandet",
+    "category": "Norge",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken norsk by har Bryggen på UNESCOs verdensarvliste?",
+    "answer": "Bergen",
+    "category": "Norge",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken norsk forfatter skrev Folk og røvere i Kardemomme by?",
+    "answer": "Thorbjørn Egner",
+    "category": "Norge",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken by er kjent for ishavskatedralen?",
+    "answer": "Tromsø",
+    "category": "Norge",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvor mange spillere fra hvert lag er på banen i vanlig elleverfotball?",
+    "answer": "11",
+    "category": "Sport",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket land forbindes med sykkelrittet Tour de France?",
+    "answer": "Frankrike",
+    "category": "Sport",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken idrett bruker puck og køller på is?",
+    "answer": "Ishockey",
+    "category": "Sport",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken idrett er Casper Ruud kjent for?",
+    "answer": "Tennis",
+    "category": "Sport",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva er lengden på et maratonløp, avrundet til én desimal i kilometer?",
+    "answer": "42,2 kilometer",
+    "category": "Sport",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken norsk friidrettsutøver har vunnet OL-gull på 400 meter hekk?",
+    "answer": "Karsten Warholm",
+    "category": "Sport",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken idrett hadde Michael Jordan som verdensstjerne?",
+    "answer": "Basketball",
+    "category": "Sport",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvor mange poeng gir en scoring fra straffemerket i håndball?",
+    "answer": "Ett poeng",
+    "category": "Sport",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket land har Eiffeltårnet i sin hovedstad?",
+    "answer": "Frankrike",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "I hvilket land ligger byen Barcelona?",
+    "answer": "Spania",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter hovedstaden i Danmark?",
+    "answer": "København",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "I hvilken verdensdel ligger Kenya?",
+    "answer": "Afrika",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilke to land ligger på hver sin side av Øresund?",
+    "answer": "Danmark og Sverige",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter øya der både Haiti og Den dominikanske republikk ligger?",
+    "answer": "Hispaniola",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket land har hovedstaden Wellington?",
+    "answer": "New Zealand",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva betyr det engelske ordet «library» på norsk?",
+    "answer": "Bibliotek",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva kaller vi ord som betyr omtrent det samme?",
+    "answer": "Synonymer",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter tegnet «?» på norsk?",
+    "answer": "Spørsmålstegn",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket engelsk ord brukes som en kjærlig betegnelse på null i tennis?",
+    "answer": "Love",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva kalles et ord som leses likt forlengs og baklengs, som radar?",
+    "answer": "Palindrom",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva står forkortelsen USB for på engelsk?",
+    "answer": "Universal Serial Bus",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilket selskap lager iPhone?",
+    "answer": "Apple",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva kalles et program du bruker til å besøke nettsider, som Chrome eller Firefox?",
+    "answer": "Nettleser",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva står forkortelsen GPS for?",
+    "answer": "Global Positioning System",
+    "category": "Teknologi",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva kalles et lite bærbart lagringsmedium som ofte ble brukt før USB-minnepinnen?",
+    "answer": "Diskett",
+    "category": "Teknologi",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter det berømte maleriet av Leonardo da Vinci med et gåtefullt smil?",
+    "answer": "Mona Lisa",
+    "category": "Kunst og kultur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken farge får du ved å blande blått og gult pigment?",
+    "answer": "Grønn",
+    "category": "Kunst og kultur",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den spanske kunstneren som malte Guernica?",
+    "answer": "Pablo Picasso",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter bygningen i Sydney med seilformet tak som brukes til konserter og opera?",
+    "answer": "Operahuset i Sydney",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter guden med hammeren Mjølner i norrøn mytologi?",
+    "answer": "Tor",
+    "category": "Mytologi og religion",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken religiøs høytid markerer kristne til minne om Jesu oppstandelse?",
+    "answer": "Påske",
+    "category": "Mytologi og religion",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter den greske guden som hersker over havet?",
+    "answer": "Poseidon",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken norrøn gud har ravnene Hugin og Munin?",
+    "answer": "Odin",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter Norges nasjonalforsamling?",
+    "answer": "Stortinget",
+    "category": "Samfunn og politikk",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvor mange år er det mellom stortingsvalg i Norge?",
+    "answer": "Fire",
+    "category": "Samfunn og politikk",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva står FN for?",
+    "answer": "De forente nasjoner",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hva heter organisasjonen som Norge ble medlem av i 1949 og som er en forsvarsallianse?",
+    "answer": "NATO",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken britisk naturprogramleder er kjent fra BBC-serier som Planet Earth?",
+    "answer": "David Attenborough",
+    "category": "Kjendiser",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvem er kjent for å ha grunnlagt Microsoft sammen med Paul Allen?",
+    "answer": "Bill Gates",
+    "category": "Kjendiser",
+    "difficulty": "easy",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken skuespiller har spilt både Iron Man og Sherlock Holmes på kino?",
+    "answer": "Robert Downey Jr.",
+    "category": "Kjendiser",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  },
+  {
+    "question": "Hvilken amerikansk TV-kokk er kjent for programmet Hell's Kitchen?",
+    "answer": "Gordon Ramsay",
+    "category": "Kjendiser",
+    "difficulty": "medium",
+    "fact": "",
+    "source": "QuizHub original – lett/middels"
+  }
+];
+const v18Norm=s=>String(s).normalize("NFKC").toLocaleLowerCase("nb").replace(/[\s?!.,:;«»"'’]+/g," ").trim();
+const v18Known=new Set(questions.general.map(q=>v18Norm(q.question)));
+const v18Geo=new Set(questions.geography.map(q=>v18Norm(q.question)));
+const v18Sport=new Set(questions.sports.map(q=>v18Norm(q.question)));
+for (const q of v18NewQuestions){const key=v18Norm(q.question);if(v18Known.has(key))continue;questions.general.push(q);v18Known.add(key);if(q.category==="Geografi"&&!v18Geo.has(key)){questions.geography.push(q);v18Geo.add(key)}if(q.category==="Sport"&&!v18Sport.has(key)){questions.sports.push(q);v18Sport.add(key)}}
