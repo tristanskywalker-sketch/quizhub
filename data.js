@@ -664,6 +664,1678 @@ export const questions={
 
 };
 
+
+// QuizHub v15: sjekkede spørsmål fra Oreilleys (3). Samme objekt brukes i begge banker.
+const newImportedQuestions = [
+  {
+    "category": "Sport",
+    "difficulty": "hard",
+    "question": "Hva ble John McDougall den første til å gjøre i en landskamp i fotball, mot England i 1878?",
+    "answer": "Score et hattrick i en landskamp.",
+    "fact": "Skottland vant kampen 7–2."
+  },
+  {
+    "category": "Film",
+    "difficulty": "medium",
+    "question": "Hvilke to filmer stammer sitatene «I’m gonna make him an offer he can’t refuse» og «I coulda been a contender» fra?",
+    "answer": "Gudfaren (The Godfather) og Storbyhavnen (On the Waterfront).",
+    "fact": "Begge replikkene ble sagt av Marlon Brando."
+  },
+  {
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "question": "Hvilken britisk forfatter skapte etterforskeren Inspector Morse?",
+    "answer": "Colin Dexter.",
+    "fact": "Morse ble også en kjent TV-figur."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "easy",
+    "question": "I hvilket sund skjedde oljeutslippet fra Exxon Valdez i 1989?",
+    "answer": "Prince William-sundet i Alaska.",
+    "fact": "Ulykken fant sted i nærheten av Valdez."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "easy",
+    "question": "Hvilken farge dominerer Vietnams nasjonalflagg?",
+    "answer": "Rød.",
+    "fact": "Flagget har en gul stjerne."
+  },
+  {
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "question": "Hvilken dyrefamilie tilhører oteren?",
+    "answer": "Mårfamilien.",
+    "fact": "Oteren er i slekt med blant annet grevling og røyskatt."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "easy",
+    "question": "I hvilken kanal satte containerskipet Ever Given seg fast i 2021?",
+    "answer": "Suezkanalen.",
+    "fact": "Hendelsen hindret skipstrafikken gjennom kanalen."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "medium",
+    "question": "Hvilken amerikansk delstat har kallenavnet «The Evergreen State»?",
+    "answer": "Washington.",
+    "fact": "Kallenavnet viser til delstatens skogområder."
+  },
+  {
+    "category": "Dyr og natur",
+    "difficulty": "hard",
+    "question": "Hvilket treslag har det vitenskapelige navnet Quercus suber?",
+    "answer": "Korkeik.",
+    "fact": "Kork høstes fra barken."
+  },
+  {
+    "category": "Spill og underholdning",
+    "difficulty": "medium",
+    "question": "Hvilket spill ble spilt i den berømte «Evergreen Game» mellom Adolf Anderssen og Jean Dufresne i 1852?",
+    "answer": "Sjakk.",
+    "fact": "Partiet er kjent for Anderssens angrepsspill."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "medium",
+    "question": "I hvilket norsk fylke ligger Bykle kommune?",
+    "answer": "Agder.",
+    "fact": "Kommunen ligger i Setesdal."
+  },
+  {
+    "category": "Historie",
+    "difficulty": "medium",
+    "question": "Hvem bodde i Breidablikk i norrøn mytologi?",
+    "answer": "Balder.",
+    "fact": "Breidablikk ble beskrevet som Balders bolig."
+  },
+  {
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "question": "Hvilken frukt prøver reven å få tak i i det norske uttrykket «Høyt henger de og sure er de»?",
+    "answer": "Rognebær.",
+    "fact": "I Æsops opprinnelige fabel var det druer."
+  },
+  {
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "question": "Hvilken fisk heter «halibut» på engelsk?",
+    "answer": "Kveite.",
+    "fact": "Kveite er en stor flatfisk."
+  },
+  {
+    "category": "Film",
+    "difficulty": "medium",
+    "question": "I hvilken skotsk by foregår handlingen i filmen Trainspotting?",
+    "answer": "Edinburgh.",
+    "fact": "Filmen bygger på en roman av Irvine Welsh."
+  },
+  {
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "question": "Fra hvilket land kommer pølsetypen kielbasa?",
+    "answer": "Polen.",
+    "fact": "Kiełbasa er polsk for pølse."
+  },
+  {
+    "category": "Historie",
+    "difficulty": "medium",
+    "question": "Hvilket land ble den tidligere spanske dronningen Sofía født i?",
+    "answer": "Hellas.",
+    "fact": "Hun ble født som gresk prinsesse."
+  },
+  {
+    "category": "Norge",
+    "difficulty": "hard",
+    "question": "Hvem var utenriksminister i Kjell Magne Bondeviks første regjering?",
+    "answer": "Knut Vollebæk.",
+    "fact": "Han var utenriksminister fra 1997 til 2000."
+  },
+  {
+    "category": "Norge",
+    "difficulty": "hard",
+    "question": "Hvem var utenriksminister i Kjell Magne Bondeviks andre regjering?",
+    "answer": "Jan Petersen.",
+    "fact": "Han var utenriksminister fra 2001 til 2005."
+  },
+  {
+    "category": "Historie",
+    "difficulty": "medium",
+    "question": "Hvilken romersk keiser lot bygge palasset som fremdeles preger gamlebyen i Split?",
+    "answer": "Diokletian.",
+    "fact": "Palasset ligger i dagens Kroatia."
+  },
+  {
+    "category": "Sport",
+    "difficulty": "easy",
+    "question": "Hvilken kampsport har stilartene shotokan, goju-ryu, wado-ryu og kyokushin?",
+    "answer": "Karate.",
+    "fact": "Dette er flere kjente retninger innen karate."
+  },
+  {
+    "category": "Norge",
+    "difficulty": "easy",
+    "question": "Hvilken språkforsker blir ofte kalt nynorskens far?",
+    "answer": "Ivar Aasen.",
+    "fact": "Han systematiserte norske dialekter og utviklet landsmål."
+  },
+  {
+    "category": "Naturvitenskap",
+    "difficulty": "hard",
+    "question": "Hvilken norsk fysiker ved navn Ivar delte Nobelprisen i fysikk i 1973?",
+    "answer": "Ivar Giæver.",
+    "fact": "Prisen gjaldt blant annet forskning på tunnelering i halvledere og superledere."
+  },
+  {
+    "category": "Sport",
+    "difficulty": "medium",
+    "question": "Hvilken norsk skøyteløper tok tre gull under vinter-OL i 1936?",
+    "answer": "Ivar Ballangrud.",
+    "fact": "Han vant 500, 5000 og 10000 meter."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "easy",
+    "question": "I hvilken nordisk hovedstad ligger bydelen Nørrebro?",
+    "answer": "København.",
+    "fact": "Nørrebro ligger nordvest for sentrum."
+  },
+  {
+    "category": "Historie",
+    "difficulty": "medium",
+    "question": "Hvilket lands nasjonalsang bygger på melodien «To Anacreon in Heaven»?",
+    "answer": "USA – The Star-Spangled Banner.",
+    "fact": "Melodien ble opprinnelig brukt av en britisk selskapssang."
+  },
+  {
+    "category": "Spill og underholdning",
+    "difficulty": "medium",
+    "question": "Hvilken konge i en vanlig kortstokk kalles noen ganger «selvmordskongen»?",
+    "answer": "Hjerter konge.",
+    "fact": "I den tradisjonelle figuren ser sverdet ut til å gå inn bak hodet."
+  },
+  {
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "question": "Hva kaltes et lite, flyttbart magnetisk lagringsmedium som tidligere ble brukt i datamaskiner?",
+    "answer": "Diskett.",
+    "fact": "Diskett kommer av «disk» med diminutivendelsen -ette, altså en liten disk."
+  },
+  {
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "question": "Hvilken norsk forfatter debuterte med «Madam Høiers Leiefolk» og skrev romanen «Constance Ring»?",
+    "answer": "Amalie Skram.",
+    "fact": "Constance Ring kom i 1885."
+  },
+  {
+    "category": "Film",
+    "difficulty": "medium",
+    "question": "I hvilken Monty Python-film møter vi The Judean People’s Front?",
+    "answer": "Life of Brian (Brian fra Nasaret).",
+    "fact": "Filmen kom i 1979."
+  },
+  {
+    "category": "Film",
+    "difficulty": "easy",
+    "question": "Hvilken filmserie har en film med undertittelen «At World’s End»?",
+    "answer": "Pirates of the Caribbean.",
+    "fact": "Den tredje filmen kom i 2007."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "medium",
+    "question": "I hvilket land ligger den kunstige øygruppen «The World»?",
+    "answer": "De forente arabiske emirater.",
+    "fact": "Øygruppen ligger utenfor Dubai."
+  },
+  {
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "question": "Hvem utviklet World Wide Web ved CERN rundt 1989?",
+    "answer": "Tim Berners-Lee.",
+    "fact": "Han foreslo et informasjonssystem bygget på hypertekst."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "easy",
+    "question": "Ved hvilken by i Florida ligger temaparken Walt Disney World?",
+    "answer": "Orlando.",
+    "fact": "Anlegget ligger hovedsakelig i Bay Lake og Lake Buena Vista nær Orlando."
+  },
+  {
+    "category": "Teknologi",
+    "difficulty": "medium",
+    "question": "Hvilken svensk bilprodusent begynte som flyprodusent?",
+    "answer": "Saab.",
+    "fact": "Navnet er forkortelse for Svenska Aeroplan Aktiebolaget."
+  },
+  {
+    "category": "Historie",
+    "difficulty": "hard",
+    "question": "Hva het grekeren som viste perserne en sti rundt grekernes stillinger ved Thermopylene?",
+    "answer": "Efialtes.",
+    "fact": "Han er blitt et symbol på forræderi."
+  },
+  {
+    "category": "Sport",
+    "difficulty": "medium",
+    "question": "Hvilket våpen veier mest av florett, kårde og sabel i moderne sportsfekting?",
+    "answer": "Kårde.",
+    "fact": "Maksimalvekten er høyest for kårde."
+  },
+  {
+    "category": "Film",
+    "difficulty": "easy",
+    "question": "Hvilken skuespiller spilte faren til Amy Farrah Fowler i The Big Bang Theory?",
+    "answer": "Teller.",
+    "fact": "Han er kjent som den vanligvis tause halvdelen av Penn & Teller."
+  },
+  {
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "question": "Hva heter stjernebildet Libra på norsk?",
+    "answer": "Vekten.",
+    "fact": "Libra er et av dyrekretsens stjernebilder."
+  },
+  {
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "question": "Hva heter speiderorganisasjonen som Ole, Dole og Doffen tilhører?",
+    "answer": "Hakkespettene (Junior Woodchucks).",
+    "fact": "Den fiktive speidergruppen finnes i Donald Duck-universet."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "medium",
+    "question": "Hvilket berømt tempelkompleks nær Siem Reap i Kambodsja står på UNESCOs verdensarvliste?",
+    "answer": "Angkor (Angkor Wat).",
+    "fact": "Angkor er et stort arkeologisk område."
+  },
+  {
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "question": "Hva kalles yrket med å preparere og stoppe ut døde dyr?",
+    "answer": "Taksidermist / utstopper.",
+    "fact": "Faget kalles taksidermi."
+  },
+  {
+    "category": "Film",
+    "difficulty": "easy",
+    "question": "Hvilken Disney-figur ble først introdusert som Dippy Dawg i 1932?",
+    "answer": "Langbein (Goofy).",
+    "fact": "Figuren ble introdusert i en animert kortfilm."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "medium",
+    "question": "Hvor mange søramerikanske land har større areal enn Peru?",
+    "answer": "To: Brasil og Argentina.",
+    "fact": "Peru er det tredje største landet i Sør-Amerika målt i areal."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "medium",
+    "question": "Hva heter havnebyen ved Lima som Thor Heyerdahl seilte fra med Kon-Tiki?",
+    "answer": "Callao.",
+    "fact": "Kon-Tiki-ekspedisjonen startet i 1947."
+  },
+  {
+    "category": "Historie",
+    "difficulty": "hard",
+    "question": "Hva het den peruanske diplomaten som var FNs generalsekretær fra 1982 til 1991?",
+    "answer": "Javier Pérez de Cuéllar.",
+    "fact": "Han var FNs femte generalsekretær."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "easy",
+    "question": "Hva heter Perus valuta?",
+    "answer": "Sol.",
+    "fact": "Valutaen har ISO-koden PEN."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "medium",
+    "question": "Hvilken by var sentrum og hovedstad i Inkariket?",
+    "answer": "Cusco (Cuzco).",
+    "fact": "Byen ligger i dagens Peru."
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "medium",
+    "question": "Hvilken by i Midtøsten kalles Al-Quds på arabisk?",
+    "answer": "Jerusalem.",
+    "fact": "Al-Quds betyr omtrent «den hellige»."
+  },
+  {
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "question": "Hvilket land kommer selskapet Motorola opprinnelig fra?",
+    "answer": "USA.",
+    "fact": "Selskapet ble etablert i Chicago."
+  },
+  {
+    "category": "Film",
+    "difficulty": "easy",
+    "question": "Hva heter den første helaftens dataanimerte kinofilmen fra 1995?",
+    "answer": "Toy Story.",
+    "fact": "Pixar produserte filmen."
+  }
+];
+const normalizedQuestion = s=>String(s).toLocaleLowerCase('nb').normalize('NFKC').replace(/[\s?!.,:;«»"'’]+/g,' ').trim();
+const knownGeneral = new Set(questions.general.map(q=>normalizedQuestion(q.question)));
+const appended=[];
+for(const q of newImportedQuestions){
+ if(knownGeneral.has(normalizedQuestion(q.question)))continue;
+ questions.general.push(q); appended.push(q); knownGeneral.add(normalizedQuestion(q.question));
+}
+const geographyKeys = new Set(questions.geography.map(q=>normalizedQuestion(q.question)));
+const sportsKeys = new Set(questions.sports.map(q=>normalizedQuestion(q.question)));
+for(const q of appended){
+ if(q.category==='Geografi'&&!geographyKeys.has(normalizedQuestion(q.question))){questions.geography.push(q);geographyKeys.add(normalizedQuestion(q.question));}
+ if(q.category==='Sport'&&!sportsKeys.has(normalizedQuestion(q.question))){questions.sports.push(q);sportsKeys.add(normalizedQuestion(q.question));}
+}
+// Markering av eldre allmennspørsmål – kategori er nytt metadatafelt.
+// Uklare spørsmål settes til «Blandet» fremfor å gi dem en påstått presis fagkategori.
+function categorizeLegacy(q){
+ const t=(q.question+' '+(q.fact||'')).toLocaleLowerCase('nb');
+ if(/hvilket land|hvilken by|hvilken hovedstad|hvilken øy|hvilket fylke|hvilken delstat|hvilket kontinent|hvilken elv|hvilket fjell|hvilke land|hvilket hav|hvilket sund|hvilken kyst|hvilket geografisk/.test(t))return 'Geografi';
+ if(/fotball|olympisk|ol-gull|ol i |ol under|verdensmester|tennis|ski|skøyte|håndball|formel 1|world series|mlb|fekting|basketball|idrett|tour de france/.test(t))return 'Sport';
+ if(/filmen|film fra|filmserie|skuespill|oscar|hovedrolle|regissør/.test(t))return 'Film';
+ if(/tv-serie|fjernsyn|tv-program|sitcom/.test(t))return 'TV-serier';
+ if(/forfatter|roman|boka|boken|litteratur|dikt|bibliotek/.test(t))return 'Litteratur';
+ if(/artist|sangen|album|bandet|musikk|grammy|eurovision/.test(t))return 'Musikk';
+ if(/president|krig|keiser|dynasti|revolusjon|grunnlagt|verdenskrig/.test(t))return 'Historie';
+ if(/grunnstoff|solsystem|planeten|astronomi|fysikk|kjemi|stjernebilde/.test(t))return 'Naturvitenskap';
+ if(/norsk|norge|nordmann|nordmenn|storting|nynorsk/.test(t))return 'Norge';
+ return 'Blandet';
+}
+for(const q of questions.general){if(!q.category)q.category=categorizeLegacy(q);}
+
+
+// QuizHub v16 – TV-spill, brettspill og ny import fra Oreilleys (4).
+const v16NewQuestions=[
+  {
+    "question": "I hvilken spillserie finner vi den fiktive brusen Nuka-Cola, og som også har blitt TV-serie?",
+    "answer": "Fallout",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "Nuka-Cola er en kjent merkevare i Fallout-universet.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hva heter prinsessen som Mario ofte må redde i Nintendo-spillene?",
+    "answer": "Princess Peach",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "Hun var tidligere ofte omtalt som Princess Toadstool.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilken virkelig amerikansk storby er Vice City i Grand Theft Auto inspirert av?",
+    "answer": "Miami",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "Den fiktive byen er inspirert av Miami.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket spill har en figur som heter Creeper, som eksploderer når den kommer nær?",
+    "answer": "Minecraft",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "Creeper er et av spillets mest kjente monstre.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilken spillserie foregår blant annet i regionene Kanto og Johto?",
+    "answer": "Pokémon",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "Kanto og Johto er fiktive regioner i Pokémon-spillene.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "I hvilken spillserie finner vi hovedpersonen Link og prinsesse Zelda?",
+    "answer": "The Legend of Zelda",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "Zelda er vanligvis prinsessen, ikke den spillbare hovedpersonen.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilken konsollprodusent lanserte spillserien Halo som et viktig trekkplaster?",
+    "answer": "Microsoft (Xbox)",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "Halo ble kjent som et flaggskip for Xbox.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hva heter det fiktive selskapet bak portal-teknologien i Portal-spillene?",
+    "answer": "Aperture Science",
+    "category": "TV-spill",
+    "difficulty": "hard",
+    "fact": "Selskapet driver testanlegget i Portal.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilken spillserie har den fiktive undervannsbyen Rapture?",
+    "answer": "BioShock",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "Rapture er en sentral setting i det første BioShock-spillet.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hva heter soppfiguren i Mario-spillene som ofte fungerer som hjelper i Mushroom Kingdom?",
+    "answer": "Toad",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "Toad er en kjent innbygger i Mushroom Kingdom.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "I hvilket spill kan man beseire en drage kalt Ender Dragon?",
+    "answer": "Minecraft",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "Ender Dragon finnes i dimensjonen The End.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hva heter hovedpersonen i God of War-serien fra de første spillene og videre inn i norrøn mytologi?",
+    "answer": "Kratos",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "Kratos er seriens hovedfigur.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hva heter byen der den første Assassin’s Creed-spillfortellingen blant annet foregår, kjent for sitt kloster og sine festningsverk?",
+    "answer": "Masyaf",
+    "category": "TV-spill",
+    "difficulty": "hard",
+    "fact": "Masyaf er et av de sentrale stedene i det første Assassin’s Creed.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilken spillserie har figuren Ellie og en soppsmitte som rammer menneskeheten, og ble senere TV-serie?",
+    "answer": "The Last of Us",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "Spillserien ble også TV-drama.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hva heter den ikoniske blå pinnsvinfiguren fra Sega?",
+    "answer": "Sonic",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "Sonic the Hedgehog debuterte i 1991.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "I hvilken spillserie finner vi Vault Boy som en maskot?",
+    "answer": "Fallout",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "Vault Boy brukes i selskapet Vault-Tecs visuelle profil.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket spill har baner med navn som Rainbow Road og Mario Circuit?",
+    "answer": "Mario Kart",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "Rainbow Road er kjent fra flere Mario Kart-spill.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket spillstudio står bak The Sims-serien, som opprinnelig ble utgitt av Maxis?",
+    "answer": "Maxis",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "Maxis utviklet det første The Sims.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilken spillserie har karakteren Lara Croft?",
+    "answer": "Tomb Raider",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "fact": "Lara Croft er arkeolog og eventyrer.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket strategispill, opprinnelig fra 1991, lar deg bygge en sivilisasjon fra antikken og fremover?",
+    "answer": "Civilization",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "Sid Meier forbindes med spillserien.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket brettspill handler om å kjøpe gater og kreve husleie fra motstanderne?",
+    "answer": "Monopol",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "Det klassiske eiendomsspillet finnes i mange nasjonale utgaver.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket brettspill bruker brikker som heter bonde, løper, tårn, springer, dronning og konge?",
+    "answer": "Sjakk",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "En sjakkspiller starter med 16 brikker.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket brettspill går ut på å avsløre en morder, et våpen og et rom i et herskapshus?",
+    "answer": "Cluedo",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "Spillet heter Clue i Nord-Amerika.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hva heter det klassiske brettspillet der man bygger veier og bosetninger med ressurser som ull, malm og korn?",
+    "answer": "Catan",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "Spillet het opprinnelig Settlers of Catan.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket brettspill bruker bokstavbrikker på et rutebrett til å danne ord?",
+    "answer": "Scrabble",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "Bokstavene har ulike poengverdier.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "I hvilket brettspill skal man forbinde byer med togruter ved hjelp av fargede togvogner?",
+    "answer": "Ticket to Ride",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "Spillserien finnes i flere geografiske utgaver.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket brettspill ber spillerne finne ut hvem de andre er ved å stille ja/nei-spørsmål om ansikter?",
+    "answer": "Gjett hvem? (Guess Who?)",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "Spillerne slår ned ansikter som ikke passer beskrivelsen.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hva heter det kooperative brettspillet hvor spillerne samarbeider om å stoppe sykdomsutbrudd over hele verden?",
+    "answer": "Pandemic",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "Spillerne har ulike spesialistroller.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hva heter brettspillet der man skal gjette ord ved hjelp av hint på kort og unngå forbudte ord?",
+    "answer": "Taboo",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "Taboo handler om å beskrive uten å bruke bestemte ord.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket strategispill har brikker på verdensregioner og går ut på å erobre territorier?",
+    "answer": "Risk",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "Risk har terningbaserte kamper.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hva heter brettspillet der man flytter brikker rundt på et kryssformet brett og må få alle fire i mål?",
+    "answer": "Ludo",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "fact": "Ludo er beslektet med det indiske Pachisi.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket prisbelønt brettspill går ut på å plassere fargerike fliser i mønstre, inspirert av portugisiske keramikkfliser?",
+    "answer": "Azul",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "Azul vant Spiel des Jahres i 2018.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket brettspill bruker små kort med bilder og fantasifulle assosiasjoner, der spillerne gjetter hvilket kort fortelleren beskrev?",
+    "answer": "Dixit",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "Dixit baserer seg på bildesymbolikk og assosiasjoner.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket brettspill har et rutebrett der man legger svarte og hvite brikker, og kan snu motstanderens brikker ved å omslutte dem?",
+    "answer": "Othello (Reversi)",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "Othello er en moderne variant av Reversi.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hvilket brettspill har roller som spionmester og agent, og lagene prøver å gjette ord med ettords-hint?",
+    "answer": "Codenames",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "Spillet handler om å gi ettordshint til flere kort.",
+    "source": "QuizHub – egenutviklet"
+  },
+  {
+    "question": "Hva het den russiske byen Nizjnij Novgorod fra 1932 til 1990?",
+    "answer": "Gorkij",
+    "category": "Geografi",
+    "difficulty": "hard",
+    "fact": "Byen ble oppkalt etter forfatteren Maksim Gorkij.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvor mange kvadratmeter er ett dekar?",
+    "answer": "1 000 m²",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "fact": "Et dekar tilsvarer 1000 kvadratmeter.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva heter den greske trollkvinnen som forvandlet Odyssevs’ menn til svin?",
+    "answer": "Kirke (Circe)",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "fact": "Kirke er en figur i Odysseen.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilken norsk konge var far til Harald Gråfell?",
+    "answer": "Eirik Blodøks",
+    "category": "Historie",
+    "difficulty": "hard",
+    "fact": "Eirik Blodøks og Gunhild Kongemor var Harald Gråfells foreldre.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilken verdensberømt artist hadde en tvillingbror som døde ved fødselen, ved navn Jesse Garon?",
+    "answer": "Elvis Presley",
+    "category": "Kjendiser",
+    "difficulty": "medium",
+    "fact": "Elvis Presley hadde en tvillingbror som døde ved fødselen.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvem spilte Woody Boyd i TV-serien Cheers?",
+    "answer": "Woody Harrelson",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "fact": "Harrelson spilte rollen i Cheers.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilken amerikansk visesanger skrev This Land Is Your Land?",
+    "answer": "Woody Guthrie",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "fact": "Sangen er et kjent eksempel på amerikansk folkemusikk.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilket britisk ska-popband har Dan «Woody» Woodgate som trommeslager?",
+    "answer": "Madness",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "fact": "Woodgate er trommeslager i Madness.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva betyr bilateral?",
+    "answer": "Tosidig (som gjelder to parter eller sider)",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "fact": "Bilateralt samarbeid foregår mellom to parter.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva heter den tyrkiske byen som tidligere var kjent som Smyrna?",
+    "answer": "Izmir",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "Izmir ligger ved Egeerhavet.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilken internasjonal organisasjon ble grunnlagt av Paul Percy Harris i Chicago i 1905?",
+    "answer": "Rotary",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "fact": "Rotary begynte som en yrkes- og samfunnsorientert serviceorganisasjon.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilken amerikansk skuespiller spilte i filmene Amadeus (1984) og Rosens navn (1986)?",
+    "answer": "F. Murray Abraham",
+    "category": "Film",
+    "difficulty": "medium",
+    "fact": "Han spilte Salieri i Amadeus.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilken amerikansk president er kjent for oppfordringen «Look to Norway»?",
+    "answer": "Franklin D. Roosevelt",
+    "category": "Historie",
+    "difficulty": "hard",
+    "fact": "Utsagnet forbindes med Roosevelt under andre verdenskrig.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilket nåværende land ble filosofen Baruch Spinoza født i?",
+    "answer": "Nederland",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "Spinoza ble født i Amsterdam.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "På hvilket kontinent lever snøleoparden naturlig?",
+    "answer": "Asia",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "fact": "Snøleoparden lever i fjellområder i Sentral- og Sør-Asia.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilket land het tidligere Abyssinia?",
+    "answer": "Etiopia",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "fact": "Abyssinia er et historisk navn på Etiopia.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva het den siste innsatte i Spandau-fengselet i Berlin, som døde i 1987?",
+    "answer": "Rudolf Hess",
+    "category": "Historie",
+    "difficulty": "hard",
+    "fact": "Hess var en ledende nazist.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva slags fartøy var Robert Fultons Clermont fra 1807?",
+    "answer": "Dampskip",
+    "category": "Teknologi",
+    "difficulty": "medium",
+    "fact": "Skipet brukte dampmaskin.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva kalles Japan på japansk, med latinske bokstaver?",
+    "answer": "Nihon eller Nippon",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "Begge uttaleformene er i bruk.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva kalles lyn man ser så langt unna at man ikke hører torden?",
+    "answer": "Kornmo",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "fact": "Kornmo er et norsk ord for fjern lynaktivitet.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "I hvilket land er den finske tangoen en særlig kjent tradisjon?",
+    "answer": "Finland",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "fact": "Finsk tango er en egen musikk- og dansetradisjon.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva heter filmen fra 1989 med Sylvester Stallone og Kurt Russell som to politimenn på flukt?",
+    "answer": "Tango & Cash",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "Filmen kom i 1989.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "I hvilket fotball-VM ble Adidas Tango brukt som offisiell kampball for første gang?",
+    "answer": "1978",
+    "category": "Sport",
+    "difficulty": "medium",
+    "fact": "1978-VM ble arrangert i Argentina.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilken øy har gitt navn til den minste nålevende neshornarten?",
+    "answer": "Sumatra",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "fact": "Sumatraneshornet er den minste av de nålevende neshornartene.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvem spilte Rodrigo Mendoza i filmen The Mission (1986)?",
+    "answer": "Robert De Niro",
+    "category": "Film",
+    "difficulty": "medium",
+    "fact": "De Niro spilte den tidligere slavejegeren Mendoza.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva het den amerikanske filmen fra 1981 som fikk den norske tittelen Døden i sumpene?",
+    "answer": "Southern Comfort",
+    "category": "Film",
+    "difficulty": "hard",
+    "fact": "Filmen ble regissert av Walter Hill.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva heter det nærmeste stjernesystemet til Solen?",
+    "answer": "Alpha Centauri",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "fact": "Proxima Centauri inngår i systemet.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva ble konfliktene mellom Island og Storbritannia om fiskerettigheter fra 1958 til 1976 kalt?",
+    "answer": "Torskekrigene",
+    "category": "Historie",
+    "difficulty": "medium",
+    "fact": "Konfliktene dreide seg om fiskerisoner.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilken elv renner gjennom Grand Canyon?",
+    "answer": "Coloradoelven",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "fact": "Elven har skåret seg ned i Colorado-platået.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "På hvilken gresk øy ligger ruinene av Knossos?",
+    "answer": "Kreta",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "fact": "Knossos var et viktig minoisk sentrum.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvem spilte Simon Templar i TV-serien Helgenen fra 1962 til 1969?",
+    "answer": "Roger Moore",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "fact": "Rollen gjorde Roger Moore svært kjent.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilken del av binyrene produserer kortisol?",
+    "answer": "Binyrebarken",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "fact": "Kortisol dannes i binyrebarken.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilket land ga betydelig økonomisk støtte til byggingen av Aswandammen i Egypt?",
+    "answer": "Sovjetunionen",
+    "category": "Historie",
+    "difficulty": "medium",
+    "fact": "Sovjetunionen bidro til prosjektet med finansiering og kompetanse.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilken øvelse erstatter ridning i moderne femkamp ved OL i Los Angeles 2028?",
+    "answer": "Hinderløp (obstacle)",
+    "category": "Sport",
+    "difficulty": "medium",
+    "fact": "Hinderløp erstatter sprangridning.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilken skuespiller debuterte på film som ung i Mio, min Mio (1987), og ble senere kjent som Batman?",
+    "answer": "Christian Bale",
+    "category": "Film",
+    "difficulty": "medium",
+    "fact": "Christian Bale spilte Jum-Jum i Mio, min Mio.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvem komponerte operaen Carmen?",
+    "answer": "Georges Bizet",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "fact": "Operaen hadde premiere i 1875.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvem er den skotske dikteren bak Auld Lang Syne?",
+    "answer": "Robert Burns",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "fact": "Burns skrev ned og bearbeidet den kjente sangteksten.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva heter Norges og Europas største ugleart?",
+    "answer": "Hubro",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "fact": "Hubro er blant verdens største uglearter.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hvilket land hadde Rawalpindi som midlertidig hovedstad fram til Islamabad overtok?",
+    "answer": "Pakistan",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "Rawalpindi var administrativt sentrum før Islamabad.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva heter det ytterste laget av solens atmosfære?",
+    "answer": "Koronaen",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "fact": "Koronaen blir synlig ved total solformørkelse.",
+    "source": "Oreilleys (4), bearbeidet"
+  },
+  {
+    "question": "Hva er det motsatte av egoisme?",
+    "answer": "Altruisme",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "fact": "Altruisme innebærer å vise omtanke for andre.",
+    "source": "Oreilleys (4), bearbeidet"
+  }
+];
+const v16Normalize=s=>String(s).normalize("NFKC").toLocaleLowerCase("nb").replace(/[\s?!.,:;«»"'’]+/g," ").trim();
+const v16Existing=new Set(questions.general.map(q=>v16Normalize(q.question)));
+const v16Geography=new Set(questions.geography.map(q=>v16Normalize(q.question)));
+const v16Sports=new Set(questions.sports.map(q=>v16Normalize(q.question)));
+for (const q of v16NewQuestions) {
+ const key=v16Normalize(q.question); if(v16Existing.has(key))continue;
+ questions.general.push(q);v16Existing.add(key);
+ if(q.category==="Geografi"&&!v16Geography.has(key)){questions.geography.push(q);v16Geography.add(key);}
+ if(q.category==="Sport"&&!v16Sports.has(key)){questions.sports.push(q);v16Sports.add(key);}
+}
+
+
+// QuizHub v17 – redigerte spørsmål fra Oreilleys (5).
+const v17NewQuestions=[
+  {
+    "question": "Hvem skrev boken «Feltnotater fra fotball-VM – 47 dager på innsiden» fra 2026?",
+    "answer": "Brede Hangeland",
+    "category": "Sport",
+    "difficulty": "medium",
+    "fact": "Boken er en skildring av Norges deltakelse i fotball-VM 2026.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-001"
+  },
+  {
+    "question": "Hvem skrev romanen «Vredens druer»?",
+    "answer": "John Steinbeck",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "fact": "Romanen ble utgitt i 1939.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-002"
+  },
+  {
+    "question": "Hvilket dyr er symbolet på evangelisten Johannes i kristen ikonografi?",
+    "answer": "Ørn",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "fact": "Johannes forbindes med ørnen i de fire evangelistsymbolene.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-003"
+  },
+  {
+    "question": "Hvilket land kommer arkitekten Renzo Piano fra?",
+    "answer": "Italia",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "fact": "Renzo Piano er en italiensk arkitekt.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-004"
+  },
+  {
+    "question": "Hva kalles pøbelvelde med et ord som begynner på O?",
+    "answer": "Oklokrati",
+    "category": "Språk og ord",
+    "difficulty": "hard",
+    "fact": "Oklokrati betegner styre av en ustyrlig folkemengde.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-005"
+  },
+  {
+    "question": "Hva heter hovedstaden i den spanske regionen Cantabria?",
+    "answer": "Santander",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "Santander er en havneby på Spanias nordkyst.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-006"
+  },
+  {
+    "question": "Hvor mange tangenter har et standard moderne piano?",
+    "answer": "88",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "fact": "Normale konsertflygler har 52 hvite og 36 svarte tangenter.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-007"
+  },
+  {
+    "question": "Hvem regisserte filmen «The Piano» fra 1993?",
+    "answer": "Jane Campion",
+    "category": "Film",
+    "difficulty": "medium",
+    "fact": "Jane Campion er fra New Zealand.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-008"
+  },
+  {
+    "question": "Hvilket meierikonsern står bak Piano-yoghurt i Norge?",
+    "answer": "Tine",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "Piano er en produktserie fra Tine.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-009"
+  },
+  {
+    "question": "Hvilken stor elv renner gjennom Hamburg?",
+    "answer": "Elben",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "Elben renner ut i Nordsjøen.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-010"
+  },
+  {
+    "question": "Hva kalles de små bitene som settes sammen til en mosaikk?",
+    "answer": "Tesseraer (tessera)",
+    "category": "Kunst og kultur",
+    "difficulty": "hard",
+    "fact": "Tessera er betegnelsen på en enkelt mosaikkbit.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-011"
+  },
+  {
+    "question": "Hva heter romanen av Umberto Eco fra 1980 som begynner med en fortelling om en bok av abbed Vallet?",
+    "answer": "Rosens navn",
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "fact": "Romanen fikk en kjent filmatisering i 1986.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-012"
+  },
+  {
+    "question": "I hvilken norsk by arrangeres Bergen internasjonale filmfestival (BIFF)?",
+    "answer": "Bergen",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "Festivalen arrangeres i Bergen.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-013"
+  },
+  {
+    "question": "I hvilket land døde Leonardo da Vinci i 1519?",
+    "answer": "Frankrike",
+    "category": "Historie",
+    "difficulty": "medium",
+    "fact": "Han døde ved Amboise.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-014"
+  },
+  {
+    "question": "I hvilket tiår ble røyking forbudt på undergrunnsbanen i London?",
+    "answer": "1980-tallet",
+    "category": "Historie",
+    "difficulty": "medium",
+    "fact": "Forbudet ble innført i 1987.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-015"
+  },
+  {
+    "question": "Hvilken Disney-figur heter Franz Gans på tysk?",
+    "answer": "Guffen (Gus Goose)",
+    "category": "Film",
+    "difficulty": "hard",
+    "fact": "Gus Goose er kjent som Donald Ducks gåsefetters figur.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-016"
+  },
+  {
+    "question": "Hva betyr navnet Los Angeles på spansk?",
+    "answer": "Englene",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "fact": "Los Ángeles betyr englene.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-017"
+  },
+  {
+    "question": "Hva slags fartøy er Los Angeles-klassen i den amerikanske marinen?",
+    "answer": "Atomdrevne ubåter",
+    "category": "Teknologi",
+    "difficulty": "medium",
+    "fact": "Los Angeles-klassen er angrepsubåter.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-018"
+  },
+  {
+    "question": "I hvilket land ligger provinsen Biobío med byen Los Ángeles?",
+    "answer": "Chile",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "Los Ángeles er en by i Chile.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-019"
+  },
+  {
+    "question": "Fra hvilket land kom operasangeren Victoria de los Ángeles?",
+    "answer": "Spania",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "fact": "Sopranen ble født i Barcelona.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-020"
+  },
+  {
+    "question": "Hvilket MLB-lag vant World Series i både 2024 og 2025?",
+    "answer": "Los Angeles Dodgers",
+    "category": "Sport",
+    "difficulty": "medium",
+    "fact": "Dodgers slo Yankees i 2024 og Blue Jays i 2025.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-021"
+  },
+  {
+    "question": "Hvilken fiskeart er Nemo i «Oppdrag Nemo»?",
+    "answer": "Klovnefisk",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "fact": "Nemo er en klovnefisk.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-022"
+  },
+  {
+    "question": "I hvilket norsk fylke ligger øya Sekken, der Håkon Herdebrei falt i 1162?",
+    "answer": "Møre og Romsdal",
+    "category": "Geografi",
+    "difficulty": "hard",
+    "fact": "Øya Sekken ligger i Molde kommune.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-023"
+  },
+  {
+    "question": "Hva ble alliansen mellom Frankrike, Russland og Storbritannia før første verdenskrig kalt?",
+    "answer": "Trippelententen (Ententen)",
+    "category": "Historie",
+    "difficulty": "medium",
+    "fact": "Alliansesystemet tok form gjennom avtaler fram mot 1907.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-024"
+  },
+  {
+    "question": "Hvilket artistnavn brukte skuespilleren Roy Harold Scherer jr.?",
+    "answer": "Rock Hudson",
+    "category": "Kjendiser",
+    "difficulty": "medium",
+    "fact": "Rock Hudson var en amerikansk filmstjerne.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-025"
+  },
+  {
+    "question": "Hvilken realitykonkurranse vant Emilie Enger Mehl i 2015?",
+    "answer": "Anno",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "fact": "Emilie Enger Mehl vant første sesong av Anno.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-026"
+  },
+  {
+    "question": "Hva heter dyret «wildebeest» på norsk?",
+    "answer": "Gnu",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "fact": "Gnu er en afrikansk antilope.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-027"
+  },
+  {
+    "question": "Hva het den svenske TV-serien som foregikk på en ferge mellom Sverige og Finland fra 1992 til 2002?",
+    "answer": "Rederiet",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "fact": "Rederiet var en svensk dramaserie.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-028"
+  },
+  {
+    "question": "Hvem er den sentrale helten i Richard Wagners «Nibelungenringen»?",
+    "answer": "Siegfried",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "fact": "Siegfried er en sentral figur i operasyklusen.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-029"
+  },
+  {
+    "question": "På hvilken dansk øy ligger byene Rønne og Nexø?",
+    "answer": "Bornholm",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "fact": "Begge byene ligger på Bornholm.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-030"
+  },
+  {
+    "question": "Hva heter en kreolsk risrett som minner om paella og ofte inneholder sjømat?",
+    "answer": "Jambalaya",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "fact": "Jambalaya er knyttet til Louisiana-kjøkkenet.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-031"
+  },
+  {
+    "question": "Hva heter hjelpemiddelet som strammes rundt en arm eller et bein for å stanse alvorlig blødning?",
+    "answer": "Tourniquet (turniké)",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "fact": "En tourniquet brukes ved alvorlig blødning.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-032"
+  },
+  {
+    "question": "Hvilken norsk by kommer fotballklubben Odd fra?",
+    "answer": "Skien",
+    "category": "Sport",
+    "difficulty": "easy",
+    "fact": "Odds Ballklubb holder til i Skien.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-033"
+  },
+  {
+    "question": "I hvilket land ligger byen Oodnadatta?",
+    "answer": "Australia",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "Oodnadatta ligger i Sør-Australia.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-034"
+  },
+  {
+    "question": "Hvilken nobelpris fikk den norske forskeren Odd Hassel i 1969?",
+    "answer": "Nobelprisen i kjemi",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "fact": "Han delte prisen med Derek Barton.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-035"
+  },
+  {
+    "question": "Hvilken norsk fotballspiller scoret 30 mål i toppdivisjonen i 1968?",
+    "answer": "Odd Iversen",
+    "category": "Sport",
+    "difficulty": "hard",
+    "fact": "Odd Iversen satte en historisk målrekord.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-036"
+  },
+  {
+    "question": "Hvilken organisasjon hadde Hastings Ismay som sin første generalsekretær?",
+    "answer": "NATO",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "fact": "Ismay var NATOs første generalsekretær fra 1952.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-037"
+  },
+  {
+    "question": "Hvilken pris for datavitenskap er oppkalt etter matematikeren Alan Turing?",
+    "answer": "Turingprisen",
+    "category": "Teknologi",
+    "difficulty": "medium",
+    "fact": "ACM deler ut Turing Award.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-038"
+  },
+  {
+    "question": "Hvem skrev det politiske verket «Leviathan» fra 1651?",
+    "answer": "Thomas Hobbes",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "fact": "Verket diskuterer statsmakt og samfunnskontrakt.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-039"
+  },
+  {
+    "question": "Hvilken tegneserie inneholder R.Ø.L.P.-klubben, «Resirkuler Øyeblikkelig Lusete Piker»?",
+    "answer": "Tommy og Tigern",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "fact": "Klubben er kjent fra Calvin and Hobbes.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-040"
+  },
+  {
+    "question": "Hvem er kjent for uttrykket «Religion er folkets opium»?",
+    "answer": "Karl Marx",
+    "category": "Historie",
+    "difficulty": "easy",
+    "fact": "Uttrykket står i en tekst av Marx fra 1844.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-041"
+  },
+  {
+    "question": "Hvilken artist ga ut albumet «Aladdin Sane» i 1973?",
+    "answer": "David Bowie",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "fact": "Aladdin Sane var Bowies sjette studioalbum.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-042"
+  },
+  {
+    "question": "Hva heter Bambis venn som er en kanin?",
+    "answer": "Trampe",
+    "category": "Film",
+    "difficulty": "easy",
+    "fact": "Trampe er kaninfiguren i Bambi.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-043"
+  },
+  {
+    "question": "Hvilken bygning i Jerusalem står på stedet som i islamsk tradisjon forbindes med Muhammeds himmelreise?",
+    "answer": "Klippedomen",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "fact": "Klippedomen står på Tempelhøyden/Haram al-Sharif.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-044"
+  },
+  {
+    "question": "Hvilken amerikansk general ledet FN-styrkene ved starten av Koreakrigen?",
+    "answer": "Douglas MacArthur",
+    "category": "Historie",
+    "difficulty": "medium",
+    "fact": "MacArthur ledet FN-kommandoen fra 1950.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-045"
+  },
+  {
+    "question": "I hvilken italiensk by ligger Palazzo Vecchio?",
+    "answer": "Firenze",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "Palazzo Vecchio står ved Piazza della Signoria.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-046"
+  },
+  {
+    "question": "Hvilken Elvis-hit fra 1956, skrevet av Leiber og Stoller, handler om en hund?",
+    "answer": "Hound Dog",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "fact": "Sangen var skrevet av Jerry Leiber og Mike Stoller.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-047"
+  },
+  {
+    "question": "Hva heter TV-serien fra 1996–2001 om en gruppe romvesener som utgir seg for å være familien Solomon?",
+    "answer": "3rd Rock from the Sun (Solens tredje stein)",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "fact": "Sitcom med John Lithgow.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-048"
+  },
+  {
+    "question": "Hvilket tidligere fengsel i San Francisco-bukta blir kalt «The Rock»?",
+    "answer": "Alcatraz",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "fact": "Alcatraz ligger på en øy utenfor San Francisco.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-049"
+  },
+  {
+    "question": "Hvilken dataspillfigur heter Rockman i Japan?",
+    "answer": "Mega Man",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "fact": "Mega Man heter Rockman i Japan.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-050"
+  },
+  {
+    "question": "Hva heter wrestleren The Rock egentlig?",
+    "answer": "Dwayne Johnson",
+    "category": "Kjendiser",
+    "difficulty": "easy",
+    "fact": "Dwayne Johnson har også hatt en stor filmkarriere.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-051"
+  },
+  {
+    "question": "Hvem skrev novellen «Sneen på Kilimanjaro»?",
+    "answer": "Ernest Hemingway",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "fact": "Novellen kom i 1936.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-052"
+  },
+  {
+    "question": "Hvilken humanitær organisasjon forbindes med Henri Dunant og slaget ved Solferino i 1859?",
+    "answer": "Røde Kors",
+    "category": "Historie",
+    "difficulty": "medium",
+    "fact": "Dunants opplevelser ved Solferino ledet til Røde Kors-bevegelsen.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-053"
+  },
+  {
+    "question": "Hva kalles en hunnrein?",
+    "answer": "Simle",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "fact": "Hannreinen kalles bukk.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-054"
+  },
+  {
+    "question": "Hvilken by var hovedstad i Nigeria før Abuja overtok i 1991?",
+    "answer": "Lagos",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "Abuja ble hovedstad i 1991.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-055"
+  },
+  {
+    "question": "Hvilken fredsforsker skrev selvbiografien «Johan uten land»?",
+    "answer": "Johan Galtung",
+    "category": "Kjendiser",
+    "difficulty": "medium",
+    "fact": "Johan Galtung var en norsk fredsforsker.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-056"
+  },
+  {
+    "question": "Hvilken frukt er en viktig ingrediens i klassisk waldorfsalat?",
+    "answer": "Eple",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "Waldorfsalat lages tradisjonelt med eple, selleri og valnøtter.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-057"
+  },
+  {
+    "question": "Er faren eller moren esel når avkommet er et muldyr?",
+    "answer": "Faren",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "fact": "Muldyr har esel som far og hest som mor.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-058"
+  },
+  {
+    "question": "Hvor mange vanlige kortstokker brukes normalt i Canasta?",
+    "answer": "To kortstokker (108 kort inkludert jokere)",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "fact": "Canasta spilles normalt med to fulle kortstokker med jokere.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-059"
+  },
+  {
+    "question": "Hvilke to sanger deltok Cliff Richard med i Eurovision i 1968 og 1973?",
+    "answer": "Congratulations og Power to All Our Friends",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "fact": "Cliff Richard representerte Storbritannia begge gangene.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-060"
+  },
+  {
+    "question": "Hva heter filmen fra 2009 der Johnny Depp spiller John Dillinger?",
+    "answer": "Public Enemies",
+    "category": "Film",
+    "difficulty": "medium",
+    "fact": "Michael Mann regisserte filmen.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-061"
+  },
+  {
+    "question": "Hva heter verftet i Gdańsk som ble sentrum for den polske Solidaritet-bevegelsen?",
+    "answer": "Leninverftet (Gdańsk skipsverft)",
+    "category": "Historie",
+    "difficulty": "hard",
+    "fact": "Arbeideropprørene på verftet ble viktige for Solidaritet.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-062"
+  },
+  {
+    "question": "Hva kalles bildekk der kordlagene går radialt og ikke krysser hverandre diagonalt?",
+    "answer": "Radialdekk",
+    "category": "Teknologi",
+    "difficulty": "medium",
+    "fact": "Kordlagene ligger radialt i forhold til rulleretningen.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-063"
+  },
+  {
+    "question": "Er pilsnerøl overgjæret eller undergjæret?",
+    "answer": "Undergjæret",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "fact": "Pilsner er en type lagerøl.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-064"
+  },
+  {
+    "question": "Hva betyr det tyske ordet «Öl»?",
+    "answer": "Olje",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "fact": "Tysk Öl betyr olje, ikke øl.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-065"
+  },
+  {
+    "question": "Hva heter bryggeriet i Flåm i Vestland?",
+    "answer": "Ægir",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "fact": "Ægir bryggeri holder til i Flåm.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-066"
+  },
+  {
+    "question": "Hvilken biffrett er oppkalt etter den russiske Stroganov-familien?",
+    "answer": "Biff Stroganoff",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "fact": "Retten er oppkalt etter familien Stroganov.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-067"
+  },
+  {
+    "question": "Hvilken annen norsk utøver enn Kjetil André Aamodt vant OL-gull i Torino i 2006?",
+    "answer": "Lars Bystøl",
+    "category": "Sport",
+    "difficulty": "medium",
+    "fact": "Lars Bystøl vant gull i normalbakke i skihopp.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-068"
+  },
+  {
+    "question": "I hvilket land er «gho» tradisjonell mannsdrakt?",
+    "answer": "Bhutan",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "fact": "Gho er en tradisjonell bhutansk klesdrakt.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-069"
+  },
+  {
+    "question": "Hvor fant slaget som tradisjonelt knyttes til Harald Hårfagres samling av Norge sted?",
+    "answer": "Hafrsfjord",
+    "category": "Historie",
+    "difficulty": "easy",
+    "fact": "Slaget ved Hafrsfjord er en sentral hendelse i tradisjonen.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-070"
+  },
+  {
+    "question": "Hva er vannets kokepunkt i fahrenheit ved normalt lufttrykk?",
+    "answer": "212 °F",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "fact": "212 grader fahrenheit tilsvarer 100 grader celsius.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-071"
+  },
+  {
+    "question": "Hvem ble utnevnt til TIME Person of the Year i 2008?",
+    "answer": "Barack Obama",
+    "category": "Kjendiser",
+    "difficulty": "easy",
+    "fact": "Obama ble valgt til USAs president i 2008.",
+    "source": "Oreilleys (5), bearbeidet",
+    "id": "oreilleys5-072"
+  }
+];
+const v17Normalize=s=>String(s).normalize("NFKC").toLocaleLowerCase("nb").replace(/[\s?!.,:;«»"'’]+/g," ").trim();
+const v17Existing=new Set(questions.general.map(q=>v17Normalize(q.question)));
+const v17Geography=new Set(questions.geography.map(q=>v17Normalize(q.question)));
+const v17Sports=new Set(questions.sports.map(q=>v17Normalize(q.question)));
+for(const q of v17NewQuestions){const key=v17Normalize(q.question); if(v17Existing.has(key))continue; questions.general.push(q);v17Existing.add(key);if(q.category==="Geografi"&&!v17Geography.has(key)){questions.geography.push(q);v17Geography.add(key);}if(q.category==="Sport"&&!v17Sports.has(key)){questions.sports.push(q);v17Sports.add(key);}}
+
 export const difficultyByIndex={"general": {"easy": [2, 7, 8, 11, 12, 16, 20, 24, 28, 32, 35, 37, 38, 40, 41, 43, 44, 47, 48, 52, 54, 55, 58, 59, 60, 61, 62, 63, 66], "hard": [1, 3, 4, 5, 6, 14, 15, 17, 18, 19, 21, 22, 23, 26, 29, 33, 34, 64]}, "geography": {"easy": [4, 5, 6, 11, 13, 15, 16, 19, 20, 24, 25, 26, 27, 29, 30, 36, 38, 39, 49, 50, 54, 56, 67, 69, 71, 72, 73, 74, 75, 78, 81, 83, 94, 100, 103, 106], "hard": [3, 12, 18, 31, 32, 34, 35, 40, 43, 44, 46, 48, 53, 58, 59, 61, 63, 64, 65, 68, 79, 80, 84, 86, 87, 88, 90, 91, 92, 93, 96, 97, 98, 99, 101, 102, 104, 105]}, "sports": {"easy": [1, 2, 3, 5, 6, 7, 11, 13, 14, 16, 18, 20, 24, 29, 30], "hard": [4, 10, 12, 21, 25, 26]}};
 // Nivåmerking er kuratert for bankens nåværende rekkefølge.
 // Nye importerte spørsmål bør ha difficulty: 'easy'|'medium'|'hard' direkte på objektet.

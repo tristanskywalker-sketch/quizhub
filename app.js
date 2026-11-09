@@ -5,17 +5,23 @@ const HISTORY_KEY='quizhub-question-history-v1';
 let history={};
 try { const loaded=JSON.parse(localStorage.getItem(HISTORY_KEY)||'{}'); if(loaded&&typeof loaded==='object'&&!Array.isArray(loaded))history=loaded; } catch {}
 function questionKey(type,q){
+ // Identisk spørsmål i Allmennquiz, Geografi og Sport får felles identitet.
+ const shared=['general','geography','sports'].includes(type)&&q.category&&q.question;
+ const identity=[shared?'knowledge':type,q.question||'',q.answer||'',q.spotify||'',...(q.clues||[])].join('\u001f');
+ let a=2166136261,b=5381;
+ for(let i=0;i<identity.length;i++){const c=identity.charCodeAt(i);a=Math.imul(a^c,16777619);b=Math.imul(b,33)^c;}
+ return (shared?'knowledge':type)+':'+(a>>>0).toString(36)+':'+(b>>>0).toString(36);
+}
+function legacyQuestionKey(type,q){
  const identity=[type,q.question||'',q.answer||'',q.spotify||'',...(q.clues||[])].join('\u001f');
- // Stabil nøkkel for like spørsmål på tvers av runder og nye versjoner av databasen.
  let a=2166136261,b=5381;
  for(let i=0;i<identity.length;i++){const c=identity.charCodeAt(i);a=Math.imul(a^c,16777619);b=Math.imul(b,33)^c;}
  return type+':'+(a>>>0).toString(36)+':'+(b>>>0).toString(36);
 }
-function seenValue(type,q){return Number(history[questionKey(type,q)]||0);}
+function seenValue(type,q){return Number(history[questionKey(type,q)]||history[legacyQuestionKey(type,q)]||0);}
 function markSeen(type,q){
  if(!q)return;
- const key=questionKey(type,q);
- history[key]=Date.now();
+ history[questionKey(type,q)]=Date.now();
  try{localStorage.setItem(HISTORY_KEY,JSON.stringify(history));}catch(e){console.warn('Kunne ikke lagre spørsmålhistorikk',e);}
 }
 function freshFirst(type,pool,indices){
