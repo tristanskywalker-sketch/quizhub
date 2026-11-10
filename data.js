@@ -3622,3 +3622,1428 @@ const v18Known=new Set(questions.general.map(q=>v18Norm(q.question)));
 const v18Geo=new Set(questions.geography.map(q=>v18Norm(q.question)));
 const v18Sport=new Set(questions.sports.map(q=>v18Norm(q.question)));
 for (const q of v18NewQuestions){const key=v18Norm(q.question);if(v18Known.has(key))continue;questions.general.push(q);v18Known.add(key);if(q.category==="Geografi"&&!v18Geo.has(key)){questions.geography.push(q);v18Geo.add(key)}if(q.category==="Sport"&&!v18Sport.has(key)){questions.sports.push(q);v18Sport.add(key)}}
+
+// QuizHub v19 additions: balanced category expansion
+const v19NewQuestions=[
+  {
+    "question": "Hva heter teaterstykket av Henrik Ibsen der Nora forlater ektemannen Torvald?",
+    "answer": "Et dukkehjem",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter den fattige gutten som ber om mer mat på barnehjemmet i en roman av Charles Dickens?",
+    "answer": "Oliver Twist",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken norsk forfatter skrev Kristin Lavransdatter?",
+    "answer": "Sigrid Undset",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "I hvilket Shakespeare-stykke møter vi Rosencrantz og Guildenstern?",
+    "answer": "Hamlet",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken fransk forfatter skapte figuren Jean Valjean?",
+    "answer": "Victor Hugo",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter familien som bor på adressen 4 Privet Drive i Harry Potter-bøkene?",
+    "answer": "Familien Dumling / Dursley",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken roman av Mary Shelley fra 1818 har en vitenskapsmann som skaper et levende vesen?",
+    "answer": "Frankenstein",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "I hvilken TV-serie møter vi rollefiguren Fleabag, som ofte snakker direkte til kamera?",
+    "answer": "Fleabag",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter familien med patriarken Logan i TV-serien Succession?",
+    "answer": "Roy-familien",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken britisk krimserie følger kriminaletterforskeren John Luther?",
+    "answer": "Luther",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter øya der en gruppe overlevende havner etter en flystyrt i TV-serien Lost?",
+    "answer": "Den navnløse øya / øya i Lost",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "I hvilken sitcom jobber Michael Scott som regionsjef?",
+    "answer": "The Office (US)",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken TV-serie handler om familien Crawley og tjenestefolkene på et britisk gods?",
+    "answer": "Downton Abbey",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter dragen som Daenerys rir på i Game of Thrones?",
+    "answer": "Drogon",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken norsk TV-serie følger ungdommer på Hartvig Nissens skole i Oslo?",
+    "answer": "SKAM",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvem spiller den mannlige hovedrollen i filmen Forrest Gump?",
+    "answer": "Tom Hanks",
+    "category": "Film",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "I hvilken film fra 1999 følger vi en mann som oppdager at tilværelsen hans er en dataskapt simulering?",
+    "answer": "The Matrix",
+    "category": "Film",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter byen som er åsted for handlingen i Disney-filmen Zootropolis?",
+    "answer": "Zootropolis / Zootopia",
+    "category": "Film",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken Pixar-film handler om den eldre mannen Carl Fredricksen som flyr med huset sitt?",
+    "answer": "Se opp / Up",
+    "category": "Film",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter familien som flytter inn i huset i filmen Alene hjemme før Kevin blir glemt igjen?",
+    "answer": "McCallister",
+    "category": "Film",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken klassisk film fra 1942 foregår delvis på Rick's Café Américain?",
+    "answer": "Casablanca",
+    "category": "Film",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken amerikansk musiker ga ut albumet Purple Rain i 1984?",
+    "answer": "Prince",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter den norske duoen bak låten Am I Wrong?",
+    "answer": "Nico & Vinz",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva het vokalisten i bandet Nirvana?",
+    "answer": "Kurt Cobain",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket instrument spilte Louis Armstrong?",
+    "answer": "Trompet",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken svensk DJ hadde en stor hit med Wake Me Up i 2013?",
+    "answer": "Avicii",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken norsk artist ga ut albumet Hunting High and Low som medlem av a-ha?",
+    "answer": "Morten Harket (som medlem av a-ha)",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken revolusjon forbindes med stormingen av Bastillen i 1789?",
+    "answer": "Den franske revolusjon",
+    "category": "Historie",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken by ble delt av en mur fra 1961 til 1989?",
+    "answer": "Berlin",
+    "category": "Historie",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva het romskipet som tok de første menneskene til månen i 1969?",
+    "answer": "Apollo 11",
+    "category": "Historie",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken dronning regjerte Storbritannia gjennom det meste av 1800-tallet?",
+    "answer": "Dronning Victoria",
+    "category": "Historie",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken oldtidssivilisasjon bygde Machu Picchu?",
+    "answer": "Inkariket",
+    "category": "Historie",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvem ble den første presidenten i Sør-Afrika valgt ved allmenne demokratiske valg i 1994?",
+    "answer": "Nelson Mandela",
+    "category": "Historie",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket europeisk land sendte Vasco da Gama på sjøveien til India?",
+    "answer": "Portugal",
+    "category": "Historie",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken norsk konge falt ved slaget på Stiklestad i 1030?",
+    "answer": "Olav Haraldsson / Olav den hellige",
+    "category": "Historie",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken ost brukes vanligvis i gresk salat?",
+    "answer": "Feta",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva slags korn brukes til å lage tradisjonell italiensk risotto?",
+    "answer": "Ris (ofte arborioris)",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva er den viktigste ingrediensen i pesto alla genovese som gir sausen grønnfarge?",
+    "answer": "Basilikum",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter den meksikanske retten med fylt tortilla som ofte brettes eller rulles?",
+    "answer": "Burrito",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter den japanske suppen laget med misopasta?",
+    "answer": "Misosuppe",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken nøtt brukes tradisjonelt i marsipan?",
+    "answer": "Mandel",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken kaffedrikk består tradisjonelt av espresso og varmt vann?",
+    "answer": "Americano",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva kalles det franske bakverket med lag av butterdeig og krem, også kjent som napoleon?",
+    "answer": "Mille-feuille",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter den delen av øyet som regulerer hvor mye lys som slipper inn ved å endre pupillstørrelsen?",
+    "answer": "Regnbuehinnen / iris",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva slags himmellegeme er Halleys?",
+    "answer": "En komet",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken gass utgjør størstedelen av jordens atmosfære?",
+    "answer": "Nitrogen",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva kalles kraften som motvirker bevegelse når to overflater gnis mot hverandre?",
+    "answer": "Friksjon",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket organ filtrerer blodet og produserer urin?",
+    "answer": "Nyrene",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter jordens nærmeste stjerne?",
+    "answer": "Solen",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva er det vanlige navnet på molekylet H₂O₂?",
+    "answer": "Hydrogenperoksid",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva kalles en hannrein?",
+    "answer": "Bukk / reinbukk",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken fugl er kjent for å kunne fly baklengs?",
+    "answer": "Kolibri",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter dyret som både er et australsk pungdyr og kjent for å bære ungen i en pung?",
+    "answer": "Kenguru",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva kalles det når en sommerfugl går fra larve til voksen?",
+    "answer": "Metamorfose / forvandling",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken type dyr er en axolotl?",
+    "answer": "En salamander",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter det største nålevende kattedyret?",
+    "answer": "Tiger",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken fugl er verdens raskeste ved stup?",
+    "answer": "Vandrefalk",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva slags dyr er en narhval?",
+    "answer": "En tannhval",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter fjorden som går inn til Geiranger?",
+    "answer": "Geirangerfjorden",
+    "category": "Norge",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter den tradisjonelle norske osten laget av myse og kjent for brunfargen?",
+    "answer": "Brunost",
+    "category": "Norge",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket norsk fylke ligger Røros i?",
+    "answer": "Trøndelag",
+    "category": "Norge",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter den norske nasjonalparken som inneholder fjellet Galdhøpiggen?",
+    "answer": "Jotunheimen nasjonalpark",
+    "category": "Norge",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken norsk konge var gift med dronning Sonja?",
+    "answer": "Harald V",
+    "category": "Norge",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken norsk forfatter skrev romanen Beatles?",
+    "answer": "Lars Saabye Christensen",
+    "category": "Norge",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva betyr uttrykket carpe diem på norsk?",
+    "answer": "Grip dagen",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva kalles et ord som er motsatt i betydning til et annet?",
+    "answer": "Antonym",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket tegn brukes i skrift for å markere at noen siteres direkte?",
+    "answer": "Anførselstegn",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva kalles uttrykket når to ord uttales likt, men betyr forskjellige ting?",
+    "answer": "Homofoner",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket italiensk uttrykk brukes om sang uten instrumental akkompagnement?",
+    "answer": "A cappella",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket latinsk uttrykk betyr «i siste øyeblikk» og brukes om noe som skjer like før fristen?",
+    "answer": "In extremis",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva kalles et ord dannet av forbokstavene i flere ord som uttales som et eget ord?",
+    "answer": "Akronym",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva betyr uttrykket «å legge hodet på blokken»?",
+    "answer": "Å ta en stor risiko / sette noe på spill",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken svensk møbelkjede ble grunnlagt av Ingvar Kamprad?",
+    "answer": "IKEA",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter filtypen som ofte brukes til dokumenter som skal se like ut på ulike enheter?",
+    "answer": "PDF",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva kalles en enhet som kobler et hjemmenettverk til internett og fordeler trafikken?",
+    "answer": "Ruter / router",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter datakomponenten som ofte kalles datamaskinens hjerne?",
+    "answer": "Prosessor / CPU",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket firma utviklet regnearkprogrammet Excel?",
+    "answer": "Microsoft",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket land kommer den populære spillutvikleren King, som skapte Candy Crush Saga, fra?",
+    "answer": "Sverige",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket spill fra 1980 har en gul figur som spiser prikker i en labyrint?",
+    "answer": "Pac-Man",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket spill lar deg bygge en fornøyelsespark og styre attraksjonene, og har navnet RollerCoaster i tittelen?",
+    "answer": "RollerCoaster Tycoon",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken betegnelse brukes for et trekk i sjakk der kongen ikke kan unngå å bli slått neste trekk?",
+    "answer": "Sjakk matt",
+    "category": "Brettspill",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken meksikansk kunstner er kjent for sine mange selvportretter og sine markante øyenbryn?",
+    "answer": "Frida Kahlo",
+    "category": "Kunst og kultur",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken arkitekt tegnet operahuset i Sydney?",
+    "answer": "Jørn Utzon",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "I hvilken by ligger EU-parlamentets hovedsete for plenarmøter?",
+    "answer": "Strasbourg",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken idrett er forbundet med den berømte gule ledertrøyen i Tour de France?",
+    "answer": "Landeveissykling",
+    "category": "Sport",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter det viktigste trofeet i nordamerikansk ishockeyliga NHL?",
+    "answer": "Stanley Cup",
+    "category": "Sport",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken idrett forbindes med uttrykkene birdie og eagle?",
+    "answer": "Golf",
+    "category": "Sport",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter arenaen i London som er kjent for tennisfinalene i Wimbledon-turneringen?",
+    "answer": "Centre Court",
+    "category": "Sport",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva kalles løpetappen i langrenn der man går med fri teknikk i stedet for klassisk?",
+    "answer": "Skøyting / fristil",
+    "category": "Sport",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "I hvilken idrett er uttrykket touchdown en måte å score poeng på?",
+    "answer": "Amerikansk fotball",
+    "category": "Sport",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken idrett bruker redskapet kø og har konkurranseformen snooker?",
+    "answer": "Biljard / snooker",
+    "category": "Sport",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "I hvilken vinteridrett brukes steiner og koster for å få en stein nærmest midten av en blink?",
+    "answer": "Curling",
+    "category": "Sport",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken idrett kombinerer svømming, sykling og løping?",
+    "answer": "Triatlon",
+    "category": "Sport",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter den store internasjonale sykkelkonkurransen som avsluttes på Champs-Élysées i Paris?",
+    "answer": "Tour de France",
+    "category": "Sport",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter verdens største internasjonale flerdagers sykkelritt for kvinner, som startet i sin nåværende form i 2022?",
+    "answer": "Tour de France Femmes",
+    "category": "Sport",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken musikkgruppe fra Liverpool besto av John, Paul, George og Ringo?",
+    "answer": "The Beatles",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken norsk musiker står bak albumet Fairytales fra 1982?",
+    "answer": "Radka Toneff",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken amerikansk artist er kjent som «The Boss»?",
+    "answer": "Bruce Springsteen",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken sjanger forbindes særlig med artisten Bob Marley?",
+    "answer": "Reggae",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter artisten som ga ut albumet Back to Black i 2006?",
+    "answer": "Amy Winehouse",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken norsk duo står bak låten Elektrisk fra 2015?",
+    "answer": "Marcus & Martinus",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hva heter det berømte konsertstedet i London hvor Proms-konsertene har sin hovedarena?",
+    "answer": "Royal Albert Hall",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken popstjerne spilte hovedrollen i filmen The Bodyguard fra 1992?",
+    "answer": "Whitney Houston",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilket britisk band hadde en hit med Wonderwall i 1995?",
+    "answer": "Oasis",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  },
+  {
+    "question": "Hvilken norsk artist er kjent for sangen Eg ser?",
+    "answer": "Bjørn Eidsvåg",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "QuizHub v19 – redaksjonelt nye spørsmål"
+  }
+];
+const v19Norm=s=>String(s).normalize("NFKC").toLocaleLowerCase("nb").replace(/[\s?!.,:;«»"'’]+/g," ").trim();
+const v19Known=new Set(questions.general.map(q=>v19Norm(q.question)));
+const v19Geo=new Set(questions.geography.filter(Boolean).map(q=>v19Norm(q.question)));
+const v19Sport=new Set(questions.sports.map(q=>v19Norm(q.question)));
+for(const q of v19NewQuestions){const k=v19Norm(q.question);if(v19Known.has(k))continue;questions.general.push(q);v19Known.add(k);if(q.category==="Geografi"&&!v19Geo.has(k)){questions.geography.push(q);v19Geo.add(k);}if(q.category==="Sport"&&!v19Sport.has(k)){questions.sports.push(q);v19Sport.add(k);}}
+// Reparasjon av én tom geografipost. Indeksen beholdes for tidligere nivåmerking.
+if(!questions.geography[106]) questions.geography[106]={question:'Hvilket europeisk land ligger byen Brugge i?',answer:'Belgia',category:'Geografi',difficulty:'easy',source:'QuizHub v19 – kvalitetsretting'};
+// Ett spørsmålsobjekt kan brukes i Allmennquiz og i riktig fagquiz, uten datakopier.
+const v19SharedKey=q=>String(q.question||'').normalize('NFKC').toLocaleLowerCase('nb').replace(/[\s?!.,:;«»"'’]+/g,' ').trim();
+for(const [category,type] of [['Geografi','geography'],['Sport','sports']]) {
+  const existing=new Set(questions[type].filter(Boolean).map(v19SharedKey));
+  for(const q of questions.general)if(q?.category===category){const k=v19SharedKey(q);if(!existing.has(k)){questions[type].push(q);existing.add(k);}}
+}
+
+
+// QuizHub v20 – revisjon av de 75 tidligere «Blandet»-spørsmålene.
+// Primærkategori på allmennspørsmål; flere menyer peker til samme objekt.
+const v20Categories = ["Teknologi", "Norge", "Geografi", "Språk og ord", "Mat og drikke", "Mytologi og religion", "Geografi", "Litteratur", "Historie", "Historie", "Kunst og kultur", "Litteratur", "Geografi", "Geografi", "Geografi", "Historie", "Kunst og kultur", "Geografi", "Naturvitenskap", "Dyr og natur", "Naturvitenskap", "Musikk", "Naturvitenskap", "Naturvitenskap", "Kunst og kultur", "Språk og ord", "Musikk", "Mytologi og religion", "Naturvitenskap", "Historie", "Samfunn og politikk", "Mytologi og religion", "Dyr og natur", "Geografi", "Historie", "Sport", "Historie", "Geografi", "Naturvitenskap", "Geografi", "Geografi", "Geografi", "Mytologi og religion", "Mytologi og religion", "Historie", "Mytologi og religion", "Kunst og kultur", "Historie", "Musikk", "Litteratur", "Litteratur", "Naturvitenskap", "Historie", "Musikk", "Kunst og kultur", "Naturvitenskap", "Musikk", "Kunst og kultur", "Kunst og kultur", "Historie", "Historie", "Kunst og kultur", "Historie", "Sport", "Historie", "Sport", "Musikk", "Litteratur", "Språk og ord", "Naturvitenskap", "Naturvitenskap", "Musikk", "Kunst og kultur", "Dyr og natur", "Geografi"];
+let v20MixedIndex=0;
+for (const q of questions.general){
+  if(q.category==='Blandet'){
+    q.category=v20Categories[v20MixedIndex++] || 'Samfunn og politikk';
+    if(q.question.startsWith('Et år i livet til'))q.questionType='et-aar-i-livet';
+    if(q.question.startsWith('Hvilket år skjedde dette?'))q.questionType='gjett-aaret';
+  }
+}
+if(v20MixedIndex!==75)console.warn('Forventet 75 omklassifiseringer, fant',v20MixedIndex);
+// Én spørsmålsforekomst deles mellom menyvalgene.
+const v20Normalize=s=>String(s||'').normalize('NFKC').toLocaleLowerCase('nb').replace(/[\s?!.,:;«»"'’]+/g,' ').trim();
+const v20GeneralIds=new Set(questions.general.map(q=>v20Normalize(q.question)));
+const v20GeoIds=new Set(questions.geography.map(q=>v20Normalize(q.question)));
+const v20SportIds=new Set(questions.sports.map(q=>v20Normalize(q.question)));
+for(const q of questions.general){
+  const k=v20Normalize(q.question);
+  if(q.category==='Geografi'&&!v20GeoIds.has(k)){questions.geography.push(q);v20GeoIds.add(k);}
+  if(q.category==='Sport'&&!v20SportIds.has(k)){questions.sports.push(q);v20SportIds.add(k);}
+}
+const v20NewQuestions=[
+  {
+    "question": "Hvilken amerikansk politiker ble skutt og drept av Sirhan Sirhan i 1968?",
+    "answer": "Robert F. Kennedy",
+    "category": "Historie",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken konge fikk ifølge Det gamle testamentet stor visdom fra Gud?",
+    "answer": "Salomo",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva heter den danske Oscar-vinnende filmen «Druk» på norsk?",
+    "answer": "Et glass til",
+    "category": "Film",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken norsk psykiater forbindes med utsagnet om en halv promille som filmen «Et glass til» viser til?",
+    "answer": "Finn Skårderud",
+    "category": "Film",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva heter den romerske veien som ble kalt «Veienes dronning»?",
+    "answer": "Via Appia",
+    "category": "Historie",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken europeisk elv ligger klippen Lorelei ved?",
+    "answer": "Rhinen",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket britisk rockeband het opprinnelig The New Yardbirds?",
+    "answer": "Led Zeppelin",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvem var kringkastingssjef i NRK fra 2001 til 2007?",
+    "answer": "John G. Bernander",
+    "category": "Norge",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket band hadde John Fogerty som frontfigur på slutten av 1960-tallet?",
+    "answer": "Creedence Clearwater Revival",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket norsk parti representerte John Alvheim på Stortinget?",
+    "answer": "Fremskrittspartiet (FrP)",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva heter animasjonsfilmen «Chicken Run» fra 2000 på norsk?",
+    "answer": "Flukten fra hønsegården",
+    "category": "Film",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket krydder gir ofte den spanske risretten paella karakteristisk gul farge?",
+    "answer": "Safran",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken plante har sorter som Victoria og Spangsbjerg og brukes blant annet i kompott?",
+    "answer": "Rabarbra",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "I hvilken bydel i Oslo holdt fotballklubben Grane, NM-vinner i 1902, til?",
+    "answer": "Nordstrand (i dagens Oslo)",
+    "category": "Sport",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken fugl heter «Adler» på tysk?",
+    "answer": "Ørn",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken elv danner Victoriafallene på grensen mellom Zambia og Zimbabwe?",
+    "answer": "Zambezi",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva kalles vann som er en blanding av ferskvann og saltvann?",
+    "answer": "Brakkvann",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva er det latinske navnet på det svenske landskapet Skåne?",
+    "answer": "Scania",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken dansk forfatter skrev korte dikt kalt «Gruk» under pseudonymet Kumbel?",
+    "answer": "Piet Hein",
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken gresk øy flytter familien Durrell til i TV-serien om familien?",
+    "answer": "Korfu",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva er den største provinsen i Canada etter areal?",
+    "answer": "Québec",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva het den amerikanske originalserien bak det norske TV-programmet «Homsepatruljen»?",
+    "answer": "Queer Eye for the Straight Guy",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket amerikansk metalband hadde Geoff Tate som vokalist fram til 2012?",
+    "answer": "Queensrÿche",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket bilmerke lager modellen A3?",
+    "answer": "Audi",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva slags drikk er London Pride fra bryggeriet Fuller's?",
+    "answer": "Øl (ale)",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket maleri av Pablo Picasso kom tilbake til Spania i 1981 etter mange år i USA?",
+    "answer": "Guernica",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken Disney-film fikk oppfølgeren «The Return of Jafar» i 1994?",
+    "answer": "Aladdin",
+    "category": "Film",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken verdensreligion har Upanishadene blant sine sentrale tekster?",
+    "answer": "Hinduisme",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "I hvilken amerikansk by har TV-kanalen CNN sitt hovedkontor?",
+    "answer": "Atlanta",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvor mange brikker har hver spiller vanligvis i et standardspill kinasjakk?",
+    "answer": "10",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket kjent maleri av Edvard Munch hadde arbeidstittelen «Fortvilelse»?",
+    "answer": "Skrik",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "I hvilket tiår ble Harald V verdensmester i seiling, før han ble konge?",
+    "answer": "1980-tallet (1987)",
+    "category": "Sport",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Fra hvilket land kommer fotballklubben Inter Club d’Escaldes?",
+    "answer": "Andorra",
+    "category": "Sport",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken fysiker har gitt navn til lysspredningen som gjør himmelen blå?",
+    "answer": "Lord Rayleigh (John William Strutt)",
+    "category": "Naturvitenskap",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken pokervariant gir spillerne fire private kort og krever at nøyaktig to brukes i kombinasjon med tre felleskort?",
+    "answer": "Omaha",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva ble planen om å blokkere sørstatshavner under den amerikanske borgerkrigen kalt?",
+    "answer": "Anakondaplanen",
+    "category": "Historie",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "I hvilket tysk band spiller Tom Kaulitz gitar?",
+    "answer": "Tokio Hotel",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket land kommer artisten Lykke Li fra?",
+    "answer": "Sverige",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken norsk dagligvarekjede ble etablert i Trondheim av I.K. Lykke i 1981?",
+    "answer": "Bunnpris",
+    "category": "Norge",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket europeisk fyrstehus tilhører det norske kongehuset?",
+    "answer": "Glücksburg",
+    "category": "Norge",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva betyr det latinske uttrykket «Fortis fortuna adiuvat» omtrent på norsk?",
+    "answer": "Lykken står den modige bi",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva heter den romerske gudinnen for lykke og skjebnens gunst?",
+    "answer": "Fortuna",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva heter den berømte sjørøverkapteinen som seiler med skuta Klara i en sang av Thorbjørn Egner?",
+    "answer": "Kaptein Sorte Bill",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvem skrev romanen «Silkesvarten» (Black Beauty)?",
+    "answer": "Anna Sewell",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "I hvilken by i Telemark ligger konsertscenen Wrightegaarden?",
+    "answer": "Langesund",
+    "category": "Norge",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva er det ingen forventer, ifølge en kjent Monty Python-sketsj?",
+    "answer": "Den spanske inkvisisjonen",
+    "category": "Film",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva heter den romerske forsvarsmuren som krysser Nord-England og er oppkalt etter en keiser?",
+    "answer": "Hadrians mur",
+    "category": "Historie",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva het den norske revygruppa som ble dannet av Åsleik Engmark og blant andre Trond Hanssen i 1987?",
+    "answer": "Lompelandslaget",
+    "category": "Norge",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken blå vårblomst har det vitenskapelige navnet Hepatica nobilis?",
+    "answer": "Blåveis",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "I fargetrykksystemet CMYK: Hvilken farge står bokstaven C for?",
+    "answer": "Cyan",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva kalles blåfargen som også er kjent som pariserblått og berlinerblått?",
+    "answer": "Preussisk blå",
+    "category": "Kunst og kultur",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvem spiller Serena van der Woodsen i TV-serien Gossip Girl?",
+    "answer": "Blake Lively",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva kalles hunderasen Nova Scotia Duck Tolling Retriever vanligvis med ett kort ord?",
+    "answer": "Toller",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva kalles ikke-angrepspakten mellom Tyskland og Sovjetunionen fra august 1939?",
+    "answer": "Molotov–Ribbentrop-pakten",
+    "category": "Historie",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken norsk komiker og programleder slo gjennom i rapduoen To Små Karer, som vant MGPjr i 2002?",
+    "answer": "Erik Solbakken",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken tysk fotballklubb er kjent for supportertribunen «Die Gelbe Wand»?",
+    "answer": "Borussia Dortmund",
+    "category": "Sport",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket av landene Nord-Korea og Sør-Korea har størst areal?",
+    "answer": "Nord-Korea",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken fransk fotballklubb ble grunnlagt i 1970 og spiller hjemmekampene på Parc des Princes?",
+    "answer": "Paris Saint-Germain (PSG)",
+    "category": "Sport",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "I hvilket hav ligger det store mesoamerikanske barriererevet utenfor Belize og Mexico?",
+    "answer": "Det karibiske hav",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva kalles det når en politiker holder en svært lang tale for å trenere en avstemning?",
+    "answer": "Filibuster",
+    "category": "Språk og ord",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvem komponerte operaen «Perlefiskerne» (Les pêcheurs de perles)?",
+    "answer": "Georges Bizet",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvor mange år er det i et sekel?",
+    "answer": "100",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva het polarskuta Fridtjof Nansen brukte på ferden mot Nordpolen?",
+    "answer": "Fram",
+    "category": "Historie",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken idrett vant brødrene Alf og Frank Hansen OL-gull i?",
+    "answer": "Roing",
+    "category": "Sport",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken norsk stortingspresident satt fra 1973 til 1981 og hadde etternavnet Hansen?",
+    "answer": "Guttorm Hansen",
+    "category": "Norge",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvem skrev romanen «Salme ved reisens slutt»?",
+    "answer": "Erik Fosnes Hansen",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket bilmerke produserer modellen Impreza?",
+    "answer": "Subaru",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken tysk forfatter skrev diktet «Erlkönig»?",
+    "answer": "Johann Wolfgang von Goethe",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva heter frihetsgudinnen i romersk mytologi?",
+    "answer": "Libertas",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Mellom Christiania (Oslo) og hvilken annen by gikk Norges første telegraflinje i 1855?",
+    "answer": "Drammen",
+    "category": "Norge",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva er det vitenskapelige navnet på sørlys?",
+    "answer": "Aurora australis",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva heter trollmannen i Asterix-tegneseriene?",
+    "answer": "Miraculix",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "I hvilket land ligger byen Batman?",
+    "answer": "Tyrkia",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket dyr har artsnavnet Rattus norvegicus?",
+    "answer": "Brunrotte",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvem av de to rapperne Tupac Shakur og The Notorious B.I.G. ble drept først?",
+    "answer": "Tupac Shakur",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "I hvilket nåværende land fant sepoyopprøret sted i 1857?",
+    "answer": "India",
+    "category": "Historie",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvem var USAs president mellom Grover Clevelands to presidentperioder?",
+    "answer": "Benjamin Harrison",
+    "category": "Historie",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "I hvilket land ligger St. Olafs slott (Olavinlinna)?",
+    "answer": "Finland",
+    "category": "Geografi",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva heter Sveriges sentralbank, som regnes som verdens eldste fortsatt eksisterende sentralbank?",
+    "answer": "Sveriges Riksbank",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva heter Japan på japansk (latinsk transkripsjon)?",
+    "answer": "Nihon eller Nippon",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilket tysk band hadde en hit med «Big in Japan» i 1984?",
+    "answer": "Alphaville",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva kalles de 47 administrative hoveddelene Japan er delt inn i?",
+    "answer": "Prefekturer",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva het slagskipet der Japan formelt undertegnet kapitulasjonen i september 1945?",
+    "answer": "USS Missouri",
+    "category": "Historie",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "I hvilket land ligger Perito Moreno-breen?",
+    "answer": "Argentina",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva heter treningskonseptet med åtte kilometer løping og åtte funksjonelle styrkeøvelser?",
+    "answer": "HYROX",
+    "category": "Sport",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva kalles bakterier som kan leve uten oksygen?",
+    "answer": "Anaerobe bakterier",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva het oljeplattformen som eksploderte i Nordsjøen i 1988?",
+    "answer": "Piper Alpha",
+    "category": "Historie",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Fra hvilket land kommer vinen Vinho Verde?",
+    "answer": "Portugal",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hvilken svensk popgruppe hadde navnet Festfolket tidlig i karrieren?",
+    "answer": "ABBA",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "source": "Oreilleys (6), bearbeidet"
+  },
+  {
+    "question": "Hva het den palestinske gruppen som stod bak terrorangrepet mot israelske OL-utøvere i München i 1972?",
+    "answer": "Svart september",
+    "category": "Historie",
+    "difficulty": "hard",
+    "source": "Oreilleys (6), bearbeidet"
+  }
+];
+let v20Added=0;
+for(const q of v20NewQuestions){
+ const k=v20Normalize(q.question);
+ if(v20GeneralIds.has(k))continue;
+ // Identifikator basert på kilde, ikke spørsmålsnummer i den nåværende listen.
+ q.id='oreilleys6-'+String(++v20Added).padStart(3,'0');
+ questions.general.push(q);v20GeneralIds.add(k);
+ if(q.category==='Geografi'&&!v20GeoIds.has(k)){questions.geography.push(q);v20GeoIds.add(k);}
+ if(q.category==='Sport'&&!v20SportIds.has(k)){questions.sports.push(q);v20SportIds.add(k);}
+}
+
+for(const q of questions.general){if(q.question.includes("Kehlsteinhaus") && q.category==="Norge")q.category="Historie";}
+
+// Sluttføring av kategorioppryddingen: to tidligere samlemerker.
+for(const q of questions.general){
+ if(q.category==='Spill og underholdning')q.category='Brettspill';
+}
