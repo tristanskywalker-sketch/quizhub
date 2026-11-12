@@ -1,4 +1,4 @@
-import {quizzes,questions,getDifficulty} from './data.js';
+import {quizzes,questions,getDifficulty} from './data.js?v=22';
 const KEY='quizhub-save-v1'; // Behold gamle spillere og lagrede poeng ved oppdatering
 // Separat historikk: beholdes også når spillere og poengtavle nullstilles.
 const HISTORY_KEY='quizhub-question-history-v1';
