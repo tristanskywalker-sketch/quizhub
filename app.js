@@ -1,4 +1,4 @@
-import {quizzes,questions,getDifficulty} from './data.js?v=22';
+import {quizzes,questions,getDifficulty} from './data.js?v=24';
 const KEY='quizhub-save-v1'; // Behold gamle spillere og lagrede poeng ved oppdatering
 // Separat historikk: beholdes også når spillere og poengtavle nullstilles.
 const HISTORY_KEY='quizhub-question-history-v1';
@@ -38,6 +38,10 @@ if(state.quiz==='career'){state.category='';state.deck=null;state.index=0;state.
 if(state.quiz==='country'){state.quiz=null;state.category='';state.started=true;}
 // Pågående økter fra tidligere versjoner kan spilles ferdig med gammel rekkefølge.
 if(state.quiz&&state.category!==undefined&&state.index>0&&!Array.isArray(state.deck)){const old=(questions[state.quiz]||[]).filter(q=>!['fiveone','career'].includes(state.quiz)||state.category==='Blandet'||q.category===state.category);state.deck=old.map((_,i)=>i);}
+// Migrering til én felles faktabank: gamle indeksbaserte kortstokker er ikke kompatible.
+if(['general','geography','sports'].includes(state.quiz) && state.bankSchema!==24){state.deck=null;state.index=0;state.revealed=false;state.level='';}
+state.bankSchema=24;
+try{localStorage.setItem(KEY,JSON.stringify(state));}catch{}
 const app=document.querySelector('#app');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function save(){localStorage.setItem(KEY,JSON.stringify(state));}
