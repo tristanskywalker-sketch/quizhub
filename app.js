@@ -98,7 +98,7 @@ const header=()=>`<header class="top"><div class="logo">QUIZ<b>HUB</b><div class
 const back=(action='home')=>`<button class="back" data-action="${action}">← Tilbake</button>`;
 const quizzTiles=()=>`<div class="grid">${quizzes.map(q=>`<button class="tile" data-action="choose" data-id="${q.id}"><div class="em">${q.emoji}</div><strong>${esc(q.name)}</strong><small>${esc(q.subtitle)}</small>${q.id==='career'?`<small>${questions.career.length} spillere i én samlet bank</small>`:''}</button>`).join('')}</div>`;
 const board=()=>`<table class="board"><thead><tr><th>Spiller</th><th>Poeng</th></tr></thead><tbody>${[...state.players].sort((a,b)=>(state.scores[b]||0)-(state.scores[a]||0)).map((p,i)=>`<tr><td>${i+1}. ${esc(p)}</td><td><strong>${state.scores[p]||0}</strong></td></tr>`).join('')}</tbody></table>`;
-function home(){return `<div class="eyebrow">Velkommen til QuizHub</div><h1 class="heading">Hva skal vi spille<br>i dag?</h1><p class="sub">Spill én quiz, eller samle gjengen til en hel quizkveld med felles poengtavle.</p><div class="modes"><button class="mode" data-action="online"><div>⚔️</div><strong>Utfordre venner</strong><small>Online · svar når du vil innen fristen.</small></button><button class="mode" data-action="setmode" data-mode="single"><div>🎯</div><strong>Enkeltquiz</strong><small>Spill én quiz med separat resultat.</small></button><button class="mode" data-action="setmode" data-mode="night"><div>🏆</div><strong>Quizkveld</strong><small>Flere quizrunder – samme poengtavle.</small></button></div><div class="banner"><strong>Seks quiztyper er klare!</strong><p>5–1, geografi-funfacts, allmennquiz, sportsquiz, fotballkarriere og musikkquiz. Eksempelspørsmål følger med.</p></div>${state.mode?`<button class="btn secondary" data-action="resume">Fortsett forrige spill</button>`:''}`;}
+function home(){return `<div class="eyebrow">Velkommen til QuizHub</div><h1 class="heading">Hva skal vi spille<br>i dag?</h1><p class="sub">Spill én quiz, eller samle gjengen til en hel quizkveld med felles poengtavle.</p><div class="modes"><button class="mode" data-action="online"><div>⚔️</div><strong>Utfordre venner</strong><small>Online · svar når du vil innen fristen.</small></button><button class="mode" data-action="setmode" data-mode="single"><div>🎯</div><strong>Enkeltquiz</strong><small>Spill én quiz med separat resultat.</small></button><button class="mode" data-action="setmode" data-mode="night"><div>🏆</div><strong>Quizkveld</strong><small>Flere quizrunder – samme poengtavle.</small></button></div><div class="actions"><button type="button" class="btn secondary" data-action="sharehub">🔗 Inviter en venn til QuizHub</button></div><div class="banner"><strong>Seks quiztyper er klare!</strong><p>5–1, geografi-funfacts, allmennquiz, sportsquiz, fotballkarriere og musikkquiz. Eksempelspørsmål følger med.</p></div>${state.mode?`<button class="btn secondary" data-action="resume">Fortsett forrige spill</button>`:''}`;}
 function setup(){return `${back()}<div class="eyebrow">${state.mode==='night'?'Quizkveld':'Enkeltquiz'}</div><h1 class="heading">Hvem er med?</h1><p class="sub">Registrer spillerne. Quizmaster kan også delta, og fasiten forblir skjult til dere åpner den.</p><div class="panel"><h2>Spillere</h2><form id="addplayer" class="field"><input id="playername" placeholder="Skriv navn" maxlength="30" autocomplete="off" aria-label="Spillernavn" required><button class="btn" type="submit">Legg til</button></form><div>${state.players.map(p=>`<span class="pill">${esc(p)} <button data-action="remove" data-id="${encodeURIComponent(p)}" aria-label="Fjern ${esc(p)}">×</button></span>`).join('')||'<p class="empty">Ingen spillere lagt til ennå.</p>'}</div></div><div class="actions"><button class="btn" data-action="start" ${!state.players.length?'disabled':''}>Velg quiz →</button></div><p class="notice">Poeng lagres på denne enheten. Dette er laget for én felles skjerm, ikke direkte synkronisering mellom ulike telefoner.</p>`;}
 function selection(){return `${back('setup')}<div class="eyebrow">${state.mode==='night'?'Quizkveld':'Enkeltquiz'}</div><h1 class="heading">Velg quiz</h1>${state.mode==='night'?`<div class="panel"><div class="roundhead"><h2>🏆 Samlet poengtavle</h2><span class="tiny">${state.rounds.length} fullførte runder</span></div>${board()}<button class="btn ghost" data-action="finish">Avslutt quizkvelden</button></div>`:''}${quizzTiles()}<p class="notice">Spørsmålsbanken er utvidet. De gamle quizprosjektenes komplette databaser er ikke importert ennå.</p>`;}
 function categorySelection(){
@@ -153,12 +153,21 @@ function dispatch(action,el){switch(action){
  case 'online': {
   // Vis respons med én gang. Også nettverks-/importfeil må være synlige.
   app.innerHTML = header() + `<main class="online-layout"><h1 class="heading">Utfordre venner</h1><div class="panel"><p role="status">Åpner online-utfordringer …</p></div></main>`;
-  import('./online.js?v=261').catch(error=>{
+  import('./online.js?v=262').then(module=>module.startOnline()).catch(error=>{
     console.error('QuizHub: kunne ikke starte online-modus',error);
     const message=esc(error?.message||'Ukjent feil');
     app.innerHTML=header()+`<main class="online-layout"><h1 class="heading">Online-utfordringer kunne ikke åpnes</h1><div class="panel"><p>Nettsiden klarte ikke å laste inn online-delen.</p><p class="notice" role="alert">Feil: ${message}</p><p>Kontroller at <code>online.js</code> og <code>config.js</code> ligger på GitHub og at Firebase er tilgjengelig.</p><div class="actions"><button class="btn" data-action="online">Prøv igjen</button><button class="btn secondary" data-action="home">Tilbake</button></div></div></main>`;
   });
   break;
+ }
+ case 'sharehub': {
+  const url=new URL(window.location.pathname,window.location.origin);url.searchParams.set('online','1');
+  const text='Bli med på QuizHub! Registrer deg gratis, så kan vi utfordre hverandre i quiz.';
+  (async()=>{try{
+   if(navigator.share){await navigator.share({title:'QuizHub',text,url:url.toString()});return;}
+   if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url.toString());alert('Lenke til QuizHub kopiert. Del den med venner!');return;}
+   window.prompt('Kopier invitasjonslenken:',url.toString());
+  }catch(e){if(e?.name!=='AbortError')window.prompt('Kopier invitasjonslenken:',url.toString());}})();break;
  }
  case 'home':update({mode:null,quiz:null,complete:false});break;
  case 'setmode':state=blank();update({mode:el.dataset.mode});break;
@@ -196,3 +205,8 @@ document.addEventListener('submit',e=>{if(e.target.id!=='addplayer')return;e.pre
 document.addEventListener('change',e=>{if(e.target.matches('[data-award-player]')){state.awarded[decodeURIComponent(e.target.dataset.awardPlayer)]=Number(e.target.value);save();}});
 if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{}));
 render();
+// Åpne online-delen automatisk ved lenke fra en venn, også før registrering.
+const startupParams=new URL(window.location.href).searchParams;
+if(startupParams.has('join')||startupParams.get('online')==='1'){
+ dispatch('online',null);
+}
