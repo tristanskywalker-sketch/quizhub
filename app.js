@@ -150,7 +150,16 @@ function results(){return `${back('selection')}<div class="eyebrow">${state.mode
 function render(){app.innerHTML=header()+(state.complete?results():!state.mode?home():state.quiz?(state.quiz==='fiveone'&&!state.category?categorySelection():leveled.includes(state.quiz)&&!state.level?levelSelection():!Array.isArray(state.deck)?roundSetup():play()):state.players.length&&state.started?selection():setup());}
 function resetQuestion(){state.index=0;state.revealed=false;state.clue=0;state.selected=null;state.awarded={};state.locks={};state.category='';state.deck=null;state.level='';state.complete=false;}
 function dispatch(action,el){switch(action){
- case 'online':import('./online.js?v=26');break;
+ case 'online': {
+  // Vis respons med én gang. Også nettverks-/importfeil må være synlige.
+  app.innerHTML = header() + `<main class="online-layout"><h1 class="heading">Utfordre venner</h1><div class="panel"><p role="status">Åpner online-utfordringer …</p></div></main>`;
+  import('./online.js?v=261').catch(error=>{
+    console.error('QuizHub: kunne ikke starte online-modus',error);
+    const message=esc(error?.message||'Ukjent feil');
+    app.innerHTML=header()+`<main class="online-layout"><h1 class="heading">Online-utfordringer kunne ikke åpnes</h1><div class="panel"><p>Nettsiden klarte ikke å laste inn online-delen.</p><p class="notice" role="alert">Feil: ${message}</p><p>Kontroller at <code>online.js</code> og <code>config.js</code> ligger på GitHub og at Firebase er tilgjengelig.</p><div class="actions"><button class="btn" data-action="online">Prøv igjen</button><button class="btn secondary" data-action="home">Tilbake</button></div></div></main>`;
+  });
+  break;
+ }
  case 'home':update({mode:null,quiz:null,complete:false});break;
  case 'setmode':state=blank();update({mode:el.dataset.mode});break;
  case 'resume':render();break;

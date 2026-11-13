@@ -35,3 +35,8 @@
 .ol-answer{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;padding:8px 0;border-top:1px dotted #ccd4e1;font-size:14px}
 .ol-answer .btn{padding:6px 9px;font-size:12px}
 @media(max-width:600px){.ol-challenge{flex-direction:column;align-items:stretch}.ol-challenge>.pill{align-self:flex-start}}
+
+/* v26.1: sikre at logo og undertittel ikke kolliderer */
+.top .logo {display:flex; flex-direction:column; align-items:flex-start; line-height:1.1; min-width:0}
+.top .logo .tag {letter-spacing:normal; font-weight:500; line-height:1.35; margin-top:7px; overflow-wrap:anywhere}
+.top > .btn {flex-shrink:0}
