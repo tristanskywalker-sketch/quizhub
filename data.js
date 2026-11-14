@@ -559,7 +559,7 @@ export const factBank = [
     "answer": "Baskerne",
     "difficulty": "hard",
     "fact": "Euskara er navnet på det baskiske språket.",
-    "category": "Sport",
+    "category": "Språk og ord",
     "id": "qh-871b40b9ede3"
   },
   {
@@ -567,7 +567,7 @@ export const factBank = [
     "answer": "Marianne",
     "difficulty": "medium",
     "fact": "Marianne ble et republikansk symbol etter revolusjonen.",
-    "category": "Sport",
+    "category": "Samfunn og politikk",
     "id": "qh-69d7f71512e8"
   },
   {
@@ -735,7 +735,7 @@ export const factBank = [
     "answer": "Olav den hellige",
     "difficulty": "medium",
     "fact": "Kirken er kjent som St. Olaf’s Church.",
-    "category": "Sport",
+    "category": "Historie",
     "id": "qh-db171585c463"
   },
   {
@@ -1136,7 +1136,7 @@ export const factBank = [
       "«Gangnam Style» ble et internasjonalt fenomen.",
       "Sommer-OL ble arrangert i London."
     ],
-    "category": "Sport",
+    "category": "Historie",
     "questionType": "gjett-aaret",
     "id": "qh-914dd0784021"
   },
@@ -3936,33 +3936,6 @@ export const factBank = [
     "id": "qh-3fbbed42e014"
   },
   {
-    "question": "Hvor mange spillere fra hvert lag er på banen i vanlig elleverfotball?",
-    "answer": "11",
-    "category": "Sport",
-    "difficulty": "easy",
-    "fact": "",
-    "source": "QuizHub original – lett/middels",
-    "id": "qh-5dcbb37858cd"
-  },
-  {
-    "question": "Hvilken idrett bruker puck og køller på is?",
-    "answer": "Ishockey",
-    "category": "Sport",
-    "difficulty": "easy",
-    "fact": "",
-    "source": "QuizHub original – lett/middels",
-    "id": "qh-1428e189b461"
-  },
-  {
-    "question": "Hvilken idrett er Casper Ruud kjent for?",
-    "answer": "Tennis",
-    "category": "Sport",
-    "difficulty": "easy",
-    "fact": "",
-    "source": "QuizHub original – lett/middels",
-    "id": "qh-f83267c543be"
-  },
-  {
     "question": "Hva er lengden på et maratonløp, avrundet til én desimal i kilometer?",
     "answer": "42,2 kilometer",
     "category": "Sport",
@@ -3979,24 +3952,6 @@ export const factBank = [
     "fact": "",
     "source": "QuizHub original – lett/middels",
     "id": "qh-f3991219677b"
-  },
-  {
-    "question": "Hvilken idrett hadde Michael Jordan som verdensstjerne?",
-    "answer": "Basketball",
-    "category": "Sport",
-    "difficulty": "medium",
-    "fact": "",
-    "source": "QuizHub original – lett/middels",
-    "id": "qh-22612177ce7e"
-  },
-  {
-    "question": "Hvor mange poeng gir en scoring fra straffemerket i håndball?",
-    "answer": "Ett poeng",
-    "category": "Sport",
-    "difficulty": "medium",
-    "fact": "",
-    "source": "QuizHub original – lett/middels",
-    "id": "qh-01ad89ccfc6d"
   },
   {
     "question": "Hvilke to land ligger på hver sin side av Øresund?",
@@ -4887,28 +4842,12 @@ export const factBank = [
     "id": "qh-658cc134d305"
   },
   {
-    "question": "Hvilken idrett er forbundet med den berømte gule ledertrøyen i Tour de France?",
-    "answer": "Landeveissykling",
-    "category": "Sport",
-    "difficulty": "easy",
-    "source": "QuizHub v19 – redaksjonelt nye spørsmål",
-    "id": "qh-a6e8bde44057"
-  },
-  {
     "question": "Hva heter det viktigste trofeet i nordamerikansk ishockeyliga NHL?",
     "answer": "Stanley Cup",
     "category": "Sport",
     "difficulty": "easy",
     "source": "QuizHub v19 – redaksjonelt nye spørsmål",
     "id": "qh-b6842f744ab0"
-  },
-  {
-    "question": "Hvilken idrett forbindes med uttrykkene birdie og eagle?",
-    "answer": "Golf",
-    "category": "Sport",
-    "difficulty": "easy",
-    "source": "QuizHub v19 – redaksjonelt nye spørsmål",
-    "id": "qh-6d12bbdf4314"
   },
   {
     "question": "Hva heter arenaen i London som er kjent for tennisfinalene i Wimbledon-turneringen?",
@@ -4919,28 +4858,12 @@ export const factBank = [
     "id": "qh-d11abca09808"
   },
   {
-    "question": "Hva kalles løpetappen i langrenn der man går med fri teknikk i stedet for klassisk?",
-    "answer": "Skøyting / fristil",
-    "category": "Sport",
-    "difficulty": "easy",
-    "source": "QuizHub v19 – redaksjonelt nye spørsmål",
-    "id": "qh-943e673d8e34"
-  },
-  {
     "question": "I hvilken idrett er uttrykket touchdown en måte å score poeng på?",
     "answer": "Amerikansk fotball",
     "category": "Sport",
     "difficulty": "easy",
     "source": "QuizHub v19 – redaksjonelt nye spørsmål",
     "id": "qh-92096a5602c3"
-  },
-  {
-    "question": "Hvilken idrett bruker redskapet kø og har konkurranseformen snooker?",
-    "answer": "Biljard / snooker",
-    "category": "Sport",
-    "difficulty": "easy",
-    "source": "QuizHub v19 – redaksjonelt nye spørsmål",
-    "id": "qh-9475cc29b7f2"
   },
   {
     "question": "I hvilken vinteridrett brukes steiner og koster for å få en stein nærmest midten av en blink?",
@@ -6477,22 +6400,6 @@ export const factBank = [
     "difficulty": "medium",
     "source": "QuizHub v21 – nye originalspørsmål",
     "id": "qh21-094"
-  },
-  {
-    "question": "I hvilken idrett konkurrerer man om Stanley Cup?",
-    "answer": "Ishockey",
-    "category": "Sport",
-    "difficulty": "easy",
-    "source": "QuizHub v21 – nye originalspørsmål",
-    "id": "qh21-095"
-  },
-  {
-    "question": "Hvor mange poeng gir et vellykket straffekast i basketball?",
-    "answer": "1",
-    "category": "Sport",
-    "difficulty": "medium",
-    "source": "QuizHub v21 – nye originalspørsmål",
-    "id": "qh21-096"
   },
   {
     "question": "Hva kalles det når en bowler velter alle ti kjeglene på første kast i en runde?",
@@ -9509,13 +9416,6 @@ export const factBank = [
     "id": "qh-4e177c760658"
   },
   {
-    "question": "Hvor mange spillere har ett lag på banen i vanlig elleverfotball?",
-    "answer": "11",
-    "id": "qh-7651ddc46cb9",
-    "category": "Sport",
-    "difficulty": "easy"
-  },
-  {
     "question": "Hvilket land vant herre-VM i fotball i 2022?",
     "answer": "Argentina",
     "id": "qh-daa055e084e9",
@@ -9523,25 +9423,12 @@ export const factBank = [
     "difficulty": "easy"
   },
   {
-    "question": "Hvor mange ringer er det i OL-symbolet?",
-    "answer": "5",
-    "id": "qh-834f6502d216",
-    "category": "Sport",
-    "difficulty": "easy"
-  },
-  {
-    "question": "Hva heter den norske skiskytteren som vant åtte olympiske gull?",
+    "question": "Hvilken norsk skiskytter har vunnet flest OL-gull gjennom tidene (åtte)?",
     "answer": "Ole Einar Bjørndalen",
     "id": "qh-0e7d593d129d",
     "category": "Sport",
-    "difficulty": "hard"
-  },
-  {
-    "question": "Hvilken idrett forbindes med Wimbledon?",
-    "answer": "Tennis",
-    "id": "qh-9f14e05f36b7",
-    "category": "Sport",
-    "difficulty": "easy"
+    "difficulty": "medium",
+    "fact": "Ole Einar Bjørndalen tok åtte OL-gull i skiskyting. Kilde: Olympedia."
   },
   {
     "question": "Hvilken fotballklubb spiller hjemmekampene sine på Anfield?",
@@ -9551,23 +9438,9 @@ export const factBank = [
     "difficulty": "easy"
   },
   {
-    "question": "Hvor lang er et maraton, målt i kilometer?",
-    "answer": "42,195 km",
-    "id": "qh-7f7fbd99dde6",
-    "category": "Sport",
-    "difficulty": "easy"
-  },
-  {
     "question": "Hvilket land arrangerte sommer-OL i 2016?",
     "answer": "Brasil",
     "id": "qh-f8265a157a4e",
-    "category": "Sport",
-    "difficulty": "medium"
-  },
-  {
-    "question": "Hva heter trofeet vinneren av NHL-sluttspillet mottar?",
-    "answer": "Stanley Cup",
-    "id": "qh-8ecf7a68bcd8",
     "category": "Sport",
     "difficulty": "medium"
   },
@@ -9591,13 +9464,6 @@ export const factBank = [
     "id": "qh-4eb69e92b931",
     "category": "Sport",
     "difficulty": "hard"
-  },
-  {
-    "question": "I hvilken idrett brukes uttrykket «love» for null poeng?",
-    "answer": "Tennis",
-    "id": "qh-0eb4d54202c6",
-    "category": "Sport",
-    "difficulty": "easy"
   },
   {
     "question": "Hvor mange spillere har et håndballag på banen når laget er fulltallig?",
@@ -9635,13 +9501,6 @@ export const factBank = [
     "difficulty": "medium"
   },
   {
-    "question": "Hvilken idrett er Usain Bolt mest kjent for?",
-    "answer": "Friidrett (sprint)",
-    "id": "qh-6a8a9c156a45",
-    "category": "Sport",
-    "difficulty": "easy"
-  },
-  {
     "question": "Hvilket land vant herre-EM i fotball i 1992?",
     "answer": "Danmark",
     "id": "qh-fbaa9d2a5eb9",
@@ -9649,25 +9508,11 @@ export const factBank = [
     "difficulty": "hard"
   },
   {
-    "question": "Hvilken norsk utøver vant OL-gull på 400 meter hekk i Tokyo 2021?",
-    "answer": "Karsten Warholm",
-    "id": "qh-3e4615aa6711",
-    "category": "Sport",
-    "difficulty": "medium"
-  },
-  {
     "question": "Hva heter tennisturneringen som spilles på grus i Paris?",
     "answer": "Roland-Garros (French Open)",
     "id": "qh-c97ddd030e42",
     "category": "Sport",
     "difficulty": "medium"
-  },
-  {
-    "question": "Hvilken idrett har posisjonene point guard og center?",
-    "answer": "Basketball",
-    "id": "qh-d261c3c05902",
-    "category": "Sport",
-    "difficulty": "easy"
   },
   {
     "question": "Hvilken klubb vant Champions League-finalen i 2005 etter å ha ligget under 0–3?",
@@ -9696,20 +9541,6 @@ export const factBank = [
     "id": "qh-7ec4ecfd6549",
     "category": "Sport",
     "difficulty": "medium"
-  },
-  {
-    "question": "Hvor mange spillere er det på banen for hvert lag i basketball?",
-    "answer": "Fem",
-    "id": "qh-1473190f6656",
-    "category": "Sport",
-    "difficulty": "easy"
-  },
-  {
-    "question": "I hvilken idrett konkurrerer man om den gule ledertrøyen i Tour de France?",
-    "answer": "Landeveissykling",
-    "id": "qh-ccbccbecd9e6",
-    "category": "Sport",
-    "difficulty": "easy"
   },
   {
     "id": "qh24-1142f302a181b5",
@@ -9840,6 +9671,334 @@ export const factBank = [
     "category": "Geografi",
     "difficulty": "medium",
     "source": "Brukerens notater 13.11.2026"
+  },
+  {
+    "question": "Hvem var landslagstrener da Hellas overraskende vant fotball-EM i 2004?",
+    "answer": "Otto Rehhagel",
+    "fact": "Tyskeren ledet Hellas til 1–0 over Portugal i finalen i 2004.",
+    "category": "Sport",
+    "id": "qh-sport28-88a209e92bfc",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilken gresk spiller scoret kampens eneste mål i EM-finalen mot Portugal i 2004?",
+    "answer": "Angelos Charisteas",
+    "fact": "Charisteas scoret i 57. minutt i finalen i 2004.",
+    "category": "Sport",
+    "id": "qh-sport28-2d520fdbf9fa",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Hvem scoret Portugals vinnermål i EM-finalen mot Frankrike i 2016?",
+    "answer": "Éder",
+    "fact": "Éder scoret i ekstraomgangene i finalen i 2016.",
+    "category": "Sport",
+    "id": "qh-sport28-1cb8ed2c5127",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvem scoret vinnermålet for Spania i VM-finalen i fotball mot Nederland i 2010?",
+    "answer": "Andrés Iniesta",
+    "fact": "Iniesta scoret i ekstraomgangene i finalen i Johannesburg.",
+    "category": "Sport",
+    "id": "qh-sport28-06a05685dd6f",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvem scoret på straffe da Norge slo Brasil 2–1 i fotball-VM i 1998?",
+    "answer": "Kjetil Rekdal",
+    "fact": "Rekdal scoret Norges vinnermål fra straffemerket i Marseille.",
+    "category": "Sport",
+    "id": "qh-sport28-4024044c34e1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilket afrikansk landslag slo regjerende mester Frankrike i åpningskampen av fotball-VM 2002?",
+    "answer": "Senegal",
+    "fact": "Senegal vant 1–0 over Frankrike i Seoul.",
+    "category": "Sport",
+    "id": "qh-sport28-27f58d290871",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvem var Danmarks keeper da landet vant fotball-EM i 1992?",
+    "answer": "Peter Schmeichel",
+    "fact": "Schmeichel sto i mål da Danmark slo Tyskland i finalen.",
+    "category": "Sport",
+    "id": "qh-sport28-103d0fc2417a",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvem scoret Chelseas avgjørende straffespark i Champions League-finalen mot Bayern München i 2012?",
+    "answer": "Didier Drogba",
+    "fact": "Drogba satte den avgjørende straffen i München.",
+    "category": "Sport",
+    "id": "qh-sport28-ef8fc2f6ba7a",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvem scoret vinnermålet for Bayern München mot Borussia Dortmund i Champions League-finalen i 2013?",
+    "answer": "Arjen Robben",
+    "fact": "Robben avgjorde finalen på Wembley i 89. minutt.",
+    "category": "Sport",
+    "id": "qh-sport28-7bec78641da7",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilket landslag tok sin første VM-tittel i kvinnefotball i 2011 etter finaleseier over USA?",
+    "answer": "Japan",
+    "fact": "Japan vant etter straffesparkkonkurranse i Frankfurt.",
+    "category": "Sport",
+    "id": "qh-sport28-58142f0ee99d",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilken norsk spiller scoret gullmålet i OL-finalen i fotball for kvinner mot USA i 2000?",
+    "answer": "Dagny Mellgren",
+    "fact": "Mellgren scoret i ekstraomgangene i Sydney.",
+    "category": "Sport",
+    "id": "qh-sport28-1135ae77cd68",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Hvilket landslag møtte Norge i finalen i håndball for kvinner under OL i Beijing 2008?",
+    "answer": "Russland",
+    "fact": "Norge slo Russland 34–27 i OL-finalen i 2008.",
+    "category": "Sport",
+    "id": "qh-sport28-4cd53192ecca",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvem ble første britiske sammenlagtvinner av Tour de France i 2012?",
+    "answer": "Bradley Wiggins",
+    "fact": "Wiggins vant Tour de France i 2012 for Team Sky.",
+    "category": "Sport",
+    "id": "qh-sport28-7eac74945ab1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilken syklist ble den første colombianeren til å vinne Tour de France sammenlagt i 2019?",
+    "answer": "Egan Bernal",
+    "fact": "Bernal vant Tour de France i 2019.",
+    "category": "Sport",
+    "id": "qh-sport28-c1b706564c64",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilken australsk syklist vant Tour de France sammenlagt i 2011?",
+    "answer": "Cadel Evans",
+    "fact": "Evans ble første australske sammenlagtvinner.",
+    "category": "Sport",
+    "id": "qh-sport28-5ab56db7ab41",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilken slovakisk syklist vant VM i landeveissykling tre år på rad fra 2015 til 2017?",
+    "answer": "Peter Sagan",
+    "fact": "Sagan vant VM-fellesstarten i 2015, 2016 og 2017.",
+    "category": "Sport",
+    "id": "qh-sport28-f73f70b7334e",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Hvilken fører ble verdensmester i Formel 1 i 2007, foran Hamilton og Alonso?",
+    "answer": "Kimi Räikkönen",
+    "fact": "Räikkönen vant VM i 2007 for Ferrari.",
+    "category": "Sport",
+    "id": "qh-sport28-5379a13e6f4d",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvem vant Formel 1-VM i 2016 og avsluttet karrieren kort tid etter?",
+    "answer": "Nico Rosberg",
+    "fact": "Rosberg vant for Mercedes i 2016.",
+    "category": "Sport",
+    "id": "qh-sport28-05bd3206dea4",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilken fører ble verdensmester i Formel 1 i 2009 for nykommerlaget Brawn GP?",
+    "answer": "Jenson Button",
+    "fact": "Button tok sin eneste VM-tittel i 2009.",
+    "category": "Sport",
+    "id": "qh-sport28-c24d5c26e398",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilket lag vant NBA-tittelen for første gang i 2016 etter å ha ligget under 1–3 i finaleserien?",
+    "answer": "Cleveland Cavaliers",
+    "fact": "Cavaliers snudde finalen mot Golden State Warriors.",
+    "category": "Sport",
+    "id": "qh-sport28-2c1628b857ef",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilket kanadisk lag vant NBA-mesterskapet for første gang i 2019?",
+    "answer": "Toronto Raptors",
+    "fact": "Raptors slo Golden State Warriors i 2019.",
+    "category": "Sport",
+    "id": "qh-sport28-5cd32b06d150",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilket NBA-lag tok sitt første mesterskap i 2023, ledet av Nikola Jokić?",
+    "answer": "Denver Nuggets",
+    "fact": "Denver slo Miami Heat i NBA-finalen i 2023.",
+    "category": "Sport",
+    "id": "qh-sport28-b2b814581c8a",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilken britisk tennisspiller vant US Open i 2021 uten å tape et sett i hovedturneringen?",
+    "answer": "Emma Raducanu",
+    "fact": "Raducanu vant som kvalifiseringsspiller i 2021.",
+    "category": "Sport",
+    "id": "qh-sport28-261bfd6625f0",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvem møtte Novak Djokovic i OL-finalen i tennis for menn i Paris i 2024?",
+    "answer": "Carlos Alcaraz",
+    "fact": "Djokovic slo Alcaraz i finalen og tok sitt første OL-gull.",
+    "category": "Sport",
+    "id": "qh-sport28-ec1bdfd47e5b",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvem vant sitt første Grand Slam-trofé i single under Australian Open i 2018 og representerte Danmark?",
+    "answer": "Caroline Wozniacki",
+    "fact": "Wozniacki slo Simona Halep i finalen i 2018.",
+    "category": "Sport",
+    "id": "qh-sport28-c896da5040ad",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hva er maksimal poengsum i ett break i vanlig snooker uten friball?",
+    "answer": "147",
+    "fact": "Femten røde med svart, deretter alle fargene, gir 147 poeng.",
+    "category": "Sport",
+    "id": "qh-sport28-8ab74c4306e8",
+    "difficulty": "medium"
+  },
+  {
+    "question": "På hvilken golfbane i Georgia arrangeres The Masters hvert år?",
+    "answer": "Augusta National Golf Club",
+    "fact": "The Masters spilles på Augusta National i delstaten Georgia.",
+    "category": "Sport",
+    "id": "qh-sport28-1af0c73a1b2b",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilken amerikansk golfspiller vant The Masters i 2019, sin første majorseier siden 2008?",
+    "answer": "Tiger Woods",
+    "fact": "Woods tok sin femte Masters-tittel i 2019.",
+    "category": "Sport",
+    "id": "qh-sport28-54b20bfc12ab",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilket land slo USA i den berømte ishockeykampen «Miracle on Ice» under OL i 1980?",
+    "answer": "Sovjetunionen",
+    "fact": "USA slo Sovjetunionen 4–3 i medaljerunden i Lake Placid.",
+    "category": "Sport",
+    "id": "qh-sport28-34e775af3c1a",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvem satte verdensrekord i tresteg for menn med 18,29 meter i Göteborg i 1995?",
+    "answer": "Jonathan Edwards",
+    "fact": "Britiske Jonathan Edwards satte rekorden under VM i 1995.",
+    "category": "Sport",
+    "id": "qh-sport28-0fcd97f6dd7e",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Hvilken sørafrikansk løper satte verdensrekord på 400 meter med 43,03 under OL i 2016?",
+    "answer": "Wayde van Niekerk",
+    "fact": "Van Niekerk satte rekorden under OL i Rio.",
+    "category": "Sport",
+    "id": "qh-sport28-0ad10f552158",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Hvilken norsk skøyteløper tok tre gull i Lillehammer-OL i 1994?",
+    "answer": "Johann Olav Koss",
+    "fact": "Koss vant 1500, 5000 og 10 000 meter på Lillehammer.",
+    "category": "Sport",
+    "id": "qh-sport28-8ff1e2d518ca",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilken nordmann tok individuelt gull og laggull i kombinert under Nagano-OL i 1998?",
+    "answer": "Bjarte Engen Vik",
+    "fact": "Vik vant begge kombinertøvelsene i Nagano.",
+    "category": "Sport",
+    "id": "qh-sport28-80178e4df24a",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Hvilken norsk skihopper vant OL-gull i kvinnenes normalbakke i Pyeongchang i 2018?",
+    "answer": "Maren Lundby",
+    "fact": "Lundby vant kvinneklassen i normalbakke i 2018.",
+    "category": "Sport",
+    "id": "qh-sport28-b6fb8147cf4a",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvem regnes som pioneren for V-stilen i skihopping etter å ha eksperimentert med teknikken på 1980-tallet?",
+    "answer": "Jan Boklöv",
+    "fact": "Svensken Jan Boklöv gjorde V-stilen kjent i internasjonal skihopping.",
+    "category": "Sport",
+    "id": "qh-sport28-69d005dc6390",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Hvilken amerikansk sjakkspiller beseiret Boris Spasskij i VM-oppgjøret på Island i 1972?",
+    "answer": "Bobby Fischer",
+    "fact": "Fischer vant den berømte VM-kampen i Reykjavik.",
+    "category": "Sport",
+    "id": "qh-sport28-3da70b1bef6e",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilket land vant rugby-VM for menn på hjemmebane i 1995 etter finaleseier over New Zealand?",
+    "answer": "Sør-Afrika",
+    "fact": "Sør-Afrika vant rugby-VM i 1995 med Nelson Mandela på tribunen.",
+    "category": "Sport",
+    "id": "qh-sport28-667dddd0efc9",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilket land brøt USAs lange seiersrekke i America’s Cup i 1983 med båten Australia II?",
+    "answer": "Australia",
+    "fact": "Australia II fra Royal Perth Yacht Club vant America’s Cup i 1983.",
+    "category": "Sport",
+    "id": "qh-sport28-3888f95c36b5",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Hvilken italiensk spiller ble toppscorer i fotball-VM i 1990 med seks mål?",
+    "answer": "Salvatore Schillaci",
+    "fact": "Schillaci scoret seks mål for Italia i VM i 1990.",
+    "category": "Sport",
+    "id": "qh-sport28-3e7b2ae5e926",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Hvilken brasilianer scoret begge målene da Brasil slo Tyskland 2–0 i fotball-VM-finalen i 2002?",
+    "answer": "Ronaldo",
+    "fact": "Ronaldo scoret to mål i finalen i Yokohama.",
+    "category": "Sport",
+    "id": "qh-sport28-6adbd7950958",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hvilken norsk kvinne scoret Norges første mål i VM-finalen i fotball mot Tyskland i 1995?",
+    "answer": "Hege Riise",
+    "fact": "Hege Riise scoret 1–0 før Marianne Pettersen økte til 2–0.",
+    "category": "Sport",
+    "id": "qh-sport28-999d23e5283d",
+    "difficulty": "hard"
   }
 ];
 export const specialBanks = {
