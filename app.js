@@ -153,7 +153,7 @@ function dispatch(action,el){switch(action){
  case 'online': {
   // Vis respons med én gang. Også nettverks-/importfeil må være synlige.
   app.innerHTML = header() + `<main class="online-layout"><h1 class="heading">Utfordre venner</h1><div class="panel"><p role="status">Åpner online-utfordringer …</p></div></main>`;
-  import('./online.js?v=262').then(module=>module.startOnline()).catch(error=>{
+  import('./online.js?v=27').then(module=>module.startOnline()).catch(error=>{
     console.error('QuizHub: kunne ikke starte online-modus',error);
     const message=esc(error?.message||'Ukjent feil');
     app.innerHTML=header()+`<main class="online-layout"><h1 class="heading">Online-utfordringer kunne ikke åpnes</h1><div class="panel"><p>Nettsiden klarte ikke å laste inn online-delen.</p><p class="notice" role="alert">Feil: ${message}</p><p>Kontroller at <code>online.js</code> og <code>config.js</code> ligger på GitHub og at Firebase er tilgjengelig.</p><div class="actions"><button class="btn" data-action="online">Prøv igjen</button><button class="btn secondary" data-action="home">Tilbake</button></div></div></main>`;

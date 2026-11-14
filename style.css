@@ -40,3 +40,14 @@
 .top .logo {display:flex; flex-direction:column; align-items:flex-start; line-height:1.1; min-width:0}
 .top .logo .tag {letter-spacing:normal; font-weight:500; line-height:1.35; margin-top:7px; overflow-wrap:anywhere}
 .top > .btn {flex-shrink:0}
+
+/* v27: venner */
+.friend-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12);flex-wrap:wrap}
+.friend-row:last-child{border-bottom:0}
+.friend-row .btn{padding:9px 14px;font-size:.93rem}
+.friend-row .actions{display:flex;gap:8px;flex-wrap:wrap}
+.friend-pick{border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:12px 16px;margin:12px 0}
+.friend-pick legend{font-weight:700;padding:0 8px}
+.friend-choice{display:flex!important;align-items:center;gap:12px;padding:8px 0;cursor:pointer}
+.friend-choice input{width:20px;height:20px;accent-color:#6e62ff}
+.friend-rows{margin-top:12px}
