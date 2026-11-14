@@ -61,3 +61,6 @@
 .ol-year-clues .clue p {margin:7px 0 0;color:#e1e6f4}
 .ol-year-review {color:#dce3f2;line-height:1.55;padding-left:22px}
 .ol-year-review li {margin:7px 0}
+
+/* v30: separat Filmquiz */
+.film-quote{font-size:clamp(23px,4.5vw,36px);line-height:1.45;letter-spacing:-.5px;margin:24px 0;padding:22px 24px;border-left:5px solid #8a7cff;background:#262d49;border-radius:0 16px 16px 0;font-weight:750}
