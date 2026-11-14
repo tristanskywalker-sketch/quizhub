@@ -139,7 +139,31 @@ async function doForm(form){if(busy)return;busy=true;notice='';const data=Object
  }
  if(form.id==='ol-username'){await rpc('qh_set_username',{p_username:data.username});await getProfile();busy=false;await showHome();return;}
  if(form.id==='ol-friend-search'){friendResults=await rpc('qh_friends_search',{p_query:data.query});busy=false;await friendsView();return;}
- if(form.id==='ol-create'){const invitees=[...new Set([...form.querySelectorAll('input[name=friend]:checked')].map(el=>el.value),...data.invitees.split(',').map(v=>v.trim().toLowerCase())].filter(Boolean))];const id=await rpc('qh_create',{p_mode:data.mode,p_count:Number(data.count),p_hours:Number(data.hours),p_invitees:invitees});busy=false;await openChallenge(id);return;}
+
+if (form.id === 'ol-create') {
+  const selectedFriends = [
+    ...form.querySelectorAll('input[name="friend"]:checked')
+  ].map(el => el.value);
+
+  const typedNames = data.invitees
+    .split(',')
+    .map(v => v.trim().toLowerCase());
+
+  const invitees = [
+    ...new Set([...selectedFriends, ...typedNames].filter(Boolean))
+  ];
+
+  const id = await rpc('qh_create', {
+    p_mode: data.mode,
+    p_count: Number(data.count),
+    p_hours: Number(data.hours),
+    p_invitees: invitees
+  });
+
+  busy = false;
+  await openChallenge(id);
+  return;
+}
  if(form.id==='ol-join'){const id=await rpc('qh_join',{p_code:data.code});busy=false;await openChallenge(id);return;}
  }catch(e){busy=false;note(err(e));if(form.id==='ol-username')usernameView();else if(form.id==='ol-create')await createView();else if(form.id==='ol-friend-search')await friendsView();else if(form.id==='ol-join')joinView();else authView();}}
 root.addEventListener('click',e=>{const el=e.target.closest('[data-ol]');if(el){e.preventDefault();doAction(el);}});
