@@ -1,4 +1,4 @@
-import {quizzes,questions,getDifficulty} from './data.js?v=28';
+import {quizzes,questions,getDifficulty} from './data.js?v=29';
 const KEY='quizhub-save-v1'; // Behold gamle spillere og lagrede poeng ved oppdatering
 // Separat historikk: beholdes også når spillere og poengtavle nullstilles.
 const HISTORY_KEY='quizhub-question-history-v1';
@@ -123,10 +123,8 @@ function play(){let q=active();if(!q)return `<h2>Ingen flere spørsmål</h2><but
  }else if(['general','geography','sports'].includes(type)){
   content+=`<h2 class="open-question">${esc(q.question)}</h2>`;
   if(q.yearClues){
-    const visible=Math.min(state.clue+1,q.yearClues.length);
-    content+=`<p class="muted">Gjett årstallet. Vis én og én ledetråd. Fasit er skjult til alle har svart.</p>`;
-    content+=q.yearClues.slice(0,visible).map((c,i)=>`<div class="clue"><strong>Ledetråd ${i+1}</strong><p style="margin:6px 0 0">${esc(c)}</p></div>`).join('');
-    if(!state.revealed&&visible<q.yearClues.length)content+=`<button class="btn secondary" data-action="clue">Vis neste ledetråd (${visible+1} av 5)</button>`;
+    content+=`<p class="muted">Alle fem hendelsene vises med en gang. Fasit er skjult til alle har svart.</p>`;
+    content+=q.yearClues.map((c,i)=>`<div class="clue"><strong>Hendelse ${i+1}</strong><p style="margin:6px 0 0">${esc(c)}</p></div>`).join('');
   }else{
     content+=`<p class="muted">Spillerne skriver ned svaret før fasit vises. Ingen svaralternativer.</p>`;
     if(q.yearRange)content+=`<p class="tiny">Alle hele årstall innenfor personens levetid er riktige.</p>`;
@@ -153,7 +151,7 @@ function dispatch(action,el){switch(action){
  case 'online': {
   // Vis respons med én gang. Også nettverks-/importfeil må være synlige.
   app.innerHTML = header() + `<main class="online-layout"><h1 class="heading">Utfordre venner</h1><div class="panel"><p role="status">Åpner online-utfordringer …</p></div></main>`;
-  import('./online.js?v=27-1').then(module=>module.startOnline()).catch(error=>{
+  import('./online.js?v=29').then(module=>module.startOnline()).catch(error=>{
     console.error('QuizHub: kunne ikke starte online-modus',error);
     const message=esc(error?.message||'Ukjent feil');
     app.innerHTML=header()+`<main class="online-layout"><h1 class="heading">Online-utfordringer kunne ikke åpnes</h1><div class="panel"><p>Nettsiden klarte ikke å laste inn online-delen.</p><p class="notice" role="alert">Feil: ${message}</p><p>Kontroller at <code>online.js</code> og <code>config.js</code> ligger på GitHub og at Firebase er tilgjengelig.</p><div class="actions"><button class="btn" data-action="online">Prøv igjen</button><button class="btn secondary" data-action="home">Tilbake</button></div></div></main>`;

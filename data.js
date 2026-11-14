@@ -4378,12 +4378,15 @@ export const factBank = [
     "id": "qh-34815032ab5e"
   },
   {
-    "question": "Hvilken norsk artist ga ut albumet Hunting High and Low som medlem av a-ha?",
-    "answer": "Morten Harket (som medlem av a-ha)",
+    "question": "Hvem er vokalist i det norske bandet a-ha?",
+    "answer": "Morten Harket",
     "category": "Musikk",
     "difficulty": "medium",
     "source": "QuizHub v19 – redaksjonelt nye spørsmål",
-    "id": "qh-6a96d46475f7"
+    "id": "qh-6a96d46475f7",
+    "acceptedAnswers": [
+      "Harket"
+    ]
   },
   {
     "question": "Hvilken revolusjon forbindes med stormingen av Bastillen i 1789?",
@@ -4571,11 +4574,14 @@ export const factBank = [
   },
   {
     "question": "Hva kalles en hannrein?",
-    "answer": "Bukk / reinbukk",
+    "answer": "Reinbukk",
     "category": "Dyr og natur",
     "difficulty": "easy",
     "source": "QuizHub v19 – redaksjonelt nye spørsmål",
-    "id": "qh-2f00561c99cb"
+    "id": "qh-2f00561c99cb",
+    "acceptedAnswers": [
+      "Bukk"
+    ]
   },
   {
     "question": "Hvilken fugl er kjent for å kunne fly baklengs?",
@@ -9999,6 +10005,1351 @@ export const factBank = [
     "category": "Sport",
     "id": "qh-sport28-999d23e5283d",
     "difficulty": "hard"
+  },
+  {
+    "question": "I hvilken film fra 1979 møter vi kaptein Benjamin Willard, spilt av Martin Sheen?",
+    "answer": "Apocalypse Now",
+    "category": "Film",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Apokalypse nå"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-32a802b9ee52"
+  },
+  {
+    "question": "Hva stjal Prometevs fra gudene i gresk mytologi?",
+    "answer": "Ilden",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Ild"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-37b526f2b9a7"
+  },
+  {
+    "question": "Hva kalles det ytterste fargede laget av skallet på en sitrusfrukt, ofte brukt i matlaging?",
+    "answer": "Zest",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-3cf2f47b6ab8"
+  },
+  {
+    "question": "Hva heter Danmarks nasjonalsang som begynner med «Der er et yndigt land»?",
+    "answer": "Der er et yndigt land",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-487321da10ef"
+  },
+  {
+    "question": "Hvilken skuespiller vant Oscar for hovedrollen i filmen «Sophie's Choice» fra 1982?",
+    "answer": "Meryl Streep",
+    "category": "Film",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Streep"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-a2407b782800"
+  },
+  {
+    "question": "Hva betyr det greske ordet «sophia», som navnet Sofie kommer fra?",
+    "answer": "Visdom",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Klokskap"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-f3eb5a865066"
+  },
+  {
+    "question": "I hvilken by ligger den tidligere katedralen Hagia Sofia?",
+    "answer": "Istanbul",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-005850c170c6"
+  },
+  {
+    "question": "Hvem skrev eventyret «Piken med svovelstikkene»?",
+    "answer": "H.C. Andersen",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Hans Christian Andersen",
+      "Andersen"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-37448325a7ac"
+  },
+  {
+    "question": "Hva kalles buen som danner fordypningen midt på overleppen?",
+    "answer": "Amorbuen",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Amorbue"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-0137e8d83a4d"
+  },
+  {
+    "question": "Hvilken norsk komiker hadde standupforestillingen «Tatt av vinen»?",
+    "answer": "Anne-Kat. Hærland",
+    "category": "Kjendiser",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Anne-Kat Hærland",
+      "Hærland"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-9221b66f13e8"
+  },
+  {
+    "question": "Hvilken forfatter skrev skuespillet «Exiles»?",
+    "answer": "James Joyce",
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Joyce"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-4f36645e017a"
+  },
+  {
+    "question": "I hvilken norsk by holder Teatret Vårt til?",
+    "answer": "Molde",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-157a379011db"
+  },
+  {
+    "question": "Hvem ga ifølge Snorres kongesagaer Olav Haraldsson banesåret under slaget på Stiklestad?",
+    "answer": "Tore Hund",
+    "category": "Historie",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-c82ce0025055"
+  },
+  {
+    "question": "Hva heter den internasjonale matematikkprisen som deles ut hvert fjerde år, ofte omtalt som matematikkens nobelpris?",
+    "answer": "Fieldsmedaljen",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Fields-medaljen",
+      "Fields Medal"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-dd583b050dde"
+  },
+  {
+    "question": "Hvem spilte tittelrollen i TV-serien «Veronica Mars»?",
+    "answer": "Kristen Bell",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Bell"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-653cc89dca4e"
+  },
+  {
+    "question": "Hvilken friidrettsøvelse har Jonathan Edwards' verdensrekord på 18,29 meter fra 1995?",
+    "answer": "Tresteg",
+    "category": "Sport",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-5512cc3ccc2a"
+  },
+  {
+    "question": "Hvem komponerte operaen «Tristan og Isolde»?",
+    "answer": "Richard Wagner",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Wagner"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-df8c0845c7d0"
+  },
+  {
+    "question": "Hva heter den tynne, ildstekte spesialiteten fra Alsace med bunn som ligner pizza?",
+    "answer": "Flammkuchen",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Tarte flambée",
+      "Flammekueche"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-8e1955071e43"
+  },
+  {
+    "question": "Hvilket bilmerke produserer SUV-modellen Kona?",
+    "answer": "Hyundai",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-ad4e639632fb"
+  },
+  {
+    "question": "Hva kalles punktet på jordoverflaten rett over jordskjelvets fokus?",
+    "answer": "Episenteret",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Episenter"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-6bb76eb4b956"
+  },
+  {
+    "question": "I hvilken TV-serie spiller Kristofer Hivju Tormund Giantsbane?",
+    "answer": "Game of Thrones",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-e205d7572166"
+  },
+  {
+    "question": "Hvilke to land produserer vanligvis mest kaffe i verden?",
+    "answer": "Brasil og Vietnam",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Vietnam og Brasil"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-6fafd1cab379"
+  },
+  {
+    "question": "Hvilken kirke regnes som Oslos eldste stående bygning?",
+    "answer": "Gamle Aker kirke",
+    "category": "Norge",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-9801dcf8f473"
+  },
+  {
+    "question": "Hva slags krigsskip tilhørte Oslo-klassen i den norske marinen?",
+    "answer": "Fregatter",
+    "category": "Historie",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Fregatt"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-7c932cccb95d"
+  },
+  {
+    "question": "Hvilken kommune er kjent for lokalavisen «Hordaland»?",
+    "answer": "Voss",
+    "category": "Norge",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-550d8bebdb94"
+  },
+  {
+    "question": "Hva heter åstedet for massakren på Lakota-folket i Sør-Dakota i desember 1890?",
+    "answer": "Wounded Knee",
+    "category": "Historie",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Wounded Knee Creek"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-2241e0f86b9e"
+  },
+  {
+    "question": "Hvilken by i Nevada har kallenavnet «The Biggest Little City in the World»?",
+    "answer": "Reno",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-98ddae43e8e1"
+  },
+  {
+    "question": "Hva heter bukta ved Baltimore som nesten deler Maryland i to?",
+    "answer": "Chesapeake Bay",
+    "category": "Geografi",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Chesapeake-bukta"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-1d0b74d7cf3a"
+  },
+  {
+    "question": "Hvilket norsk treslag har det latinske navnet Quercus robur?",
+    "answer": "Sommereik",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Eik"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-20753a173e2c"
+  },
+  {
+    "question": "I hvilket stjernebilde finner vi stjernen Pollux?",
+    "answer": "Tvillingene",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Gemini"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-bea385caf73c"
+  },
+  {
+    "question": "Hva heter det slovenske stedet som er kjent for skiflygingsanlegget Letalnica?",
+    "answer": "Planica",
+    "category": "Sport",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-b66d6455fbc7"
+  },
+  {
+    "question": "Hva kalles de tradisjonelle vaktene ved Tower of London, også kjent som Yeoman Warders?",
+    "answer": "Beefeaters",
+    "category": "Historie",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Beefeater"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-80550e7e600e"
+  },
+  {
+    "question": "I hvilken stat ligger den buddhistiske pagoden Golden Rock, også kalt Kyaiktiyo?",
+    "answer": "Myanmar",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Burma"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-91e254438a00"
+  },
+  {
+    "question": "Hvilken forfatter skrev barneboken «The Gremlins» fra 1943?",
+    "answer": "Roald Dahl",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Dahl"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-836f0581685d"
+  },
+  {
+    "question": "Hvilken kjent amerikansk TV-programleder filmdebuterte i «Purpurfargen» fra 1985?",
+    "answer": "Oprah Winfrey",
+    "category": "Film",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Oprah",
+      "Winfrey"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-28c6e4297e4b"
+  },
+  {
+    "question": "Hva heter det nordafrikanske området vest for Egypt som omfatter blant annet Marokko, Algerie og Tunisia?",
+    "answer": "Maghreb",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Magreb"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-0bc2ed071bcc"
+  },
+  {
+    "question": "Hvem spiller rollen som Jim Garrison i Oliver Stones film «JFK» fra 1991?",
+    "answer": "Kevin Costner",
+    "category": "Film",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Costner"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-9c0976f0d518"
+  },
+  {
+    "question": "Hvilket vesen i filmen «Gremlins» fra 1984 er Gizmo?",
+    "answer": "Mogwai",
+    "category": "Film",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-d538cd91fd84"
+  },
+  {
+    "question": "Hva kalles en periode med uvanlig varmt vær sent på høsten?",
+    "answer": "Indian summer",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Husmannssommer",
+      "Fattigmannssommer"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-4d9f3ee4d2aa"
+  },
+  {
+    "question": "Hvilket svensk metalband har låten «Put Your Back Into the Oar»?",
+    "answer": "Amon Amarth",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-f4b128db8eb7"
+  },
+  {
+    "question": "Hvilken arkitekturstil forbinder vi blant annet med Notre-Dame i Paris?",
+    "answer": "Gotisk",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Gotikken",
+      "Gotisk stil"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-05e48ba6204b"
+  },
+  {
+    "question": "Hvilket lands flagg har en paradisfugl?",
+    "answer": "Papua Ny-Guinea",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Papua New Guinea"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-00c205bfd002"
+  },
+  {
+    "question": "Hvem komponerte operaen «Ridder Blåskjeggs borg»?",
+    "answer": "Béla Bartók",
+    "category": "Kunst og kultur",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Bartók",
+      "Bela Bartok"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-227647de42eb"
+  },
+  {
+    "question": "Hva heter den japanske diktformen som tradisjonelt består av 17 mora fordelt på tre linjer?",
+    "answer": "Haiku",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-f76ed9fff41a"
+  },
+  {
+    "question": "Under hvilket vinter-OL vant Norge ingen gullmedaljer?",
+    "answer": "Calgary 1988",
+    "category": "Sport",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "1988",
+      "OL 1988"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-fc7dd8060c55"
+  },
+  {
+    "question": "Hva kjempet de britiske suffragettene for?",
+    "answer": "Stemmerett for kvinner",
+    "category": "Historie",
+    "difficulty": "easy",
+    "acceptedAnswers": [
+      "Kvinnelig stemmerett"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-e1cc029eb2b8"
+  },
+  {
+    "question": "Hva slags dyr er en lipizzaner?",
+    "answer": "Hest",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-ee3e608a0125"
+  },
+  {
+    "question": "Hva heter diktformen med 14 verselinjer, ofte fordelt på to kvartetter og to tersetter?",
+    "answer": "Sonett",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Sonetten"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-43d23f4bccaf"
+  },
+  {
+    "question": "Hvem skapte etterretningsoffiseren George Smiley som romanfigur?",
+    "answer": "John le Carré",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Le Carré",
+      "John Le Carre"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-f1ca9970e6c4"
+  },
+  {
+    "question": "Hvilken gresk trollkvinne forvandlet Odyssevs' menn til griser?",
+    "answer": "Kirke",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Circe"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-76869c11d86e"
+  },
+  {
+    "question": "I hvilket land er Brno den nest største byen?",
+    "answer": "Tsjekkia",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Den tsjekkiske republikk"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-2fd81a926707"
+  },
+  {
+    "question": "Hvilken norrøn gud eide skipet Skidbladne?",
+    "answer": "Frøy",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Freyr"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-8fabd3757fe0"
+  },
+  {
+    "question": "Hvilken film fra 1997 spiller Jack Nicholson en forfatter som heter Melvin Udall?",
+    "answer": "Livets lyse side",
+    "category": "Film",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "As Good as It Gets"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-18ff0fa69cdf"
+  },
+  {
+    "question": "Hvilken norsk forfatter skrev romanene «Skyskraperengler» og «Skyskrapersommer»?",
+    "answer": "Tove Nilsen",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Nilsen"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-88d273c3fce2"
+  },
+  {
+    "question": "Hva står forkortelsen «c/o» for i en postadresse?",
+    "answer": "Care of",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-ef24937b05f5"
+  },
+  {
+    "question": "Hva heter byen hvor Konrad Adenauer var overborgermester før han ble vesttysk kansler?",
+    "answer": "Köln",
+    "category": "Historie",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Cologne",
+      "Koln"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-74c3ff53f77a"
+  },
+  {
+    "question": "Hvem komponerte operaen «Rosenkavaleren»?",
+    "answer": "Richard Strauss",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Strauss"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-606c6290adb4"
+  },
+  {
+    "question": "I hvilken by ble Münchenavtalen undertegnet i 1938?",
+    "answer": "München",
+    "category": "Historie",
+    "difficulty": "easy",
+    "acceptedAnswers": [
+      "Munich"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-9d2b386fd6a9"
+  },
+  {
+    "question": "Hva slags fugl er den største av kråkefuglene?",
+    "answer": "Ravn",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-3e0e0f8752db"
+  },
+  {
+    "question": "Hva kalles planeter som går i bane rundt andre stjerner enn Solen?",
+    "answer": "Eksoplaneter",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "acceptedAnswers": [
+      "Eksoplanet"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-09461a367b6c"
+  },
+  {
+    "question": "Hvilke land var de to første som ble med i NATO etter grunnleggelsen i 1949?",
+    "answer": "Hellas og Tyrkia",
+    "category": "Historie",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Tyrkia og Hellas"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-8842daf9407b"
+  },
+  {
+    "question": "Hvilket band ble startet av blant andre Peter Green og Mick Fleetwood i 1967?",
+    "answer": "Fleetwood Mac",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-410076e5940b"
+  },
+  {
+    "question": "Hvem var Cubas president da han ble styrtet i revolusjonen i 1959?",
+    "answer": "Fulgencio Batista",
+    "category": "Historie",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Batista"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-aa0b140ed42f"
+  },
+  {
+    "question": "Hvilken amerikansk TV-serie fra 1980-tallet hadde Linda Evans i rollen som Krystle Carrington?",
+    "answer": "Dynastiet",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Dynasty"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-a56c14ee7116"
+  },
+  {
+    "question": "Hvilken jotunkvinne var mor til Tors sønn Magne?",
+    "answer": "Jernsaksa",
+    "category": "Mytologi og religion",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Járnsaxa",
+      "Jarnsaxa"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-652c81bb78e8"
+  },
+  {
+    "question": "Hvilken by i det gamle Mesopotamia forbindes tradisjonelt med patriarken Abrahams fødested?",
+    "answer": "Ur",
+    "category": "Historie",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-00167413eaad"
+  },
+  {
+    "question": "Hvilken øy og hvilket kloster ble angrepet av vikinger i 793, ofte brukt som startpunkt for vikingtiden?",
+    "answer": "Lindisfarne",
+    "category": "Historie",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-3e20fc6922f0"
+  },
+  {
+    "question": "Hvilken australsk fotballspiller scoret fem VM-mål og spilte mange sesonger i Everton?",
+    "answer": "Tim Cahill",
+    "category": "Sport",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Cahill"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-26926ded9359"
+  },
+  {
+    "question": "Hvilke to norske menn har tatt OL-gull i spydkast?",
+    "answer": "Egil Danielsen og Andreas Thorkildsen",
+    "category": "Sport",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Andreas Thorkildsen og Egil Danielsen"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-845da90c78ca"
+  },
+  {
+    "question": "Hvilken norsk lyriker skrev diktet «Republikanerne»?",
+    "answer": "Johan Sebastian Welhaven",
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Welhaven"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-da603d626367"
+  },
+  {
+    "question": "Hvilket dyr er kjent for en drektighetstid på omkring 22 måneder?",
+    "answer": "Elefant",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-c005dc8ccd98"
+  },
+  {
+    "question": "Hva heter den vanligste tittelen på Irlands statsminister, skrevet på irsk?",
+    "answer": "Taoiseach",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-488a37229c8c"
+  },
+  {
+    "question": "Hva heter Irlands nest største by?",
+    "answer": "Cork",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-7f31e661ffa6"
+  },
+  {
+    "question": "Hva er SI-enheten for effekt?",
+    "answer": "Watt",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-24887da2edc1"
+  },
+  {
+    "question": "I hvilket arkadespill fra 1981 dukket Mario opp for første gang under navnet Jumpman?",
+    "answer": "Donkey Kong",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-e18b5a0792cd"
+  },
+  {
+    "question": "Hva kalles innretningen i eldre bensinmotorer som blander bensin og luft før forbrenning?",
+    "answer": "Forgasser",
+    "category": "Teknologi",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Forgasseren"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-b154829ea7da"
+  },
+  {
+    "question": "Hvilken fransk by nådde Charles Lindbergh da han krysset Atlanterhavet alene i 1927?",
+    "answer": "Paris",
+    "category": "Historie",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-2e78a740e8dd"
+  },
+  {
+    "question": "Hvem av de norske padlerne Eirik Verås Larsen og Knut Holmann tok flest OL-gull?",
+    "answer": "Knut Holmann",
+    "category": "Sport",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Holmann"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-22dccca3fba0"
+  },
+  {
+    "question": "Hvilken fiktiv detektiv har en kjæreste ved navn Ned Nickerson?",
+    "answer": "Nancy Drew",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-868d7e521ae7"
+  },
+  {
+    "question": "Hvilken litterær figur er kjæreste med Becky Thatcher?",
+    "answer": "Tom Sawyer",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-a1dc93df04b7"
+  },
+  {
+    "question": "Hva heter den tyske utenriksministeren som signerte ikkeangrepspakten med Sovjetunionen i 1939?",
+    "answer": "Joachim von Ribbentrop",
+    "category": "Historie",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Ribbentrop"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-f1aeb910a687"
+  },
+  {
+    "question": "Hvilken amerikansk stat ligger Prince of Wales Island i?",
+    "answer": "Alaska",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-825459ff7adc"
+  },
+  {
+    "question": "Hvilken film fra 1990 har en eldre nabo som heter Marley, spilt av Robert Blossom?",
+    "answer": "Alene hjemme",
+    "category": "Film",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Home Alone"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-d177784cb157"
+  },
+  {
+    "question": "Hvilken by i Florida kalles «Amerikas Venezia» på grunn av kanalnettet?",
+    "answer": "Fort Lauderdale",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-ecf6982993af"
+  },
+  {
+    "question": "Hvilken hunderase kalles også persisk mynde og regnes som en av verdens eldste?",
+    "answer": "Saluki",
+    "category": "Dyr og natur",
+    "difficulty": "hard",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-080084d5fc88"
+  },
+  {
+    "question": "Hvilken løpsøvelse avslutter en tikamp i friidrett?",
+    "answer": "1500 meter",
+    "category": "Sport",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "1500 m"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-bf2a390cadbd"
+  },
+  {
+    "question": "Hvilken brasiliansk trener vant fotball-VM i 1970, etter å ha vunnet VM som spiller i 1958 og 1962?",
+    "answer": "Mário Zagallo",
+    "category": "Sport",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Zagallo",
+      "Mario Zagallo"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-d2aca04d815b"
+  },
+  {
+    "question": "Hva heter den kinesiske måltidstypen med mange småretter, ofte servert i bambuskurver?",
+    "answer": "Dim sum",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-d2fe9bcb857c"
+  },
+  {
+    "question": "Hvem ble FIDE-verdensmester i sjakk i 1985 og beholdt tittelen til 1993?",
+    "answer": "Garry Kasparov",
+    "category": "Sport",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Kasparov"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-97dd6b91f0cd"
+  },
+  {
+    "question": "Hvilken dansk-norsk forfatter skrev romanen «En flyktning krysser sitt spor»?",
+    "answer": "Aksel Sandemose",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Sandemose"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-829977268af4"
+  },
+  {
+    "question": "Hva heter den dypeste havgropen i Atlanterhavet?",
+    "answer": "Puerto Rico-gropen",
+    "category": "Geografi",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Puerto Rico Trench"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-5bf0acb2d747"
+  },
+  {
+    "question": "Hvilken film vant Anthony Hopkins sin første Oscar for beste mannlige hovedrolle med?",
+    "answer": "Nattsvermeren",
+    "category": "Film",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "The Silence of the Lambs"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-4727c2ac1f80"
+  },
+  {
+    "question": "Hvilket hav renner Volga ut i?",
+    "answer": "Det kaspiske hav",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Kaspihavet"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-963495c10349"
+  },
+  {
+    "question": "Hva kalles en tradisjonell samisk vinterkofte laget av reinskinn?",
+    "answer": "Pesk",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-35e2f02cef6d"
+  },
+  {
+    "question": "Hvilket metall leder elektrisitet best ved romtemperatur?",
+    "answer": "Sølv",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-693f6f776634"
+  },
+  {
+    "question": "Hvilken dvergplanet ble oppdaget av Giuseppe Piazzi i 1801?",
+    "answer": "Ceres",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-f67c674f3066"
+  },
+  {
+    "question": "Hvem bygde polarskipet «Fram»?",
+    "answer": "Colin Archer",
+    "category": "Historie",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Archer"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-2598975facf7"
+  },
+  {
+    "question": "Hvilket skuespill av Henrik Ibsen inneholder uttrykket «fram og tilbake er like langt»?",
+    "answer": "Peer Gynt",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-b49cd547b4f5"
+  },
+  {
+    "question": "Hva kalles omdanning av sukker til alkohol eller syrer ved hjelp av mikroorganismer?",
+    "answer": "Gjæring",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Fermentering"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-5007b89e86b5"
+  },
+  {
+    "question": "Hva kalles et negativt ladd ion?",
+    "answer": "Anion",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-cf1f952b03b6"
+  },
+  {
+    "question": "Hva heter TV-serien der vi møter Saga Norén og Martin Rohde?",
+    "answer": "Broen",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Bron",
+      "The Bridge"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-9329bb4b3082"
+  },
+  {
+    "question": "Hva heter elva som renner gjennom Setesdalen?",
+    "answer": "Otra",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-4059093b69b1"
+  },
+  {
+    "question": "Hvilket instrument er jazzmusikeren Miles Davis mest kjent for?",
+    "answer": "Trompet",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-d9137103f87b"
+  },
+  {
+    "question": "Hvem skrev romanen «Moby Dick»?",
+    "answer": "Herman Melville",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Melville"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-746305f55ffb"
+  },
+  {
+    "question": "Hva heter elva som renner fra Ontariosjøen mot Atlanterhavet?",
+    "answer": "St. Lawrence",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Saint Lawrence",
+      "St Lawrence"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-4d27ed5eaabd"
+  },
+  {
+    "question": "Fra hvilket land kommer rapperen Sean Paul?",
+    "answer": "Jamaica",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-2f27cd802eb5"
+  },
+  {
+    "question": "Hva var hovedstaden i Inkariket?",
+    "answer": "Cusco",
+    "category": "Historie",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Cuzco"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-c9ab1ebf3c76"
+  },
+  {
+    "question": "Hvilken filosofisk skole ble grunnlagt av Zenon fra Kition og har navn etter en søylegang?",
+    "answer": "Stoisismen",
+    "category": "Historie",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Stoisisme"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-f24fa7e64b1d"
+  },
+  {
+    "question": "I hvilken by ligger Nansenskolen?",
+    "answer": "Lillehammer",
+    "category": "Norge",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-aacc3c6c3504"
+  },
+  {
+    "question": "Hvilket sjøslag fra vikingtiden deltok skipet «Ormen Lange» i?",
+    "answer": "Slaget ved Svolder",
+    "category": "Historie",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Svolder"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-c8ffd22a4f20"
+  },
+  {
+    "question": "Hva kalles tidevannsstrømmen ytterst i Lofoten?",
+    "answer": "Moskstraumen",
+    "category": "Geografi",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "Moskenesstraumen"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-77dcbe5113a7"
+  },
+  {
+    "question": "Hvilke to innsjøer er Norges nest og tredje største etter Mjøsa?",
+    "answer": "Røssvatnet og Femunden",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Femunden og Røssvatnet"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-f19fb8f94acc"
+  },
+  {
+    "question": "Hva kalles et svært grovt, mørkt rugbrød fra Tyskland?",
+    "answer": "Pumpernickel",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-375e2e0051a0"
+  },
+  {
+    "question": "Hvem malte landskapsmaleriet «Bjerk i storm» i 1849?",
+    "answer": "Johan Christian Dahl",
+    "category": "Kunst og kultur",
+    "difficulty": "hard",
+    "acceptedAnswers": [
+      "I.C. Dahl",
+      "JC Dahl"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-93a29f8ee78c"
+  },
+  {
+    "question": "Hvilket dyr har det vitenskapelige navnet Balaenoptera musculus?",
+    "answer": "Blåhval",
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-d1f39812f6b2"
+  },
+  {
+    "question": "Hva kalles en kjærlighetssang sunget utenfor den elskedes vindu?",
+    "answer": "Serenade",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-0ee5c59835c3"
+  },
+  {
+    "question": "Hvilken organisasjon fikk Nobels fredspris i 1999?",
+    "answer": "Leger Uten Grenser",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Médecins Sans Frontières",
+      "MSF"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-e7dc32a26ff1"
+  },
+  {
+    "question": "Hvilken roman av Kurt Vonnegut følger blant annet Billy Pilgrim?",
+    "answer": "Slaktehus-5",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Slaughterhouse-Five",
+      "Slaktehus fem"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-399ad3d693e0"
+  },
+  {
+    "question": "Hvem skrev romanen «Krig og fred»?",
+    "answer": "Lev Tolstoj",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "acceptedAnswers": [
+      "Tolstoj",
+      "Leo Tolstoy"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-ea988c99380f"
+  },
+  {
+    "question": "I hvilken by ligger Norsk Hermetikkmuseum?",
+    "answer": "Stavanger",
+    "category": "Norge",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-7c775ce214ff"
+  },
+  {
+    "question": "Hva kalles en person som er utdannet til å anbefale og servere vin på restaurant?",
+    "answer": "Sommelier",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Vinkelner"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-545295797813"
+  },
+  {
+    "question": "Hva kaller vi måltidet danskene kaller «frokost»?",
+    "answer": "Lunsj",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-c4638bc5dbfc"
+  },
+  {
+    "question": "Hvilket land erklærte Texas uavhengighet fra i 1836?",
+    "answer": "Mexico",
+    "category": "Historie",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-83748b33758e"
+  },
+  {
+    "question": "Rundt hvilken planet går månen Europa i bane?",
+    "answer": "Jupiter",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-8087f8e00e27"
+  },
+  {
+    "question": "Hvem vant OL-gull i Europajolle i 2004?",
+    "answer": "Siren Sundby",
+    "category": "Sport",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Sundby"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-6f22bccd4b77"
+  },
+  {
+    "question": "Hvilket land har nasjonalsangen «Europa»?",
+    "answer": "Kosovo",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-d6a796df797f"
+  },
+  {
+    "question": "Hva er det walisiske navnet på Wales?",
+    "answer": "Cymru",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-d75ff0a9d3c7"
+  },
+  {
+    "question": "Hvilken skuespiller spilte hovedrollen i westernfilmen «The Outlaw Josey Wales» fra 1976?",
+    "answer": "Clint Eastwood",
+    "category": "Film",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Eastwood"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-17cafed1c3dd"
+  },
+  {
+    "question": "Hva er coulrofobi frykt for?",
+    "answer": "Klovner",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "acceptedAnswers": [
+      "Klovn"
+    ],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-b8060b33433f"
+  },
+  {
+    "question": "Hva er siste bokstav i det greske alfabetet?",
+    "answer": "Omega",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "acceptedAnswers": [],
+    "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
+    "id": "qh29-771a9d3f7798"
   }
 ];
 export const specialBanks = {
