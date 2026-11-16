@@ -11350,6 +11350,3048 @@ export const factBank = [
     "acceptedAnswers": [],
     "source": "Quiz (1).docx – redaksjonelt kontrollert utvalg",
     "id": "qh29-771a9d3f7798"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "easy",
+    "question": "Hvilken norsk fotballklubb spiller hjemmekampene sine på Aspmyra?",
+    "answer": "Bodø/Glimt",
+    "acceptedAnswers": [
+      "Bodø Glimt",
+      "Glimt"
+    ],
+    "id": "qh33-141a62c9517fac"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "easy",
+    "question": "Hva slags idrett er Holmenkollstafetten et arrangement i?",
+    "answer": "Løping",
+    "acceptedAnswers": [
+      "Friidrett"
+    ],
+    "id": "qh33-405e9a3e96a00b"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "easy",
+    "question": "I hvilken idrett kan man vinne et Grand Slam-mesterskap i Wimbledon?",
+    "answer": "Tennis",
+    "acceptedAnswers": [],
+    "id": "qh33-08895ebb7b01eb"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "easy",
+    "question": "Hvor mange spillere fra hvert lag er på banen i vanlig basketball?",
+    "answer": "Fem",
+    "acceptedAnswers": [
+      "5"
+    ],
+    "id": "qh33-730f69bf0b5bd5"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "easy",
+    "question": "Hvilken idrett forbindes med et gult ledertrøyeløp i Tour de France?",
+    "answer": "Sykling",
+    "acceptedAnswers": [
+      "Sykkel"
+    ],
+    "id": "qh33-fbda1adc738805"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "easy",
+    "question": "I hvilken idrett brukes en puck?",
+    "answer": "Ishockey",
+    "acceptedAnswers": [],
+    "id": "qh33-39539d31a828d1"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "easy",
+    "question": "Hvilken norsk fotballklubb spiller hjemmekampene sine på Lerkendal?",
+    "answer": "Rosenborg",
+    "acceptedAnswers": [
+      "Rosenborg BK",
+      "RBK"
+    ],
+    "id": "qh33-8d5c4777baeba3"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "easy",
+    "question": "I hvilken idrett kan en utøver vinne på ippon?",
+    "answer": "Judo",
+    "acceptedAnswers": [],
+    "id": "qh33-27d39055c484fe"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "easy",
+    "question": "Hva heter arenaen der Liverpool spiller sine hjemmekamper?",
+    "answer": "Anfield",
+    "acceptedAnswers": [],
+    "id": "qh33-b6d8859f9dd8dc"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "medium",
+    "question": "Hvilken fotballklubb fra Madrid har kallenavnet Los Colchoneros?",
+    "answer": "Atlético Madrid",
+    "acceptedAnswers": [
+      "Atletico Madrid"
+    ],
+    "id": "qh33-630e011e1a4e26"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "medium",
+    "question": "Hvem ble verdensmester i fotball for herrer i 2010?",
+    "answer": "Spania",
+    "acceptedAnswers": [],
+    "id": "qh33-5207fd8e37cb40"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "medium",
+    "question": "Hvilket land vant det første verdensmesterskapet i fotball for herrer i 1930?",
+    "answer": "Uruguay",
+    "acceptedAnswers": [],
+    "id": "qh33-c0a719dcc727d3"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "medium",
+    "question": "Hvilken svensk tennisspiller vant Wimbledon fem ganger på rad fra 1976 til 1980?",
+    "answer": "Björn Borg",
+    "acceptedAnswers": [
+      "Borg"
+    ],
+    "id": "qh33-ca8c13c50a0111"
+  },
+  {
+    "category": "Sport",
+    "difficulty": "medium",
+    "question": "Hvilken norsk kvinnelig håndballspiller ble kåret til verdens beste kvinnelige spiller av IHF i 2011?",
+    "answer": "Heidi Løke",
+    "acceptedAnswers": [
+      "Løke"
+    ],
+    "id": "qh33-69178ba7e6e8a3"
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "easy",
+    "question": "Hvilket land ligger byen Porto i?",
+    "answer": "Portugal",
+    "acceptedAnswers": [],
+    "id": "qh33-4db949d0eca220"
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "easy",
+    "question": "Hvilket land ligger byen Kraków i?",
+    "answer": "Polen",
+    "acceptedAnswers": [],
+    "id": "qh33-79d19b3effc115"
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "easy",
+    "question": "Hvilket hav ligger mellom Afrika og Australia?",
+    "answer": "Det indiske hav",
+    "acceptedAnswers": [
+      "Indiahavet"
+    ],
+    "id": "qh33-d9be6923fa277c"
+  },
+  {
+    "category": "Geografi",
+    "difficulty": "medium",
+    "question": "Hvilken elv renner gjennom den franske byen Lyon?",
+    "answer": "Rhône",
+    "acceptedAnswers": [
+      "Rhone"
+    ],
+    "id": "qh33-d720eb9ffb3d3f"
+  },
+  {
+    "category": "Historie",
+    "difficulty": "easy",
+    "question": "Hvilken norsk konge er kjent for å ha sagt «Alt for Norge» som valgspråk?",
+    "answer": "Haakon VII",
+    "acceptedAnswers": [
+      "Kong Haakon",
+      "Haakon den sjuende"
+    ],
+    "id": "qh33-b1a397adfb6c58"
+  },
+  {
+    "category": "Historie",
+    "difficulty": "medium",
+    "question": "Hvilket land ble styrt av Augusto Pinochet fra 1973?",
+    "answer": "Chile",
+    "acceptedAnswers": [],
+    "id": "qh33-437535ea69bdfb"
+  },
+  {
+    "category": "Historie",
+    "difficulty": "medium",
+    "question": "Hvilken begivenhet startet i Frankrike i 1789?",
+    "answer": "Den franske revolusjon",
+    "acceptedAnswers": [
+      "Den franske revolusjonen"
+    ],
+    "id": "qh33-96c4bf757264ba"
+  },
+  {
+    "category": "Musikk",
+    "difficulty": "easy",
+    "question": "Hva heter vokalisten i bandet U2?",
+    "answer": "Bono",
+    "acceptedAnswers": [],
+    "id": "qh33-4474d8e62dab74"
+  },
+  {
+    "category": "Musikk",
+    "difficulty": "easy",
+    "question": "Hvilket instrument er Yo-Yo Ma særlig kjent for å spille?",
+    "answer": "Cello",
+    "acceptedAnswers": [],
+    "id": "qh33-ee782d1e971503"
+  },
+  {
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "question": "Hvem skrev bøkene om Mummitrollet?",
+    "answer": "Tove Jansson",
+    "acceptedAnswers": [
+      "Jansson"
+    ],
+    "id": "qh33-b9bb8ee36dd241"
+  },
+  {
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "question": "Hvem skrev den dystopiske romanen Fahrenheit 451?",
+    "answer": "Ray Bradbury",
+    "acceptedAnswers": [
+      "Bradbury"
+    ],
+    "id": "qh33-3f3ab1f93ce87b"
+  },
+  {
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "question": "Hvilken norsk forfatter skapte karakteren Elling?",
+    "answer": "Ingvar Ambjørnsen",
+    "acceptedAnswers": [
+      "Ambjørnsen"
+    ],
+    "id": "qh33-2ec781cda4fbac"
+  },
+  {
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "question": "Hvilken TV-serie handler om kjemilærer som begynner å produsere metamfetamin etter å ha fått en kreftdiagnose?",
+    "answer": "Breaking Bad",
+    "acceptedAnswers": [],
+    "id": "qh33-debedf4114dd3b"
+  },
+  {
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "question": "I hvilken dramaserie er Waystar Royco et viktig mediekonsern?",
+    "answer": "Succession",
+    "acceptedAnswers": [],
+    "id": "qh33-d6eca10f7df33e"
+  },
+  {
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "question": "Hvilket land forbindes særlig med matretten bibimbap?",
+    "answer": "Sør-Korea",
+    "acceptedAnswers": [
+      "Korea",
+      "Sør Korea"
+    ],
+    "id": "qh33-099f86193cbf81"
+  },
+  {
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "question": "Hva heter verdens største nålevende haiart?",
+    "answer": "Hvalhai",
+    "acceptedAnswers": [],
+    "id": "qh33-3cb4cf5a2bec44"
+  },
+  {
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "question": "Hva kalles kraften som trekker gjenstander mot jorden?",
+    "answer": "Tyngdekraft",
+    "acceptedAnswers": [
+      "Gravitasjon"
+    ],
+    "id": "qh33-bc9a23cc30fc1d"
+  },
+  {
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "question": "Hva heter prosessen der væske går over til gass under kokepunktet?",
+    "answer": "Fordamping",
+    "acceptedAnswers": [
+      "Evaporasjon"
+    ],
+    "id": "qh33-85a6050cf7f753"
+  },
+  {
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "question": "Hvilket grunnstoff har kjemisk symbol Ag?",
+    "answer": "Sølv",
+    "acceptedAnswers": [],
+    "id": "qh33-976c7706e22a19"
+  },
+  {
+    "category": "Norge",
+    "difficulty": "easy",
+    "question": "I hvilket fylke ligger byen Tromsø?",
+    "answer": "Troms",
+    "acceptedAnswers": [],
+    "id": "qh33-a78e271c69a926"
+  },
+  {
+    "category": "Norge",
+    "difficulty": "medium",
+    "question": "Hvilken elv renner gjennom Drammen?",
+    "answer": "Drammenselva",
+    "acceptedAnswers": [
+      "Drammenselven"
+    ],
+    "id": "qh33-eb97eb2b6a033d"
+  },
+  {
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "question": "Hva heter tegnet som settes etter et spørsmål?",
+    "answer": "Spørsmålstegn",
+    "acceptedAnswers": [],
+    "id": "qh33-a2aab946e1b3d9"
+  },
+  {
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "question": "Hva kalles ord som har motsatt betydning, for eksempel varm og kald?",
+    "answer": "Antonymer",
+    "acceptedAnswers": [
+      "Antonym"
+    ],
+    "id": "qh33-130827167ad80c"
+  },
+  {
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "question": "Hva heter en ordklasse som blant annet omfatter rask, grønn og vanskelig?",
+    "answer": "Adjektiv",
+    "acceptedAnswers": [],
+    "id": "qh33-a4c8177190e4e2"
+  },
+  {
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "question": "Hvilket firma utvikler spillkonsollen PlayStation?",
+    "answer": "Sony",
+    "acceptedAnswers": [],
+    "id": "qh33-f9be51d9da8c24"
+  },
+  {
+    "category": "Teknologi",
+    "difficulty": "medium",
+    "question": "Hva kalles angrep der noen forsøker å lure til seg passord via falske e-poster?",
+    "answer": "Phishing",
+    "acceptedAnswers": [
+      "Nettfiske"
+    ],
+    "id": "qh33-d0dd3a8e107538"
+  },
+  {
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "question": "Hvilken spillserie har karakteren Master Chief?",
+    "answer": "Halo",
+    "acceptedAnswers": [],
+    "id": "qh33-2f7eb6d9444243"
+  },
+  {
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "question": "Hvilket spillstudio utviklet serien The Last of Us?",
+    "answer": "Naughty Dog",
+    "acceptedAnswers": [],
+    "id": "qh33-2fd3db09fec543"
+  },
+  {
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "question": "Hva kalles den japanske kunsten å brette papir?",
+    "answer": "Origami",
+    "acceptedAnswers": [],
+    "id": "qh33-de5675f1e79637"
+  },
+  {
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "question": "Hva heter den norrøne gudinnen som eier smykket Brisingamen?",
+    "answer": "Frøya",
+    "acceptedAnswers": [
+      "Freyja"
+    ],
+    "id": "qh33-c313fe97751961"
+  },
+  {
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "question": "Hvem er budbringeren til de greske gudene?",
+    "answer": "Hermes",
+    "acceptedAnswers": [],
+    "id": "qh33-7d6ef0c58baccc"
+  },
+  {
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "question": "Hva heter Norges øverste domstol?",
+    "answer": "Høyesterett",
+    "acceptedAnswers": [],
+    "id": "qh33-9f5dcc5f665909"
+  },
+  {
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "question": "Hva heter det internasjonale organet som har hovedsete i New York og ble grunnlagt i 1945?",
+    "answer": "FN",
+    "acceptedAnswers": [
+      "De forente nasjoner",
+      "United Nations"
+    ],
+    "id": "qh33-e50017cc1fd908"
+  },
+  {
+    "category": "Kjendiser",
+    "difficulty": "easy",
+    "question": "Hvilken norsk komiker er kjent fra TV-serien Side om side og rollen som Jonas?",
+    "answer": "Vidar Magnussen",
+    "acceptedAnswers": [
+      "Magnussen"
+    ],
+    "id": "qh33-a5c59064136ddb"
+  },
+  {
+    "category": "Kjendiser",
+    "difficulty": "medium",
+    "question": "Hvilken amerikansk skuespiller er kjent for rollen som Jack Sparrow?",
+    "answer": "Johnny Depp",
+    "acceptedAnswers": [
+      "Depp"
+    ],
+    "id": "qh33-d5ca01e3d300ea"
+  },
+  {
+    "category": "Kjendiser",
+    "difficulty": "medium",
+    "question": "Hvilken norsk skuespiller spiller hovedrollen i TV-serien Exit som Adam?",
+    "answer": "Simon J. Berger",
+    "acceptedAnswers": [
+      "Simon Berger",
+      "Berger"
+    ],
+    "id": "qh33-39839ab9e45af1"
+  },
+  {
+    "id": "qh34-5b1470f02e7d7e",
+    "question": "Hvilken detektiv spiller Robert Downey Jr. i to filmer regissert av Guy Ritchie?",
+    "answer": "Sherlock Holmes",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-12614ace4c3fa7",
+    "question": "Hvilket land har hovedstaden Canberra?",
+    "answer": "Australia",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-24ee7f214fad9c",
+    "question": "Hvilke to kongenavn hadde alle de dansk-norske kongene mellom 1513 og 1814?",
+    "answer": "Christian og Frederik",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-291572f94c7ccd",
+    "question": "Hva heter meldingsappen som opprinnelig ble utviklet av Facebook?",
+    "answer": "Messenger",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-fa96f69070338a",
+    "question": "Hva kalles frukten carambole på norsk?",
+    "answer": "Stjernefrukt",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-6f31da72e4db73",
+    "question": "Hvilket Michael Jackson-album inneholder «Billie Jean»?",
+    "answer": "Thriller",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-a10ff5070e0625",
+    "question": "Hva kalles planter som henter næring ved å fange og fordøye smådyr?",
+    "answer": "Kjøttetende planter",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-c36c0f41c93fc2",
+    "question": "Hvilket protein reagerer personer med cøliaki på?",
+    "answer": "Gluten",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-ef85c17969bc28",
+    "question": "Hva står den norske ungdomsorganisasjonen KRIK for?",
+    "answer": "Kristen Idrettskontakt",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-4a94c2fd292ec8",
+    "question": "Hva kalles en person som leder et rollespill?",
+    "answer": "Spillmester",
+    "acceptedAnswers": [],
+    "category": "TV-spill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-4d22ff9cd9dcbd",
+    "question": "Hvem er den norrøne tordenguden?",
+    "answer": "Tor",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-8c0e9e12bd74c3",
+    "question": "Hvilket stort pattedyr er Fantorangen en blanding av, sammen med orangutang?",
+    "answer": "Elefant",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-04918084894ffb",
+    "question": "Hva heter skurken i Disneys «101 dalmatinere»?",
+    "answer": "Cruella de Vil",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-6af4b314b28fbb",
+    "question": "Hvilken militærallianse ble etablert i 1955 som motvekt til NATO?",
+    "answer": "Warszawapakten",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-73e056f78381b4",
+    "question": "Hvem ble første skandinav i verdensrommet i 2006?",
+    "answer": "Christer Fuglesang",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-b00531a909270a",
+    "question": "Hvilket jentenavn var svært populært i Norge i perioden 2003–2015?",
+    "answer": "Emma",
+    "acceptedAnswers": [],
+    "category": "Norge",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-5cca6750f2fef6",
+    "question": "Hvor mange spillere er det på hvert lag i bordfotball?",
+    "answer": "To",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-8bd5d4be4ea468",
+    "question": "Hvilken norsk TV-konkurranse har vært vunnet av Thor Hushovd og Pål Anders Ullevålseter?",
+    "answer": "Mesternes mester",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-303e61c2215ad1",
+    "question": "Hva heter første bok i Annika Thors serie om søstrene Steffi og Nelli?",
+    "answer": "En øy i havet",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-3d1583f58ea64f",
+    "question": "Hva er navnet på Rowan Atkinsons klossete spionfigur i filmene som parodierer James Bond?",
+    "answer": "Johnny English",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-007c86105d7405",
+    "question": "Hva heter monumentet i England som består av store steiner og ble reist i forhistorisk tid?",
+    "answer": "Stonehenge",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-e3542a7f68a995",
+    "question": "Hva er fartsgrensen på de raskeste motorveiene i Norge, målt i km/t?",
+    "answer": "110",
+    "acceptedAnswers": [],
+    "category": "Norge",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-691f26af4b96a3",
+    "question": "Hvilken enhet brukes for å måle frekvens?",
+    "answer": "Hertz",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-6983aab2751baa",
+    "question": "Hva heter den tradisjonelle gjemmeleken som er oppkalt etter noe som brenner?",
+    "answer": "Tampen brenner",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-a3af7bb77cdc80",
+    "question": "Hvem vant tre OL-gull i kunstløp for Norge i 1928, 1932 og 1936?",
+    "answer": "Sonja Henie",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-8f96d3bdd272bf",
+    "question": "Hvilken farge har skjærfene som deles ut under Kirkens Bymisjons juleaksjon «Gled en som gruer seg til jul»?",
+    "answer": "Oransje",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-4e0ecafca35877",
+    "question": "Hva heter barne-TV-serien med figurene Hopsi Deisi, Hinkelpinkel og Makka Pakka?",
+    "answer": "Drømmehagen",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-70aa7929ea7369",
+    "question": "Hva heter filmen der et barn reiser med et magisk tog til Nordpolen på julaften?",
+    "answer": "Polarekspressen",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-4af8bf2e2ad865",
+    "question": "Hva kalles fjellveggen i Romsdalen som er kjent for ekstremklatring og sitt høye loddrette stup?",
+    "answer": "Trollveggen",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-cbfa7e6e8e9eb0",
+    "question": "Hva slags bygning er Sagrada Família i Barcelona?",
+    "answer": "Kirke",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-39ef5845b4b923",
+    "question": "Hvor mange eggeplommer er det i pepperkakebakesangen fra Hakkebakkeskogen?",
+    "answer": "Åtte",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-8141e8a32fe69f",
+    "question": "Hvem spiller Willy Wonka i filmen «Charlie og sjokoladefabrikken» fra 2005?",
+    "answer": "Johnny Depp",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-e25d8b123e0555",
+    "question": "Hvilket land hadde flest innbyggere i verden før India passerte det i 2023?",
+    "answer": "Kina",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-cf940ea3fd236e",
+    "question": "Hvilke tre land inngikk i Kalmarunionen?",
+    "answer": "Danmark, Norge og Sverige",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-35688a96fcd536",
+    "question": "Hvilke to farger har jordledningen i en moderne elektrisk installasjon?",
+    "answer": "Gul og grønn",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-40182769d35db4",
+    "question": "Hva heter sjokoladekjeksene fra 1912 med krem mellom to mørke kjeks?",
+    "answer": "Oreo",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-0c0bb3ec095966",
+    "question": "Hvilken Michael Jackson-sang inneholder linjen «But if you're thinkin' about my baby»?",
+    "answer": "Black or White",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-3f6cdcca325643",
+    "question": "Hva kalles tett luftforurensning som ofte oppstår i storbyer?",
+    "answer": "Smog",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-d8f34df6cb81d0",
+    "question": "Hva heter den fargede delen av øyet?",
+    "answer": "Iris",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-cb8087ad5610ae",
+    "question": "Hvilken vintersport utøves liggende på magen med hodet først på en liten kjelke?",
+    "answer": "Skeleton",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-7bd866477d44bb",
+    "question": "Hva står FOMO for?",
+    "answer": "Fear of Missing Out",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-d8700354fa5967",
+    "question": "Hvilken tittel har øverste leder i Den Norske Frimurerorden?",
+    "answer": "Stormester",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-9217f7dec5c4d7",
+    "question": "Hvilken komiker spiller TV-figurene Ove Hoff og Asbjørn Brekke?",
+    "answer": "Espen Eckbo",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-1cd3785ac7f5ab",
+    "question": "Hva heter animasjonsfilmserien om Manny, Sid og Diego?",
+    "answer": "Istid",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-e2a45c0555aa37",
+    "question": "Hvilket land ligger Johannesburg i?",
+    "answer": "Sør-Afrika",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-6406270fac93b3",
+    "question": "Hvilket land erklærte selvstendighet 14. mai 1948?",
+    "answer": "Israel",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-744a48d3b6fb43",
+    "question": "Hvilken klesbutikkjede står bak merkene Divided og L.O.G.G.?",
+    "answer": "H&M",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-b3e2f91b4b7ef5",
+    "question": "Hvilken grønnsak finnes blant annet i variantene batavia og radicchio?",
+    "answer": "Salat",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-71f4f1582f793b",
+    "question": "Hvem komponerte «Eine kleine Nachtmusik»?",
+    "answer": "Wolfgang Amadeus Mozart",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-bf47856357637c",
+    "question": "Hvilket treslag har smale nåler og mister nålene om vinteren?",
+    "answer": "Lerk",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-dce0d43b26ab31",
+    "question": "Hva kalles en spesialseng for spedbarn som trenger varme og beskyttelse?",
+    "answer": "Kuvøse",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-93d95811ef5f7d",
+    "question": "Hvor mange brikker har hver spiller i backgammon?",
+    "answer": "15",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-e71a7b0b35c67e",
+    "question": "Hva er maksimal poengsum med tre piler i vanlig dart?",
+    "answer": "180",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-d7186a44a5cd8a",
+    "question": "Hva er norsk flertall av ordet konto, i tillegg til «kontoer»?",
+    "answer": "Konti",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-38281136398ab7",
+    "question": "Hva kalles perioden mellom 23. juli og 23. august også, i tillegg til røtmåneden?",
+    "answer": "Hundedagene",
+    "acceptedAnswers": [],
+    "category": "Kunst og kultur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-f04cdcd6e4ea2f",
+    "question": "Hva kalles fuglen med svart hode og rødt bryst som ofte sees ved fuglebrett?",
+    "answer": "Dompap",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-b15d48059f4cc1",
+    "question": "Hvem spiller Snøhvit i filmen Snow White and the Huntsman fra 2012?",
+    "answer": "Kristen Stewart",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-a6170111a5b4bb",
+    "question": "Hva er Norges østligste by?",
+    "answer": "Vardø",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-c26938e4071838",
+    "question": "Hva står HF for i LCHF-kosthold?",
+    "answer": "High Fat",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-5aa033b675c0d4",
+    "question": "Hva heter Kygos singel fra 2014 som ble en internasjonal hit i 2015?",
+    "answer": "Firestone",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-e192c81e6476cb",
+    "question": "Hvilken planet kommer etter Saturn i rekkefølgen ut fra solen?",
+    "answer": "Uranus",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-1467f84c086a58",
+    "question": "Hva heter Norges største bryggerikonsern?",
+    "answer": "Ringnes",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-f1243bbcc6d0d0",
+    "question": "Hva kalles leken «hula hoop» på norsk?",
+    "answer": "Rokkering",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-cf746f9c33ed18",
+    "question": "Hvilken nordisk hovedstad var vertskap for Sommer-OL i 1952?",
+    "answer": "Helsinki",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-c10e2d802f5ff7",
+    "question": "I hvilken religion regnes kua som hellig?",
+    "answer": "Hinduisme",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-575c9b2b241f48",
+    "question": "Hva kalles TV-programmer med intervjuer og samtaler i studio?",
+    "answer": "Talkshow",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-b0648fa0907613",
+    "question": "I hvilken norsk by arrangeres Den norske kortfilmfestivalen?",
+    "answer": "Grimstad",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-0b9de80086e03c",
+    "question": "Hva kalles den lille refleksen Percy Shaw tok patent på i 1934?",
+    "answer": "Kattøye",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-3bc8b6c8b911a4",
+    "question": "Hva er M og Y i fargesystemet CMYK?",
+    "answer": "Magenta og gul",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-767d06b54d7664",
+    "question": "Hva kalles den som lager espresso og annen kaffe på kafé?",
+    "answer": "Barista",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-8eeadf74a470ab",
+    "question": "Hva kalles intervallet mellom to toner med 12 halvtonetrinn?",
+    "answer": "Oktav",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-5e393f8ed2659a",
+    "question": "Hvilket engelsk uttrykk brukes om en uvanlig varm periode om høsten?",
+    "answer": "Indian summer",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-6a41246db57902",
+    "question": "Hvilken avstand er omtrent 9,46 billioner kilometer?",
+    "answer": "Lysår",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-958287839e27ea",
+    "question": "Hva er kong Harald Vs valgspråk?",
+    "answer": "Alt for Norge",
+    "acceptedAnswers": [],
+    "category": "Norge",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-6d81c669e2181c",
+    "question": "Hvilket symbol på PlayStation-kontrollen kommer i tillegg til firkant, trekant og sirkel?",
+    "answer": "Kryss",
+    "acceptedAnswers": [],
+    "category": "TV-spill",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-6acf59b5395a20",
+    "question": "Hvem har trent Norges herrelandslag i fotball lengst?",
+    "answer": "Egil Olsen",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-ba6e03b9ce9136",
+    "question": "Hva betyr uttrykket «carte blanche»?",
+    "answer": "Frie hender",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-25445efeb0b911",
+    "question": "Når feirer USA sin uavhengighetsdag?",
+    "answer": "4. juli",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-0b3fa035e0ba22",
+    "question": "Hva heter bokserien om Conor, Abeke, Meilin og Rollan i den fantastiske verdenen Erdas?",
+    "answer": "Spirit Animals",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-9a7a98cdd6ddf0",
+    "question": "Hvilken dinosaur fra Jurassic Park-filmene har et navn som betyr «rask tyv»?",
+    "answer": "Velociraptor",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-342085ff37c1b5",
+    "question": "Hvem er Katniss Everdeens venn og medkjempende partner i The Hunger Games?",
+    "answer": "Peeta Mellark",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-e5162a0d929117",
+    "question": "Hva heter havområdet mellom Jylland og Sverige?",
+    "answer": "Kattegat",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-44331e1e580b83",
+    "question": "Hvem sto bak kulturrevolusjonen i Kina?",
+    "answer": "Mao Zedong",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-1c9e9008da097f",
+    "question": "Hvilken rot gir karripulveret en karakteristisk gul farge?",
+    "answer": "Gurkemeie",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-ed6cdfe2484898",
+    "question": "Hvilken lyd lager fisken i Ylvis-låten «The Fox», ifølge musikkvideoen?",
+    "answer": "Blub",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-0a24c9f9ce98c8",
+    "question": "Hvilket nåletre med latinsk slektsnavn Larix feller nålene om vinteren?",
+    "answer": "Lerk",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-0ef3322ce4f68c",
+    "question": "Hvem formulerte den klassiske gravitasjonsloven?",
+    "answer": "Isaac Newton",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-4248be4b8b97e5",
+    "question": "Hva var det skattefrie beløpet studenter kunne tjene i Norge i 2016 ifølge gammel grense?",
+    "answer": "50 000 kr",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-8577e3f46b6c7b",
+    "question": "Hva heter mobilspillet der man skjærer frukt med en sverdbevegelse?",
+    "answer": "Fruit Ninja",
+    "acceptedAnswers": [],
+    "category": "TV-spill",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-9dd01b93190813",
+    "question": "Hva kalles et godkjent kast som slagmannen ikke treffer i baseball?",
+    "answer": "Strike",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-e0f289cb97053b",
+    "question": "Hva kalles det å rulle en side på skjermen?",
+    "answer": "Scroll",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-e265dd90aeaaa4",
+    "question": "Hva betyr ordet evangelium?",
+    "answer": "Det glade budskap",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-dcdb1f25556f5a",
+    "question": "Hva heter NRKs oppussingsprogram med Kjersti, Einar og Andreas?",
+    "answer": "Tid for hjem",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-b7dec491019237",
+    "question": "Hva heter jenta med en «umulig mamma» i Gro Dahles barnebok?",
+    "answer": "Emilie",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-27e99ea828a4c5",
+    "question": "Hvilket undertøysmerke arrangerte store motevisninger med modeller med englevinger?",
+    "answer": "Victoria's Secret",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-9603c3397b42c4",
+    "question": "Hva kalles umodne soyabønner som ofte serveres dampet og saltet?",
+    "answer": "Edamame",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-c9b5e2f796dfe7",
+    "question": "Hvem synger med Rihanna og Kanye West på «FourFiveSeconds»?",
+    "answer": "Paul McCartney",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-d91358611da4d3",
+    "question": "Hva heter effekten der atmosfæren holder på varme fra jorden?",
+    "answer": "Drivhuseffekten",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-fa75f1586727a1",
+    "question": "Hva kalles sykdommen herpes labialis på folkemunne?",
+    "answer": "Forkjølelsessår",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-08b2426335bc7b",
+    "question": "I hvilket tiår innførte Norge allmenn stemmerett for kvinner?",
+    "answer": "1910-tallet",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-bbc2037920fb7f",
+    "question": "Hva heter den norske versjonen av «Truth or Dare»?",
+    "answer": "Nødt eller sannhet",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-b7f5d954f6c3f9",
+    "question": "Hvilken idrett ble Carl Yngvar Christensen verdensmester i i 2014?",
+    "answer": "Styrkeløft",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-4a8c36c11ad86d",
+    "question": "Hvordan forkortes «og så videre» på norsk?",
+    "answer": "osv.",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-cf0497bcc4e408",
+    "question": "I hvilket land er shintoismen en tradisjonell religion?",
+    "answer": "Japan",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-cf6dcccf019124",
+    "question": "Hvilket fantasidyr drar Nils Holgersson på ryggen gjennom Sverige?",
+    "answer": "Gås",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-86ea8b3c195b67",
+    "question": "Hvilken orden av pattedyr tilhører bever?",
+    "answer": "Gnagere",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-f140ae0c034dcb",
+    "question": "Hva heter superheltmoren i Pixars «De utrolige»?",
+    "answer": "Elastika",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-fc031d43e2597c",
+    "question": "Hva heter valutaen i Mexico?",
+    "answer": "Peso",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-8ad4c58cadc0e9",
+    "question": "Hvem var mor til kong Olav V?",
+    "answer": "Dronning Maud",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-4dc690973bcdc7",
+    "question": "Hvilket tilnavn fikk den tynnere iPad-modellen som ble lansert i 2013?",
+    "answer": "Air",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-51fd74f3c9f0d4",
+    "question": "Hva kalles skyen fra et vulkanutbrudd som kan stanse flytrafikken?",
+    "answer": "Askesk y",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-919da67e846d45",
+    "question": "Hva er det vanligste norske navnet på Polaris?",
+    "answer": "Nordstjernen",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-2cd333127b971a",
+    "question": "Hvilken idrett forbindes med Anne Margrethe Hausken Nordberg og Olav Lundanes?",
+    "answer": "Orientering",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-eef31c311d7852",
+    "question": "Hvilken ukedag heter Mittwoch på tysk?",
+    "answer": "Onsdag",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-a37f8128e2c3a5",
+    "question": "Hva heter den hinduistiske guden som ofte kalles «ødeleggeren»?",
+    "answer": "Shiva",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-0ffdd2eb8a5531",
+    "question": "Hvilken amerikansk komiserie har karakteren Barney Stinson?",
+    "answer": "How I Met Your Mother",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-a0cfef1a4333e7",
+    "question": "Hvilket dyr har tradisjonelt blitt jaktet med redskapet hakapik?",
+    "answer": "Sel",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-2e572d78336328",
+    "question": "Hva heter hovedpersonen spilt av Kristen Stewart i Twilight-filmene?",
+    "answer": "Bella Swan",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-a4cf922cc66073",
+    "question": "På hvilken øy ligger Tjømes gamle kongelige feriested?",
+    "answer": "Mågerø",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-1817cec104789a",
+    "question": "Hva heter det profesjonelle sosiale nettverket som ble lansert i 2003?",
+    "answer": "LinkedIn",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-8958f423c4d724",
+    "question": "Hvor mange teskjeer går det vanligvis på en spiseskje?",
+    "answer": "Tre",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-a863d25f471158",
+    "question": "Hvilken Meghan Trainor-låt fra 2014 har tittelen «All About That ...»?",
+    "answer": "Bass",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-f55211d6748de6",
+    "question": "Hva kalles de enorme gresslettene i Nord-Amerika?",
+    "answer": "Prærie",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-1bea2f2840adb3",
+    "question": "Hvilken farge er den femte ringen i det olympiske flagget?",
+    "answer": "Sort",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-069b1ca0b59c14",
+    "question": "Hva måtte israelittene ifølge Bibelen lage av gull mens Moses var på Sinai-fjellet?",
+    "answer": "Gullkalv",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-73461fc4de1ff5",
+    "question": "Hva heter det strømlinjeformede organet på hver side av fiskens kropp som registrerer vannbevegelser?",
+    "answer": "Sidelinje",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-06d3bae8965060",
+    "question": "Hvem spiller hovedrollen som Tris i Divergent-filmene?",
+    "answer": "Shailene Woodley",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-9987f7e8b1ba59",
+    "question": "Hvilket land har hovedstaden Ankara?",
+    "answer": "Tyrkia",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-5c3ad04ecf7e29",
+    "question": "Ved hvilken norsk institusjon ble Kirsten Flagstad første sjef i 1958?",
+    "answer": "Den Norske Opera",
+    "acceptedAnswers": [],
+    "category": "Kunst og kultur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-bc84aa24070305",
+    "question": "Hva kalles de hvite trekantene på en vikepliktlinje i veien?",
+    "answer": "Haitenner",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-e373dd0437839a",
+    "question": "Hvilket kjøtt brukes vanligvis i en tradisjonell italiensk pasta carbonara?",
+    "answer": "Pancetta",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-711c679ff84671",
+    "question": "Hvilken musikksjanger forbindes med Bugge Wesseltoft, Terje Rypdal og Karin Krog?",
+    "answer": "Jazz",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-ce1c94dd4228c8",
+    "question": "Hvilken blomst har varianter som «Karen Blixen», «Hurdal» og «That's Jazz»?",
+    "answer": "Rose",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-4bbd27e2b02434",
+    "question": "Hvor mange grader er det i den siste vinkelen i en trekant med vinkler på 50 og 40 grader?",
+    "answer": "90",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-b41e6abbb02836",
+    "question": "Hvilken internasjonal organisasjon fikk Trygve Lie som første generalsekretær i 1946?",
+    "answer": "FN",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-3dd6764365645f",
+    "question": "Hvilket leketøysselskap laget spillserien LEGO Dimensions?",
+    "answer": "LEGO",
+    "acceptedAnswers": [],
+    "category": "TV-spill",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-5dc052055a9cbf",
+    "question": "Hvilken Grand Slam-turnering i tennis spilles i januar?",
+    "answer": "Australian Open",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-a8dd43ac32e9c9",
+    "question": "Hva kaller engelskmennene bæret stikkelsbær?",
+    "answer": "Gooseberry",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-c1b2a07567224f",
+    "question": "Hva sier barn på halloween når de ber om godteri?",
+    "answer": "Trick or treat",
+    "acceptedAnswers": [],
+    "category": "Kunst og kultur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-6318c9407c9989",
+    "question": "Hvilket land forbindes med Lucia-feiringens tradisjon i Norden?",
+    "answer": "Sverige",
+    "acceptedAnswers": [],
+    "category": "Kunst og kultur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-d95396e601d959",
+    "question": "Hvilken filmstjerne spilte i «Noen har det hett» og «Herrer liker blonde piker»?",
+    "answer": "Marilyn Monroe",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-d541f6964fcf07",
+    "question": "Hvilken bokstav er landskoden på biler fra Spania?",
+    "answer": "E",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-f311b492f5058c",
+    "question": "Hva het det berømte fossilet som Donald Johanson fant i Etiopia i 1974?",
+    "answer": "Lucy",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-3e150493815866",
+    "question": "Hvilken nettskytjeneste ble grunnlagt av Drew Houston og Arash Ferdowsi?",
+    "answer": "Dropbox",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-8bb29b1a2028c3",
+    "question": "Hvilke tre tilstandsformer kan vann finnes i?",
+    "answer": "Fast, flytende og gass",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-1cd4254908d22c",
+    "question": "Hva heter utdanningsinstitusjonen som tidligere het Statens gymnastikkskole?",
+    "answer": "Norges idrettshøgskole",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-9bb2f4d5ee81d1",
+    "question": "Hva kalles barnesanger og rytmeleker med klapping?",
+    "answer": "Klappeleker",
+    "acceptedAnswers": [],
+    "category": "Kunst og kultur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-e03288d5154c57",
+    "question": "Hva kalles bæret som på engelsk heter gooseberry?",
+    "answer": "Stikkelsbær",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-b49d94c3d65afb",
+    "question": "Hvilken svensk tradisjon markeres med Lucia-tog?",
+    "answer": "Luciadagen",
+    "acceptedAnswers": [],
+    "category": "Kunst og kultur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-3bb31e52b8240e",
+    "question": "Hvilket dyr er sentralt i NRK-serien Det store spranget?",
+    "answer": "Hester",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-d282acc6433aa7",
+    "question": "Hvilke tre land var blant aksemaktene under andre verdenskrig?",
+    "answer": "Tyskland, Italia og Japan",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-e33daeb39f3677",
+    "question": "Hvilket skomerke er kjent for sorte støvler med gule sømmer?",
+    "answer": "Dr. Martens",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-9dfd2554c4fdc5",
+    "question": "I hvilket land ligger Darjeeling, kjent for te?",
+    "answer": "India",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-016c7a305c6148",
+    "question": "Hvilken julehit inneholder tekstlinjen «This year, to save me from tears»?",
+    "answer": "Last Christmas",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-e07b8fdb4710ea",
+    "question": "Hva er tallet på motsatt side av tre på en vanlig terning?",
+    "answer": "Fire",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-0271d9c8142320",
+    "question": "Hvilken idrett tok Kjetil André Aamodt bare ett OL-gull i blant de alpine disiplinene?",
+    "answer": "Slalåm",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-4cf5c1be8d01f6",
+    "question": "Hvilket språk har gitt norsk ord som sofa og madrass?",
+    "answer": "Arabisk",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-e0ed45787ad3c7",
+    "question": "Hvem var programleder for God kveld Norge da programmet begynte i 1997?",
+    "answer": "Dorthe Skappel",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-df0bcea9450acd",
+    "question": "Hvilken by ligger verdens høyeste bygning Burj Khalifa i?",
+    "answer": "Dubai",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-3dc285f4f67fbf",
+    "question": "Hva er navnet på den store klokken i Elizabeth Tower ved Westminster?",
+    "answer": "Big Ben",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-e146d18535b055",
+    "question": "Hvilket nettbutikkmerke ble grunnlagt i Tyskland i 2008 og selger klær og sko?",
+    "answer": "Zalando",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-d054173e65c9b7",
+    "question": "Hvilket land forbindes tradisjonelt med kjøttypen wagyu/kobe?",
+    "answer": "Japan",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-af507b519f5500",
+    "question": "Hvilke farger kan en sjampinjong vanligvis ha?",
+    "answer": "Hvit og brun",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-233c43e15fe5bf",
+    "question": "Hvor i kroppen finner vi menisken?",
+    "answer": "I kneet",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-7173aef4481826",
+    "question": "Hva står IKEA for?",
+    "answer": "Ingvar Kamprad Elmtaryd Agunnaryd",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-0e13994a37fb1e",
+    "question": "Hvor mange hvite felt finnes på et klassisk ludo-brett?",
+    "answer": "48",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-bf795f283fd019",
+    "question": "Hvilken stadion spiller Arsenal sine hjemmekamper på?",
+    "answer": "Emirates Stadium",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-3aa616b14e7ac5",
+    "question": "Hvor mange ganger daglig kalles det tradisjonelt til bønn i islam?",
+    "answer": "Fem",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-47fae3317a3897",
+    "question": "Hvilken komiserie hadde Topher Grace, Ashton Kutcher og Mila Kunis i sentrale roller?",
+    "answer": "That '70s Show",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-3c7d0a88acae11",
+    "question": "Hvilken norsk filmserie er kjent for de fargerike kjeftesmellene «Amatører! Idioter!»?",
+    "answer": "Olsenbanden",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-b36ac781b6a3b0",
+    "question": "Hva heter jordens nest største hav?",
+    "answer": "Atlanterhavet",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-5f20552fa115d5",
+    "question": "I hvilken by ligger Spansketrappen?",
+    "answer": "Roma",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-b42421f3b6042e",
+    "question": "Hvilket Mac-program symboliseres med et smilende ansikt på blå bakgrunn?",
+    "answer": "Finder",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-7fa68966424593",
+    "question": "Hva er de små hvite bollene som spises til kjøttboller i klassisk hønsesuppe?",
+    "answer": "Melboller",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-4643b199dabd35",
+    "question": "Hvor mange ganger hadde Norge vunnet Eurovision da Alexander Rybak vant i 2009?",
+    "answer": "Tre",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-15164e2cd71f09",
+    "question": "Hva heter den norske miljøorganisasjonen for barn som brukte slagordet «Ikke sint, bare veldig skuffet»?",
+    "answer": "Miljøagentene",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-f3c343ff932430",
+    "question": "Hvilket grunnstoff utgjør mesteparten av solens masse?",
+    "answer": "Hydrogen",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-6370cb7ef89dee",
+    "question": "Hvilket dyr er Geoffrey maskot for Toys R Us?",
+    "answer": "Sjiraff",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-8c1df761430ab4",
+    "question": "Hva heter LEGO-serien med figurene Mia, Andrea og Stephanie?",
+    "answer": "LEGO Friends",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-fc72f932be3d46",
+    "question": "Hva heter gudenes verden i norrøn mytologi?",
+    "answer": "Åsgard",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-06253e62ef8f73",
+    "question": "Hvilken komponistduo står bak Röyksopp?",
+    "answer": "Svein Berge og Torbjørn Brundtland",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-025098d75f18d5",
+    "question": "Hva kalles et fruktbart område i ørkenen med tilgang på vann?",
+    "answer": "Oase",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-327b6143b075d5",
+    "question": "Når markeres arbeidernes internasjonale kampdag?",
+    "answer": "1. mai",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-7e624d31a97765",
+    "question": "Hva kalles små brikker med prikker som brukes i et brettspill?",
+    "answer": "Dominobrikker",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-7cd8226a1b39e4",
+    "question": "Hva er det fulle navnet på den norske ishockeyspilleren kjent som Zucca?",
+    "answer": "Mats Zuccarello Aasen",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-71898e270871b8",
+    "question": "Hvilken tegneseriefigur er bestevennen til Svampebob Firkant?",
+    "answer": "Patrick",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-83351de9b13e26",
+    "question": "Hva kalles et lite rovdyr i mårfamilien med lange, smale kropp?",
+    "answer": "Ilder",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-52c21c1d97b5c5",
+    "question": "Hvem trener Luke Skywalker til å bli jedi i «The Empire Strikes Back»?",
+    "answer": "Yoda",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-49dee5e6ea76c9",
+    "question": "Hvilken by har Den blå moské?",
+    "answer": "Istanbul",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-63f53a58928973",
+    "question": "Hva het skipet Roald Amundsen brukte til Antarktis-ekspedisjonen 1910–1912?",
+    "answer": "Fram",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-f88dc8b77c4216",
+    "question": "Hva heter skolefaget som tidligere het heimkunnskap?",
+    "answer": "Mat og helse",
+    "acceptedAnswers": [],
+    "category": "Norge",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-7939afd330fa06",
+    "question": "Hva kalles sopp med porer under hatten i stedet for skiver?",
+    "answer": "Rørsopper",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-0046c23a5df301",
+    "question": "Hva heter eieren av Tudor Mansion i Cluedo?",
+    "answer": "Dr. Black",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-ebd8e857103d99",
+    "question": "Hvilket Formel 1-lag kjørte Sebastian Vettel for da han ble verdensmester i 2010?",
+    "answer": "Red Bull Racing",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-b194eb175bb99e",
+    "question": "Hva heter det tyske ordet for ost?",
+    "answer": "Käse",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-6920ff4d23bd74",
+    "question": "Hva kalles tanken om at Gud er til stede i alt, og at alt er Gud?",
+    "answer": "Panteisme",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-58fd52d2326c16",
+    "question": "Hva skjer med Kenny i mange av episodene av South Park?",
+    "answer": "Han dør",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-83b461c0dc826d",
+    "question": "Hvilket land har hovedstaden Buenos Aires?",
+    "answer": "Argentina",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-bab6ce718c6dea",
+    "question": "Hvem skrev romanen om Robinson Crusoe?",
+    "answer": "Daniel Defoe",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-b4ed17d78f053d",
+    "question": "Hva er den engelske tittelen på tegneserien om Son Goku som kjemper mot ondskap?",
+    "answer": "Dragon Ball",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-2ab93ef0e7af8b",
+    "question": "I hvilken norsk by ligger Polaria, det arktiske opplevelsessenteret?",
+    "answer": "Tromsø",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-5e7d6029c43e22",
+    "question": "Hvilken karakter i Ole Brumm er et lite, engstelig rosa dyr?",
+    "answer": "Nasse Nøff",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-9eb7975c30996f",
+    "question": "I hvilken fjord ligger både Preikestolen og Kjeragbolten?",
+    "answer": "Lysefjorden",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-619285a8ccf298",
+    "question": "Hva slags italiensk matvare er pecorino, scamorza og ricotta?",
+    "answer": "Ost",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-f16877407dea59",
+    "question": "Hvilken norsk pianist mottok Spellemannprisens hederspris i 2013?",
+    "answer": "Leif Ove Andsnes",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-48c38c8b832f80",
+    "question": "Hvilket primtall går opp i både 39 og 65?",
+    "answer": "13",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-522038e04f372d",
+    "question": "Hvilken ministerpost i Norge var ikke besatt av en kvinne innen 2016?",
+    "answer": "Utenriksminister",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-3bb08c4c1e9bc4",
+    "question": "Hvor gammel var Magnus Carlsen da han vant VM i sjakk i 2013?",
+    "answer": "22",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-0995befc9f99d7",
+    "question": "Hvilket uttrykk brukes om noe som bare er interessant et kort øyeblikk?",
+    "answer": "Døgnflue",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-1b336f18c23520",
+    "question": "Hvilket dyr er Kong Julien fra Madagascar-filmene?",
+    "answer": "Lemur",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-d5d55e5f78bfc4",
+    "question": "Hva heter Jørn Lier Horsts spenningsserie for barn om Cecilia, Leo og Une?",
+    "answer": "CLUE",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-fd04070f786ac4",
+    "question": "Hva kalles en person fra Stavanger?",
+    "answer": "Siddis",
+    "acceptedAnswers": [],
+    "category": "Norge",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-cb4436659a732c",
+    "question": "Hva heter TVNorges program der kjendiser konkurrerer om å lage best middag?",
+    "answer": "4-stjerners middag",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-dcb756d8b65501",
+    "question": "Hva heter den klassiske barnebokserien om en liten grend med tre gårder – Nordgården, Mellomgården og Sørgården?",
+    "answer": "Bakkebygrenda",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-3410ec669e3ff0",
+    "question": "Hvilken verdensdel kan man se pirajaer i sitt naturlige habitat?",
+    "answer": "Sør-Amerika",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-e08aa794989697",
+    "question": "Hvilken film fra 2012 handler om jentekoret The Barden Bellas?",
+    "answer": "Pitch Perfect",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-db8507ee46e335",
+    "question": "Hva heter Indias nasjonalfugl?",
+    "answer": "Påfugl",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-2a686f4c7ee3a8",
+    "question": "Hva heter Mowglis store tigerfiende i «Jungelboken»?",
+    "answer": "Shere Khan",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-390823110b8442",
+    "question": "Hva heter gutten som eier lekene i Toy Story-filmene?",
+    "answer": "Andy",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-6dc0d5df380314",
+    "question": "Hvilken bro var verdens lengste hengebro da den ble åpnet i 1937?",
+    "answer": "Golden Gate Bridge",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-b7fad2af826ce1",
+    "question": "Hva trenger man først og fremst for å lage origami?",
+    "answer": "Papir",
+    "acceptedAnswers": [],
+    "category": "Kunst og kultur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-bfabe6853c3d83",
+    "question": "Hvilken kinesisk rett serveres gjerne med små pannekaker, hoisinsaus og vårløk?",
+    "answer": "Pekingand",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-1d611870b8470e",
+    "question": "Hvilken Pharrell Williams-hit fra 2013 var med i filmen «Grusomme meg 2»?",
+    "answer": "Happy",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-f4a3780c5c2f5b",
+    "question": "Hva kalles den lille gule engsoleien på norsk?",
+    "answer": "Smørblomst",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-6c65b6d0b117c1",
+    "question": "Hvilket land kom Jurij Gagarin fra, da han ble første menneske i verdensrommet i 1961?",
+    "answer": "Sovjetunionen",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-675a60d729b122",
+    "question": "Hvilken varehuskjede er oppkalt etter grunnleggerens initialer og hjemstedet Elmtaryd Agunnaryd?",
+    "answer": "IKEA",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-aaf13184428c25",
+    "question": "Hvordan sier man «takk» på russisk?",
+    "answer": "Spasiba",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-76dce0767e5901",
+    "question": "I hvilken by red Jesus inn på palmesøndag ifølge Bibelen?",
+    "answer": "Jerusalem",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-56b1a0331441a7",
+    "question": "Hvilken norsk vitenskapsserie er oppkalt etter et tankeeksperiment om en katt?",
+    "answer": "Schrödingers katt",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-c4eba2d7a3afdc",
+    "question": "Hva kalles Norges nasjonalfugl?",
+    "answer": "Fossekall",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-62d50f6271228c",
+    "question": "I hvilken by i De forente arabiske emirater ligger Burj Khalifa?",
+    "answer": "Dubai",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-852ef45e70c7e7",
+    "question": "Hvilket klassisk indisk instrument har mange strenger og en lang hals?",
+    "answer": "Sitar",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-e1c3bda409a5be",
+    "question": "Hvor i kroppen finnes menisken?",
+    "answer": "Kneet",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-026e16e9fddb62",
+    "question": "Hva får man når man bestiller «une glace» på en varm dag i Frankrike?",
+    "answer": "Is",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-b5b07e6acf1b22",
+    "question": "Hvor mange bønnerop er det vanligvis i løpet av døgnet i islam?",
+    "answer": "Fem",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-22714f9abe4204",
+    "question": "Hvilken amerikansk TV-serie handler om en vennegjeng på 1970-tallet med blant andre Ashton Kutcher og Mila Kunis?",
+    "answer": "That '70s Show",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-05252dc5ac67c3",
+    "question": "Hvilken internasjonal dag markeres 8. mars?",
+    "answer": "Kvinnedagen",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-90744bed2c6615",
+    "question": "Hva heter det amerikanske teknologiselskapet som lanserte Macintosh i 1984?",
+    "answer": "Apple",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-6556c125a83054",
+    "question": "I hvilken filmserie trener Yoda Luke Skywalker?",
+    "answer": "Star Wars",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-183d0f7b938967",
+    "question": "Hvilket skip brukte Roald Amundsen på sin ekspedisjon til Sørpolen?",
+    "answer": "Fram",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-7ad2905c281911",
+    "question": "Hva er den fjerde ingrediensen på Pizza Hawaii ved siden av tomatsaus, ost og skinke?",
+    "answer": "Ananas",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-87fd4d484d9e41",
+    "question": "Hvilken norsk DJ-duo står bak «Vannski», «Afterski» og «Bonski»?",
+    "answer": "Broiler",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-9196cb4102e28d",
+    "question": "Hvilken type sopp har porer under hatten?",
+    "answer": "Rørsopper",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-65e6350d70e651",
+    "question": "Hvilken statsminister satt lengst i Norge etter krigen?",
+    "answer": "Einar Gerhardsen",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-e6970d8b2924ac",
+    "question": "Hvem er offeret i det engelske brettspillet Cluedo?",
+    "answer": "Dr. Black",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-d9ee4dcf45689d",
+    "question": "Hva heter ost på tysk?",
+    "answer": "Käse",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-68ea23b90740f4",
+    "question": "Hva heter læren om at alt er Gud?",
+    "answer": "Panteisme",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-ef47c24c8e448c",
+    "question": "Hvem regnes som «de fire store» i norsk litteratur på slutten av 1800-tallet?",
+    "answer": "Henrik Ibsen, Bjørnstjerne Bjørnson, Alexander Kielland og Jonas Lie",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-bee8f7715d7eae",
+    "question": "Hvilken gruppe superhelter består blant annet av Wolverine, Magneto og Phoenix?",
+    "answer": "X-Men",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-b2cf54412ba499",
+    "question": "Hva heter hovedstaden i Sveits?",
+    "answer": "Bern",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-77c5b63192981d",
+    "question": "Hva heter basilikaen i Roma som ble oppført fra 1506 til 1626?",
+    "answer": "Peterskirken",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-377e263f9ea521",
+    "question": "Hvilket selskap står bak e-posttjenesten Gmail?",
+    "answer": "Google",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-adb0b73e0be1c0",
+    "question": "Hvilket land er verdens største eksportør av kaffe, målt i volum?",
+    "answer": "Brasil",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-33790a9da7037e",
+    "question": "Hvilket australsk rockeband ga ut «Highway to Hell»?",
+    "answer": "AC/DC",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-bb0d9bfb8ad6c6",
+    "question": "Hva heter havstrømmen som bidrar til et mildere klima i Norge?",
+    "answer": "Golfstrømmen",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-827e0fe1634465",
+    "question": "Hva kalles en person som stadig frykter at han eller hun er syk?",
+    "answer": "Hypokonder",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-8947bd20e8ccac",
+    "question": "Hvilke skoler forbindes med den pedagogiske bevegelsen eurytmi?",
+    "answer": "Steinerskoler",
+    "acceptedAnswers": [],
+    "category": "Kunst og kultur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-5b8b014634a4e6",
+    "question": "Hva kalles kabalen kjent som Solitaire i Windows?",
+    "answer": "Sju-er kabal",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-419c909a894024",
+    "question": "Hvem regnes som den mest berømte kanadiske ishockeyspilleren med draktnummer 99?",
+    "answer": "Wayne Gretzky",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-446c7e6deb866c",
+    "question": "Hvilket land har vunnet flest titler i Tour de France utenom Frankrike, historisk per 2016?",
+    "answer": "Belgia",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-7538bc603f6d06",
+    "question": "Hva er det vanlige norske svaret når noen sier «takk» på svensk?",
+    "answer": "Vær så god",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-8dbc5be7790eba",
+    "question": "Hvilke overnaturlige vesener sies å samles på Blokksberg under valborgsnatten?",
+    "answer": "Hekser",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-de6e91ccb0e847",
+    "question": "I hvilken Netflix-serie spiller Kevin Spacey politikeren Frank Underwood?",
+    "answer": "House of Cards",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-480b78e22ee634",
+    "question": "Hva heter plassen i Moskva som er kjent for Lenin-mausoleet og Vasilijkatedralen?",
+    "answer": "Den røde plass",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-b7a160c757f0f8",
+    "question": "Hvilken norsk by regnes ofte som Norges eldste by?",
+    "answer": "Tønsberg",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-05c41033cb6264",
+    "question": "Hva står BCC for i e-post?",
+    "answer": "Blind carbon copy",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-0af13ed1a752b2",
+    "question": "Hva heter den franske grønnsaksretten med blant annet aubergine, squash og tomat?",
+    "answer": "Ratatouille",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-042a05b5d4637f",
+    "question": "Hvilken temperaturskala har vannets frysepunkt på 32 grader?",
+    "answer": "Fahrenheit",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-61ad243f5cb33f",
+    "question": "Hvilken sykdom forkortes MS?",
+    "answer": "Multippel sklerose",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-55137b6c27ad24",
+    "question": "Hva heter eliteidrettsorganet i Norges idrettsforbund?",
+    "answer": "Olympiatoppen",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-f744c033c1d6d0",
+    "question": "Hva heter Microsoft-kabalen som på norsk kalles sjuerkabal?",
+    "answer": "7-er kabal",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-e503295bfcd25d",
+    "question": "Hvilket dyr blandes med elefant i navnet på Fantorangen?",
+    "answer": "Orangutang",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-610a8ff4501470",
+    "question": "Hvilken av Disneys figurer er en skurk som vil lage pels av dalmatinere?",
+    "answer": "Cruella de Vil",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-426bb50303c468",
+    "question": "Hvilket klassisk dansk forfatterverk inneholder fortellingen om havfruen?",
+    "answer": "Den lille havfruen",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-a4b93b8368a338",
+    "question": "Hvilken moderne animasjonsfilm tar for seg en familie av lilla figurer?",
+    "answer": "Minions",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-58cc1e64f53868",
+    "question": "Hvilken svensk forfatter skapte karakteren Emil i Lønneberget?",
+    "answer": "Astrid Lindgren",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-8ed79b72136fdb",
+    "question": "Hva kalles den hvite soyabønnepastaen som ofte brukes i asiatisk mat?",
+    "answer": "Tofu",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-c28630209a8c18",
+    "question": "Hvilken tidligere One Direction-sanger ga ut singelen «Pillowtalk»?",
+    "answer": "Zayn Malik",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-c7a8fadb4ae1f7",
+    "question": "Hva kalles et område med svært liten nedbør, under cirka 25 cm i året?",
+    "answer": "Ørken",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-fe191e8fe15b06",
+    "question": "Hvilket grunnstoff tilsatte man tradisjonelt bordsalt for å forebygge struma?",
+    "answer": "Jod",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-532586c957d6d0",
+    "question": "Hvilken amerikaner publiserte i 2013 opplysninger om NSA sin overvåking?",
+    "answer": "Edward Snowden",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-2b94c38c882f33",
+    "question": "Hva er fargen på knappen i «Virre virre vapp, du slapp»?",
+    "answer": "Gul",
+    "acceptedAnswers": [],
+    "category": "Kunst og kultur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-8aa412d48e6ebe",
+    "question": "Hva er det norske ordet for smilodon?",
+    "answer": "Sabeltannkatt",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-20de5831184b21",
+    "question": "Hva heter sangen der Sophie synger «I Have a Dream» i en kjent musikalfilm?",
+    "answer": "Mamma Mia!",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-b9125420748455",
+    "question": "Hvilken bygning i Washington D.C. ble truffet under terrorangrepene 11. september 2001?",
+    "answer": "Pentagon",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-ff2eef30788a99",
+    "question": "Hvilket selskap organiserer kollektivtransporten i Oslo og Akershus?",
+    "answer": "Ruter",
+    "acceptedAnswers": [],
+    "category": "Norge",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-e5444cfd292c5e",
+    "question": "Hvilken rot er kjent for den sterke smaken og serveres med wienerschnitzel?",
+    "answer": "Pepperrot",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-3020632d9e7769",
+    "question": "Hvem hadde hitlåtene «Shape of You» og «Thinking Out Loud»?",
+    "answer": "Ed Sheeran",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-dce09d382a83a2",
+    "question": "Hva kalles en forstening av et dyr eller en plante?",
+    "answer": "Fossil",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-9f399cceb9b8ee",
+    "question": "Hvilken syre dannes når CO₂ reagerer med vann?",
+    "answer": "Kullsyre",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-f069d638a066ae",
+    "question": "Hvilket leketøy finner man merkene Razor, Blitz, Slamm og District på?",
+    "answer": "Sparkesykkel",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-99009cea287cb5",
+    "question": "Hva heter den jamaicanske sprinteren som løp 100 meter under 9,6 sekunder i 2009?",
+    "answer": "Usain Bolt",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-4b30c30cd15a4b",
+    "question": "Hvilket bibelord er navnet på en av evangeliene som begynner med «Det skjedde i de dager»?",
+    "answer": "Lukasevangeliet",
+    "acceptedAnswers": [],
+    "category": "Mytologi og religion",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-11aa5efd349a83",
+    "question": "Hvem eier atomkraftverket i TV-serien The Simpsons?",
+    "answer": "Mr. Burns",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-2ec1a2b90e36e4",
+    "question": "Hvem skrev romanen «På sporet av den tapte tid»?",
+    "answer": "Marcel Proust",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-b5a5ecea4ef3bd",
+    "question": "Hvilke to elefantarter omtales ofte som de to hovedgruppene?",
+    "answer": "Afrikansk og asiatisk elefant",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-31ab5de54b8901",
+    "question": "Hvem spiller alven Legolas i Ringenes herre-filmene?",
+    "answer": "Orlando Bloom",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-416be28a2236c1",
+    "question": "Hva heter fjellformasjonen som stikker ut over Ringedalsvatnet ved Odda?",
+    "answer": "Trolltunga",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-2af1707439caf1",
+    "question": "Hva het landet Josip Tito var president i fra 1953 til 1980?",
+    "answer": "Jugoslavia",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-26e4971c30a0ea",
+    "question": "Hva står IC for når vi snakker om tog?",
+    "answer": "InterCity",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-f2f9f03aa514c3",
+    "question": "Hva heter den store sitrusfrukten med tykt skall som ofte er lysegul inni?",
+    "answer": "Pomelo",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-61a6198d77e726",
+    "question": "Hvilket amerikansk metalband hadde hitene «Psychosocial» og «Duality»?",
+    "answer": "Slipknot",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-8cd8da45e18f8f",
+    "question": "Hva heter den vannplanten med hvite eller rosa blomster som er kjent fra indisk symbolikk?",
+    "answer": "Lotus",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-c2e5bb42fddb7b",
+    "question": "Hvor mange melketenner får barn normalt?",
+    "answer": "20",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-8cf8c327994eb6",
+    "question": "Hvilket norsk politisk parti har et firkløver i logoen?",
+    "answer": "Senterpartiet",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-de88a9806d5c13",
+    "question": "Hva kalles den yngste broren i en familie?",
+    "answer": "Lillebror",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-e5ea1b3ab8c24a",
+    "question": "Hvor mange kamper må man vinne i dameturneringen i Wimbledon for å bli mester?",
+    "answer": "Sju",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "hard"
+  },
+  {
+    "id": "qh34-5e547edfe448df",
+    "question": "Hva kalles den lange streken som på engelsk heter em dash?",
+    "answer": "Tankestrek",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-8b61e35ad13759",
+    "question": "Hvilken by spiller hovedrolle i TV-serien Sex and the City?",
+    "answer": "New York City",
+    "acceptedAnswers": [],
+    "category": "TV-serier",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-3a27da0a40f7df",
+    "question": "Hvilken forfatter skrev Tarzan-bøkene?",
+    "answer": "Edgar Rice Burroughs",
+    "acceptedAnswers": [],
+    "category": "Litteratur",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-b655d2ea9580f9",
+    "question": "Hva kalles ungene til en hval?",
+    "answer": "Kalver",
+    "acceptedAnswers": [],
+    "category": "Dyr og natur",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-ea1784ad6466f4",
+    "question": "Hvilken norsk komiker spiller 11 ulike roller i filmen Norske byggeklosser fra 2018?",
+    "answer": "Atle Antonsen",
+    "acceptedAnswers": [],
+    "category": "Film",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-3ae2ebc3c87980",
+    "question": "Hva heter hovedstaden i Oman?",
+    "answer": "Muskat",
+    "acceptedAnswers": [],
+    "category": "Geografi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-153ad26c668dc9",
+    "question": "Hvilken oppfinner forbinder man med boktrykkerkunsten i Europa?",
+    "answer": "Johann Gutenberg",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-a82ff6281b0479",
+    "question": "Hvilke av tallknappene på en gammel mobil er bokstavene T, U og V plassert på?",
+    "answer": "8",
+    "acceptedAnswers": [],
+    "category": "Teknologi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-417b77f3297e95",
+    "question": "Hvilken ungarsk matrett består av storfekjøtt, paprika og løk?",
+    "answer": "Gulasj",
+    "acceptedAnswers": [],
+    "category": "Mat og drikke",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-d23a6cd61218a8",
+    "question": "Hvem synger på Mark Ronsons «Uptown Funk»?",
+    "answer": "Bruno Mars",
+    "acceptedAnswers": [],
+    "category": "Musikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-fa07a622b237a1",
+    "question": "Hvilken NASA-måneferdsserie brukte romfartøy med mannskap fra 1960-årene?",
+    "answer": "Apollo",
+    "acceptedAnswers": [],
+    "category": "Naturvitenskap",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-bbf497365bfbd8",
+    "question": "Hvilken farge har sløyfen som symboliserer solidaritet med brystkreftrammede?",
+    "answer": "Rosa",
+    "acceptedAnswers": [],
+    "category": "Samfunn og politikk",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-e4d1fe9c1e5f46",
+    "question": "Hvilket kortspill spilles av fire personer i to lag etter en kontrakt?",
+    "answer": "Bridge",
+    "acceptedAnswers": [],
+    "category": "Brettspill",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qh34-ca1e2d6bcfcbb9",
+    "question": "Hvor lang er en standard utendørs løpebane på friidrettsstadion?",
+    "answer": "400 meter",
+    "acceptedAnswers": [],
+    "category": "Sport",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-d061711c00f7b8",
+    "question": "Hva heter det spanske uttrykket for «God jul»?",
+    "answer": "Feliz Navidad",
+    "acceptedAnswers": [],
+    "category": "Språk og ord",
+    "difficulty": "easy"
+  },
+  {
+    "id": "qh34-dfd3e7063c3267",
+    "question": "Hvilken by ble ifølge romersk mytologi grunnlagt av Romulus og Remus?",
+    "answer": "Roma",
+    "acceptedAnswers": [],
+    "category": "Historie",
+    "difficulty": "easy"
   }
 ];
 export const specialBanks = {
