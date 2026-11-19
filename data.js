@@ -7011,14 +7011,6 @@ export const factBank = [
     "difficulty": "easy"
   },
   {
-    "question": "Hvilket land har navnet sitt fra ekvator?",
-    "answer": "Ecuador",
-    "fact": "Ecuador betyr ekvator på spansk.",
-    "id": "qh-bcb49d189cda",
-    "category": "Geografi",
-    "difficulty": "easy"
-  },
-  {
     "question": "Hvilket land har en hovedstad som heter Nukuʻalofa?",
     "answer": "Tonga",
     "fact": "Tonga er et kongerike i Stillehavet.",
