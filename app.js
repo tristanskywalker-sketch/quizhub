@@ -163,7 +163,7 @@ function resetQuestion(){state.index=0;state.revealed=false;state.clue=0;state.s
 function dispatch(action,el){switch(action){
  case 'live': {
   app.innerHTML=header()+'<main class="online-layout"><h1 class="heading">Live flerspiller</h1><p>Åpner flerspillermodusen …</p></main>';
-  import('./live.js?v=39').then(m=>m.startLive()).catch(e=>{
+  import('./live.js?v=40').then(m=>m.startLive()).catch(e=>{
     console.error(e);app.innerHTML=header()+'<main class="online-layout"><h1>Kunne ikke åpne live quiz</h1><div class="panel"><p>'+esc(e.message)+'</p><button class="btn" data-action="home">Tilbake</button></div></main>';
   });
   break;
