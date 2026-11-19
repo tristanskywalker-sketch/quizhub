@@ -12,8 +12,8 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const code=()=>Array.from(crypto.getRandomValues(new Uint8Array(8)),v=>'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'[v%32]).join('');
 const pools={general:questions.general,geography:questions.geography,sports:questions.sports};
 const modeNames={general:'Blandet quiz',geography:'Geografi',sports:'Sport'};
-let uid=null, roomCode='',room=null, players=[],responses=[],secret=null,user=null,unsubs=[],answerOff=null,error='',draft='',mode='landing',sending=false,grading=false;
-const cleanup=()=>{if(answerOff){answerOff();answerOff=null;}unsubs.forEach(fn=>fn());unsubs=[];};
+let uid=null, roomCode='',room=null, players=[],responses=[],secret=null,user=null,unsubs=[],answerOff=null,keyOff=null,error='',draft='',mode='landing',sending=false,grading=false,keyLoading=false;
+const cleanup=()=>{if(answerOff){answerOff();answerOff=null;}if(keyOff){keyOff();keyOff=null;}unsubs.forEach(fn=>fn());unsubs=[];};
 const roomRef=()=>doc(db,'liveRooms',roomCode);
 const members=()=>collection(db,'liveRooms',roomCode,'players');
 const answers=()=>collection(db,'liveRooms',roomCode,'answers');
@@ -62,9 +62,21 @@ function render(){
    (submitted?'<p class="notice">✓ Svaret ditt er levert. Fasit vises når runden er avsluttet.</p>':
     '<form id="live-answer-form" class="ol-form"><label>Ditt svar<textarea name="answer" id="live-answer" maxlength="500" required rows="3" placeholder="Skriv svaret her …">'+esc(draft)+'</textarea></label>'+(error?'<p class="notice" role="alert">'+esc(error)+'</p>':'')+'<button class="btn" type="submit" '+(sending?'disabled aria-busy="true"':'')+'>'+(sending?'Sender svar …':'Lever svar')+'</button></form>')+
    (host?'<div class="actions">'+btn(allReady?'Vis fasit og rett svar':'Avslutt svarrunden og vis fasit','reveal','class="btn secondary"')+'</div>':'<p class="tiny">Venter på at alle svarer og quizmaster avslutter runden.</p>'):
-   '<div class="answer">Fasit: '+esc(secret?.answer||'Henter fasit …')+'</div><h3>Alle svar</h3>'+listHtml+
-   (host?'<p class="tiny">Du kan rette alle svar manuelt. Poengene oppdateres for alle.</p><div class="actions">'+btn(grading?'Retter svar …':'Rett svar automatisk på nytt','regrade',grading?'disabled aria-busy="true"':'')+btn(idx===room.total-1?'Vis sluttresultat':'Neste spørsmål →','next')+'</div>':'<p class="muted">Venter på neste spørsmål.</p>'))+
+   '<div class="answer">Fasit: '+esc(secret?.answer||(keyLoading?'Henter fasit …':'Fasit ikke tilgjengelig ennå'))+'</div><h3>Alle svar</h3>'+listHtml+
+   (host?'<p class="tiny">Du kan rette alle svar manuelt. Poengene oppdateres for alle.</p><div class="actions">'+btn('Hent fasit på nytt','reloadkey')+btn(grading?'Retter svar …':'Rett svar automatisk på nytt','regrade',grading?'disabled aria-busy="true"':'')+btn(idx===room.total-1?'Vis sluttresultat':'Neste spørsmål →','next')+'</div>':'<p class="muted">Venter på neste spørsmål.</p>'))+
   '</div><div class="panel"><h3>Poengtavle</h3>'+playerTable()+'</div>');
+}
+function watchKey(idx){
+ if(keyOff){keyOff();keyOff=null;}
+ secret=null;keyLoading=true;
+ // Firestore-lytter: henter fasiten både ved avdekking og ved gjentilkobling.
+ // Ikke la en enkelt getDoc-operasjon blokkere hele runden.
+ keyOff=onSnapshot(secretRef(idx),s=>{
+  if(!room||room.index!==idx||!room.revealed)return;
+  keyLoading=false;
+  if(!s.exists()){error='Fant ingen fasit for dette spørsmålet. Prøv «Hent fasit på nytt».';render();return;}
+  secret=s.data();error='';render();
+ },e=>{keyLoading=false;error='Klarte ikke hente fasit fra Firebase: '+e.message;render();});
 }
 function listenRoom(id){
  cleanup();roomCode=id;mode='room';error='';draft='';room=null;responses=[];secret=null;render();
@@ -72,9 +84,9 @@ function listenRoom(id){
   if(!s.exists()){error='Rommet finnes ikke.';mode='landing';cleanup();render();return;}
   const oldIndex=room?.index,oldReveal=room?.revealed;
   room=s.data();
-  if(oldIndex!==room.index){if(answerOff){answerOff();answerOff=null;}draft='';secret=null;responses=[];}
-  if(room.revealed&&(!oldReveal||oldIndex!==room.index)){getDoc(secretRef(room.index)).then(s=>{if(!s.exists())throw new Error('Fant ikke fasiten i databasen.');secret=s.data();render();}).catch(e=>{error='Kunne ikke hente fasit: '+e.message+'. Kontroller Firestore-reglene.';render();});}
-  if(!room.revealed)secret=null;
+  if(oldIndex!==room.index){if(answerOff){answerOff();answerOff=null;}if(keyOff){keyOff();keyOff=null;}draft='';secret=null;responses=[];}
+  if(room.revealed&&(!oldReveal||oldIndex!==room.index))watchKey(room.index);
+  if(!room.revealed){secret=null;if(keyOff){keyOff();keyOff=null;}}
   if(room.revealed&&(!oldReveal||oldIndex!==room.index)){
     if(answerOff)answerOff();answerOff=onSnapshot(answers(),s=>{responses=s.docs.map(d=>d.data());render();},e=>{error=e.message;render();});
   }
@@ -129,9 +141,10 @@ async function gradeCurrent(idx=room.index){
  if(grading)return;
  grading=true;error='';render();
  try{
-  const ss=await getDoc(secretRef(idx));
-  if(!ss.exists())throw new Error('Fasit mangler for dette spørsmålet.');
-  const key=ss.data();secret=key;render();
+  // Bruk fasiten som allerede er mottatt fra lytteren når den er tilgjengelig.
+  // Unngår at en ekstra getDoc blir hengende når Firestore er midlertidig offline.
+  const key=secret || (await Promise.race([getDoc(secretRef(idx)).then(s=>{if(!s.exists())throw new Error('Fasit mangler.');return s.data();}),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Tidsavbrudd ved henting av fasit. Prøv på nytt.')),12000))]));
+  secret=key;render();
   const currentPlayers=[...players];
   for(const p of currentPlayers){
    if(p.graded?.[String(idx)]===0||p.graded?.[String(idx)]===1)continue;
@@ -175,6 +188,7 @@ async function handle(a,el){
  }
  if(a==='start'&&room.owner===uid)await updateDoc(roomRef(),{phase:'playing'});
  if(a==='reveal')await reveal();
+ if(a==='reloadkey'&&room.revealed){error='';watchKey(room.index);render();}
  if(a==='regrade'&&room.owner===uid&&room.revealed)await gradeCurrent();
  if(a==='approve')await grade(el.dataset.player,1);
  if(a==='reject')await grade(el.dataset.player,0);
