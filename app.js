@@ -1,4 +1,4 @@
-import {quizzes,questions,getDifficulty} from './data.js?v=36';
+import {quizzes,questions,getDifficulty} from './data.js?v=43';
 import {filmQuestions} from './film-data.js?v=31';
 const KEY='quizhub-save-v1'; // Behold gamle spillere og lagrede poeng ved oppdatering
 // Separat historikk: beholdes også når spillere og poengtavle nullstilles.
