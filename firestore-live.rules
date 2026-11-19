@@ -64,7 +64,7 @@ service cloud.firestore {
           && room(id).phase == 'playing' && room(id).revealed == false
           && request.resource.data.uid == request.auth.uid
           && request.resource.data.position == room(id).index
-          && answerId == (room(id).index + '_' + request.auth.uid)
+          && answerId == (string(room(id).index) + '_' + request.auth.uid)
           && request.resource.data.value is string
           && request.resource.data.value.size() <= 500;
         allow get: if signedIn() && member(id)
