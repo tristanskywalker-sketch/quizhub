@@ -1,5 +1,5 @@
 import {FIREBASE_CONFIG} from './config.js';
-import {questions} from './data.js?v=43';
+import {questions} from './data.js?v=44';
 import {checkOpenAnswer} from './answer-check.js';
 import {initializeApp,getApps,getApp} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
 import {getAuth,onAuthStateChanged} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
@@ -63,7 +63,7 @@ function render(){
     '<form id="live-answer-form" class="ol-form"><label>Ditt svar<textarea name="answer" id="live-answer" maxlength="500" required rows="3" placeholder="Skriv svaret her …">'+esc(draft)+'</textarea></label>'+(error?'<p class="notice" role="alert">'+esc(error)+'</p>':'')+'<button class="btn" type="submit" '+(sending?'disabled aria-busy="true"':'')+'>'+(sending?'Sender svar …':'Lever svar')+'</button></form>')+
    (host?'<div class="actions">'+btn(allReady?'Vis fasit og rett svar':'Avslutt svarrunden og vis fasit','reveal','class="btn secondary"')+'</div>':'<p class="tiny">Venter på at alle svarer og quizmaster avslutter runden.</p>'):
    '<div class="answer">Fasit: '+esc(secret?.answer||(keyLoading?'Henter fasit …':'Fasit ikke tilgjengelig ennå'))+'</div><h3>Alle svar</h3>'+listHtml+
-   (host?'<p class="tiny">Du kan rette alle svar manuelt. Poengene oppdateres for alle.</p><div class="actions">'+btn('Hent fasit på nytt','reloadkey')+btn(grading?'Retter svar …':'Rett svar automatisk på nytt','regrade',grading?'disabled aria-busy="true"':'')+btn(idx===room.total-1?'Vis sluttresultat':'Neste spørsmål →','next')+'</div>':'<p class="muted">Venter på neste spørsmål.</p>'))+
+   (host?'<p class="tiny">Du kan rette alle svar manuelt. Poengene oppdateres for alle.</p><div class="actions">'+((!secret&&!keyLoading)?btn('Hent fasit på nytt','reloadkey'):'')+(error?btn(grading?'Retter svar …':'Rett svar automatisk på nytt','regrade',grading?'disabled aria-busy="true"':''):'')+btn(idx===room.total-1?'Vis sluttresultat':'Neste spørsmål →','next')+'</div>':'<p class="muted">Venter på neste spørsmål.</p>'))+
   '</div><div class="panel"><h3>Poengtavle</h3>'+playerTable()+'</div>');
 }
 function watchKey(idx){
