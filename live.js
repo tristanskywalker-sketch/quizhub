@@ -12,8 +12,8 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const code=()=>Array.from(crypto.getRandomValues(new Uint8Array(8)),v=>'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'[v%32]).join('');
 const pools={general:questions.general,geography:questions.geography,sports:questions.sports};
 const modeNames={general:'Blandet quiz',geography:'Geografi',sports:'Sport'};
-let uid=null, roomCode='',room=null, players=[],responses=[],secret=null,user=null,unsubs=[],error='',draft='',mode='landing';
-const cleanup=()=>{unsubs.forEach(fn=>fn());unsubs=[];};
+let uid=null, roomCode='',room=null, players=[],responses=[],secret=null,user=null,unsubs=[],answerOff=null,error='',draft='',mode='landing';
+const cleanup=()=>{if(answerOff){answerOff();answerOff=null;}unsubs.forEach(fn=>fn());unsubs=[];};
 const roomRef=()=>doc(db,'liveRooms',roomCode);
 const members=()=>collection(db,'liveRooms',roomCode,'players');
 const answers=()=>collection(db,'liveRooms',roomCode,'answers');
@@ -72,11 +72,11 @@ function listenRoom(id){
   if(!s.exists()){error='Rommet finnes ikke.';mode='landing';cleanup();render();return;}
   const oldIndex=room?.index,oldReveal=room?.revealed;
   room=s.data();
-  if(oldIndex!==room.index){draft='';secret=null;responses=[];}
+  if(oldIndex!==room.index){if(answerOff){answerOff();answerOff=null;}draft='';secret=null;responses=[];}
   if(room.revealed&&(!oldReveal||oldIndex!==room.index)){getDoc(secretRef(room.index)).then(s=>{secret=s.data();render();}).catch(e=>{error=e.message;render();});}
   if(!room.revealed)secret=null;
   if(room.revealed&&(!oldReveal||oldIndex!==room.index)){
-    const off=onSnapshot(answers(),s=>{responses=s.docs.map(d=>d.data());render();},e=>{error=e.message;render();});unsubs.push(off);
+    if(answerOff)answerOff();answerOff=onSnapshot(answers(),s=>{responses=s.docs.map(d=>d.data());render();},e=>{error=e.message;render();});
   }
   render();
  },e=>{error=e.message;render();}));
@@ -107,7 +107,7 @@ async function join(form){
  listenRoom(id);
 }
 async function submit(value){
- const idx=room.index;const name=short(value);
+ const idx=room.index;const name=String(value||'').trim().slice(0,500);
  if(!name)return;
  await runTransaction(db,async t=>{
   const member=doc(db,'liveRooms',roomCode,'players',uid),snap=await t.get(member);
