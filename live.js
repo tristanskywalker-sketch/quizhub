@@ -134,6 +134,7 @@ async function gradeCurrent(idx=room.index){
   const key=ss.data();secret=key;render();
   const currentPlayers=[...players];
   for(const p of currentPlayers){
+   if(p.graded?.[String(idx)]===0||p.graded?.[String(idx)]===1)continue;
    const s=await getDoc(answersRef(idx,p.uid));
    if(!s.exists())continue;
    const check=checkOpenAnswer(key,s.data().value);
