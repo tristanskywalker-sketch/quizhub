@@ -37,3 +37,21 @@ Nettsidefilen `config.js` inneholder **bare offentlige Firebase-webverdier og Cl
 Worker validerer Firebase ID-tokenets signatur, prosjekt, utløp og bekreftet e-post. D1 er tilgjengelig bare for Worker-en, som kontrollerer medlemskap før spørsmål og resultater returneres. Ingen service-account-nøkkel trengs. Serverbasert spørsmålskatalog leveres som **separat serverpakke** for ikke å eksponere serverens private spørsmålsfil på Render.
 
 Kode og SQL er kontrollert lokalt for syntaks. Det er ikke utført ende-til-ende-test mot en virkelig Firebase-/Cloudflare-konto, siden den krever brukerkontoer og dine prosjektverdier.
+
+
+## Live flerspiller (ny modus)
+
+GitHub inneholder live.js og firestore-live.rules. Dette er en synkron quiz der quizmaster selv deltar, alle svarer på egen mobil og svarene rettes automatisk eller manuelt.
+
+**Viktig: Én manuell Firebase-aktivering kreves.** Vanlige online-utfordringer fortsetter på Cloudflare D1. Live-modusen benytter separat Cloud Firestore.
+
+1. Gå til https://console.firebase.google.com/ og åpne prosjektet quizhub-9d92a.
+2. Velg Build → Firestore Database → Create database. Velg en europeisk region og produksjonsmodus.
+3. Gå til Rules, lim inn HELE innholdet fra firestore-live.rules i GitHub, og trykk Publish. Ikke overskriv eventuelle eksisterende regler for andre tjenester uten å slå dem sammen.
+4. Åpne https://quizhub-tjhh.onrender.com/ på nytt og velg Live flerspiller.
+5. Logg inn gjennom Utfordre venner hvis du ikke er innlogget. Opprett et rom og del kode/lenke.
+6. Test med minst to innloggede deltakere på hver sin mobil.
+
+Koden er ikke ende-til-ende-testet mot brukerens Firebase-prosjekt. Firestore må aktiveres og sikkerhetsreglene må publiseres før denne funksjonen kan brukes.
+
+**Integritet:** Live-fasit har egen tilgangskontroll i Firestore, men den offentlige papirquiz-banken data.js inneholder fortsatt de samme svarene. Dette er vennequiz basert på tillit, ikke en fullstendig jukssikker løsning.
