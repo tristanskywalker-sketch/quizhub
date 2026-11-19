@@ -33,6 +33,25 @@ export function checkOpenAnswer(question, supplied) {
       if(words.length >= 2 && input === words[words.length-1]) return {status:'correct',reason:'Etternavn godkjent'};
     }
   }
+  // Godta et tydelig, sammenhengende kjernenavn uten generiske tillegg.
+  // Eksempler: «Golden Gate» for «Golden Gate Bridge», «Emirates»
+  // for «Emirates Stadium» og «Zelda» for «The Legend of Zelda».
+  // Svært korte eller generiske enkeltdeler blir ikke godkjent automatisk.
+  const generic = new Set(['the','of','and','a','an','de','den','det','en','et','i','på','av','til','for','fra','stadium','bridge','arena','fc','fk','club','football','united','city','sport','sports','museum','hotel','hotell','skole','kirke','film','serie','land','by','park','norge','norway']);
+  const tokenList = text => clean(text).split(' ').filter(Boolean);
+  for (const variant of variants) {
+    const expected = tokenList(variant), actual = tokenList(supplied);
+    if (!actual.length || actual.length >= expected.length) continue;
+    if (actual.some(word => word.length < 4 || generic.has(word))) continue;
+    const strong = actual.some(word => word.length >= 6 && !generic.has(word));
+    const distinctive = actual.length >= 2 || strong;
+    if (!distinctive) continue;
+    for (let start=0; start<=expected.length-actual.length; start++) {
+      if(actual.every((word,i)=>word===expected[start+i])) {
+        return {status:'correct',reason:'Tydelig kjernenavn uten generisk tillegg'};
+      }
+    }
+  }
   // Svært restriktiv feilstaving: ingen automatisk omtolkning av korte landnavn.
   for(const variant of variants) {
     const standard = clean(variant);
