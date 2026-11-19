@@ -12,7 +12,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const code=()=>Array.from(crypto.getRandomValues(new Uint8Array(8)),v=>'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'[v%32]).join('');
 const pools={general:questions.general,geography:questions.geography,sports:questions.sports};
 const modeNames={general:'Blandet quiz',geography:'Geografi',sports:'Sport'};
-let uid=null, roomCode='',room=null, players=[],responses=[],secret=null,user=null,unsubs=[],answerOff=null,error='',draft='',mode='landing';
+let uid=null, roomCode='',room=null, players=[],responses=[],secret=null,user=null,unsubs=[],answerOff=null,error='',draft='',mode='landing',sending=false;
 const cleanup=()=>{if(answerOff){answerOff();answerOff=null;}unsubs.forEach(fn=>fn());unsubs=[];};
 const roomRef=()=>doc(db,'liveRooms',roomCode);
 const members=()=>collection(db,'liveRooms',roomCode,'players');
@@ -60,7 +60,7 @@ function render(){
   (!room.revealed?
    '<p class="muted">'+players.filter(p=>p.submitted===idx).length+' av '+players.length+' har levert.</p>'+
    (submitted?'<p class="notice">✓ Svaret ditt er levert. Fasit vises når runden er avsluttet.</p>':
-    '<form id="live-answer-form" class="ol-form"><label>Ditt svar<textarea name="answer" id="live-answer" maxlength="500" required rows="3" placeholder="Skriv svaret her …">'+esc(draft)+'</textarea></label><button class="btn" type="submit">Lever svar</button></form>')+
+    '<form id="live-answer-form" class="ol-form"><label>Ditt svar<textarea name="answer" id="live-answer" maxlength="500" required rows="3" placeholder="Skriv svaret her …">'+esc(draft)+'</textarea></label>'+(error?'<p class="notice" role="alert">'+esc(error)+'</p>':'')+'<button class="btn" type="submit" '+(sending?'disabled aria-busy="true"':'')+'>'+(sending?'Sender svar …':'Lever svar')+'</button></form>')+
    (host?'<div class="actions">'+btn(allReady?'Vis fasit og rett svar':'Avslutt svarrunden og vis fasit','reveal','class="btn secondary"')+'</div>':'<p class="tiny">Venter på at alle svarer og quizmaster avslutter runden.</p>'):
    '<div class="answer">Fasit: '+esc(secret?.answer||'Henter fasit …')+'</div><h3>Alle svar</h3>'+listHtml+
    (host?'<p class="tiny">Du kan rette alle svar manuelt. Poengene oppdateres for alle.</p><div class="actions">'+btn(idx===room.total-1?'Vis sluttresultat':'Neste spørsmål →','next')+'</div>':'<p class="muted">Venter på neste spørsmål.</p>'))+
@@ -107,15 +107,23 @@ async function join(form){
  listenRoom(id);
 }
 async function submit(value){
+ if(sending)return;
  const idx=room.index;const name=String(value||'').trim().slice(0,500);
- if(!name)return;
- await runTransaction(db,async t=>{
-  const member=doc(db,'liveRooms',roomCode,'players',uid),snap=await t.get(member);
-  if(!snap.exists()||snap.data().submitted===idx)throw new Error('Svaret er allerede levert.');
-  t.set(answersRef(idx,uid),{uid,position:idx,value:name,createdAt:serverTimestamp()});
-  t.update(member,{submitted:idx});
- });
- draft='';render();
+ if(!name)throw new Error('Skriv et svar før du leverer.');
+ draft=name;sending=true;error='';render();
+ try{
+  await runTransaction(db,async t=>{
+   const member=doc(db,'liveRooms',roomCode,'players',uid),snap=await t.get(member);
+   if(!snap.exists()||snap.data().submitted===idx)throw new Error('Svaret er allerede levert.');
+   t.set(answersRef(idx,uid),{uid,position:idx,value:name,createdAt:serverTimestamp()});
+   t.update(member,{submitted:idx});
+  });
+  draft='';error='';
+ }catch(ex){
+  if(ex.code==='permission-denied')throw new Error('Firebase avviste innsendingen (manglende tillatelse). Kontroller at de oppdaterte Firestore-reglene er publisert.');
+  if(ex.code==='unavailable')throw new Error('Kunne ikke nå Firebase. Kontroller nettforbindelsen og prøv igjen.');
+  throw ex;
+ }finally{sending=false;render();}
 }
 async function reveal(){
  if(room.owner!==uid)return;
