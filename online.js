@@ -40,7 +40,19 @@ function generalInviteUrl(){const url=new URL(window.location.pathname,window.lo
 function challengeInviteUrl(){const url=new URL(window.location.pathname,window.location.origin);url.searchParams.set('join',active.code);return url.toString();}
 function shell(content){root.innerHTML=`<header class="top"><div class="logo">QUIZ<b>HUB</b><div class="tag">Utfordre venner – spill når det passer</div></div><button class="btn ghost" data-ol="exit">Hjem</button></header><main class="online-layout">${notice?`<div class="notice" role="status">${esc(notice)}</div>`:''}${content}</main>`;}
 function button(text,act,props=''){return `<button type="button" class="btn" data-ol="${act}" ${props}>${text}</button>`;}
-function err(e){let t=e?.message||String(e);return t.replace(/duplicate key[^.]+/i,'Brukernavnet er allerede opptatt.').replace('Invalid login credentials','Feil e-post eller passord.').replace('Email not confirmed','Bekreft e-postadressen før du logger inn.');}
+function err(e){
+ const t=String(e?.message||e||'Ukjent feil');
+ if(/auth\/(invalid-credential|wrong-password|user-not-found|invalid-email)/i.test(t))return 'Feil e-post eller passord. Kontroller opplysningene og prøv igjen.';
+ if(/auth\/too-many-requests/i.test(t))return 'For mange forsøk. Vent litt før du prøver igjen.';
+ if(/auth\/(network-request-failed|timeout)/i.test(t))return 'Får ikke kontakt med Firebase. Kontroller internettforbindelsen.';
+ if(/failed to fetch|networkerror|load failed|aborterror|timeout/i.test(t))return 'Får ikke kontakt med QuizHub-serveren. Kontroller internettforbindelsen og prøv igjen.';
+ return t.replace(/duplicate key[^.]+/i,'Brukernavnet er allerede opptatt.').replace('Invalid login credentials','Feil e-post eller passord.').replace('Email not confirmed','Bekreft e-postadressen før du logger inn.');
+}
+function connectionIssueView(message){
+ screen='connection';
+ const user=auth?.currentUser;
+ shell(`<h1 class="heading">Pålogget – serveren svarer ikke</h1><div class="panel"><p>Du er logget inn${user?.email?' som <strong>'+esc(user.email)+'</strong>':''}, men QuizHub får ikke hentet spillerprofilen eller utfordringene akkurat nå.</p><p class="notice" role="alert">${esc(message)}</p><p>Dine innloggingsopplysninger er ikke slettet. Prøv å koble til igjen.</p><div class="actions">${button('Prøv servertilkoblingen igjen','retryconnection')}${button('Logg ut','logout','class="btn secondary"')}</div></div>`);
+}
 function note(text){notice=text;console.warn(text);}
 function configured(){return Boolean(FIREBASE_CONFIG.apiKey&&FIREBASE_CONFIG.projectId&&FIREBASE_CONFIG.authDomain&&FIREBASE_CONFIG.appId&&/^https:\/\/[^/]+\.workers\.dev\/?$/.test(ONLINE_API_URL));}
 async function rpc(name,params={}){
@@ -57,9 +69,9 @@ async function init(){
  try{
   const app=initializeApp(FIREBASE_CONFIG);auth=getAuth(app);
   await new Promise(resolve=>onAuthStateChanged(auth,()=>resolve(),()=>resolve()));
-  if(auth.currentUser&&!auth.currentUser.emailVerified){await signOut(auth);note('Bekreft e-posten din før du logger inn.');}
+  if(auth.currentUser){await auth.currentUser.reload();if(!auth.currentUser.emailVerified){await signOut(auth);note('Bekreft e-posten din før du logger inn.');}}
   session=auth.currentUser?{user:{id:auth.currentUser.uid}}:null;
-  await getProfile();await showHome();
+  try{await getProfile();await showHome();}catch(e){note(err(e));connectionIssueView(err(e));}
  }catch(e){note('Kunne ikke starte Firebase: '+err(e));shell(`${button('Prøv igjen','refresh')} ${button('Hjem','exit')}`);}
 }
 function authView(){shell(`<h1 class="heading">Utfordre venner</h1><p class="sub">Opprett konto én gang, og spill mot venner på hver deres mobil – når det passer.</p><div class="panel"><h2>Logg inn</h2><form id="ol-login" class="ol-form"><label>E-post<input name="email" type="email" autocomplete="email" required></label><label>Passord<input name="password" type="password" autocomplete="current-password" minlength="6" required></label><button class="btn" type="submit">Logg inn</button></form><div class="ol-divider">Ny spiller?</div><h3>Opprett konto</h3><form id="ol-signup" class="ol-form"><label>E-post<input name="email" type="email" autocomplete="email" required></label><label>Passord (minst 6 tegn)<input name="password" type="password" autocomplete="new-password" minlength="6" required></label><button class="btn secondary" type="submit">Registrer konto</button></form><div class="panel" style="background:#25344b;border:1px solid #90a8c9;margin-top:1rem;color:#fff"><strong style="color:#fff">📧 Viktig: Du må bekrefte e-posten din!</strong><p style="color:#fff">Etter registrering sender vi en e-post med en bekreftelseslenke. Åpne e-posten og trykk på lenken <b>før du logger inn</b>.</p><p style="color:#fff">Finner du ikke e-posten? Sjekk <strong>søppelpost/spam</strong> og eventuelt fanen Kampanjer.</p></div><details style="margin-top:1rem"><summary>Ikke mottatt bekreftelsesmail? Send på nytt</summary><form id="ol-resend" class="ol-form" style="margin-top:1rem"><label>E-post<input name="email" type="email" autocomplete="email" required></label><label>Passord<input name="password" type="password" autocomplete="current-password" required></label><button class="btn secondary" type="submit">Send bekreftelsesmail på nytt</button></form></details></div>`);}
@@ -106,6 +118,7 @@ function saveAnswer(){if(!active||active.submitted||active.closed)return;const e
 async function doAction(el){if(busy)return;const a=el.dataset.ol;notice='';try{
  if(a==='exit'){window.location.assign('/');return;}
  if(a==='refresh'){await showHome();return;}
+ if(a==='retryconnection'){busy=true;try{await auth.currentUser?.getIdToken(true);session=auth.currentUser?{user:{id:auth.currentUser.uid}}:null;await getProfile();busy=false;await showHome();}catch(e){busy=false;note(err(e));connectionIssueView(err(e));}return;}
  if(a==='home'){await showHome();return;}
  if(a==='new'){await createView();return;}
  if(a==='friends'){friendResults=[];await friendsView();return;}
@@ -135,9 +148,14 @@ async function doForm(form){if(busy)return;busy=true;notice='';const data=Object
     busy=false;verificationView(data.email);return;
   }
   const cred=await signInWithEmailAndPassword(auth,data.email,data.password);
+  await cred.user.reload();
   if(!cred.user.emailVerified){await sendEmailVerification(cred.user).catch(()=>{});await signOut(auth);throw new Error('E-post må bekreftes. Vi har sendt en ny bekreftelseslenke.');}
   session={user:{id:cred.user.uid}};
-  await getProfile();busy=false;await showHome();return;
+  try{
+   await cred.user.getIdToken(true);
+   await getProfile();busy=false;await showHome();
+  }catch(e){busy=false;note(err(e));connectionIssueView(err(e));}
+  return;
  }
  if(form.id==='ol-resend'){
    const cred=await signInWithEmailAndPassword(auth,data.email,data.password);
