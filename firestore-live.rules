@@ -1,0 +1,88 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null && request.auth.token.email_verified == true; }
+    function room(id) { return get(/databases/$(database)/documents/liveRooms/$(id)).data; }
+    function roomAfter(id) { return getAfter(/databases/$(database)/documents/liveRooms/$(id)).data; }
+    function member(id) { return exists(/databases/$(database)/documents/liveRooms/$(id)/players/$(request.auth.uid)); }
+    function host(id) { return signedIn() && room(id).owner == request.auth.uid; }
+    function safeRoomUpdate(id) {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['phase','index','revealed'])
+        && request.resource.data.owner == resource.data.owner
+        && request.resource.data.type == resource.data.type
+        && request.resource.data.prompts == resource.data.prompts
+        && request.resource.data.total == resource.data.total;
+    }
+    match /liveRooms/{id} {
+      // An eight-character room code is the invitation credential.
+      allow get: if signedIn();
+      allow list: if false;
+      allow create: if signedIn()
+        && request.resource.data.owner == request.auth.uid
+        && request.resource.data.phase == 'lobby'
+        && request.resource.data.index == 0
+        && request.resource.data.revealed == false
+        && request.resource.data.total is int
+        && request.resource.data.total > 0 && request.resource.data.total <= 20
+        && request.resource.data.prompts.size() == request.resource.data.total;
+      allow update: if host(id) && safeRoomUpdate(id)
+        && (
+          (resource.data.phase == 'lobby' && request.resource.data.phase == 'playing' && request.resource.data.index == 0)
+          || (resource.data.phase == 'playing'
+              && (
+                (resource.data.revealed == false && request.resource.data.index == resource.data.index && request.resource.data.revealed == true)
+                || (resource.data.revealed == true && request.resource.data.revealed == false && request.resource.data.index == resource.data.index + 1)
+                || (resource.data.revealed == true && request.resource.data.phase == 'finished')
+              )
+            )
+        );
+      allow delete: if false;
+      match /players/{playerId} {
+        allow read: if signedIn() && member(id);
+        allow create: if signedIn() && playerId == request.auth.uid
+          && roomAfter(id).phase == 'lobby'
+          && request.resource.data.uid == request.auth.uid
+          && request.resource.data.score == 0
+          && request.resource.data.submitted == -1
+          && request.resource.data.graded == {};
+        allow update: if signedIn() && (
+          (host(id) && room(id).revealed == true
+           && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['score','graded'])
+           && request.resource.data.uid == resource.data.uid
+           && request.resource.data.name == resource.data.name)
+          ||
+          (playerId == request.auth.uid && room(id).phase == 'playing'
+           && room(id).revealed == false
+           && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['submitted'])
+           && request.resource.data.submitted == room(id).index
+           && resource.data.submitted < room(id).index)
+        );
+        allow delete: if false;
+      }
+      match /answers/{answerId} {
+        allow create: if signedIn() && member(id)
+          && room(id).phase == 'playing' && room(id).revealed == false
+          && request.resource.data.uid == request.auth.uid
+          && request.resource.data.position == room(id).index
+          && answerId == (room(id).index + '_' + request.auth.uid)
+          && request.resource.data.value is string
+          && request.resource.data.value.size() <= 500;
+        allow get: if signedIn() && member(id)
+          && (resource.data.uid == request.auth.uid || resource.data.position < room(id).index
+              || (room(id).revealed && resource.data.position == room(id).index));
+        allow list: if signedIn() && member(id)
+          && (room(id).revealed == true);
+        allow update, delete: if false;
+      }
+      match /keys/{position} {
+        allow create: if signedIn() && roomAfter(id).owner == request.auth.uid
+          && roomAfter(id).phase == 'lobby';
+        allow get: if signedIn() && member(id)
+          && (int(position) < room(id).index
+              || (room(id).revealed == true && int(position) == room(id).index)
+              || room(id).phase == 'finished');
+        allow list, update, delete: if false;
+      }
+    }
+  }
+}
