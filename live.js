@@ -12,7 +12,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const code=()=>Array.from(crypto.getRandomValues(new Uint8Array(8)),v=>'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'[v%32]).join('');
 const pools={general:questions.general,geography:questions.geography,sports:questions.sports};
 const modeNames={general:'Blandet quiz',geography:'Geografi',sports:'Sport'};
-let uid=null, roomCode='',room=null, players=[],responses=[],secret=null,user=null,unsubs=[],answerOff=null,error='',draft='',mode='landing',sending=false;
+let uid=null, roomCode='',room=null, players=[],responses=[],secret=null,user=null,unsubs=[],answerOff=null,error='',draft='',mode='landing',sending=false,grading=false;
 const cleanup=()=>{if(answerOff){answerOff();answerOff=null;}unsubs.forEach(fn=>fn());unsubs=[];};
 const roomRef=()=>doc(db,'liveRooms',roomCode);
 const members=()=>collection(db,'liveRooms',roomCode,'players');
@@ -63,7 +63,7 @@ function render(){
     '<form id="live-answer-form" class="ol-form"><label>Ditt svar<textarea name="answer" id="live-answer" maxlength="500" required rows="3" placeholder="Skriv svaret her …">'+esc(draft)+'</textarea></label>'+(error?'<p class="notice" role="alert">'+esc(error)+'</p>':'')+'<button class="btn" type="submit" '+(sending?'disabled aria-busy="true"':'')+'>'+(sending?'Sender svar …':'Lever svar')+'</button></form>')+
    (host?'<div class="actions">'+btn(allReady?'Vis fasit og rett svar':'Avslutt svarrunden og vis fasit','reveal','class="btn secondary"')+'</div>':'<p class="tiny">Venter på at alle svarer og quizmaster avslutter runden.</p>'):
    '<div class="answer">Fasit: '+esc(secret?.answer||'Henter fasit …')+'</div><h3>Alle svar</h3>'+listHtml+
-   (host?'<p class="tiny">Du kan rette alle svar manuelt. Poengene oppdateres for alle.</p><div class="actions">'+btn(idx===room.total-1?'Vis sluttresultat':'Neste spørsmål →','next')+'</div>':'<p class="muted">Venter på neste spørsmål.</p>'))+
+   (host?'<p class="tiny">Du kan rette alle svar manuelt. Poengene oppdateres for alle.</p><div class="actions">'+btn(grading?'Retter svar …':'Rett svar automatisk på nytt','regrade',grading?'disabled aria-busy="true"':'')+btn(idx===room.total-1?'Vis sluttresultat':'Neste spørsmål →','next')+'</div>':'<p class="muted">Venter på neste spørsmål.</p>'))+
   '</div><div class="panel"><h3>Poengtavle</h3>'+playerTable()+'</div>');
 }
 function listenRoom(id){
@@ -73,7 +73,7 @@ function listenRoom(id){
   const oldIndex=room?.index,oldReveal=room?.revealed;
   room=s.data();
   if(oldIndex!==room.index){if(answerOff){answerOff();answerOff=null;}draft='';secret=null;responses=[];}
-  if(room.revealed&&(!oldReveal||oldIndex!==room.index)){getDoc(secretRef(room.index)).then(s=>{secret=s.data();render();}).catch(e=>{error=e.message;render();});}
+  if(room.revealed&&(!oldReveal||oldIndex!==room.index)){getDoc(secretRef(room.index)).then(s=>{if(!s.exists())throw new Error('Fant ikke fasiten i databasen.');secret=s.data();render();}).catch(e=>{error='Kunne ikke hente fasit: '+e.message+'. Kontroller Firestore-reglene.';render();});}
   if(!room.revealed)secret=null;
   if(room.revealed&&(!oldReveal||oldIndex!==room.index)){
     if(answerOff)answerOff();answerOff=onSnapshot(answers(),s=>{responses=s.docs.map(d=>d.data());render();},e=>{error=e.message;render();});
@@ -125,19 +125,34 @@ async function submit(value){
   throw ex;
  }finally{sending=false;render();}
 }
+async function gradeCurrent(idx=room.index){
+ if(grading)return;
+ grading=true;error='';render();
+ try{
+  const ss=await getDoc(secretRef(idx));
+  if(!ss.exists())throw new Error('Fasit mangler for dette spørsmålet.');
+  const key=ss.data();secret=key;render();
+  const currentPlayers=[...players];
+  for(const p of currentPlayers){
+   const s=await getDoc(answersRef(idx,p.uid));
+   if(!s.exists())continue;
+   const check=checkOpenAnswer(key,s.data().value);
+   const verdict=check.status==='correct'?1:check.status==='incorrect'?0:null;
+   // Usikre svar skal vurderes manuelt, ikke dømmes feil automatisk.
+   if(verdict!==null)await grade(p.uid,verdict,idx);
+  }
+ }catch(ex){
+  error='Automatisk retting feilet: '+ex.message+'. Du kan prøve igjen eller rette manuelt.';
+  throw ex;
+ }finally{grading=false;render();}
+}
 async function reveal(){
  if(room.owner!==uid)return;
  const allReady=players.every(p=>p.submitted===room.index);
  if(!allReady&&!confirm('Ikke alle har levert. Vil du likevel avslutte svarrunden?'))return;
- await updateDoc(roomRef(),{revealed:true});
  const idx=room.index;
- const ss=await getDoc(secretRef(idx));const key=ss.data();
- const entries=await Promise.all(players.map(async p=>({p,s:await getDoc(answersRef(idx,p.uid))})));
- for(const {p,s} of entries){
-  if(!s.exists())continue;
-  const graded=checkOpenAnswer(key,s.data().value).status==='correct'?1:0;
-  await grade(p.uid,graded,idx);
- }
+ await updateDoc(roomRef(),{revealed:true});
+ try{await gradeCurrent(idx);}catch(ex){/* Feilen er vist i grensesnittet; omprøving er mulig. */}
 }
 async function grade(player,verdict,idx=room.index){
  if(room.owner!==uid)throw new Error('Bare quizmaster kan rette.');
@@ -159,6 +174,7 @@ async function handle(a,el){
  }
  if(a==='start'&&room.owner===uid)await updateDoc(roomRef(),{phase:'playing'});
  if(a==='reveal')await reveal();
+ if(a==='regrade'&&room.owner===uid&&room.revealed)await gradeCurrent();
  if(a==='approve')await grade(el.dataset.player,1);
  if(a==='reject')await grade(el.dataset.player,0);
  if(a==='next'&&room.owner===uid){
