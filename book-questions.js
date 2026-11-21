@@ -3770,5 +3770,427 @@ export const bookQuestions = [
     "category": "TV-serier",
     "id": "qh-1ec2b4cc9e08",
     "difficulty": "easy"
+  },
+  {
+    "question": "I hvilken TV-serie følger vi Clark Kent som tenåring på gården til familien Kent i Kansas?",
+    "answer": "Smallville",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "id": "qh-63bd7a7ecad2"
+  },
+  {
+    "question": "Hvilken superhelt spilt av Will Smith i 2008 skaper store ødeleggelser i Los Angeles når han prøver å hjelpe folk?",
+    "answer": "Hancock",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-2235dbecb58f",
+    "acceptedAnswers": [
+      "John Hancock"
+    ]
+  },
+  {
+    "question": "Hvilken Marvel-forfatter skapte Spider-Man sammen med Steve Ditko og var også med på å skape Hulken og Iron Man?",
+    "answer": "Stan Lee",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "id": "qh-7996230967ee"
+  },
+  {
+    "question": "Hvilke to skuespillere hadde rollen som Peter Parker i henholdsvis Spider-Man fra 2002 og The Amazing Spider-Man fra 2012?",
+    "answer": "Tobey Maguire og Andrew Garfield",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-4df7e5f32435",
+    "acceptedAnswers": [
+      "Andrew Garfield og Tobey Maguire",
+      "Maguire og Garfield",
+      "Garfield og Maguire"
+    ]
+  },
+  {
+    "question": "Hvilket superheltnavn bruker Barry Allen når han beskytter Central City?",
+    "answer": "The Flash",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "id": "qh-4c837ce2f75e",
+    "acceptedAnswers": [
+      "Flash",
+      "Lynet"
+    ]
+  },
+  {
+    "question": "Hvilken tegneseriefigur fra Batman-universet spilte Halle Berry i en egen film fra 2004?",
+    "answer": "Catwoman",
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-98bbd5547cdd",
+    "acceptedAnswers": [
+      "Cat Woman"
+    ]
+  },
+  {
+    "question": "Hva er det fulle navnet til Professor X, telepaten som grunnlegger X-Men?",
+    "answer": "Charles Xavier",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-fd0ef0d7f603",
+    "acceptedAnswers": [
+      "Charles Francis Xavier",
+      "Xavier"
+    ]
+  },
+  {
+    "question": "Hvilket superheltnavn velger tenåringen Dave Lizewski i filmen der Aaron Taylor-Johnson spiller hovedrollen?",
+    "answer": "Kick-Ass",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-90d09e67e301",
+    "acceptedAnswers": [
+      "Kickass"
+    ]
+  },
+  {
+    "question": "Hva heter Marvel-laget der Star-Lord, Gamora, Rocket og Groot kjemper sammen?",
+    "answer": "Guardians of the Galaxy",
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-fcd3870ab2e6",
+    "acceptedAnswers": [
+      "The Guardians of the Galaxy"
+    ]
+  },
+  {
+    "question": "Hvem spilte Wolverine da den første X-Men-filmen kom på kino i 2000?",
+    "answer": "Hugh Jackman",
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-8d5d8c96dde3",
+    "acceptedAnswers": [
+      "Jackman"
+    ]
+  },
+  {
+    "question": "På hvilken stasjon møtes Sørlandsbanen og jernbanelinjen til Arendal?",
+    "answer": "Nelaug",
+    "category": "Norge",
+    "difficulty": "medium",
+    "id": "qh-7ef6632488c4",
+    "acceptedAnswers": [
+      "Nelaug stasjon"
+    ]
+  },
+  {
+    "question": "I hvilken skandinavisk hovedstad åpnet en underjordisk banestrekning til Nationaltheatret i 1928?",
+    "answer": "Oslo",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-67eab3e63ee4"
+  },
+  {
+    "question": "Hvilke to kollektivselskaper gikk sammen om å danne Ruter i 2008?",
+    "answer": "Oslo Sporveier og Stor-Oslo Lokaltrafikk",
+    "category": "Norge",
+    "difficulty": "hard",
+    "id": "qh-d7c59a38f448",
+    "acceptedAnswers": [
+      "Oslo Sporveier og SL",
+      "SL og Oslo Sporveier",
+      "AS Oslo Sporveier og Stor-Oslo Lokaltrafikk AS"
+    ]
+  },
+  {
+    "question": "I hvilken hovedstad i et av Norges naboland åpnet metroen i 1935, med blant annet stasjonen Komsomolskaja?",
+    "answer": "Moskva",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-169703e48145",
+    "acceptedAnswers": [
+      "Moscow"
+    ]
+  },
+  {
+    "question": "I hvilken by åpnet Kinas første undergrunnsbane i 1969?",
+    "answer": "Beijing",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-2844ed9fe3f0",
+    "acceptedAnswers": [
+      "Peking"
+    ]
+  },
+  {
+    "question": "Hva kalles undergrunnsbanen i Berlin på tysk?",
+    "answer": "U-Bahn",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "id": "qh-40040d0a4986",
+    "acceptedAnswers": [
+      "U Bahn",
+      "Untergrundbahn"
+    ]
+  },
+  {
+    "question": "Nevn én av kollektivaktørene som betjente Sør-Trøndelag, Hordaland eller Rogaland i 2016.",
+    "answer": "AtB",
+    "category": "Norge",
+    "difficulty": "medium",
+    "id": "qh-349661ad2eda",
+    "acceptedAnswers": [
+      "Skyss",
+      "Kolumbus"
+    ]
+  },
+  {
+    "question": "Hvilke to byer forbinder bilferga på riksvei 19 over Oslofjorden?",
+    "answer": "Moss og Horten",
+    "category": "Norge",
+    "difficulty": "easy",
+    "id": "qh-aff900918133",
+    "acceptedAnswers": [
+      "Horten og Moss"
+    ]
+  },
+  {
+    "question": "Hvilke to steder forbinder den korte bilfergeruten over Drammensfjorden ved utløpet av Svelvikstrømmen?",
+    "answer": "Svelvik og Verket",
+    "category": "Norge",
+    "difficulty": "hard",
+    "id": "qh-1d63cdf46965",
+    "acceptedAnswers": [
+      "Verket og Svelvik"
+    ]
+  },
+  {
+    "question": "Hvilken innsjø krysser ferga mellom Horn og Tangen i Innlandet?",
+    "answer": "Randsfjorden",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-7cca2d77fc8d",
+    "acceptedAnswers": [
+      "Randsfjord"
+    ]
+  },
+  {
+    "question": "Hvor mange administrative bydeler hadde Oslo i januar 2016?",
+    "answer": "15",
+    "category": "Norge",
+    "difficulty": "medium",
+    "id": "qh-6102b52357b5",
+    "acceptedAnswers": [
+      "Femten"
+    ]
+  },
+  {
+    "question": "I hvilket år fikk Kristiania offisielt tilbake navnet Oslo?",
+    "answer": "1925",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-a52ec7cf3e22"
+  },
+  {
+    "question": "Hvilken gate i Bjørvika følger rekken av høyhus som kalles Barcode?",
+    "answer": "Dronning Eufemias gate",
+    "category": "Norge",
+    "difficulty": "medium",
+    "id": "qh-e926f8dafb15",
+    "acceptedAnswers": [
+      "Dronning Eufemias gt"
+    ]
+  },
+  {
+    "question": "Hvilket norsk programvareselskap utviklet nettleseren til Nintendos Wii-konsoll?",
+    "answer": "Opera Software",
+    "category": "Teknologi",
+    "difficulty": "medium",
+    "id": "qh-df926e98d51e",
+    "acceptedAnswers": [
+      "Opera"
+    ]
+  },
+  {
+    "question": "Hvordan gjengis Oslos latinske motto «Unanimiter et constanter» vanligvis på norsk?",
+    "answer": "Enig og bestandig",
+    "category": "Språk og ord",
+    "difficulty": "hard",
+    "id": "qh-d7275a9bcf44",
+    "acceptedAnswers": [
+      "Enige og bestandige"
+    ]
+  },
+  {
+    "question": "Hvilken norsk barista vant VM i 2004 og åpnet et kaffebrenneri på Grünerløkka med sitt eget navn på skiltet?",
+    "answer": "Tim Wendelboe",
+    "category": "Mat og drikke",
+    "difficulty": "hard",
+    "id": "qh-4002d52b3d61",
+    "acceptedAnswers": [
+      "Wendelboe"
+    ]
+  },
+  {
+    "question": "Hvilket sjokolademerke lyser fra den kjente takreklamen på Egertorget i Oslo?",
+    "answer": "Freia",
+    "category": "Norge",
+    "difficulty": "easy",
+    "id": "qh-a095988c0ce9"
+  },
+  {
+    "question": "Torggata i Oslo starter ved Stortorvet. Hvilket torg passerer den før den fortsetter mot Ankerbrua?",
+    "answer": "Youngstorget",
+    "category": "Norge",
+    "difficulty": "medium",
+    "id": "qh-3511ea4ac9fc",
+    "acceptedAnswers": [
+      "Youngstorvet"
+    ]
+  },
+  {
+    "question": "Hvilken Karpe Diem-låt nevner både en invitasjon til stranda og en regning som kan vente?",
+    "answer": "Piano",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-941676668610"
+  },
+  {
+    "question": "I hvilken Odd Nordstoga-sang lyser månen over en rev på vandring mens en gris ikke får sove?",
+    "answer": "Kveldssong for deg og meg",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-56330f21d3de",
+    "acceptedAnswers": [
+      "Kveldsong for deg og meg"
+    ]
+  },
+  {
+    "question": "I hvilken vise sunget av Nora Brockstedt kjenner fortelleren igjen Klara på latteren?",
+    "answer": "Tango for to",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-4e6120081d60"
+  },
+  {
+    "question": "Hvilken deLillos-låt begynner med en stille by ved daggry og en forteller på vei hjem til senga?",
+    "answer": "Suser avgårde alle mann",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-dc487fa4374c",
+    "acceptedAnswers": [
+      "Suser av gårde alle mann"
+    ]
+  },
+  {
+    "question": "Hvilken Oslo-vise sunget av Jens Book-Jenssen sammenligner våren i hovedstaden med våren i Paris?",
+    "answer": "Når kastanjene blomstrer",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-5f7983ad2932"
+  },
+  {
+    "question": "I hvilken Jokke & Valentinerne-låt kjeder kameratene seg og krangler om hvem som skal gå i butikken?",
+    "answer": "Gutta",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-d01647f01b5f"
+  },
+  {
+    "question": "Hvilken Ole Ivars-låt beskriver en campingvogn fra 1986 med bærbart toalett?",
+    "answer": "Kongen av campingplassen",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-5ff9c1428ec0"
+  },
+  {
+    "question": "I hvilken Bjørn Eidsvåg-låt ønsker kvinnen i teksten seg litt fred og en bekymringsfri dag?",
+    "answer": "Skyfri himmel",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-b7c6f8861ba7"
+  },
+  {
+    "question": "Hvilken sang av Lillebjørn Nilsen, basert på Pete Seegers My Rainbow Race, beskriver jorda som et sted der blomster gror?",
+    "answer": "Barn av regnbuen",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-f5586cbb6d1c"
+  },
+  {
+    "question": "I hvilken Raga Rockers-låt blir kvinnen i teksten sammenlignet med en båt som mangler anker?",
+    "answer": "Hun er fri",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-9786866e18f3"
+  },
+  {
+    "question": "Hvem fikk som straff i dødsriket å rulle en kampestein opp en bakke, bare for å se den trille ned igjen?",
+    "answer": "Sisyfos",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "id": "qh-01ccb2757a9d",
+    "acceptedAnswers": [
+      "Sisyphos",
+      "Sisyphus"
+    ]
+  },
+  {
+    "question": "Hva ble igjen i Pandoras krukke etter at hun slapp plagene ut i verden?",
+    "answer": "Håpet",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "id": "qh-2b998615bcbb",
+    "acceptedAnswers": [
+      "Håp"
+    ]
+  },
+  {
+    "question": "Hva het maten til gudene på Olympen, der nektar var drikken?",
+    "answer": "Ambrosia",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "id": "qh-906fabb6c57b"
+  },
+  {
+    "question": "Hvilket gresk navn har helten romerne kalte Hercules?",
+    "answer": "Herakles",
+    "category": "Mytologi og religion",
+    "difficulty": "easy",
+    "id": "qh-f498ce32c758",
+    "acceptedAnswers": [
+      "Heracles"
+    ]
+  },
+  {
+    "question": "Hva het sønnen til Daidalos som fløy så nær sola at voksen i vingene smeltet?",
+    "answer": "Ikaros",
+    "category": "Mytologi og religion",
+    "difficulty": "easy",
+    "id": "qh-504c8d43e27a",
+    "acceptedAnswers": [
+      "Icarus",
+      "Ikarus"
+    ]
+  },
+  {
+    "question": "Hvilken gresk krigsgud var sønn av Zevs og Hera?",
+    "answer": "Ares",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "id": "qh-7e44f0b5eb20"
+  },
+  {
+    "question": "Hvilket sportsmerke deler navn med den bevingede seiersgudinnen i gresk mytologi?",
+    "answer": "Nike",
+    "category": "Mytologi og religion",
+    "difficulty": "easy",
+    "id": "qh-ea786d896c35"
+  },
+  {
+    "question": "I hvilken gresk helligdom ga prestinnen Pythia orakelsvar på vegne av Apollon?",
+    "answer": "Delfi",
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "id": "qh-bee322dee56c",
+    "acceptedAnswers": [
+      "Delphi"
+    ]
   }
 ];
