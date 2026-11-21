@@ -1,3 +1,4 @@
+import {bookQuestions} from './book-questions.js?v=46';
 // QuizHub v24: EN lagret faktabank. Visningsmodusene bruker filtre, ikke kopierte spørsmål.
 export const quizzes = [
   {
@@ -17393,6 +17394,8 @@ export const specialBanks = {
     }
   ]
 };
+factBank.push(...bookQuestions);
+
 // Dynamiske, lesbare filtre: ingen spørsmål oppbevares i flere fagbanker.
 export const questions = {
   get general(){ return factBank; },

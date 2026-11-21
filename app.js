@@ -1,4 +1,4 @@
-import {quizzes,questions,getDifficulty} from './data.js?v=45';
+import {quizzes,questions,getDifficulty} from './data.js?v=46';
 import {filmQuestions} from './film-data.js?v=31';
 const KEY='quizhub-save-v1'; // Behold gamle spillere og lagrede poeng ved oppdatering
 // Separat historikk: beholdes også når spillere og poengtavle nullstilles.
@@ -198,7 +198,7 @@ function resetQuestion(){state.index=0;state.revealed=false;state.clue=0;state.s
 function dispatch(action,el){switch(action){
  case 'live': {
   app.innerHTML=header()+'<main class="online-layout"><h1 class="heading">Live flerspiller</h1><p>Åpner flerspillermodusen …</p></main>';
-  import('./live.js?v=42').then(m=>m.startLive()).catch(e=>{
+  import('./live.js?v=46').then(m=>m.startLive()).catch(e=>{
     console.error(e);app.innerHTML=header()+'<main class="online-layout"><h1>Kunne ikke åpne live quiz</h1><div class="panel"><p>'+esc(e.message)+'</p><button class="btn" data-action="home">Tilbake</button></div></main>';
   });
   break;
@@ -206,7 +206,7 @@ function dispatch(action,el){switch(action){
  case 'online': {
   // Vis respons med én gang. Også nettverks-/importfeil må være synlige.
   app.innerHTML = header() + `<main class="online-layout"><h1 class="heading">Utfordre venner</h1><div class="panel"><p role="status">Åpner online-utfordringer …</p></div></main>`;
-  import('./online.js?v=39').then(module=>module.startOnline()).catch(error=>{
+  import('./online.js?v=46').then(module=>module.startOnline()).catch(error=>{
     console.error('QuizHub: kunne ikke starte online-modus',error);
     const message=esc(error?.message||'Ukjent feil');
     app.innerHTML=header()+`<main class="online-layout"><h1 class="heading">Online-utfordringer kunne ikke åpnes</h1><div class="panel"><p>Nettsiden klarte ikke å laste inn online-delen.</p><p class="notice" role="alert">Feil: ${message}</p><p>Kontroller at <code>online.js</code> og <code>config.js</code> ligger på GitHub og at Firebase er tilgjengelig.</p><div class="actions"><button class="btn" data-action="online">Prøv igjen</button><button class="btn secondary" data-action="home">Tilbake</button></div></div></main>`;

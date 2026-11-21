@@ -1,5 +1,5 @@
 import {FIREBASE_CONFIG} from './config.js';
-import {questions} from './data.js?v=44';
+import {questions} from './data.js?v=46';
 import {checkOpenAnswer} from './answer-check.js';
 import {initializeApp,getApps,getApp} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
 import {getAuth,onAuthStateChanged} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
