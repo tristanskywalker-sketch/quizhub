@@ -1,4 +1,4 @@
-import {quizzes,questions,getDifficulty} from './data.js?v=44';
+import {quizzes,questions,getDifficulty} from './data.js?v=45';
 import {filmQuestions} from './film-data.js?v=31';
 const KEY='quizhub-save-v1'; // Behold gamle spillere og lagrede poeng ved oppdatering
 // Separat historikk: beholdes også når spillere og poengtavle nullstilles.
@@ -87,6 +87,41 @@ function makeLeveledDeck(type,requested,level){
  chosen.push(...repeated.slice(0,remaining));remaining=countRequested-chosen.length;
  // Ved «Alle» kan vi også ta med nivåer utenfor profilen til slutt.
  if(remaining){const other=['easy','medium','hard'].filter(k=>!allowed.includes(k)).flatMap(k=>bands[k]);chosen.push(...other.slice(0,remaining));}
+ // Behold bare ett spørsmål fra samme gjenkjennelige band, artist eller filmserie.
+ if(requested!=='all'){
+  const subject=q=>{
+   if(q.topic)return String(q.topic).toLowerCase();
+   const s=(q.question||'')+' '+(q.answer||'');
+   const groups=[
+    ['beatles',/\\bbeatles\\b|\\bringo starr\\b|\\bjohn lennon\\b|\\bpaul mccartney\\b/i],
+    ['harry potter',/harry potter|galtvort|hogwarts|dobby|noldus|j\\.k\\. rowling/i],
+    ['star wars',/star wars|darth vader|luke skywalker|obi-wan|yoda/i],
+    ['ringenes herre',/ringenes herre|lord of the rings|aragorn|gandalf|frodo/i],
+    ['marvel',/marvel|avengers|iron man|spider-man/i],
+    ['pokemon',/pok[eé]mon|pikachu/i],
+    ['minecraft',/minecraft/i],
+    ['game of thrones',/game of thrones|westeros/i],
+    ['a-ha',/a-ha|morten harket/i],
+    ['abba',/\\babba\\b/i],
+    ['queen',/\\bqueen\\b|freddie mercury/i],
+    ['rolling stones',/rolling stones|mick jagger/i],
+    ['guns n roses',/guns n.? roses/i],
+    ['coldplay',/coldplay|chris martin/i],
+    ['karpe',/karpe diem|\\bkarpe\\b/i],
+    ['metallica',/metallica/i],
+    ['taylor swift',/taylor swift/i],
+    ['michael jackson',/michael jackson/i],
+    ['elvis presley',/elvis presley/i]
+   ];
+   const hit=groups.find(([name,rx])=>rx.test(s));return hit?hit[0]:null;
+  };
+  const used=new Set(),picked=[],dupes=[];
+  for(const i of chosen){const tag=subject(pool[i]);if(tag&&used.has(tag)){dupes.push(i);continue;}picked.push(i);if(tag)used.add(tag);}
+  const alternatives=freshFirst(type,pool,Array.from({length:pool.length},(_,i)=>i)).filter(i=>!picked.includes(i)&&!dupes.includes(i)&&allowed.includes(getDifficulty(type,pool[i],i)));
+  for(const i of alternatives){if(picked.length>=countRequested)break;const tag=subject(pool[i]);if(tag&&used.has(tag))continue;picked.push(i);if(tag)used.add(tag);}
+  if(picked.length<countRequested)for(const i of [...dupes,...alternatives]){if(picked.length>=countRequested)break;if(!picked.includes(i))picked.push(i);}
+  chosen=picked;
+ }
  return shuffle(chosen);
 }
 const safeColor=(s)=>{const n=String(s).toLowerCase().replace(/\s*\(.*?\)/g,'');const palettes=[['#e12842','#ffffff','stripes'],['#245dba','#ffffff','solid'],['#e7c03a','#141b37','solid'],['#ffffff','#202b3c','solid'],['#1a9c79','#ffffff','stripes'],['#a12f57','#ffffff','solid'],['#111a28','#ffffff','stripes'],['#f38b35','#19213c','solid']];
