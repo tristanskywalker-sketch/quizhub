@@ -4192,5 +4192,3639 @@ export const bookQuestions = [
     "acceptedAnswers": [
       "Delphi"
     ]
+  },
+  {
+    "question": "Hvem skrev romanen Bildet av Dorian Gray?",
+    "answer": "Oscar Wilde",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-6c5cc03839c3"
+  },
+  {
+    "question": "Hvilken Huxley-roman har en tittel hentet fra Shakespeares Stormen?",
+    "answer": "Brave New World",
+    "acceptedAnswers": [
+      "Vidunderlige nye verden"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-674df1dc02a7"
+  },
+  {
+    "question": "Hvem skrev novellesamlingen Kiss Kiss?",
+    "answer": "Roald Dahl",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "id": "qh-1589e80c763a"
+  },
+  {
+    "question": "Hvem skrev diktet «O Captain! My Captain!» etter Abraham Lincolns død?",
+    "answer": "Walt Whitman",
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "id": "qh-ed40d787e739"
+  },
+  {
+    "question": "Hvilken forfatter hadde fornavnene John Ronald Reuel?",
+    "answer": "J.R.R. Tolkien",
+    "acceptedAnswers": [
+      "Tolkien"
+    ],
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "id": "qh-d7230abf902b"
+  },
+  {
+    "question": "Hvem skrev både Fever Pitch og High Fidelity?",
+    "answer": "Nick Hornby",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-5b8243296fcc"
+  },
+  {
+    "question": "Hvilken engelsk filosof er hovedpersonen i teorien om at han skrev Shakespeares skuespill?",
+    "answer": "Francis Bacon",
+    "acceptedAnswers": [
+      "Sir Francis Bacon"
+    ],
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "id": "qh-a4560b160b1d"
+  },
+  {
+    "question": "Hvem skrev Emma og Mansfield Park?",
+    "answer": "Jane Austen",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "id": "qh-408c18d04913"
+  },
+  {
+    "question": "Hvilken bokserie av George R.R. Martin ble til TV-serien Game of Thrones?",
+    "answer": "A Song of Ice and Fire",
+    "acceptedAnswers": [
+      "En sang om is og ild"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-263ee68ddf53"
+  },
+  {
+    "question": "I hvilken amerikansk by oppsto hiphopkulturen på 1970-tallet?",
+    "answer": "New York",
+    "acceptedAnswers": [
+      "New York City",
+      "Bronx",
+      "The Bronx"
+    ],
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-91059ec9fa53"
+  },
+  {
+    "question": "Hvilken visuell kunstform regnes blant hiphopens fire klassiske elementer?",
+    "answer": "Graffiti",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-f99cb51ad119"
+  },
+  {
+    "question": "Hva heter DJ-teknikken der en vinylplate beveges rytmisk fram og tilbake?",
+    "answer": "Scratching",
+    "acceptedAnswers": [
+      "Scratch"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-bf676dd0d153"
+  },
+  {
+    "question": "Hvilken gruppe toppet den amerikanske singellisten med «Rapture» i 1981?",
+    "answer": "Blondie",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-c2adca290c4e"
+  },
+  {
+    "question": "Hvilken rapstil forbindes særlig med N.W.A og albumet Straight Outta Compton?",
+    "answer": "Gangstarap",
+    "acceptedAnswers": [
+      "Gangsta rap",
+      "Gangsterrap"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-7d3f20de2fc4"
+  },
+  {
+    "question": "Hvilket artistnavn brukte Will Smith i duoen med DJ Jazzy Jeff?",
+    "answer": "The Fresh Prince",
+    "acceptedAnswers": [
+      "Fresh Prince"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-9d9a8b4e3dd0"
+  },
+  {
+    "question": "Hva het MTVs hiphopprogram med utropet «Yo!» i tittelen?",
+    "answer": "Yo! MTV Raps",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-6634be500552"
+  },
+  {
+    "question": "Hvilket artistnavn bruker rapperen Calvin Broadus, kjent for «Gin and Juice»?",
+    "answer": "Snoop Dogg",
+    "acceptedAnswers": [
+      "Snoop Doggy Dogg"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-0f50b31e93fd"
+  },
+  {
+    "question": "Hvilket norsk hiphopprogram ledet Tommy Tee på radio fra 1993?",
+    "answer": "National Rap Show",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-70207a04f9f3"
+  },
+  {
+    "question": "Hva kalles det å lage trommerytmer med munnen i hiphop?",
+    "answer": "Beatboxing",
+    "acceptedAnswers": [
+      "Beatboksing"
+    ],
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-fe248d31d207"
+  },
+  {
+    "question": "Hvilken HBO-serie om en familie i Utah brukte «God Only Knows» i åpningssekvensen?",
+    "answer": "Big Love",
+    "category": "TV-serier",
+    "difficulty": "hard",
+    "id": "qh-74c1d4849673"
+  },
+  {
+    "question": "Hvilken dansk krimserie har Sarah Lund som etterforsker?",
+    "answer": "Forbrydelsen",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "id": "qh-d6ceef0d629a"
+  },
+  {
+    "question": "Hva heter den amerikanske versjonen av Forbrydelsen med Sarah Linden i hovedrollen?",
+    "answer": "The Killing",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "id": "qh-e2598831e7ba"
+  },
+  {
+    "question": "Hvor mange sesonger fikk How I Met Your Mother?",
+    "answer": "9",
+    "acceptedAnswers": [
+      "Ni"
+    ],
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "id": "qh-fecb4f83d22b"
+  },
+  {
+    "question": "Hvilken serie følger Frank Tagliano fra New York til en norsk OL-by?",
+    "answer": "Lilyhammer",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "id": "qh-b4bec821ecfb"
+  },
+  {
+    "question": "Hvem spiller Sherlock Holmes mot Martin Freemans Watson i BBC-serien Sherlock?",
+    "answer": "Benedict Cumberbatch",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "id": "qh-b0138d70b949"
+  },
+  {
+    "question": "Hvem skapte Twin Peaks sammen med David Lynch?",
+    "answer": "Mark Frost",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "id": "qh-a99fcb08cdb0"
+  },
+  {
+    "question": "I hvilken amerikansk by foregår The Wire?",
+    "answer": "Baltimore",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "id": "qh-68e1059d5b9a"
+  },
+  {
+    "question": "Hva heter Dexter til etternavn i serien om kriminalteknikeren som lever et dobbeltliv?",
+    "answer": "Morgan",
+    "acceptedAnswers": [
+      "Dexter Morgan"
+    ],
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "id": "qh-f76b93bbcb19"
+  },
+  {
+    "question": "Hvilken Oslo-avis utgir også A-magasinet?",
+    "answer": "Aftenposten",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "id": "qh-4125f74d00d2"
+  },
+  {
+    "question": "Hva står avisnavnet VG for?",
+    "answer": "Verdens Gang",
+    "category": "Samfunn og politikk",
+    "difficulty": "easy",
+    "id": "qh-2aabddaad631"
+  },
+  {
+    "question": "I hvilken by har avisen Firda hovedredaksjon?",
+    "answer": "Førde",
+    "category": "Norge",
+    "difficulty": "medium",
+    "id": "qh-a5d2d75aada9"
+  },
+  {
+    "question": "Hvilken norsk avis het tidligere Arbeiderbladet?",
+    "answer": "Dagsavisen",
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-3e5db59c538c"
+  },
+  {
+    "question": "Hvilken norsk ukeavis hadde Anna B. Jenssen som sjefredaktør fra 2012 til 2019?",
+    "answer": "Morgenbladet",
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-c1a65da14fda"
+  },
+  {
+    "question": "Hvilken papirfarge kjennetegnet VGs sportsbilag?",
+    "answer": "Rosa",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "id": "qh-f93d4dc437d1"
+  },
+  {
+    "question": "Hvilken italiensk sportsavis på rosa papir grunnla sykkelrittet Giro d’Italia?",
+    "answer": "La Gazzetta dello Sport",
+    "acceptedAnswers": [
+      "Gazzetta dello Sport",
+      "La Gazzetta"
+    ],
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-39eb24c2306c"
+  },
+  {
+    "question": "Hvilken amerikansk finansavis har navn etter en gate i New York?",
+    "answer": "The Wall Street Journal",
+    "acceptedAnswers": [
+      "Wall Street Journal",
+      "WSJ"
+    ],
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "id": "qh-0ee398e496b9"
+  },
+  {
+    "question": "Hva heter den franske månedsavisen om internasjonal politikk som også finnes i norsk utgave?",
+    "answer": "Le Monde diplomatique",
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-00e7e1eafb58"
+  },
+  {
+    "question": "Hvilken avis fra Tromsø deler navn med lysfenomenet aurora borealis?",
+    "answer": "Nordlys",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "id": "qh-b2a723cb3294"
+  },
+  {
+    "question": "Hva slags dyr stakk den australske TV-profilen Steve Irwin i 2006?",
+    "answer": "Piggrokke",
+    "acceptedAnswers": [
+      "Rokke"
+    ],
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "id": "qh-ce4ac4ef5203"
+  },
+  {
+    "question": "Hva heter stoffet fra spermhvalens tarmsystem som tidligere ble brukt i parfyme?",
+    "answer": "Ambra",
+    "acceptedAnswers": [
+      "Ambergris"
+    ],
+    "category": "Dyr og natur",
+    "difficulty": "hard",
+    "id": "qh-116b89fe534f"
+  },
+  {
+    "question": "Hvilket sjøpattedyr har det vitenskapelige navnet Orcinus orca?",
+    "answer": "Spekkhogger",
+    "acceptedAnswers": [
+      "Spekkhugger",
+      "Orka"
+    ],
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "id": "qh-79f46c061770"
+  },
+  {
+    "question": "Hvor mange bein har en vanlig strandkrabbe når klørne telles med?",
+    "answer": "10",
+    "acceptedAnswers": [
+      "Ti"
+    ],
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "id": "qh-7b88c21965e2"
+  },
+  {
+    "question": "Hva het delfinen i den amerikanske familie-TV-serien fra 1960-tallet?",
+    "answer": "Flipper",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "id": "qh-1eeac95d0038"
+  },
+  {
+    "question": "Hva slags fisk forbindes med den japanske retten fugu?",
+    "answer": "Kulefisk",
+    "acceptedAnswers": [
+      "Pufferfish"
+    ],
+    "category": "Dyr og natur",
+    "difficulty": "medium",
+    "id": "qh-2277f8d9ad9e"
+  },
+  {
+    "question": "Hvilken gruppe sjøpattedyr omfatter dugonger og manater og har blitt knyttet til myter om havfruer?",
+    "answer": "Sjøkyr",
+    "acceptedAnswers": [
+      "Sjøkuer",
+      "Sirenia",
+      "Sjøku"
+    ],
+    "category": "Dyr og natur",
+    "difficulty": "hard",
+    "id": "qh-253f58c6b94f"
+  },
+  {
+    "question": "Hva het spekkhoggeren som spilte Willy i Free Willy?",
+    "answer": "Keiko",
+    "category": "Dyr og natur",
+    "difficulty": "easy",
+    "id": "qh-1ee46b873bf7"
+  },
+  {
+    "question": "Hva kalles tilberedning i vakuumpose i et temperaturstyrt vannbad?",
+    "answer": "Sous vide",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-cec945d305d9"
+  },
+  {
+    "question": "Hvilken Oslo-restaurant fikk to Michelin-stjerner i 2012 med Esben Holmboe Bang som kjøkkensjef?",
+    "answer": "Maaemo",
+    "category": "Mat og drikke",
+    "difficulty": "hard",
+    "id": "qh-cfe6e1f127cc"
+  },
+  {
+    "question": "Hva heter salaten med tomat, mozzarella og basilikum som er oppkalt etter Capri?",
+    "answer": "Caprese",
+    "acceptedAnswers": [
+      "Insalata caprese"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "id": "qh-d7b90d30619a"
+  },
+  {
+    "question": "Hva heter den japanske sitrussausen som ofte serveres til sashimi?",
+    "answer": "Ponzu",
+    "acceptedAnswers": [
+      "Ponzusaus"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "hard",
+    "id": "qh-d178572b17fc"
+  },
+  {
+    "question": "Hvilken rett består av rått, finhakket oksekjøtt og serveres gjerne med eggeplomme?",
+    "answer": "Biff tartar",
+    "acceptedAnswers": [
+      "Bifftartar",
+      "Tartar",
+      "Steak tartare"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-f22404a29dc9"
+  },
+  {
+    "question": "Hvordan tilberedes eggene i klassiske eggs Benedict?",
+    "answer": "De posjeres",
+    "acceptedAnswers": [
+      "Posjeres",
+      "Posjering",
+      "Posjerte egg",
+      "Posjert"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-b7494c456973"
+  },
+  {
+    "question": "Hvilket italiensk ord brukes også på engelske menyer om blekksprut, ofte frityrstekt i ringer?",
+    "answer": "Calamari",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-f11f0fed6136"
+  },
+  {
+    "question": "Hva kalles French toast tradisjonelt på norsk?",
+    "answer": "Arme riddere",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "id": "qh-d75c3945e4ab"
+  },
+  {
+    "question": "Hvilket sportsmerke ble grunnlagt av Adolf «Adi» Dassler?",
+    "answer": "Adidas",
+    "category": "Samfunn og politikk",
+    "difficulty": "easy",
+    "id": "qh-f6d1bf9e65cf"
+  },
+  {
+    "question": "Hvilket japansk selskap laget grafkalkulatoren fx-7000G?",
+    "answer": "Casio",
+    "category": "Teknologi",
+    "difficulty": "hard",
+    "id": "qh-f156a0a41e82"
+  },
+  {
+    "question": "Hvilket ølmerke fra Bergen bruker slagordet «Brygget i regnet»?",
+    "answer": "Hansa",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-52371761582a"
+  },
+  {
+    "question": "Hvilken kombinasjon av bokstaver og tall bruker Cristiano Ronaldo som klesmerke?",
+    "answer": "CR7",
+    "category": "Kjendiser",
+    "difficulty": "easy",
+    "id": "qh-25cd53316148"
+  },
+  {
+    "question": "Hvilket finsk teknologiselskap brukte slagordet «Connecting People»?",
+    "answer": "Nokia",
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "id": "qh-f1ba842c1f07"
+  },
+  {
+    "question": "Hvilket støvsugermerke har også blitt et engelsk verb for å støvsuge?",
+    "answer": "Hoover",
+    "category": "Teknologi",
+    "difficulty": "medium",
+    "id": "qh-558ce7a49695"
+  },
+  {
+    "question": "Hvilket leketøyselskap ble grunnlagt som Hassenfeld Brothers?",
+    "answer": "Hasbro",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "id": "qh-33eb6f857cea"
+  },
+  {
+    "question": "Hvilket svensk selskap står bak snusmerkene General og Ettan?",
+    "answer": "Swedish Match",
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-72fe35e2001e"
+  },
+  {
+    "question": "Hvilket norsk klesmerke ble kjent for heldresser med slagordet «Jump In»?",
+    "answer": "Onepiece",
+    "acceptedAnswers": [
+      "One Piece"
+    ],
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-c653f04e0068"
+  },
+  {
+    "question": "Hvilket dansk mediekonsern het tidligere Gutenberghus?",
+    "answer": "Egmont",
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-9e361999d46e"
+  },
+  {
+    "question": "Hvilket land ble i 2002 det første med fem VM-gull i herrefotball?",
+    "answer": "Brasil",
+    "acceptedAnswers": [
+      "Brazil"
+    ],
+    "category": "Sport",
+    "difficulty": "easy",
+    "id": "qh-400b37f39451"
+  },
+  {
+    "question": "Hvilken tysk spiss nådde 16 VM-mål i semifinalen mot Brasil i 2014?",
+    "answer": "Miroslav Klose",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-dd43f123d5ea"
+  },
+  {
+    "question": "Hvilket land arrangerte fotball-VM for menn i 2002 sammen med Japan?",
+    "answer": "Sør-Korea",
+    "acceptedAnswers": [
+      "Republikken Korea"
+    ],
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-80e2bb6cf75f"
+  },
+  {
+    "question": "I hvor mange VM-sluttspill i herrefotball deltok Norge før år 2000?",
+    "answer": "3",
+    "acceptedAnswers": [
+      "Tre"
+    ],
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-41c08c5a21a9"
+  },
+  {
+    "question": "Hvilken brasiliansk spiller ble verdensmester i 1958, 1962 og 1970?",
+    "answer": "Pelé",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-07c016c9723c"
+  },
+  {
+    "question": "I hvilket land ble det første fotball-VM for menn arrangert i 1930?",
+    "answer": "Uruguay",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-13eb02d72c0e"
+  },
+  {
+    "question": "Hvilket herrelandslag vant VM-finalen på Wembley i 1966?",
+    "answer": "England",
+    "category": "Sport",
+    "difficulty": "easy",
+    "id": "qh-a620298cc6b6"
+  },
+  {
+    "question": "Hva heter plastblåseinstrumentet som preget tribunelyden under fotball-VM i 2010?",
+    "answer": "Vuvuzela",
+    "category": "Sport",
+    "difficulty": "easy",
+    "id": "qh-4eeee5f6904a"
+  },
+  {
+    "question": "Hva heter Englands EM-låt fra 1996 med omkvedet «Football’s coming home»?",
+    "answer": "Three Lions",
+    "acceptedAnswers": [
+      "3 Lions"
+    ],
+    "category": "Sport",
+    "difficulty": "hard",
+    "id": "qh-0c0b40487c3d"
+  },
+  {
+    "question": "Hvilket land vant fotball-VM for menn på hjemmebane i 1998 etter å ha gått glipp av VM i 1994?",
+    "answer": "Frankrike",
+    "category": "Sport",
+    "difficulty": "easy",
+    "id": "qh-cefd8b3cfb5e"
+  },
+  {
+    "question": "Hvilken norsk statsminister fra 1884 kalles parlamentarismens far i Norge?",
+    "answer": "Johan Sverdrup",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "id": "qh-ecfb7c210d5a"
+  },
+  {
+    "question": "Hvilken norsk miljøvernminister havnet i en berømt ordstrid med britiske John Gummer i 1994?",
+    "answer": "Thorbjørn Berntsen",
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-02c2021bc057"
+  },
+  {
+    "question": "Hvilken KrF-politiker var «djupt såra og vonbroten» etter regjeringsforhandlingene i 1971?",
+    "answer": "Kjell Bondevik",
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-b7a72569be68"
+  },
+  {
+    "question": "Hvilken norsk statsminister delte etternavn med en doktor i en låt av Kaizers Orchestra?",
+    "answer": "Johan Ludwig Mowinckel",
+    "acceptedAnswers": [
+      "Johan Ludvig Mowinckel",
+      "Mowinckel"
+    ],
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-174cc671bf04"
+  },
+  {
+    "question": "Hvilken Høyre-statsminister fra 1980-tallet sa at det var bedre å ha vært statsminister enn å være det?",
+    "answer": "Kåre Willoch",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "id": "qh-9c5aec761de4"
+  },
+  {
+    "question": "Hvilken tidligere norsk statsminister brukte uttrykket «Bongo fra Kongo»?",
+    "answer": "Thorbjørn Jagland",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "id": "qh-43ecab64f3d4"
+  },
+  {
+    "question": "Hvilken planleggingsminister gikk av kort tid etter at Jaglands regjering tiltrådte i 1996?",
+    "answer": "Terje Rød-Larsen",
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-03a1c16a55e7"
+  },
+  {
+    "question": "Hvilken forfatter bak bøkene om Hanne Wilhelmsen var også Norges justisminister?",
+    "answer": "Anne Holt",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "id": "qh-201247c23a62"
+  },
+  {
+    "question": "Hvilken politiminister i Quislings regjering skrev krim under navnet Max Mauser?",
+    "answer": "Jonas Lie",
+    "acceptedAnswers": [
+      "Jonas Lie den yngre"
+    ],
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-7da13c034185"
+  },
+  {
+    "question": "Hvem hadde samlet lengst tid som norsk statsminister av Jens Stoltenberg og Gro Harlem Brundtland?",
+    "answer": "Gro Harlem Brundtland",
+    "acceptedAnswers": [
+      "Gro",
+      "Brundtland"
+    ],
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "id": "qh-72cfbfe0dfeb"
+  },
+  {
+    "question": "Hvilken Spice Girl var kjent som Posh Spice?",
+    "answer": "Victoria Beckham",
+    "acceptedAnswers": [
+      "Victoria Adams"
+    ],
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-3505ebdd6270"
+  },
+  {
+    "question": "Hvem utgjorde M2M sammen med Marit Larsen?",
+    "answer": "Marion Ravn",
+    "acceptedAnswers": [
+      "Marion Raven"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-a13e79560c20"
+  },
+  {
+    "question": "Hvilken film har både James Horners musikk og Céline Dions «My Heart Will Go On» på lydsporet?",
+    "answer": "Titanic",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-ca54459f503f"
+  },
+  {
+    "question": "Hvilket artistnavn brukte Jonny Jakobsen på «Calcutta (Taxi Taxi Taxi)»?",
+    "answer": "Dr. Bombay",
+    "acceptedAnswers": [
+      "Doctor Bombay"
+    ],
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-1f358647a0b6"
+  },
+  {
+    "question": "Hvilket boyband ga ut albumet Millennium i 1999?",
+    "answer": "Backstreet Boys",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-6b909cf337fb"
+  },
+  {
+    "question": "Hvem ga ut albumet Jagged Little Pill i 1995?",
+    "answer": "Alanis Morissette",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-07a0e80162dd"
+  },
+  {
+    "question": "Hvilken avdød rapper hedres i «I’ll Be Missing You» fra 1997?",
+    "answer": "The Notorious B.I.G.",
+    "acceptedAnswers": [
+      "Biggie",
+      "Biggie Smalls",
+      "Christopher Wallace"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-b103940b1f42"
+  },
+  {
+    "question": "Hva heter Mariah Careys julesingel fra 1994 om å ønske seg én person til jul?",
+    "answer": "All I Want for Christmas Is You",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-e0c6cea03f8f"
+  },
+  {
+    "question": "Hvilken artist hadde den svenske hiten «Vi drar till fjällen»?",
+    "answer": "Markoolio",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-503167950dfd"
+  },
+  {
+    "question": "Hvilket latinsk uttrykk for en ubeskrevet tavle forbindes med John Lockes menneskesyn?",
+    "answer": "Tabula rasa",
+    "category": "Kunst og kultur",
+    "difficulty": "hard",
+    "id": "qh-3fcf0b32776c"
+  },
+  {
+    "question": "Hvilken filosof skrev Slik talte Zarathustra om blant annet overmennesket?",
+    "answer": "Friedrich Nietzsche",
+    "category": "Kunst og kultur",
+    "difficulty": "hard",
+    "id": "qh-3b01cddb1e84"
+  },
+  {
+    "question": "Hvilken filosof brukte hulelignelsen i verket Staten?",
+    "answer": "Platon",
+    "acceptedAnswers": [
+      "Plato"
+    ],
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "id": "qh-86ddd53b7cb3"
+  },
+  {
+    "question": "Hvem formulerte det kategoriske imperativ?",
+    "answer": "Immanuel Kant",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "id": "qh-9fd5afd4fb0f"
+  },
+  {
+    "question": "Hvilken filosof fra Aten ble dømt til å drikke gift i 399 f.Kr.?",
+    "answer": "Sokrates",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "id": "qh-345f648e3ebe"
+  },
+  {
+    "question": "Hvilken fransk filosof forbindes med «Jeg tenker, altså er jeg»?",
+    "answer": "René Descartes",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "id": "qh-0c4b0a423990"
+  },
+  {
+    "question": "Hvilken matematiker fra Syrakus skal ha ropt «Eureka» etter en oppdagelse i badet?",
+    "answer": "Arkimedes",
+    "acceptedAnswers": [
+      "Archimedes"
+    ],
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "id": "qh-3a5b68ba722c"
+  },
+  {
+    "question": "Hvilken elev av Platon forbindes med verket Metafysikken?",
+    "answer": "Aristoteles",
+    "acceptedAnswers": [
+      "Aristotle"
+    ],
+    "category": "Kunst og kultur",
+    "difficulty": "hard",
+    "id": "qh-d3061ad3841c"
+  },
+  {
+    "question": "Hvem representerte Norge med «Haba Haba» i Eurovision i 2011?",
+    "answer": "Stella Mwangi",
+    "acceptedAnswers": [
+      "STL"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-884003f0048e"
+  },
+  {
+    "question": "Hvilket av landene i Eurovisions «Big Five» var vertskap for finalen i Torino i 2022?",
+    "answer": "Italia",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-ec7251eeeb7c"
+  },
+  {
+    "question": "Hvor gammel var Sandra Kim da hun vant Eurovision i Bergen i 1986?",
+    "answer": "13",
+    "acceptedAnswers": [
+      "13 år",
+      "Tretten"
+    ],
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-1ec1e2d9efdb"
+  },
+  {
+    "question": "Hvilken nordmann var Eurovisions øverste ansvarlige fra 2011 til 2020?",
+    "answer": "Jon Ola Sand",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-c246e391833e"
+  },
+  {
+    "question": "Hva kalles de korte presentasjonsfilmene før hvert bidrag i Eurovision?",
+    "answer": "Postkort",
+    "acceptedAnswers": [
+      "Postkortene",
+      "Postcards"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-b984729c8e70"
+  },
+  {
+    "question": "Hvem ledet Eurovision-finalen i Oslo i 1996 sammen med Ingvild Bryn?",
+    "answer": "Morten Harket",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-a324a5853ebb"
+  },
+  {
+    "question": "Hvilket kallenavn brukte mannen som tok seg opp på scenen under Spanias Eurovision-bidrag i 2010?",
+    "answer": "Jimmy Jump",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-029501bf311d"
+  },
+  {
+    "question": "Hvem vant Eurovision med 387 poeng i Moskva i 2009?",
+    "answer": "Alexander Rybak",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-e28d56406cf9"
+  },
+  {
+    "question": "Hvem fikk 18 tolvere med «Euphoria» i Eurovision-finalen i 2012?",
+    "answer": "Loreen",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-1bb6e1876408"
+  },
+  {
+    "question": "Fra hvilket verk av Charpentier kommer kjenningsmelodien til Eurovision?",
+    "answer": "Te Deum",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-cd1f26ec3546"
+  },
+  {
+    "question": "Hvilket nordafrikansk land styrte Muammar al-Gaddafi fram til 2011?",
+    "answer": "Libya",
+    "category": "Historie",
+    "difficulty": "easy",
+    "id": "qh-e7d4690cd162"
+  },
+  {
+    "question": "Hvilket land nevnes i tittelen The Last King of …, filmen om Idi Amin?",
+    "answer": "Skottland",
+    "acceptedAnswers": [
+      "Scotland"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-840fe845add2"
+  },
+  {
+    "question": "Hvem ledet Sovjetunionen da landet gikk inn i andre verdenskrig?",
+    "answer": "Josef Stalin",
+    "acceptedAnswers": [
+      "Joseph Stalin"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-fc2388a8f338"
+  },
+  {
+    "question": "I hvilket land tok Teodoro Obiang Nguema Mbasogo makten i 1979?",
+    "answer": "Ekvatorial-Guinea",
+    "acceptedAnswers": [
+      "Ekvatorialguinea"
+    ],
+    "category": "Historie",
+    "difficulty": "hard",
+    "id": "qh-9118e4507fc2"
+  },
+  {
+    "question": "I hvilket land ble president Omar al-Bashir styrtet i 2019?",
+    "answer": "Sudan",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-ec497e265278"
+  },
+  {
+    "question": "Hva var Bashar al-Assads legespesialitet før han ble president i Syria?",
+    "answer": "Øyesykdommer",
+    "acceptedAnswers": [
+      "Øyelege",
+      "Oftalmologi"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-da17a6d0c061"
+  },
+  {
+    "question": "Hvilket land hadde Daniel arap Moi som president fra 1978 til 2002?",
+    "answer": "Kenya",
+    "category": "Historie",
+    "difficulty": "hard",
+    "id": "qh-e11286115cbb"
+  },
+  {
+    "question": "Hvem ledet Røde Khmer da bevegelsen tok makten i Kambodsja i 1975?",
+    "answer": "Pol Pot",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-60e453591647"
+  },
+  {
+    "question": "Hvilken norsk skuespiller har roller i Buddy, Jonny Vang og 90 minutter?",
+    "answer": "Aksel Hennie",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-6ec76fa5569d"
+  },
+  {
+    "question": "Hvilken norsk skuespiller spiller både i Kautokeino-opprøret og i Død snø?",
+    "answer": "Bjørn Sundquist",
+    "category": "Film",
+    "difficulty": "hard",
+    "id": "qh-6ad0251b3ad8"
+  },
+  {
+    "question": "Hvilken norsk skuespiller spilte Atalanta i Hercules fra 2014?",
+    "answer": "Ingrid Bolsø Berdal",
+    "category": "Film",
+    "difficulty": "hard",
+    "id": "qh-399967852f15"
+  },
+  {
+    "question": "Hvilken norsk kunstløper og filmstjerne har en stjerne på Hollywood Walk of Fame?",
+    "answer": "Sonja Henie",
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-1f47125074a0"
+  },
+  {
+    "question": "Hvem fikk Amanda for rollen som John i thrilleren Naboer?",
+    "answer": "Kristoffer Joner",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-e114a4ba344f"
+  },
+  {
+    "question": "Hvem regisserte den norske filmen Kristin Lavransdatter fra 1995?",
+    "answer": "Liv Ullmann",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-f359a1c0faaa"
+  },
+  {
+    "question": "Hvem var fortellerstemmen i Flåklypa Grand Prix og drev Edderkoppen teater?",
+    "answer": "Leif Juster",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-decd81b554e3"
+  },
+  {
+    "question": "Hvilken norsk komiker spiller en versjon av seg selv i NRKs Hjerte til hjerte?",
+    "answer": "Linn Skåber",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "id": "qh-7b01c01f9c04"
+  },
+  {
+    "question": "Hvem spiller hovedrollen i Joachim Triers Oslo, 31. august?",
+    "answer": "Anders Danielsen Lie",
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-ba14bfbc376c"
+  },
+  {
+    "question": "Hvem spilte Geirr i Kunsten å tenke negativt?",
+    "answer": "Fridtjov Såheim",
+    "category": "Film",
+    "difficulty": "hard",
+    "id": "qh-dcc1e0906204"
+  },
+  {
+    "question": "Hvilket av antikkens sju underverker står fremdeles i Giza?",
+    "answer": "Keopspyramiden",
+    "acceptedAnswers": [
+      "Den store pyramiden",
+      "Den store pyramiden i Giza"
+    ],
+    "category": "Historie",
+    "difficulty": "easy",
+    "id": "qh-8e568ae1de6c"
+  },
+  {
+    "question": "I hvilket år ble Gro Harlem Brundtland statsminister for første gang?",
+    "answer": "1981",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-f69049e688d1"
+  },
+  {
+    "question": "Hvilken amerikansk president er teddybjørnen oppkalt etter?",
+    "answer": "Theodore Roosevelt",
+    "acceptedAnswers": [
+      "Teddy Roosevelt"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-07abaccd1d52"
+  },
+  {
+    "question": "Hvilken president ble skutt av John Wilkes Booth?",
+    "answer": "Abraham Lincoln",
+    "category": "Historie",
+    "difficulty": "easy",
+    "id": "qh-97c092ba3de8"
+  },
+  {
+    "question": "Hvilken senere president spilte mot en sjimpanse i filmen Bedtime for Bonzo?",
+    "answer": "Ronald Reagan",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-796c225048a7"
+  },
+  {
+    "question": "Hva slags økonomisk hendelse på Wall Street forbindes med «Black Tuesday» i 1929?",
+    "answer": "Børskrakket",
+    "acceptedAnswers": [
+      "Børskrakk",
+      "Aksjekrakket",
+      "Børskrakket i New York"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-cd46da8a9673"
+  },
+  {
+    "question": "Hvilken spansk conquistador tok inkaherskeren Atahualpa til fange?",
+    "answer": "Francisco Pizarro",
+    "category": "Historie",
+    "difficulty": "hard",
+    "id": "qh-9c0ae51e0778"
+  },
+  {
+    "question": "Hvilken indisk frigjøringsleder arbeidet som advokat i Sør-Afrika før han vendte tilbake til India?",
+    "answer": "Mahatma Gandhi",
+    "acceptedAnswers": [
+      "Mohandas Gandhi",
+      "Gandhi"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-42c21e353e00"
+  },
+  {
+    "question": "Hvilket land ga kvinner stemmerett ved nasjonale valg i 1893?",
+    "answer": "New Zealand",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-94c10839f719"
+  },
+  {
+    "question": "Hvilken thriller fra 1973 har George C. Scott som forsker som lærer delfiner å snakke?",
+    "answer": "The Day of the Dolphin",
+    "acceptedAnswers": [
+      "Day of the Dolphin"
+    ],
+    "category": "Film",
+    "difficulty": "hard",
+    "id": "qh-98ca67f9859c"
+  },
+  {
+    "question": "I hvilken 1980-tallsfilm skulker en tenåring skolen for å oppleve Chicago i en Ferrari?",
+    "answer": "Ferris Bueller’s Day Off",
+    "acceptedAnswers": [
+      "Skulk med stil"
+    ],
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-fd5c436338d7"
+  },
+  {
+    "question": "I hvilken komedie fra 2004 hjelper en tenåring vennen Pedro med valgkampen på skolen?",
+    "answer": "Napoleon Dynamite",
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-105e688a3dae"
+  },
+  {
+    "question": "Hvilken Wes Anderson-film fra 2001 handler om søsknene Chas, Margot og Richie?",
+    "answer": "The Royal Tenenbaums",
+    "category": "Film",
+    "difficulty": "hard",
+    "id": "qh-947ca5f2f387"
+  },
+  {
+    "question": "I hvilken film fra 1967 blir Benjamin Braddock forført av Mrs. Robinson?",
+    "answer": "The Graduate",
+    "acceptedAnswers": [
+      "Manndomsprøven"
+    ],
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-3d1517080c49"
+  },
+  {
+    "question": "Hva heter mannen som uvitende er hovedperson i et døgnkontinuerlig TV-show i en Jim Carrey-film?",
+    "answer": "Truman Burbank",
+    "acceptedAnswers": [
+      "Truman"
+    ],
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-442a36cae346"
+  },
+  {
+    "question": "Hva er etternavnet til Truman, som uten å vite det er stjerne i sitt eget TV-program i en film fra 1998?",
+    "answer": "Burbank",
+    "acceptedAnswers": [
+      "Truman Burbank"
+    ],
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-1b5d9687649a"
+  },
+  {
+    "question": "Hvem spilte faren til Indiana Jones i Indiana Jones og det siste korstog?",
+    "answer": "Sean Connery",
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-c617fbbdbc93"
+  },
+  {
+    "question": "Hvilken Monty Python-film fra 1979 ble en periode forbudt på norske kinoer?",
+    "answer": "Life of Brian",
+    "acceptedAnswers": [
+      "Monty Python’s Life of Brian"
+    ],
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-d2a411b1478e"
+  },
+  {
+    "question": "I hvilken film fra 1967 spiller Warren Beatty og Faye Dunaway et bankranerpar?",
+    "answer": "Bonnie and Clyde",
+    "acceptedAnswers": [
+      "Bonnie og Clyde"
+    ],
+    "category": "Film",
+    "difficulty": "hard",
+    "id": "qh-cdbdf29d2c2d"
+  },
+  {
+    "question": "Hvilken norrøn sjøfarer forbindes med reisene til Vinland rundt år 1000?",
+    "answer": "Leiv Eiriksson",
+    "acceptedAnswers": [
+      "Leif Eriksson",
+      "Leiv Eriksson",
+      "Leif Erikson"
+    ],
+    "category": "Historie",
+    "difficulty": "easy",
+    "id": "qh-5a276a64b293"
+  },
+  {
+    "question": "Hvilket år nådde Columbus Karibia på sin første reise over Atlanteren?",
+    "answer": "1492",
+    "category": "Historie",
+    "difficulty": "easy",
+    "id": "qh-f7aa0e70d6bd"
+  },
+  {
+    "question": "Hvilken portugiser nådde India sjøveien rundt Afrika i 1498?",
+    "answer": "Vasco da Gama",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-f0fa8d4094cd"
+  },
+  {
+    "question": "Hva kalles de spanske erobrerne som Cortés og Pizarro var blant?",
+    "answer": "Conquistadorer",
+    "acceptedAnswers": [
+      "Conquistador",
+      "Conquistadores",
+      "Konkistadorer"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-64d55ab6eb54"
+  },
+  {
+    "question": "Hva het det mytiske gullriket som europeiske oppdagere lette etter i Sør-Amerika?",
+    "answer": "El Dorado",
+    "acceptedAnswers": [
+      "Eldorado"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-6040d7dcc328"
+  },
+  {
+    "question": "Hvilken venetiansk handelsmann skrev om reisene sine til Kublai-khans rike?",
+    "answer": "Marco Polo",
+    "category": "Historie",
+    "difficulty": "easy",
+    "id": "qh-f719ab61cd50"
+  },
+  {
+    "question": "Hvilken britisk polfarer nådde Sydpolen i januar 1912 etter Amundsen?",
+    "answer": "Robert Falcon Scott",
+    "acceptedAnswers": [
+      "Robert Scott"
+    ],
+    "category": "Historie",
+    "difficulty": "hard",
+    "id": "qh-422ae8bfc339"
+  },
+  {
+    "question": "Hvem nådde toppen av Mount Everest sammen med Tenzing Norgay i 1953?",
+    "answer": "Edmund Hillary",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-283111f4b52b"
+  },
+  {
+    "question": "Hvilken romsonde krysset heliopausen som den første i 2012?",
+    "answer": "Voyager 1",
+    "acceptedAnswers": [
+      "Voyager I"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-ecd841b84021"
+  },
+  {
+    "question": "Hvilket land invaderte Tyskland 1. september 1939?",
+    "answer": "Polen",
+    "category": "Historie",
+    "difficulty": "easy",
+    "id": "qh-2976ba1c4c5d"
+  },
+  {
+    "question": "Hva het atombomben som ble sluppet over Hiroshima i 1945?",
+    "answer": "Little Boy",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-f5a199f4301b"
+  },
+  {
+    "question": "Hvilken sovjetisk utenriksminister ga navn til en pakt med Ribbentrop i 1939?",
+    "answer": "Vjatsjeslav Molotov",
+    "acceptedAnswers": [
+      "Molotov"
+    ],
+    "category": "Historie",
+    "difficulty": "hard",
+    "id": "qh-8fae1ccd54bd"
+  },
+  {
+    "question": "Hvilken tysk feltmarskalk ble kalt «Ørkenreven»?",
+    "answer": "Erwin Rommel",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-9011f659aeb1"
+  },
+  {
+    "question": "Hva var det allierte kodenavnet for operasjonen som startet med landgangen i Normandie i juni 1944?",
+    "answer": "Operasjon Overlord",
+    "acceptedAnswers": [
+      "Operation Overlord",
+      "Overlord"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-5fe6593cb604"
+  },
+  {
+    "question": "Hvem var amerikansk president da Tyskland kapitulerte i mai 1945?",
+    "answer": "Harry S. Truman",
+    "acceptedAnswers": [
+      "Harry Truman",
+      "Truman"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-ada89e22192a"
+  },
+  {
+    "question": "Hvilken tysk krysser ble senket ved Oscarsborg 9. april 1940?",
+    "answer": "Blücher",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-8138a17c1891"
+  },
+  {
+    "question": "Hvilken av Hitlers stedfortredere fløy til Skottland på egen hånd i 1941?",
+    "answer": "Rudolf Hess",
+    "category": "Historie",
+    "difficulty": "hard",
+    "id": "qh-0e05bd9e23a2"
+  },
+  {
+    "question": "Hvilken britisk statsminister erklærte «peace for our time» etter Münchenavtalen?",
+    "answer": "Neville Chamberlain",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-51768513a002"
+  },
+  {
+    "question": "Hva kalles Sovjetunionens krig mot Nazi-Tyskland fra 1941 til 1945 tradisjonelt i Russland?",
+    "answer": "Den store fedrelandskrigen",
+    "acceptedAnswers": [
+      "Den store fedrelandske krig"
+    ],
+    "category": "Historie",
+    "difficulty": "hard",
+    "id": "qh-a8e734f11615"
+  },
+  {
+    "question": "Hvilken film om en jødisk fyrstes skjebne vant elleve Oscar med Charlton Heston i hovedrollen?",
+    "answer": "Ben-Hur",
+    "acceptedAnswers": [
+      "Ben Hur"
+    ],
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-72eb70c109e5"
+  },
+  {
+    "question": "For hvilken film fikk Robin Williams Oscar for rollen som terapeuten Sean Maguire?",
+    "answer": "Good Will Hunting",
+    "acceptedAnswers": [
+      "Den enestående Will Hunting"
+    ],
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-4e692ec49788"
+  },
+  {
+    "question": "Hvilken Star Wars-film fra 1977 vant seks ordinære Oscar-priser?",
+    "answer": "Star Wars",
+    "acceptedAnswers": [
+      "A New Hope",
+      "Episode IV",
+      "Star Wars Episode IV A New Hope",
+      "Stjernekrigen"
+    ],
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-469d7b605f7a"
+  },
+  {
+    "question": "Hvilken film om Jan Baalsrud ble Norges første Oscar-nominerte spillefilm?",
+    "answer": "Ni liv",
+    "category": "Film",
+    "difficulty": "hard",
+    "id": "qh-c004f70b66bd"
+  },
+  {
+    "question": "Hvem vant Oscar for ballerinarollen i Black Swan?",
+    "answer": "Natalie Portman",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-056d5196a06f"
+  },
+  {
+    "question": "Hvilken amerikansk animasjonspioner vant 22 ordinære Oscar-priser i sin karriere?",
+    "answer": "Walt Disney",
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-4eaaebaf36e9"
+  },
+  {
+    "question": "Hvem komponerte den Oscar-belønte filmmusikken til Løvenes konge fra 1994?",
+    "answer": "Hans Zimmer",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-375f7094a98b"
+  },
+  {
+    "question": "Hvem skrev teksten til «Can You Feel the Love Tonight» til Elton Johns melodi?",
+    "answer": "Tim Rice",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-5fb159cd5c02"
+  },
+  {
+    "question": "Hvilken skuespiller vant sin fjerde Oscar for beste kvinnelige hovedrolle med On Golden Pond?",
+    "answer": "Katharine Hepburn",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-01ce9430c973"
+  },
+  {
+    "question": "Hvilken antikrigsroman av Joseph Heller følger bombesikteren Yossarian?",
+    "answer": "Catch-22",
+    "acceptedAnswers": [
+      "Catch 22"
+    ],
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "id": "qh-f5bcefcb74d9"
+  },
+  {
+    "question": "Hva het blekkspruten som «tippet» åtte kamper riktig under fotball-VM i 2010?",
+    "answer": "Paul",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-3a326c0b17e8"
+  },
+  {
+    "question": "Hva kalles studiet av påståtte fenomener som telepati og klarsyn?",
+    "answer": "Parapsykologi",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "id": "qh-6cdb36d5b662"
+  },
+  {
+    "question": "Hvilket suppemerke avbildet Andy Warhol i serien med 32 bokser fra 1962?",
+    "answer": "Campbell’s",
+    "acceptedAnswers": [
+      "Campbell",
+      "Campbells"
+    ],
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "id": "qh-6a0215c98707"
+  },
+  {
+    "question": "Hva kalles Hitlers mislykkede kuppforsøk i München i 1923?",
+    "answer": "Ølkjellerkuppet",
+    "acceptedAnswers": [
+      "Ølhallkuppet",
+      "Hitlerkuppet"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-37a301098dfb"
+  },
+  {
+    "question": "Hvilket land bruker navnet Hrvatska om seg selv?",
+    "answer": "Kroatia",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-231f0fb71f62"
+  },
+  {
+    "question": "Hvor mange år har et ektepar vært gift når de feirer diamantbryllup i Norge?",
+    "answer": "60",
+    "acceptedAnswers": [
+      "Seksti"
+    ],
+    "category": "Kunst og kultur",
+    "difficulty": "easy",
+    "id": "qh-fe272e2a31af"
+  },
+  {
+    "question": "Hva kalles den norske sabotasjegruppen som Asbjørn Sunde ledet under okkupasjonen?",
+    "answer": "Osvaldgruppa",
+    "acceptedAnswers": [
+      "Osvaldgruppen"
+    ],
+    "category": "Historie",
+    "difficulty": "hard",
+    "id": "qh-34898859945b"
+  },
+  {
+    "question": "Hvilken amerikansk hotellarving gjestet den norske utgaven av Paradise Hotel i 2013?",
+    "answer": "Paris Hilton",
+    "category": "TV-serier",
+    "difficulty": "hard",
+    "id": "qh-6cc9e0933d63"
+  },
+  {
+    "question": "Hva heter Irland på irsk?",
+    "answer": "Éire",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "id": "qh-cdcdaa26342c"
+  },
+  {
+    "question": "Hva står den amerikanske forkortelsen CIA for?",
+    "answer": "Central Intelligence Agency",
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "id": "qh-989fff8757bd"
+  },
+  {
+    "question": "Hva sto bokstavene m-l for i det norske partinavnet AKP(m-l)?",
+    "answer": "Marxist-leninistene",
+    "acceptedAnswers": [
+      "Marxistene-leninistene"
+    ],
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-ea7e57917a44"
+  },
+  {
+    "question": "Hvilke fire engelske ord forkortes til TTYL i en tekstmelding?",
+    "answer": "Talk to you later",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "id": "qh-192d1854467c"
+  },
+  {
+    "question": "Hva står SVK for i den norske tittelen på Roald Dahls bok om kjempen og Sofie?",
+    "answer": "Store vennlige kjempe",
+    "acceptedAnswers": [
+      "Den store vennlige kjempen"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-602b71f5f377"
+  },
+  {
+    "question": "Hva er det fulle franske navnet på fotballforbundet FIFA?",
+    "answer": "Fédération Internationale de Football Association",
+    "category": "Sport",
+    "difficulty": "hard",
+    "id": "qh-c91656d5165d"
+  },
+  {
+    "question": "Hvilken film fra 1991 med Arnold Schwarzenegger blir ofte forkortet T2?",
+    "answer": "Terminator 2",
+    "acceptedAnswers": [
+      "Terminator 2 Judgment Day"
+    ],
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-5ebb037745eb"
+  },
+  {
+    "question": "Hvilke fire kyrilliske bokstaver sto på sovjetiske landslagsdrakter som forkortelse for Sovjetunionen?",
+    "answer": "СССР",
+    "acceptedAnswers": [
+      "CCCP",
+      "SSSR"
+    ],
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "id": "qh-f663a1cc87c5"
+  },
+  {
+    "question": "Hvilken skala brukes til å angi hvor sur eller basisk en vannløsning er?",
+    "answer": "pH",
+    "acceptedAnswers": [
+      "pH-skalaen"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-382585a53699"
+  },
+  {
+    "question": "Hvilket EU-direktiv fra 2006 ble på norsk forkortet DLD?",
+    "answer": "Datalagringsdirektivet",
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-06122ea48386"
+  },
+  {
+    "question": "Hva står NATO for på engelsk?",
+    "answer": "North Atlantic Treaty Organization",
+    "acceptedAnswers": [
+      "North Atlantic Treaty Organisation"
+    ],
+    "category": "Samfunn og politikk",
+    "difficulty": "medium",
+    "id": "qh-d1f034f99880"
+  },
+  {
+    "question": "I hvilken spillserie reiser Sora mellom Disney-verdener og møter figurer fra Final Fantasy?",
+    "answer": "Kingdom Hearts",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "id": "qh-c9ee0cb9d495"
+  },
+  {
+    "question": "I hvilken Nintendo-spillserie kan Mario, Link og Samus slåss mot hverandre?",
+    "answer": "Super Smash Bros.",
+    "acceptedAnswers": [
+      "Super Smash Brothers",
+      "Smash Bros"
+    ],
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "id": "qh-5922a434fb9b"
+  },
+  {
+    "question": "Hvilket Atari 2600-spill om et strandet romvesen var basert på en Spielberg-film fra 1982?",
+    "answer": "E.T. the Extra-Terrestrial",
+    "acceptedAnswers": [
+      "E.T.",
+      "ET"
+    ],
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "id": "qh-b3491c1fac92"
+  },
+  {
+    "question": "I hvilket arkadespill fra 1978 skyter man mot rader av romvesener som beveger seg nedover?",
+    "answer": "Space Invaders",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "id": "qh-4566a1b5db69"
+  },
+  {
+    "question": "Hva står NES for i navnet på Nintendos spillkonsoll?",
+    "answer": "Nintendo Entertainment System",
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "id": "qh-399f9623b55f"
+  },
+  {
+    "question": "I hvilken spillserie bygger man hus og styrer hverdagen til virtuelle familier?",
+    "answer": "The Sims",
+    "acceptedAnswers": [
+      "Sims"
+    ],
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "id": "qh-2d292e3467f2"
+  },
+  {
+    "question": "Hvilken spillutgiver står bak Grand Theft Auto V?",
+    "answer": "Rockstar Games",
+    "acceptedAnswers": [
+      "Rockstar"
+    ],
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "id": "qh-4e7a78c2c18b"
+  },
+  {
+    "question": "Hvilken spillserie fra Insomniac følger en lombax og en liten robot?",
+    "answer": "Ratchet & Clank",
+    "acceptedAnswers": [
+      "Ratchet og Clank",
+      "Ratchet and Clank"
+    ],
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "id": "qh-332603814fb3"
+  },
+  {
+    "question": "Hvilket puslespill skapte Aleksej Pazjitnov i Sovjetunionen i 1984?",
+    "answer": "Tetris",
+    "category": "TV-spill",
+    "difficulty": "easy",
+    "id": "qh-891dc75b3b85"
+  },
+  {
+    "question": "Hva het tennisspillet William Higinbotham viste fram på et oscilloskop i 1958?",
+    "answer": "Tennis for Two",
+    "acceptedAnswers": [
+      "Tennis for 2"
+    ],
+    "category": "TV-spill",
+    "difficulty": "hard",
+    "id": "qh-c688b917aa4e"
+  },
+  {
+    "question": "Hva slags overnaturlig vesen er greven i Bram Stokers Dracula?",
+    "answer": "Vampyr",
+    "acceptedAnswers": [
+      "En vampyr"
+    ],
+    "category": "Mytologi og religion",
+    "difficulty": "easy",
+    "id": "qh-33101aa0dcc8"
+  },
+  {
+    "question": "Hvilket metall forbindes i mange skrekkfortellinger med varulvenes svakhet?",
+    "answer": "Sølv",
+    "category": "Mytologi og religion",
+    "difficulty": "easy",
+    "id": "qh-3ba2eeb4b219"
+  },
+  {
+    "question": "Hvilket fabeldyr står sammen med løven på det britiske riksvåpenet?",
+    "answer": "Enhjørning",
+    "acceptedAnswers": [
+      "Enhjørningen"
+    ],
+    "category": "Mytologi og religion",
+    "difficulty": "easy",
+    "id": "qh-54fa614ee37e"
+  },
+  {
+    "question": "Hvilket vesen med oksehode bodde i labyrinten på Kreta?",
+    "answer": "Minotauros",
+    "acceptedAnswers": [
+      "Minotauren",
+      "Minotaurus"
+    ],
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "id": "qh-e90a27a7b12a"
+  },
+  {
+    "question": "Hvilket annet navn brukes om det nordamerikanske sagnvesenet Sasquatch?",
+    "answer": "Bigfoot",
+    "category": "Mytologi og religion",
+    "difficulty": "easy",
+    "id": "qh-5f2e813a66b9"
+  },
+  {
+    "question": "Hvem tilskrives de antikke greske fablene om blant annet haren og skilpadden?",
+    "answer": "Æsop",
+    "acceptedAnswers": [
+      "Aisopos",
+      "Aesop"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-3c801ae1536a"
+  },
+  {
+    "question": "Hva heter fabeldyret med kropp som en løve og hode og vinger som en ørn?",
+    "answer": "Griff",
+    "acceptedAnswers": [
+      "Griffon"
+    ],
+    "category": "Mytologi og religion",
+    "difficulty": "easy",
+    "id": "qh-a2cfb2f76b57"
+  },
+  {
+    "question": "Hva kalles skikkelsene som ifølge norrøn mytologi valgte ut falne krigere til Odin?",
+    "answer": "Valkyrier",
+    "acceptedAnswers": [
+      "Valkyrjer",
+      "Valkyriene"
+    ],
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "id": "qh-e13efe00ba53"
+  },
+  {
+    "question": "Hva kaller mange utøvere av den nyhedenske religionen wicca seg?",
+    "answer": "Hekser",
+    "acceptedAnswers": [
+      "Heks"
+    ],
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "id": "qh-eb0a969be555"
+  },
+  {
+    "question": "Hva heter stoffet som ifølge spiritister kunne vise seg under en seanse?",
+    "answer": "Ektoplasma",
+    "category": "Mytologi og religion",
+    "difficulty": "hard",
+    "id": "qh-057e3e5ad61f"
+  },
+  {
+    "question": "Hvilken leskedrikk utviklet John Pemberton i Atlanta i 1886?",
+    "answer": "Coca-Cola",
+    "acceptedAnswers": [
+      "Coca Cola"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "id": "qh-52539eb654c2"
+  },
+  {
+    "question": "Hvilken sitrusfrukt gir sammen med sitron den klassiske smaken av 7 Up?",
+    "answer": "Lime",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-85c3c32158bf"
+  },
+  {
+    "question": "Hvilken norsk brusprodusent fra Lillestrøm deler navn med Italias hovedstad?",
+    "answer": "Roma",
+    "acceptedAnswers": [
+      "Roma Mineralvannfabrikk"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "hard",
+    "id": "qh-94db11cd130a"
+  },
+  {
+    "question": "Hvilket ord følger etter Solo i navnet på den sukkerfrie appelsinbrusen i gul flaske merket med en stor S?",
+    "answer": "Super",
+    "acceptedAnswers": [
+      "Solo Super"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-22d004d31fad"
+  },
+  {
+    "question": "Hvilket bryggeri i Trondheim er kjent for sitt ingefærøl med initialene E.C. på flasken?",
+    "answer": "E.C. Dahls",
+    "acceptedAnswers": [
+      "E.C. Dahls bryggeri",
+      "Dahls"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-bb269a473642"
+  },
+  {
+    "question": "Hvem lager den kjente ananasbrusen og pærebrusen fra Molde?",
+    "answer": "Oskar Sylte",
+    "acceptedAnswers": [
+      "Oskar Sylte Mineralvannfabrikk"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-81e2715ec9ca"
+  },
+  {
+    "question": "Hva het Pepsi-varianten med et engelsk navn som betyr «rå», lansert i Storbritannia i 2008?",
+    "answer": "Pepsi Raw",
+    "acceptedAnswers": [
+      "Raw"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "hard",
+    "id": "qh-62476ad5f0f1"
+  },
+  {
+    "question": "Hva heter den lysegrønne tropiske brusen fra Grans?",
+    "answer": "Tropo",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-e2bcf4976cab"
+  },
+  {
+    "question": "Hva heter den oransje skotske brusen fra A.G. Barr?",
+    "answer": "Irn-Bru",
+    "acceptedAnswers": [
+      "Irn Bru"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-2f970c5428ad"
+  },
+  {
+    "question": "Hvilket bær gir smaken i brusvarianten som ble lansert som Cherry Coke?",
+    "answer": "Kirsebær",
+    "acceptedAnswers": [
+      "Morell"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "id": "qh-8c4df94c2995"
+  },
+  {
+    "question": "Hvem sang «Warwick Avenue» på debutalbumet Rockferry?",
+    "answer": "Duffy",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-e55091e7debf"
+  },
+  {
+    "question": "Hvilken duo hadde en hit med «Crazy» i 2006?",
+    "answer": "Gnarls Barkley",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-d237c7318c25"
+  },
+  {
+    "question": "Hvilket britisk band ga ut «Ruby» i 2007?",
+    "answer": "Kaiser Chiefs",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-abc1358d288d"
+  },
+  {
+    "question": "Hvilket band ga ut Hail to the Thief i 2003?",
+    "answer": "Radiohead",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-bf45ef0675ba"
+  },
+  {
+    "question": "Hvilken artist fikk sitt gjennombrudd med «Grace Kelly» og «Relax, Take It Easy»?",
+    "answer": "Mika",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-558214c6d6e1"
+  },
+  {
+    "question": "Hvem synger duett med Bjørn Eidsvåg på «Floden» fra 2006?",
+    "answer": "Elvira Nikolaisen",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-e82c132367f3"
+  },
+  {
+    "question": "Hvilken Gorillaz-hit fra Demon Days har gjestevokal fra De La Soul og en vindmølle i musikkvideoen?",
+    "answer": "Feel Good Inc.",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-36a7d3b0e0bd"
+  },
+  {
+    "question": "Hvilket band står bak «Knights of Cydonia», «Starlight» og «Uprising»?",
+    "answer": "Muse",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-b26a5dfbbeb7"
+  },
+  {
+    "question": "Hvem sang «I Don’t Want to Be», kjenningsmelodien til One Tree Hill?",
+    "answer": "Gavin DeGraw",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-cf8d4fca46f8"
+  },
+  {
+    "question": "Hva het Michael Jacksons planlagte konsertserie i London og konsertfilmen fra 2009?",
+    "answer": "This Is It",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-ce91f9cbbe5c"
+  },
+  {
+    "question": "I hvilket år fant Cubakrisen mellom USA og Sovjetunionen sted?",
+    "answer": "1962",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-843478f896be"
+  },
+  {
+    "question": "Hvem ledet Sovjetunionen fra Khrusjtsjovs fall i 1964 til sin død i 1982?",
+    "answer": "Leonid Bresjnev",
+    "acceptedAnswers": [
+      "Leonid Brezhnev"
+    ],
+    "category": "Historie",
+    "difficulty": "hard",
+    "id": "qh-3d3930bc159b"
+  },
+  {
+    "question": "Hvilket år begynte østtyske myndigheter å bygge Berlinmuren?",
+    "answer": "1961",
+    "category": "Historie",
+    "difficulty": "easy",
+    "id": "qh-4763661f1a11"
+  },
+  {
+    "question": "Hvilken argentinskfødt lege ble en av lederne i den cubanske revolusjonen?",
+    "answer": "Che Guevara",
+    "acceptedAnswers": [
+      "Ernesto Guevara"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-3f7f470bc871"
+  },
+  {
+    "question": "Hvilken amerikansk president ba Gorbatsjov rive Berlinmuren i en tale i 1987?",
+    "answer": "Ronald Reagan",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-bd057630d6d8"
+  },
+  {
+    "question": "Hva ble det østtyske sikkerhetspolitiet vanligvis kalt?",
+    "answer": "Stasi",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-b8b00d8dbc0a"
+  },
+  {
+    "question": "Hva het Gorbatsjovs reformpolitikk for omstrukturering av det sovjetiske samfunnet?",
+    "answer": "Perestrojka",
+    "acceptedAnswers": [
+      "Perestroika"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-524aac7cd8bc"
+  },
+  {
+    "question": "Hva het den første kunstige satellitten i bane rundt jorda?",
+    "answer": "Sputnik 1",
+    "acceptedAnswers": [
+      "Sputnik"
+    ],
+    "category": "Teknologi",
+    "difficulty": "easy",
+    "id": "qh-26ba2d748756"
+  },
+  {
+    "question": "Hva het sangen Ketil Stokkan fremførte for Norge i Eurovision i 1990?",
+    "answer": "Brandenburger Tor",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-ca80b9b391c0"
+  },
+  {
+    "question": "Hvilken flåttbåren bakteriesykdom kalles også Lymes sykdom?",
+    "answer": "Borreliose",
+    "acceptedAnswers": [
+      "Lyme-borreliose"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-595619356729"
+  },
+  {
+    "question": "Hva kalles varianten av Creutzfeldt-Jakobs sykdom som er knyttet til kugalskap, med fire bokstaver?",
+    "answer": "vCJD",
+    "category": "Naturvitenskap",
+    "difficulty": "hard",
+    "id": "qh-39d659a52eec"
+  },
+  {
+    "question": "Hvilken nevrologisk søvnsykdom forbindes med søvnanfall på dagtid og noen ganger katapleksi?",
+    "answer": "Narkolepsi",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-d1678a581f88"
+  },
+  {
+    "question": "Hvilken kreftform oppstår i blærehalskjertelen?",
+    "answer": "Prostatakreft",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-75a1fe4a5338"
+  },
+  {
+    "question": "Hva er forkortelsen for amyotrofisk lateral sklerose?",
+    "answer": "ALS",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "id": "qh-cf7bde774690"
+  },
+  {
+    "question": "Hvilken kronisk sykdom gir betennelse i tynntarmen når man spiser gluten?",
+    "answer": "Cøliaki",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-22898033096c"
+  },
+  {
+    "question": "Hva står den engelske forkortelsen AIDS for?",
+    "answer": "Acquired immunodeficiency syndrome",
+    "acceptedAnswers": [
+      "Acquired immune deficiency syndrome"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-ed85b0b0ec54"
+  },
+  {
+    "question": "Hvilken sykdom er BCG-vaksinen utviklet mot?",
+    "answer": "Tuberkulose",
+    "acceptedAnswers": [
+      "TB"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-1055c649be60"
+  },
+  {
+    "question": "Hvilken av de to vanligste diabetestypene er særlig forbundet med insulinresistens?",
+    "answer": "Type 2",
+    "acceptedAnswers": [
+      "Diabetes type 2",
+      "2"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-737b439eb9f9"
+  },
+  {
+    "question": "Hvilken virussykdom fikk navn etter en elv i dagens DR Kongo etter et utbrudd i 1976?",
+    "answer": "Ebola",
+    "acceptedAnswers": [
+      "Ebolavirussykdom"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-759810087dd3"
+  },
+  {
+    "question": "Hvilken Premier League-klubb spilte 49 ligakamper på rad uten tap i 2003 og 2004?",
+    "answer": "Arsenal",
+    "category": "Sport",
+    "difficulty": "easy",
+    "id": "qh-f65a3b493e3c"
+  },
+  {
+    "question": "Hva het Evertons hjemmebane for herrelaget fram til sommeren 2025?",
+    "answer": "Goodison Park",
+    "category": "Sport",
+    "difficulty": "hard",
+    "id": "qh-023b2cd92c54"
+  },
+  {
+    "question": "I hvilket år gikk Gareth Bale fra Tottenham til Real Madrid?",
+    "answer": "2013",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-89240b384ec2"
+  },
+  {
+    "question": "Hvilken Blackburn- og Newcastle-spiss avsluttet karrieren med 260 Premier League-mål?",
+    "answer": "Alan Shearer",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-16dbd946f6c0"
+  },
+  {
+    "question": "Hvilken waliser spilte 632 Premier League-kamper for Manchester United?",
+    "answer": "Ryan Giggs",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-7ebfa7308e22"
+  },
+  {
+    "question": "I hvilket år startet den første Premier League-sesongen?",
+    "answer": "1992",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-17cac1faf614"
+  },
+  {
+    "question": "Hvilken fotballklubb fra Manchester spiller på Etihad Stadium?",
+    "answer": "Manchester City",
+    "acceptedAnswers": [
+      "Man City"
+    ],
+    "category": "Sport",
+    "difficulty": "easy",
+    "id": "qh-00bd16146952"
+  },
+  {
+    "question": "Hvilken walisisk klubb ledet Brendan Rodgers rett før han ble Liverpool-manager?",
+    "answer": "Swansea City",
+    "acceptedAnswers": [
+      "Swansea"
+    ],
+    "category": "Sport",
+    "difficulty": "hard",
+    "id": "qh-b22eabeff430"
+  },
+  {
+    "question": "Hvor mange lag spilte i Premier League i sesongen 2023/24?",
+    "answer": "20",
+    "acceptedAnswers": [
+      "Tjue"
+    ],
+    "category": "Sport",
+    "difficulty": "easy",
+    "id": "qh-4ea21506d0e1"
+  },
+  {
+    "question": "Hvor mange forskjellige klubber hadde vunnet Premier League da Chelsea vant våren 2015?",
+    "answer": "5",
+    "acceptedAnswers": [
+      "Fem"
+    ],
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-b186ac0606db"
+  },
+  {
+    "question": "Hva heter USAs føderale hovedstad?",
+    "answer": "Washington D.C.",
+    "acceptedAnswers": [
+      "Washington",
+      "Washington DC"
+    ],
+    "category": "Geografi",
+    "difficulty": "easy",
+    "id": "qh-8a034e530413"
+  },
+  {
+    "question": "Hvor mange delstater har USA?",
+    "answer": "50",
+    "acceptedAnswers": [
+      "Femti"
+    ],
+    "category": "Geografi",
+    "difficulty": "easy",
+    "id": "qh-d11a0ea12584"
+  },
+  {
+    "question": "Hvilke to amerikanske delstater ble tatt opp i unionen i 1959?",
+    "answer": "Alaska og Hawaii",
+    "acceptedAnswers": [
+      "Hawaii og Alaska"
+    ],
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-58b2b651ca2e"
+  },
+  {
+    "question": "Hvilken delstat ratifiserte USAs grunnlov først og kalles «The First State»?",
+    "answer": "Delaware",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-04b254b72fbf"
+  },
+  {
+    "question": "Hvem etterfulgte George Washington som USAs president?",
+    "answer": "John Adams",
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-88cbe945a38c"
+  },
+  {
+    "question": "I hvilken delstat ligger Philadelphia?",
+    "answer": "Pennsylvania",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-53d0738e8695"
+  },
+  {
+    "question": "Omtrent hvor mange prosent av USAs befolkning oppga bare kategorien «Black or African American» i folketellingen i 2020, avrundet til nærmeste hele prosent?",
+    "answer": "12",
+    "acceptedAnswers": [
+      "12 prosent",
+      "12 %"
+    ],
+    "category": "Samfunn og politikk",
+    "difficulty": "hard",
+    "id": "qh-b20aefa37c0f"
+  },
+  {
+    "question": "Hvilket land var verdens tredje mest folkerike ved inngangen til 2020, etter Kina og India?",
+    "answer": "USA",
+    "acceptedAnswers": [
+      "Amerikas forente stater"
+    ],
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-8786cdbc3bf4"
+  },
+  {
+    "question": "Hvilket dyr er symbolet til Republikanerne i USA?",
+    "answer": "Elefant",
+    "acceptedAnswers": [
+      "Elefanten"
+    ],
+    "category": "Samfunn og politikk",
+    "difficulty": "easy",
+    "id": "qh-5b17eb2644b6"
+  },
+  {
+    "question": "Hva er originaltittelen på J.D. Salingers roman Redderen i rugen?",
+    "answer": "The Catcher in the Rye",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-d7d01e1a9f22"
+  },
+  {
+    "question": "Hva er originaltittelen på rockekomedien Hjelp, vi er i popbransjen!?",
+    "answer": "This Is Spinal Tap",
+    "category": "Film",
+    "difficulty": "hard",
+    "id": "qh-6df3195858d9"
+  },
+  {
+    "question": "Hva er den norske tittelen på John Hughes-komedien Ferris Bueller’s Day Off?",
+    "answer": "Skulk med stil",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-dbd231ceb931"
+  },
+  {
+    "question": "Hvilken Ben Stiller-film heter Slekten er verst på norsk?",
+    "answer": "Meet the Parents",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-55ef038cc55f"
+  },
+  {
+    "question": "Hva heter den amerikanske dramaserien Presidenten på originalspråket?",
+    "answer": "The West Wing",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "id": "qh-9e041f9136e5"
+  },
+  {
+    "question": "Hvilken superhelt het Lynvingen i eldre norske tegneserier?",
+    "answer": "Batman",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-b768ef6bb346"
+  },
+  {
+    "question": "Hva heter Robin Williams-filmen Dagen er din på engelsk?",
+    "answer": "Dead Poets Society",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-246f851a6d0c"
+  },
+  {
+    "question": "Hvilken Bond-film fikk den norske tittelen James Bond i Japan?",
+    "answer": "You Only Live Twice",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-a9bbb786e817"
+  },
+  {
+    "question": "Hvilken humorgruppe besto av Jahn Teigen, Tom Mathisen og Herodes Falsk?",
+    "answer": "Prima Vera",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-144eb8d37fd6"
+  },
+  {
+    "question": "Hvilket norsk avløserord for «hat trick» spiller på det å få tre barn samtidig?",
+    "answer": "Trillingmål",
+    "category": "Språk og ord",
+    "difficulty": "hard",
+    "id": "qh-b5e9ad71d907"
+  },
+  {
+    "question": "Hvilken nordmann vant femmila i Innsbruck-OL i 1976?",
+    "answer": "Ivar Formo",
+    "category": "Sport",
+    "difficulty": "hard",
+    "id": "qh-5a471fbc3166"
+  },
+  {
+    "question": "Hvilken italiensk by var hovedarrangør for vinter-OL i 2006?",
+    "answer": "Torino",
+    "acceptedAnswers": [
+      "Turin"
+    ],
+    "category": "Sport",
+    "difficulty": "easy",
+    "id": "qh-4c9be21fddb3"
+  },
+  {
+    "question": "I hvilken vertsby tok Petter Northug sine første OL-gull i 2010?",
+    "answer": "Vancouver",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-2bbf93ad0f51"
+  },
+  {
+    "question": "Hvilket år ble de første olympiske vinterlekene holdt?",
+    "answer": "1924",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-b210fab65212"
+  },
+  {
+    "question": "Hvilken fransk by var vertskap for de første olympiske vinterlekene?",
+    "answer": "Chamonix",
+    "acceptedAnswers": [
+      "Chamonix-Mont-Blanc"
+    ],
+    "category": "Sport",
+    "difficulty": "easy",
+    "id": "qh-664a74f58f14"
+  },
+  {
+    "question": "Hvilket land toppet gullstatistikken på Lillehammer i 1994?",
+    "answer": "Russland",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-d3cc9efaa079"
+  },
+  {
+    "question": "Hvilken norsk langrennsløper sto med seks OL-gull etter vinterlekene i Sotsji i 2014 og tok to til i 2018?",
+    "answer": "Marit Bjørgen",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-8477ec0f9f5c"
+  },
+  {
+    "question": "Hvilken amerikansk by arrangerte vinter-OL i både 1932 og 1980?",
+    "answer": "Lake Placid",
+    "category": "Sport",
+    "difficulty": "hard",
+    "id": "qh-fd9a65c45f62"
+  },
+  {
+    "question": "Hva heter rapperen Eminem egentlig?",
+    "answer": "Marshall Bruce Mathers III",
+    "acceptedAnswers": [
+      "Marshall Mathers",
+      "Marshall Bruce Mathers"
+    ],
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-75ee3ce21597"
+  },
+  {
+    "question": "Hvilket artistnavn brukte Norma Jeane Mortenson?",
+    "answer": "Marilyn Monroe",
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-1ae65f3338a3"
+  },
+  {
+    "question": "Hvilken reggaeartist hadde fornavnene Robert Nesta?",
+    "answer": "Bob Marley",
+    "acceptedAnswers": [
+      "Marley"
+    ],
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-e0024d476c68"
+  },
+  {
+    "question": "Hvilket artistnavn tok Robert Allen Zimmerman?",
+    "answer": "Bob Dylan",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-21a989ebb82d"
+  },
+  {
+    "question": "Hvilken norsk forfatter skrev krim under pseudonymet Bernhard Borge?",
+    "answer": "André Bjerke",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-a2e3899ecdac"
+  },
+  {
+    "question": "Hvilket artistnavn brukte David Robert Jones, mannen bak Ziggy Stardust?",
+    "answer": "David Bowie",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-2637df2f71ff"
+  },
+  {
+    "question": "Hvilken forfatter skrev trilogien Skandinavisk misantropi som Abo Rasul?",
+    "answer": "Matias Faldbakken",
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "id": "qh-aad1697a7584"
+  },
+  {
+    "question": "Hvilket skuespillernavn bruker Ramón Estévez, far til Emilio Estévez?",
+    "answer": "Martin Sheen",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-804880dcdb35"
+  },
+  {
+    "question": "Under hvilket navn rapper Curtis James Jackson III?",
+    "answer": "50 Cent",
+    "acceptedAnswers": [
+      "Fifty Cent"
+    ],
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-7b797b0fdbbc"
+  },
+  {
+    "question": "Hva heter grunnleggeren av Andeby i norske Donald-blader?",
+    "answer": "Kornelius Kvakk",
+    "acceptedAnswers": [
+      "Cornelius Coot"
+    ],
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "id": "qh-4abd326341db"
+  },
+  {
+    "question": "Ved hvilken italiensk vulkan bor Magika fra Tryll?",
+    "answer": "Vesuv",
+    "acceptedAnswers": [
+      "Vesuvius"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-0ccea72fb7f7"
+  },
+  {
+    "question": "Hvilken jobb gjorde unge Skrue da han tjente sin første tiøring?",
+    "answer": "Skopusser",
+    "acceptedAnswers": [
+      "Han pusset sko",
+      "Pusset sko"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-ee4740df0274"
+  },
+  {
+    "question": "Hvilket tresifret nummer har Donalds bil?",
+    "answer": "313",
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "id": "qh-160bc2b4f836"
+  },
+  {
+    "question": "Hva heter Skrues sekretær i de norske tegneseriene?",
+    "answer": "Frøken Vable",
+    "acceptedAnswers": [
+      "Vable"
+    ],
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "id": "qh-ba8f7f3347d4"
+  },
+  {
+    "question": "Hvilken dato i 1934 hadde Den kloke lille høna, filmen der Donald debuterte, premiere?",
+    "answer": "9. juni",
+    "acceptedAnswers": [
+      "9. juni 1934",
+      "9 juni",
+      "9/6"
+    ],
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "id": "qh-c2d015d36236"
+  },
+  {
+    "question": "Hvilket engelsk fornavn har Fetter Anton i Donald Duck?",
+    "answer": "Gladstone",
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "id": "qh-b4b2c19cc0a5"
+  },
+  {
+    "question": "Hvilket år kom det første norske nummeret av Donald Duck & Co.?",
+    "answer": "1948",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-84c374da7cc0"
+  },
+  {
+    "question": "Hvilken Donald-tegner pleide å gjemme bokstavene D.U.C.K. på førstesiden?",
+    "answer": "Don Rosa",
+    "acceptedAnswers": [
+      "Keno Don Hugo Rosa"
+    ],
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "id": "qh-4bad788e5c26"
+  },
+  {
+    "question": "Hvilken tegneserieskaper er «Uncle Carl» i Don Rosas skjulte dedikasjon?",
+    "answer": "Carl Barks",
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "id": "qh-ce72b3c1772c"
+  },
+  {
+    "question": "Hvilket norsk forbund for organisert quiz bruker forkortelsen NQF?",
+    "answer": "Norges Quizforbund",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "id": "qh-71510146ad1c"
+  },
+  {
+    "question": "Hva het NRKs spørreprogram der Siss Vik lot kulturpersonligheter konkurrere?",
+    "answer": "Kulturquiz",
+    "category": "Kunst og kultur",
+    "difficulty": "hard",
+    "id": "qh-d6a9b7d91837"
+  },
+  {
+    "question": "Hvem ledet den første norske utgaven av Vil du bli millionær? på TV 2?",
+    "answer": "Arve Juritzen",
+    "category": "TV-serier",
+    "difficulty": "medium",
+    "id": "qh-dd722f9e0413"
+  },
+  {
+    "question": "I hvilket land ble spørrespillet Trivial Pursuit utviklet?",
+    "answer": "Canada",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "id": "qh-8023e715e67a"
+  },
+  {
+    "question": "Hvilket dansk spørrespill har et navn som spiller på det tyske ordet for en bedreviter?",
+    "answer": "Bezzerwizzer",
+    "acceptedAnswers": [
+      "Besserwizzer"
+    ],
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "id": "qh-d83b790f4676"
+  },
+  {
+    "question": "Hva heter quizappen fra FEO Media der venner utfordrer hverandre i seks runder?",
+    "answer": "Quizkampen",
+    "acceptedAnswers": [
+      "Quizduell",
+      "QuizDuel"
+    ],
+    "category": "TV-spill",
+    "difficulty": "medium",
+    "id": "qh-fa75664c4970"
+  },
+  {
+    "question": "Hvem ledet NRKs radioprogram Popquiz fra starten i 2000?",
+    "answer": "Finn Bjelke",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-d5975c5d44a8"
+  },
+  {
+    "question": "Hva het NRKs geografiske radiokonkurranse som Viggo Valle ledet hver påske gjennom flere tiår?",
+    "answer": "Påskelabyrinten",
+    "category": "Kunst og kultur",
+    "difficulty": "medium",
+    "id": "qh-87659df36829"
+  },
+  {
+    "question": "Hvilket firma leverte spørsmål til NRK-konkurransen QuizDan?",
+    "answer": "Quiz Park",
+    "acceptedAnswers": [
+      "Quizpark"
+    ],
+    "category": "Kunst og kultur",
+    "difficulty": "hard",
+    "id": "qh-cba28a679972"
+  },
+  {
+    "question": "I hvilket amerikansk quizprogram skal deltakerne formulere svaret sitt som et spørsmål?",
+    "answer": "Jeopardy!",
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "id": "qh-f15123de326a"
+  },
+  {
+    "question": "Hvor mange kolonier ble USAs opprinnelige delstater?",
+    "answer": "13",
+    "acceptedAnswers": [
+      "Tretten"
+    ],
+    "category": "Historie",
+    "difficulty": "medium",
+    "id": "qh-6e36fdf6283a"
+  },
+  {
+    "question": "Hvilken amerikansk delstat ender med navnet på Finnmark-kommunen Tana?",
+    "answer": "Montana",
+    "category": "Geografi",
+    "difficulty": "hard",
+    "id": "qh-3512be6ab29b"
+  },
+  {
+    "question": "Hvilken amerikansk delstat er størst i areal blant de 48 sammenhengende statene?",
+    "answer": "Texas",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "id": "qh-f33a90a2d29c"
+  },
+  {
+    "question": "Hva er Floridas engelske kallenavn?",
+    "answer": "The Sunshine State",
+    "acceptedAnswers": [
+      "Sunshine State"
+    ],
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-fd4d31a3adb3"
+  },
+  {
+    "question": "Hvilken delstat har amerikanske øyer på begge sider av 180-gradersmeridianen?",
+    "answer": "Alaska",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-247928782249"
+  },
+  {
+    "question": "I hvilken amerikansk delstat ligger kasinobyen Atlantic City?",
+    "answer": "New Jersey",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-e682375b3e1f"
+  },
+  {
+    "question": "Hvilken amerikansk delstat har en himmelretning i navnet og Charleston som hovedstad?",
+    "answer": "West Virginia",
+    "category": "Geografi",
+    "difficulty": "hard",
+    "id": "qh-c70cc5380526"
+  },
+  {
+    "question": "Hvilken amerikansk president er Nebraskas hovedstad oppkalt etter?",
+    "answer": "Abraham Lincoln",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-15d94a701911"
+  },
+  {
+    "question": "Hva heter den avledede SI-enheten for trykk?",
+    "answer": "Pascal",
+    "acceptedAnswers": [
+      "Pa"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-43943883c785"
+  },
+  {
+    "question": "Hvilken hovedsetning i termodynamikken sier at varme ikke spontant går fra et kaldere til et varmere legeme?",
+    "answer": "Termodynamikkens andre hovedsetning",
+    "acceptedAnswers": [
+      "Andre hovedsetning",
+      "Termodynamikkens andre lov",
+      "Den andre",
+      "2"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "hard",
+    "id": "qh-0d5561f05779"
+  },
+  {
+    "question": "Hva kalles forholdstallet som betegnes med den greske bokstaven phi og er omtrent 1,618?",
+    "answer": "Det gylne snitt",
+    "acceptedAnswers": [
+      "Det gyldne snitt"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-777dfdcf8596"
+  },
+  {
+    "question": "Hvilken farge er komplementær til blå i den tradisjonelle fargesirkelen for maling med rødt, gult og blått som primærfarger?",
+    "answer": "Oransje",
+    "acceptedAnswers": [
+      "Orange"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-17cf894e4a93"
+  },
+  {
+    "question": "Hva kalles prosessen der to lette atomkjerner smelter sammen?",
+    "answer": "Fusjon",
+    "acceptedAnswers": [
+      "Kjernefusjon"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-f561fa59be0e"
+  },
+  {
+    "question": "Hva heter prosessen der tunge atomkjerner spaltes i en vanlig kraftreaktor?",
+    "answer": "Fisjon",
+    "acceptedAnswers": [
+      "Kjernefisjon"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-115e5fa50770"
+  },
+  {
+    "question": "Hva heter knuten i hjertet som normalt setter rytmen for hjerteslagene?",
+    "answer": "Sinusknuten",
+    "acceptedAnswers": [
+      "Sinus"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-4a887ddbd713"
+  },
+  {
+    "question": "Hvilket grunnstoff har symbolet Cu?",
+    "answer": "Kobber",
+    "acceptedAnswers": [
+      "Kopper"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "id": "qh-79333ff7969f"
+  },
+  {
+    "question": "Hva kalles grensen mellom dagsiden og nattsiden på en planet eller måne?",
+    "answer": "Terminator",
+    "acceptedAnswers": [
+      "Terminatoren"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "hard",
+    "id": "qh-22bf216781a1"
+  },
+  {
+    "question": "Hva er de fire første sifrene etter komma i pi, uten avrunding?",
+    "answer": "1415",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "id": "qh-e1df10655819"
+  },
+  {
+    "question": "Hvilket parti tilhørte Fritz Jenssen, Oslos ordfører under store deler av okkupasjonen?",
+    "answer": "Nasjonal Samling",
+    "acceptedAnswers": [
+      "NS"
+    ],
+    "category": "Historie",
+    "difficulty": "hard",
+    "id": "qh-40eeb1b1a91b"
+  },
+  {
+    "question": "Hva heter den 828 meter høye skyskraperen som åpnet i Dubai i 2010?",
+    "answer": "Burj Khalifa",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "id": "qh-570581fe7dbb"
+  },
+  {
+    "question": "Hva heter de to reparatørene i NRKs dukkeserie Reparatørene kommer?",
+    "answer": "Pompel og Pilt",
+    "acceptedAnswers": [
+      "Pilt og Pompel"
+    ],
+    "category": "TV-serier",
+    "difficulty": "easy",
+    "id": "qh-4ef83354e2a7"
+  },
+  {
+    "question": "Hvilket skrift av Marx og Engels åpner med ordene «Det går et spøkelse gjennom Europa»?",
+    "answer": "Det kommunistiske manifest",
+    "acceptedAnswers": [
+      "Det kommunistiske manifestet",
+      "Kommunistmanifestet"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-e49a49045631"
+  },
+  {
+    "question": "Hvilken komponist samarbeidet med Hal David om «I Say a Little Prayer» og «Raindrops Keep Fallin’ on My Head»?",
+    "answer": "Burt Bacharach",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-09e3b9252259"
+  },
+  {
+    "question": "Hva kalles hovmod, grådighet, begjær, misunnelse, fråtseri, vrede og latskap samlet i kristen tradisjon?",
+    "answer": "De sju dødssyndene",
+    "acceptedAnswers": [
+      "De syv dødssynder",
+      "De syv dødssyndene",
+      "De sju dødssynder"
+    ],
+    "category": "Mytologi og religion",
+    "difficulty": "medium",
+    "id": "qh-6e16942f0926"
+  },
+  {
+    "question": "Hvilket latinsk uttrykk for «stort verk» brukes om en kunstners hovedverk?",
+    "answer": "Magnum opus",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "id": "qh-13e943470435"
+  },
+  {
+    "question": "I hvilket land ble FIFAs første kvinne-VM i fotball holdt i 1991?",
+    "answer": "Kina",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-b781421795c0"
+  },
+  {
+    "question": "Hva heter Henrik Wergelands tidligere hus i Oslo som senere ble statens æresbolig for kunstnere?",
+    "answer": "Grotten",
+    "category": "Norge",
+    "difficulty": "medium",
+    "id": "qh-3fa3563b186b"
+  },
+  {
+    "question": "Hvilket fransk fekteuttrykk brukes også når man innrømmer at en replikk traff godt?",
+    "answer": "Touché",
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "id": "qh-e3eec19187b3"
+  },
+  {
+    "question": "Hvilket latinsk uttrykk betyr gjengjeldelsesloven, ofte gjengitt som «øye for øye»?",
+    "answer": "Lex talionis",
+    "category": "Språk og ord",
+    "difficulty": "hard",
+    "id": "qh-6afe70454c1e"
+  },
+  {
+    "question": "Hvilket historisk områdenavn betyr «landet mellom elvene» og viser til Eufrat og Tigris?",
+    "answer": "Mesopotamia",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "id": "qh-726e405a20a6"
+  },
+  {
+    "question": "Hva heter piggsvin på svensk?",
+    "answer": "Igelkott",
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "id": "qh-fed02232ddec"
+  },
+  {
+    "question": "Hvilket norsk ord anbefalte Språkrådet om kjøretøy av typen Segway?",
+    "answer": "Ståhjuling",
+    "category": "Språk og ord",
+    "difficulty": "hard",
+    "id": "qh-84c19be21b6f"
+  },
+  {
+    "question": "Hva er det vitenskapelige artsnavnet på gråulven?",
+    "answer": "Canis lupus",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-4fbfc6dba337"
+  },
+  {
+    "question": "Hvilket språk er det fjerde av Sveits’ nasjonalspråk ved siden av tysk, fransk og italiensk?",
+    "answer": "Retoromansk",
+    "acceptedAnswers": [
+      "Romansh",
+      "Rumantsch"
+    ],
+    "category": "Språk og ord",
+    "difficulty": "medium",
+    "id": "qh-d78cc91c3f15"
+  },
+  {
+    "question": "Hvilket romansk språk er morsmål for flest mennesker?",
+    "answer": "Spansk",
+    "acceptedAnswers": [
+      "Kastiljansk"
+    ],
+    "category": "Språk og ord",
+    "difficulty": "easy",
+    "id": "qh-564d3b350fa4"
+  },
+  {
+    "question": "Hva er det norske ordet for den sterke lykkefølelsen som har gitt navn til Loreens «Euphoria»?",
+    "answer": "Eufori",
+    "category": "Språk og ord",
+    "difficulty": "hard",
+    "id": "qh-5342d57d43d4"
+  },
+  {
+    "question": "Hvilket fransk uttrykk for «i forbifarten» brukes om et bondeslag i sjakk?",
+    "answer": "En passant",
+    "category": "Brettspill",
+    "difficulty": "medium",
+    "id": "qh-06a65fb204cf"
+  },
+  {
+    "question": "Hvem spilte inn den teatralske originalversjonen av «I Put a Spell on You» i 1956?",
+    "answer": "Screamin’ Jay Hawkins",
+    "acceptedAnswers": [
+      "Jay Hawkins"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-4b0623326312"
+  },
+  {
+    "question": "Hvilken brasiliansk sangerinne sang den engelske teksten på Getz/Gilberto-innspillingen av «The Girl from Ipanema»?",
+    "answer": "Astrud Gilberto",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-570cea83c02a"
+  },
+  {
+    "question": "Hvilken søskenduo fikk en hit med «(They Long to Be) Close to You» i 1970?",
+    "answer": "The Carpenters",
+    "acceptedAnswers": [
+      "Carpenters"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-c706c4066767"
+  },
+  {
+    "question": "Hvem skrev og sang «American Pie» på begynnelsen av 1970-tallet?",
+    "answer": "Don McLean",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-840deaaac7af"
+  },
+  {
+    "question": "Hvilken amerikansk discogruppe sto bak «Funkytown» i 1980?",
+    "answer": "Lipps Inc.",
+    "acceptedAnswers": [
+      "Lipps Inc"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-ccf12b8951df"
+  },
+  {
+    "question": "Hvilket amerikansk metalband ga ut «We’re Not Gonna Take It» i 1984?",
+    "answer": "Twisted Sister",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-ba579685f83b"
+  },
+  {
+    "question": "Hvilken skotsk tvillingduo sang «I’m Gonna Be (500 Miles)»?",
+    "answer": "The Proclaimers",
+    "acceptedAnswers": [
+      "Proclaimers"
+    ],
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-e91ed7a26c1c"
+  },
+  {
+    "question": "Hvem fikk en countryhit med «Achy Breaky Heart» i 1992?",
+    "answer": "Billy Ray Cyrus",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-040744da3d0e"
+  },
+  {
+    "question": "Hvilket kanadisk band ga ut «Mmm Mmm Mmm Mmm» i 1993?",
+    "answer": "Crash Test Dummies",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-d3e689b20436"
+  },
+  {
+    "question": "Hvilken italiensk gruppe sto bak «Blue (Da Ba Dee)»?",
+    "answer": "Eiffel 65",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-e282b4a8ef4a"
+  },
+  {
+    "question": "Foruten Brasil og Peru, hvilket land grenser til Amazonas ved byen Leticia?",
+    "answer": "Colombia",
+    "category": "Geografi",
+    "difficulty": "hard",
+    "id": "qh-afb71937009a"
+  },
+  {
+    "question": "Hvilket land deler sin lengste landegrense med Chile, langs Andesfjellene?",
+    "answer": "Argentina",
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-70e3382eaab9"
+  },
+  {
+    "question": "Hvilke to søramerikanske land mangler kystlinje?",
+    "answer": "Bolivia og Paraguay",
+    "acceptedAnswers": [
+      "Paraguay og Bolivia"
+    ],
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-538aa0384874"
+  },
+  {
+    "question": "Hvilket land har «Ordem e Progresso» skrevet på flagget?",
+    "answer": "Brasil",
+    "category": "Geografi",
+    "difficulty": "easy",
+    "id": "qh-dffd814705e8"
+  },
+  {
+    "question": "Hvor mange selvstendige stater ligger i Sør-Amerika?",
+    "answer": "12",
+    "acceptedAnswers": [
+      "Tolv"
+    ],
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-bb1eb8513118"
+  },
+  {
+    "question": "Hvilket søramerikansk land har nederlandsk som offisielt språk?",
+    "answer": "Surinam",
+    "acceptedAnswers": [
+      "Suriname"
+    ],
+    "category": "Geografi",
+    "difficulty": "medium",
+    "id": "qh-d650c1b75a75"
+  },
+  {
+    "question": "Hva kalles The Katzenjammer Kids på norsk?",
+    "answer": "Knoll og Tott",
+    "acceptedAnswers": [
+      "Knoll & Tott"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-0d760ee4aef7"
+  },
+  {
+    "question": "Hvilken Disney-kortfilm fra 1928 viser Mikke Mus ved roret på en dampbåt?",
+    "answer": "Steamboat Willie",
+    "category": "Film",
+    "difficulty": "medium",
+    "id": "qh-b532dbbd24af"
+  },
+  {
+    "question": "Hva heter Art Spiegelmans tegneserie om farens opplevelser under Holocaust?",
+    "answer": "Maus",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-27162af34842"
+  },
+  {
+    "question": "Hvem skrev manuset til tegneserien Watchmen?",
+    "answer": "Alan Moore",
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-b263fe5ab18f"
+  },
+  {
+    "question": "Hvilken tegneserie av Alan Moore og David Lloyd har en hovedfigur med Guy Fawkes-maske?",
+    "answer": "V for Vendetta",
+    "acceptedAnswers": [
+      "V for vendetta"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-1efc5c6e81ed"
+  },
+  {
+    "question": "Hvilken zombieserie skapte Robert Kirkman og Tony Moore før AMC laget TV-versjonen?",
+    "answer": "The Walking Dead",
+    "acceptedAnswers": [
+      "Walking Dead"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-3234671d67e5"
+  },
+  {
+    "question": "Hva het Hjemmets tegneserieblad fra 1966 med blant andre Tintin, Asterix og Lucky Luke?",
+    "answer": "Tempo",
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "id": "qh-a71eed1dc3b7"
+  },
+  {
+    "question": "Hva heter superheltlaget der blant andre Wonder Woman, Batman og The Flash er medlemmer?",
+    "answer": "Justice League",
+    "acceptedAnswers": [
+      "Lovens voktere",
+      "Justice League of America"
+    ],
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "id": "qh-2a06923be6ba"
+  },
+  {
+    "question": "Hvilken Molde-spiller avsluttet sin eliteseriekarriere i 2015 etter 473 kamper på øverste nivå?",
+    "answer": "Daniel Berg Hestad",
+    "acceptedAnswers": [
+      "Berg Hestad"
+    ],
+    "category": "Sport",
+    "difficulty": "hard",
+    "id": "qh-707742bf1dca"
+  },
+  {
+    "question": "Hvilken spiss fra Vadsø scoret 172 mål på øverste nivå i norsk herrefotball?",
+    "answer": "Sigurd Rushfeldt",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-77839548f971"
+  },
+  {
+    "question": "Hvilken klubb spilte sammenhengende i norsk toppdivisjon fra 1975 til nedrykket i 2019?",
+    "answer": "Lillestrøm",
+    "acceptedAnswers": [
+      "LSK",
+      "Lillestrøm SK"
+    ],
+    "category": "Sport",
+    "difficulty": "hard",
+    "id": "qh-3c52b255e439"
+  },
+  {
+    "question": "Hvilken klubb ble i 2020 første nordnorske seriemester i herrefotball?",
+    "answer": "Bodø/Glimt",
+    "acceptedAnswers": [
+      "Bodø Glimt",
+      "Glimt"
+    ],
+    "category": "Sport",
+    "difficulty": "easy",
+    "id": "qh-0b7cc827464e"
+  },
+  {
+    "question": "Hvilken norsk midtstopper spilte for Brøndby og Alavés og scoret mot Marokko i VM i 1998?",
+    "answer": "Dan Eggen",
+    "category": "Sport",
+    "difficulty": "hard",
+    "id": "qh-17097ae53bf0"
+  },
+  {
+    "question": "Hvilken norsk trener ledet blant annet Start, Vålerenga og Lillestrøm og fikk kallenavnet «Keiko»?",
+    "answer": "Tom Nordlie",
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-2e7988aa9361"
+  },
+  {
+    "question": "Hvor mange seriemesterskap på rad tok Rosenborg fra 1992 til og med 2004?",
+    "answer": "13",
+    "acceptedAnswers": [
+      "Tretten"
+    ],
+    "category": "Sport",
+    "difficulty": "medium",
+    "id": "qh-cdd307fdd01b"
+  },
+  {
+    "question": "Hvilken Rosenborg-spiller med kallenavnet «Kalle» ble toppscorer i Tippeligaen i 1991?",
+    "answer": "Karl-Petter Løken",
+    "acceptedAnswers": [
+      "Kalle Løken"
+    ],
+    "category": "Sport",
+    "difficulty": "hard",
+    "id": "qh-9c1650e204f3"
+  },
+  {
+    "question": "Hvilken Stavanger-klubb vant serien i norsk herrefotball i 1991?",
+    "answer": "Viking",
+    "acceptedAnswers": [
+      "Viking FK"
+    ],
+    "category": "Sport",
+    "difficulty": "easy",
+    "id": "qh-a713afc08509"
+  },
+  {
+    "question": "Hvilken Rosenborg-spiller fikk straffe mot Viking i 2008 i en omdiskutert situasjon der krampe ble forklaringen?",
+    "answer": "John Pelu",
+    "category": "Sport",
+    "difficulty": "hard",
+    "id": "qh-a930ca805e71"
+  },
+  {
+    "question": "I hvilket år ble Pluto omklassifisert til dvergplanet av Den internasjonale astronomiske union?",
+    "answer": "2006",
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-941298b21332"
+  },
+  {
+    "question": "På hvilken planet ligger vulkanen Olympus Mons?",
+    "answer": "Mars",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "id": "qh-a49f819613c0"
+  },
+  {
+    "question": "Hvilken planet er solsystemets nest største?",
+    "answer": "Saturn",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "id": "qh-7f27d1e62a1a"
+  },
+  {
+    "question": "Hvilket romteleskop ble sendt opp med romfergen Discovery i 1990?",
+    "answer": "Hubble",
+    "acceptedAnswers": [
+      "Hubble-teleskopet",
+      "Hubble Space Telescope"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-600efc475d83"
+  },
+  {
+    "question": "På hvilken dato landet månefartøyet Eagle med Armstrong og Aldrin i 1969?",
+    "answer": "20. juli",
+    "acceptedAnswers": [
+      "20. juli 1969",
+      "20/7"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-e48ef9ef1fbe"
+  },
+  {
+    "question": "Hvilken europeisk romsonde hadde med seg kometlanderen Philae?",
+    "answer": "Rosetta",
+    "category": "Naturvitenskap",
+    "difficulty": "hard",
+    "id": "qh-efa1dcc7f990"
+  },
+  {
+    "question": "Hva het den amerikanske romfergen som gikk tapt kort etter oppskyting i januar 1986?",
+    "answer": "Challenger",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "id": "qh-d73dc18d6135"
+  },
+  {
+    "question": "Hvilken planet deler navn med den romerske havguden?",
+    "answer": "Neptun",
+    "acceptedAnswers": [
+      "Neptune"
+    ],
+    "category": "Naturvitenskap",
+    "difficulty": "medium",
+    "id": "qh-bc3140a07943"
+  },
+  {
+    "question": "Hvilken måne rundt Jupiter deler navn med en verdensdel?",
+    "answer": "Europa",
+    "category": "Naturvitenskap",
+    "difficulty": "easy",
+    "id": "qh-4df6af85ee07"
+  },
+  {
+    "question": "Hvilket dyr er det thailandske ølet Chang oppkalt etter?",
+    "answer": "Elefant",
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-5bf59e4fb7b1"
+  },
+  {
+    "question": "Hvilket tidligere Oslo-bryggeri har gitt navn til deler av universitetsområdet på Pilestredet?",
+    "answer": "Frydenlund",
+    "acceptedAnswers": [
+      "Frydenlunds bryggeri"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-cabba4cea4e1"
+  },
+  {
+    "question": "Hvilket bryggeri i Drammen ble grunnlagt i 1834?",
+    "answer": "Aass",
+    "acceptedAnswers": [
+      "Aass Bryggeri"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-545c0b5788ff"
+  },
+  {
+    "question": "Vinmonopolet åpnet sine to første spesialbutikker for øl i 2016. Den ene lå i Sandnes. I hvilken trøndersk by lå den andre?",
+    "answer": "Trondheim",
+    "category": "Mat og drikke",
+    "difficulty": "hard",
+    "id": "qh-9ed682c51c4e"
+  },
+  {
+    "question": "Hvilket amerikansk ølmerke bruker slagordet «King of Beers»?",
+    "answer": "Budweiser",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "id": "qh-74e1fb42ecb9"
+  },
+  {
+    "question": "Hvilket kornslag kjennetegner tysk weissbier?",
+    "answer": "Hvete",
+    "acceptedAnswers": [
+      "Hvetemalt"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "id": "qh-cd18101da5e6"
+  },
+  {
+    "question": "Hvilket spansk ølmerke fra Barcelona har en gullstjerne på rød bakgrunn?",
+    "answer": "Estrella Damm",
+    "acceptedAnswers": [
+      "Estrella"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-d009dbefa636"
+  },
+  {
+    "question": "Hvilken type slange deler navn med ølmerket som Karan Bilimoria grunnla i Storbritannia?",
+    "answer": "Kobra",
+    "acceptedAnswers": [
+      "Cobra",
+      "Kobraslange"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-185f62addd04"
+  },
+  {
+    "question": "Hva heter bryggeriet fra Sandefjord som blant annet lager Bare Øl?",
+    "answer": "Grans",
+    "acceptedAnswers": [
+      "Grans Bryggeri"
+    ],
+    "category": "Mat og drikke",
+    "difficulty": "medium",
+    "id": "qh-a0d1cdec35fe"
+  },
+  {
+    "question": "Hva står ølforkortelsen IPA for?",
+    "answer": "India Pale Ale",
+    "category": "Mat og drikke",
+    "difficulty": "easy",
+    "id": "qh-62f8f6921372"
+  },
+  {
+    "question": "Hvilken trollmann kaller alvene Mithrandir i Ringenes herre?",
+    "answer": "Gandalf",
+    "acceptedAnswers": [
+      "Gandalv"
+    ],
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "id": "qh-7005d54d3add"
+  },
+  {
+    "question": "Hva heter området i Midgard som Frodo og Sam kommer fra?",
+    "answer": "Hobsyssel",
+    "acceptedAnswers": [
+      "The Shire",
+      "Hobbsyssel",
+      "Shire"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-66746d85951d"
+  },
+  {
+    "question": "Hvem regisserte filmtrilogien Ringenes herre som hadde premiere fra 2001 til 2003?",
+    "answer": "Peter Jackson",
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-2416e4f19e21"
+  },
+  {
+    "question": "Hva kalles de storvokste orkene som Saruman bruker som soldater?",
+    "answer": "Uruk-hai",
+    "acceptedAnswers": [
+      "Uruk-haier"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-967069a11b8a"
+  },
+  {
+    "question": "Hva slags vesen er Treskjegg i Ringenes herre?",
+    "answer": "Ent",
+    "acceptedAnswers": [
+      "En ent"
+    ],
+    "category": "Litteratur",
+    "difficulty": "easy",
+    "id": "qh-c43995b219b6"
+  },
+  {
+    "question": "Hvem fant ringen i elva før Sméagol tok den fra ham?",
+    "answer": "Déagol",
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "id": "qh-9b1a61d85fb5"
+  },
+  {
+    "question": "Hvilket alverike hersker Galadriel over sammen med Celeborn?",
+    "answer": "Lothlórien",
+    "acceptedAnswers": [
+      "Lórien"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-ab98df9e07e8"
+  },
+  {
+    "question": "Hva heter Gimlis far, som også er en av dvergene i Hobbiten?",
+    "answer": "Glóin",
+    "acceptedAnswers": [
+      "Gloin"
+    ],
+    "category": "Litteratur",
+    "difficulty": "hard",
+    "id": "qh-c9145e5be756"
+  },
+  {
+    "question": "Hvilken britisk skuespiller spilte Saruman i Peter Jacksons filmer?",
+    "answer": "Christopher Lee",
+    "category": "Film",
+    "difficulty": "easy",
+    "id": "qh-46f551e5ab47"
+  },
+  {
+    "question": "Hvilke to hobbiter møter Treskjegg i Fangorn etter å ha rømt fra orkene?",
+    "answer": "Munti og Pippin",
+    "acceptedAnswers": [
+      "Merry og Pippin",
+      "Merry and Pippin",
+      "Pippin og Munti",
+      "Pippin og Merry"
+    ],
+    "category": "Litteratur",
+    "difficulty": "medium",
+    "id": "qh-6c0a40e6e839"
+  },
+  {
+    "question": "Hva kalte Nico & Vinz seg da de først ga ut «Am I Wrong» i Norge?",
+    "answer": "Envy",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-a33e3e096143"
+  },
+  {
+    "question": "Hvilken australsk artist sang «Chandelier» i 2014?",
+    "answer": "Sia",
+    "acceptedAnswers": [
+      "Sia Furler"
+    ],
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-a08b1f1e5bcf"
+  },
+  {
+    "question": "Hvilken svensk artist ga ut albumene Wounded Rhymes og I Never Learn?",
+    "answer": "Lykke Li",
+    "category": "Musikk",
+    "difficulty": "hard",
+    "id": "qh-abb4cfb3a4b0"
+  },
+  {
+    "question": "Hva heter fellesalbumet til Jay-Z og Kanye West fra 2011?",
+    "answer": "Watch the Throne",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-3bdb05d2aa3f"
+  },
+  {
+    "question": "Hvem synger refrengene på Eminems «Love the Way You Lie» og «The Monster»?",
+    "answer": "Rihanna",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-c2230ad5e6a1"
+  },
+  {
+    "question": "Hvem sang «Writing’s on the Wall» til Bond-filmen Spectre?",
+    "answer": "Sam Smith",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-a4bd174896af"
+  },
+  {
+    "question": "Hvilket britisk band ga ut albumet AM med «Do I Wanna Know?» i 2013?",
+    "answer": "Arctic Monkeys",
+    "category": "Musikk",
+    "difficulty": "medium",
+    "id": "qh-22bbc0158c92"
+  },
+  {
+    "question": "Hvem sang «Call Me Maybe»?",
+    "answer": "Carly Rae Jepsen",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-977e2030fb26"
+  },
+  {
+    "question": "Hvem ga ut albumet ×, også kalt Multiply, i 2014?",
+    "answer": "Ed Sheeran",
+    "category": "Musikk",
+    "difficulty": "easy",
+    "id": "qh-021933865b7c"
   }
 ];
