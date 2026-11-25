@@ -1,4 +1,4 @@
-import {bookQuestions} from './book-questions.js?v=46';
+import {bookQuestions} from './book-questions.js?v=50';
 // QuizHub v24: EN lagret faktabank. Visningsmodusene bruker filtre, ikke kopierte spørsmål.
 export const quizzes = [
   {
