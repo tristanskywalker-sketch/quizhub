@@ -1,7 +1,8 @@
 import {FIREBASE_CONFIG,ONLINE_API_URL} from './config.js';
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
 import {getAuth,signInWithEmailAndPassword,createUserWithEmailAndPassword,signOut,sendEmailVerification,onAuthStateChanged} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
-let auth;
+import {pushPanel,savePush,removePush,refreshPush} from './push-client.js';
+let auth, firebaseApp, pushRefreshedUid=null;
 
 const root=document.querySelector('#app');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -67,7 +68,7 @@ async function getProfile(){if(!auth?.currentUser){profile=null;return;}profile=
 async function init(){
  if(!configured()){shell(`<h1 class="heading">Online-utfordringer</h1><div class="panel"><h2>Firebase-oppsett mangler</h2><p>Fyll ut Firebase-verdiene og Cloudflare Worker-adressen i <code>config.js</code>.</p><p>Se <code>README.md</code> i v26-pakken for stegvis oppsett av Firebase Authentication og Cloudflare D1.</p>${button('Tilbake til QuizHub','exit')}</div>`);return;}
  try{
-  const app=initializeApp(FIREBASE_CONFIG);auth=getAuth(app);
+  firebaseApp=initializeApp(FIREBASE_CONFIG);auth=getAuth(firebaseApp);
   await new Promise(resolve=>onAuthStateChanged(auth,()=>resolve(),()=>resolve()));
   if(auth.currentUser){await auth.currentUser.reload();if(!auth.currentUser.emailVerified){await signOut(auth);note('Bekreft e-posten din før du logger inn.');}}
   session=auth.currentUser?{user:{id:auth.currentUser.uid}}:null;
@@ -84,7 +85,7 @@ function usernameView(value=''){
  <input name="username" value="${esc(value)}" pattern="[a-zA-Z0-9_]{3,24}" minlength="3" maxlength="24" autocapitalize="none" spellcheck="false" required></label>
  <button class="btn" type="submit">Lagre brukernavn</button></form></div>${button('Logg ut','logout')}`);
 }
-async function showHome(){screen='home';active=null;questionIndex=0;if(!session){authView();return;}if(!profile){usernameView();return;}const [listing,fd]=await Promise.all([rpc('qh_list'),rpc('qh_friends_list')]);friendsData=fd||{friends:[],incoming:[],outgoing:[]};const current=Array.isArray(listing)?listing:[];
+async function showHome(){screen='home';active=null;questionIndex=0;if(!session){authView();return;}if(!profile){usernameView();return;}if(pushRefreshedUid!==session.user.id){pushRefreshedUid=session.user.id;refreshPush(firebaseApp,session.user.id,rpc).catch(()=>{});}const [listing,fd]=await Promise.all([rpc('qh_list'),rpc('qh_friends_list')]);friendsData=fd||{friends:[],incoming:[],outgoing:[]};const current=Array.isArray(listing)?listing:[];
  const finished=await Promise.all(current.filter(c=>c.closed).slice(0,35).map(async c=>{try{return {id:c.id,detail:await rpc('qh_detail',{p_id:c.id})};}catch{return null;}}));
  const winnerLabels={},stats=new Map();
  for(const item of finished.filter(Boolean)){
@@ -98,7 +99,9 @@ async function showHome(){screen='home';active=null;questionIndex=0;if(!session)
    }
  }
  const statsHtml=[...stats.values()].sort((a,b)=>b.played-a.played).map(s=>`<div class="friend-row" style="display:block"><strong>${esc(s.name)}</strong><p>${s.played} utfordringer · ${s.won} seire · ${s.tied} uavgjort · ${s.lost} tap</p><small>Riktige svar: deg ${s.max?Math.round(100*s.own/s.max):0}% · ${esc(s.name)} ${s.max?Math.round(100*s.their/s.max):0}%</small></div>`).join('');
- shell(`<div class="eyebrow">Pålogget som ${esc(profile.username)}</div><h1 class="heading">Spill med venner</h1><p class="sub">Lag en quiz, inviter Ola eller flere venner, og svar innen fristen – uten å være pålogget samtidig.</p><div class="actions">${button('⚔️ Ny utfordring','new')}${button('🔗 Bli med med kode','join','class="btn secondary"')}${button('Oppdater','refresh','class="btn ghost"')}${button(`👥 Mine venner${friendsData.incoming.length?' ('+friendsData.incoming.length+' nye)':''}`,'friends','class="btn secondary"')}${button('🔗 Inviter til QuizHub','sharegeneral','class="btn secondary"')}</div><h2>Mine utfordringer</h2>${current.length?current.map(c=>`<button class="ol-challenge" data-ol="open" data-id="${esc(c.id)}"><span><strong>${c.mode==='sports'?'🏆 Sport':c.mode==='geography'?'🌍 Geografi':'🧠 Allmenn'}</strong><small>Fra ${esc(c.owner)} · ${c.player_count} spillere · ${new Date(c.expires_at).toLocaleString('nb-NO')}</small></span><span class="pill ol-status ${c.closed?'ol-status--done':c.submitted?'ol-status--sent':'ol-status--open'}">${c.closed?('Ferdig'+(winnerLabels[c.id]?' · '+winnerLabels[c.id]:'')):c.submitted?'Levert':'Svar nå'}</span></button>`).join(''):'<div class="panel"><p class="muted">Ingen utfordringer ennå. Opprett en eller bli invitert av en venn.</p></div>'}<div class="panel"><h2>Statistikk mot venner</h2><p class="tiny">Basert på inntil 35 nylige, ferdige utfordringer. Poengandel gjør at runder med ulikt antall spørsmål kan sammenlignes.</p>${statsHtml||'<p class="muted">Ingen fullførte dueller å sammenligne ennå.</p>'}</div><div class="actions">${button('Logg ut','logout','class="btn ghost"')}</div>`);
+ shell(`<div class="eyebrow">Pålogget som ${esc(profile.username)}</div><h1 class="heading">Spill med venner</h1><p class="sub">Lag en quiz, inviter Ola eller flere venner, og svar innen fristen – uten å være pålogget samtidig.</p><div class="actions">${button('⚔️ Ny utfordring','new')}${button('🔗 Bli med med kode','join','class="btn secondary"')}${button('Oppdater','refresh','class="btn ghost"')}${button(`👥 Mine venner${friendsData.incoming.length?' ('+friendsData.incoming.length+' nye)':''}`,'friends','class="btn secondary"')}${button('🔗 Inviter til QuizHub','sharegeneral','class="btn secondary"')}</div>${pushPanel(session.user.id)}<h2>Mine utfordringer</h2>${current.length?current.map(c=>`<button class="ol-challenge" data-ol="open" data-id="${esc(c.id)}"><span><strong>${c.mode==='sports'?'🏆 Sport':c.mode==='geography'?'🌍 Geografi':'🧠 Allmenn'}</strong><small>Fra ${esc(c.owner)} · ${c.player_count} spillere · ${new Date(c.expires_at).toLocaleString('nb-NO')}</small></span><span class="pill ol-status ${c.closed?'ol-status--done':c.submitted?'ol-status--sent':'ol-status--open'}">${c.closed?('Ferdig'+(winnerLabels[c.id]?' · '+winnerLabels[c.id]:'')):c.submitted?'Levert':'Svar nå'}</span></button>`).join(''):'<div class="panel"><p class="muted">Ingen utfordringer ennå. Opprett en eller bli invitert av en venn.</p></div>'}<div class="panel"><h2>Statistikk mot venner</h2><p class="tiny">Basert på inntil 35 nylige, ferdige utfordringer. Poengandel gjør at runder med ulikt antall spørsmål kan sammenlignes.</p>${statsHtml||'<p class="muted">Ingen fullførte dueller å sammenligne ennå.</p>'}</div><div class="actions">${button('Logg ut','logout','class="btn ghost"')}</div>`);
+ const target=new URL(window.location.href);const challenge=target.searchParams.get('challenge'),friends=target.searchParams.get('friends');
+ if(challenge||friends){target.searchParams.delete('challenge');target.searchParams.delete('friends');history.replaceState(null,'',target.pathname+target.search+target.hash);try{if(challenge)await openChallenge(challenge);else await friendsView();}catch(e){note(err(e));await showHome();}return;}
  const pending=getPendingInvite();
  if(pending){
   try{const id=await rpc('qh_join',{p_code:pending});clearPendingInvite();await openChallenge(id);}
@@ -156,7 +159,8 @@ async function doAction(el){if(busy)return;const a=el.dataset.ol;notice='';try{
  if(a==='sharechallenge'){note(await shareInvite(challengeInviteUrl(),'Jeg utfordrer deg i QuizHub! Åpne lenken for å bli med.'));challengeView();return;}
  if(a==='sharegeneral'){note(await shareInvite(generalInviteUrl(),'Bli med på QuizHub! Registrer deg og utfordre venner til quiz.'));if(screen==='home')await showHome();return;}
  if(a==='loginview'){authView();return;}
- if(a==='logout'){await signOut(auth);session=null;profile=null;await showHome();return;}
+ if(a==='pushsave'||a==='pushremove'){busy=true;try{if(a==='pushsave')await savePush(firebaseApp,session.user.id,rpc);else await removePush(firebaseApp,session.user.id,rpc);note(a==='pushsave'?'Varslingsvalg lagret.':'Varsler deaktivert.');}catch(e){note(err(e));}busy=false;await showHome();return;}
+ if(a==='logout'){await removePush(firebaseApp,session.user.id,rpc);pushRefreshedUid=null;await signOut(auth);session=null;profile=null;await showHome();return;}
  if(a==='submit'){saveAnswer();const blank=answers.filter(x=>!x.trim()).length;if(!confirm(`Levere ${answers.length} svar nå${blank?` (${blank} tomme svar)`:''}? Du kan ikke endre dem senere.`))return;busy=true;await rpc('qh_submit',{p_id:active.id,p_answers:answers});localStorage.removeItem(draftKey(active.id));busy=false;await openChallenge(active.id);return;}
  if(a==='approve'||a==='reject'||a==='undo'){busy=true;await rpc('qh_review',{p_id:active.id,username:el.dataset.username,p_position:Number(el.dataset.pos),p_accept:a==='approve',p_undo:a==='undo'});busy=false;await openChallenge(active.id);return;}
  }catch(e){busy=false;note(err(e));if(active&&screen==='challenge')challengeView();else if(screen==='new')await createView();else if(screen==='friends')await friendsView();else if(screen==='join')joinView();else await showHome();}}
